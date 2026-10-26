@@ -1,0 +1,38 @@
+{
+  "baseline_archive": "ui16-microSD-font-stage3-hardware-tested-2026-10-26.zip",
+  "baseline_sha256": "5F7D50A6C3B83E7D923446E8E4947264D9087DFFDA6098F5672AEEAC8A86F803",
+  "monitor_binary_sha256": "E01027299E356C353E7C30827FDBCD852C0BB41AB0D71EBC765CAB1F82833121",
+  "changed_sources": [
+    {
+      "path": "ui16-continuation/monitor/src/pll/pll_27.v",
+      "stage3_sha256": "3B638613616121211C5FD2D080EADE3F4740FB349116BFFA87A55A36E2540CFC",
+      "stage4_sha256": "0FF0E1641F4A9FC66CE5AECF0ABC02FADE9935CA331F58E777060FF5DBFB1226"
+    },
+    {
+      "path": "ui16-continuation/monitor/src/pll/pll_27.ipc",
+      "stage3_sha256": null,
+      "stage4_sha256": "280D15050CE75F35F49D88B819392C225195AD93C73A28E2B2B77F6258244BD3"
+    },
+    {
+      "path": "ui16-continuation/monitor/src/pll/pll_27.mod",
+      "stage3_sha256": null,
+      "stage4_sha256": "FAD4391FE169514776239B6D7C29257DFF0C1B198F3406A65BC165A6D22E3B09"
+    },
+    {
+      "path": "ui16-continuation/monitor/src/pll/pll_74.v",
+      "stage3_sha256": "CF41F78DA2EA26739D38DEF1EE055CFA2C80246C2EC239812A0AC09F0C57A202",
+      "stage4_sha256": "AC6C298133A0C044A436159AED9E8410E8EED66A0EFF2E25C7A91D35C73EA57A"
+    },
+    {
+      "path": "ui16-continuation/monitor/src/pll/pll_74.ipc",
+      "stage3_sha256": null,
+      "stage4_sha256": "D6A3AAA06D4535929B6B4914D5B30D0AA89180AC0A3D37D860762E58A2702153"
+    },
+    {
+      "path": "ui16-continuation/monitor/src/pll/pll_74.mod",
+      "stage3_sha256": null,
+      "stage4_sha256": "6197B65E3EEA4A3B2F6BA4A62D50B56113917DF83A277F1BDED8FE9B2A13E003"
+    }
+  ],
+  "note": "Only the two PLLs differ from the stage3 cumulative release; IPC and MOD metadata are included with Verilog."
+}
