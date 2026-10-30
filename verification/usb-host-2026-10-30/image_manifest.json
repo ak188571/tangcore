@@ -1,0 +1,24 @@
+{
+  "scope": [
+    "monitor",
+    "NES",
+    "SNES"
+  ],
+  "purpose": "Exact hardware-tested images; no automatic device write",
+  "image_files": {
+    "cores/console138k/monitor.bin": {
+      "sha256": "31db2db40f4cd968a6b744043f0e2b84f8474e9f9608dba5698dba548275b095",
+      "bytes": 4532318
+    },
+    "cores/console138k/nestang.bin": {
+      "sha256": "b5363ee6e1fb4b6d259e0fc4babff416afa82e04c1b9c358d70111a8db490804",
+      "bytes": 4614440
+    },
+    "cores/console138k/snestang.bin": {
+      "sha256": "e31c906e12bf00d072f0a18b287b491cc743b03f155093cf15aeac93b6861085",
+      "bytes": 5050570
+    }
+  },
+  "microSD_readback_matched": true,
+  "monitor_ten_page_diagnostic_display_retained": true
+}

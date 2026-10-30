@@ -1,0 +1,22 @@
+{
+  "verified_package_manifest_sha256": "2cbd4adbb57c48765c01e323bdeeaab96ec53f2d57e0ecb7627d2b2a2ce93764",
+  "verified_source_manifest_sha256": "d57f634fc3e3586bfd96959c67f89773abc6439b037b321a230fccce11c8da40",
+  "image_sha256": {
+    "cores/console138k/monitor.bin": "31db2db40f4cd968a6b744043f0e2b84f8474e9f9608dba5698dba548275b095",
+    "cores/console138k/nestang.bin": "b5363ee6e1fb4b6d259e0fc4babff416afa82e04c1b9c358d70111a8db490804",
+    "cores/console138k/snestang.bin": "e31c906e12bf00d072f0a18b287b491cc743b03f155093cf15aeac93b6861085"
+  },
+  "scope": [
+    "monitor",
+    "NES",
+    "SNES"
+  ],
+  "source_content_changes_since_hardware_test": false,
+  "integration": "Relocate verified modules inside each core; add target-specific top and console138k dispatcher",
+  "software_conditions": {
+    "monitor": 292,
+    "NES": 185,
+    "SNES": 185
+  },
+  "all_build_setup_hold_violations": 0
+}
