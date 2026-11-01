@@ -9,10 +9,10 @@
 	url = ../snestang.git
 [submodule "gbatang"]
 	path = gbatang
-	url = https://github.com/nand2mario/gbatang.git
+	url = https://github.com/ak188571/gbatang.git
 [submodule "mdtang"]
 	path = mdtang
-	url = https://github.com/nand2mario/mdtang.git
+	url = https://github.com/ak188571/mdtang.git
 [submodule "monitor"]
 	path = monitor
 	url = ../monitorcore.git
@@ -21,4 +21,4 @@
 	url = ../smstang.git
 [submodule "pctang"]
 	path = pctang
-	url = https://github.com/nand2mario/pctang.git
+	url = https://github.com/ak188571/pctang.git
