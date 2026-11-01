@@ -1,0 +1,41 @@
+TangCore CRTとOSD2 第1段階の実装結果
+
+基準: tangcore-integrated / a67003941a26ccc856134f0d9142298d94b34483
+作業branch: crt-osd2-stage1
+対象: Console138K / NES
+
+実装した内容
+・ゲームRGBからOSD合成までの間に、遅延を加えないCRT bypassを接続。
+・既存core_configで要求値を受信し、異なるclock間を保持busとrequest/acknowledgeで転送。
+・frame境界で設定一式を適用し、その後の適用値をUARTで照会可能。
+・Player 1のSELECT＋右はOSD1、SELECT＋左はOSD2。表示中の別OSD呼出しは無視。
+・OSD1は中央固定、OSD2は中央・四隅の5位置。ゲーム側の入力遮断と解放待ちを維持。
+・OSD2に要求値とframe適用確認を表示。非対応coreではOSD2を有効化しない。
+
+検証結果
+・firmwareの16本の試験script成功。日本語メニュー、CSV順、起動、font、OSDを含む。
+・RTLの3種類の試験成功。設定mailbox、実UART、変更前との映像比較を含む。
+・65,536組のRGBでbypass一致。実際の映像変換部では400万画素のRGBとOSD座標が基準版と一致。
+・最終試験中にsourceが変わっていないことを検査値で確認。
+・Console138K向けfirmwareとNES bitstreamのbuild成功。
+・timing reportのsetup違反0件、hold違反0件。
+
+今回の範囲外
+・水平方向のぼかし、走査線の演算、推奨値、Reset to Recommended、設定保存、controller profile、hold time。
+・OSD1のROM保持型Restart Gameは追加していない。
+・FPGA内で合成済みの入力sourceの分離は未実装。
+・要求値をONにしても画面はbypassのまま。OSDにもBYPASS ONLYとNO SAVEを表示。
+・実機書き込み、実機でのHDMI・ROM動作確認、GitHubへのpushは行っていない。
+
+残るwarning
+・既存PLLのVCO範囲とclock関係のwarningが残る。
+・新moduleの出力宣言時の初期値にEX2478がある。両clock側の明示reset処理は保持している。
+・buildとsimulationの成功は実機受入れの代替ではない。
+
+詳細: docs/crt/STAGE1.md
+試験記録: verification/crt-stage1/checks.json
+
+firmware commit: b77930d60db63e675a855b29f9f076fa556d108f
+NES commit: 39af62a9042c5561ad8cf520471cff7f84519a2b
+firmware: 220416 byte / SHA-256 5582848b795e7ac17954f43c21a5de9a43bf4337a77e669f5808bcb9d596e728
+NES: 4611678 byte / SHA-256 f273d30b546403e7e330803f0be822b740760ba002d5955dec5b69e5e64189f0

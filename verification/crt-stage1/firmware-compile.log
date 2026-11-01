@@ -1,0 +1,24 @@
+[  3%] Built target fatfs
+[  6%] Built target mm
+[ 24%] Built target app
+[ 33%] Built target std
+[ 55%] Built target lhal
+[ 81%] Built target libc
+[ 87%] Built target freertos
+[ 93%] Built target cherryusb
+[ 99%] Built target utils
+[ 99%] Building CXX object CMakeFiles/tangcore_bl616.elf.dir/main.cpp.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/main.cpp: In function 'int menu_loadrom(const char*)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/main.cpp:158:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<core_info>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  158 |     for (int i = 0; i < core_info_list.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+[100%] Linking CXX executable build_out/tangcore_bl616.elf
+Memory region         Used Size  Region Size  %age Used
+fw_header_memory:         256 B         4 KB      6.25%
+      xip_memory:      209692 B         4 MB      5.00%
+       ram_psram:          0 GB         4 MB      0.00%
+     ram_nocache:       25168 B       447 KB      5.50%
+      ram_memory:      135600 B       447 KB     29.62%
+        ram_wifi:          0 GB        32 KB      0.00%
+Generate D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-console138k-crt-stage1/build_out/tangcore_bl616.bin
+[100%] Built target tangcore_bl616.elf
