@@ -2,6 +2,8 @@
 
 ## 対象と現在の状態
 
+初版の実機試験では、複数のNESゲームでFPGA image再構成後の `Usercode=0, status=0` 表示から先へ進まないことが報告された。保存試験は未到達。JTAG終了状態と失敗時のinterrupt復帰を修正し、関連8本の自動試験とfirmware buildを完了したが、修正版の起動・保存は実機再試験待ちである。詳細は `STAGE5_STARTUP_FIX.md` を参照する。以下の初版の導入実績は保持し、第5段階を完了扱いにしない。
+
 実機確認済み `crt-stage4b-hw-20261103` を基準に、BL616 firmwareへ保存機能を追加する。対象は現在CRTに対応するConsole138K／NES。NESの映像・UART・設定bit配置は変更せず、実機確認済み4bのNES imageをそのまま組み合わせる。第5段階の自動試験とfirmware build、実機導入・全flash読戻し照合は完了した。通常起動後の保存・再起動試験は利用者の確認待ち。記録は `verification/crt-stage5/` に保存する。
 
 日本語一覧、16×16 font、titles.csv順序、OSDの5位置・排他・入力遮断・終了後の全解放待ちを既存の前提とする。GitHubへのpushは行わない。

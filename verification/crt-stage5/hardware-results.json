@@ -1,0 +1,14 @@
+{
+  "date_jst": "2026-11-03",
+  "hardware_test_status": "failed_pending_startup_fix",
+  "firmware_commit": "e8c617f3ce95da736bc47699770c9675f4ec6fc8",
+  "firmware_sha256": "814f941f9b0cb8b23cc56bc94643543913ad36f7c6c1b69e03b11f34f2711555",
+  "user_reports": [
+    "タイトル一覧からゲームを選択すると、通常ではromのロード画面になるところで画面下部にUsercode=0x00000000, status=0x0が表示されてそれ以上進まない",
+    "別のNESゲームでも同じ表示で停止する"
+  ],
+  "code_location": "fpga/programmer.cpp writeSRAM_end, before UI16 runtime reaches load_rom/CRT prepare",
+  "persistence_hardware_checks": "not reached",
+  "last_accepted_hardware_tag": "crt-stage4b-hw-20261103",
+  "completion_tag_created": false
+}

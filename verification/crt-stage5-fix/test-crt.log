@@ -1,0 +1,2 @@
+CRT host PASS: independent hotkeys, config preservation, frame acknowledgement, lost-transfer recovery, stale status rejection, session reset
+CRT persistence PASS: hierarchy, CRC/size/system/volume identity, rename, two generations, 32 torn writes, corrupt/future records, I/O failures, tombstone recommendation updates, real popup save/reset/retry/leave-unsaved
