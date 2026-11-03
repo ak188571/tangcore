@@ -1,0 +1,174 @@
+{
+  "target": "Console138K NES",
+  "command": [
+    "C:/Gowin/Gowin_V1.9.12.03_x64/IDE/bin/gw_sh.exe",
+    "build.tcl",
+    "console138k"
+  ],
+  "exit_code": 0,
+  "seconds": 1322.77,
+  "source_hashes": {
+    "src/nes2hdmi.sv": "0db58e49ffcda9239f08b9732851aadfc826d598f9a10037574c2a65e09834c1",
+    "src/iosys/crt_filter.sv": "27ab1db999c9608470e953055350844dccb2e5e9a3d0da793cf9b62d7c43c7fa",
+    "src/iosys/iosys_bl616.v": "1f6372cc51788380c6c6d37a924cc9f7856615a315447f0c894d50b7b06f45cd"
+  },
+  "device_programming_performed": false,
+  "hardware_test_status": "pending",
+  "timing": {
+    "Numbers of Setup Violated Endpoints": 0,
+    "Numbers of Hold Violated Endpoints": 0
+  },
+  "synthesis_resources": {
+    "T_Register": 19587,
+    "T_Alu": 1716,
+    "T_Lut": 39574,
+    "T_MULT12X12": 1,
+    "T_MULT27X36": 4,
+    "T_MULTADDALU12X12": 1,
+    "T_Bsram": 31
+  },
+  "reported_minimum_pulse_width_rows": [
+    [
+      "1",
+      "2.331",
+      "3.231",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "2",
+      "2.336",
+      "3.236",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "3",
+      "2.425",
+      "3.325",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "4",
+      "2.430",
+      "3.330",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "5",
+      "2.435",
+      "3.335",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "6",
+      "2.439",
+      "3.339",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "7",
+      "2.550",
+      "3.450",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "8",
+      "2.555",
+      "3.455",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "9",
+      "2.987",
+      "3.212",
+      "0.225",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/enumeration/control_request_16_s0"
+    ],
+    [
+      "10",
+      "2.987",
+      "3.212",
+      "0.225",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/enumeration/control_request_17_s0"
+    ]
+  ],
+  "artifact_bytes": 4627550,
+  "artifact_sha256": "edc19884800545532cdf1590b7808bbb742b6e5aa9058de6d05c1ed31b2dc3bb",
+  "warning_counts": {
+    "EX2478": 74,
+    "EX3638": 9,
+    "EX3680": 1,
+    "EX3628": 1,
+    "EX3069": 1,
+    "EX2830": 2,
+    "EX3671": 2,
+    "EX3073": 7,
+    "EX3791": 39,
+    "EX3670": 63,
+    "EX2882": 1,
+    "EX3780": 33,
+    "EX2565": 216,
+    "EX1998": 12,
+    "EX0211": 1,
+    "CV0016": 2,
+    "NL0002": 23,
+    "CK3000": 5,
+    "PA1019": 3,
+    "PR1014": 1
+  },
+  "baseline_warning_counts": {
+    "EX2478": 74,
+    "EX3638": 9,
+    "EX3680": 1,
+    "EX3628": 1,
+    "EX3069": 1,
+    "EX2830": 2,
+    "EX3671": 2,
+    "EX3073": 7,
+    "EX3791": 45,
+    "EX3670": 63,
+    "EX2882": 1,
+    "EX3780": 33,
+    "EX2565": 216,
+    "EX1998": 12,
+    "EX0211": 1,
+    "CV0016": 2,
+    "NL0002": 26,
+    "CK3000": 5,
+    "PA1019": 3,
+    "PR1014": 1
+  },
+  "warning_notes": [
+    "Existing PLL VCO and clock-relationship warnings remain; clocks and constraints are unchanged.",
+    "An additional address-width warning EX3791 concerns truncation to the existing 16-bit framebuffer address. This preserves the previous address bus width; visible-row addresses fit within the framebuffer. Legacy address/phase behavior was compared in the video test."
+  ],
+  "source_commit": "a0c49be884f765c323c6ff3b7342fde995f244f4",
+  "tests_source_hashes_unchanged": true
+}
