@@ -1,0 +1,10 @@
+CRT stage4b repair: build and automatic tests PASS; hardware test PENDING.
+Original stage4b hardware test failed: persistent WAITING and native224 spacing appearance.
+Old UART regression reproduces the dropped packet; repaired UART and firmware retry tests pass.
+Fractional scanline depth preserves native224 phase and integrated attenuation.
+Firmware commit 4708296db351b369587cfb185e5c444a4f84c249
+Firmware SHA-256 be73e95967114f96d0c4aa829c9cef125c4756c90191bdbdde87b9a604c7d9a0
+NES commit c8df819ae6b96f1bc645b2d03b9e7714d8a9117e
+NES SHA-256 745ad31b4d1707f6b9ddf5a6d9e9c4964b41a2ab59ce6b0018f38545fdb5b1ec
+Setup/hold violated endpoints: 0/0. SDC unchanged from accepted stage4a.
+No device operation performed by this build. Do not complete stage4b or start stage5 yet.

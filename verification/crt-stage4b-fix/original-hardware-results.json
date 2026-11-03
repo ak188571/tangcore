@@ -1,0 +1,18 @@
+{
+  "date_jst": "2026-11-03",
+  "source": "User reports in this chat after deploying the original stage4b pair",
+  "hardware_test_status": "failed_pending_fix",
+  "accepted_hardware_baseline": "crt-stage4a-hw-20261103",
+  "tested_nes_commit": "08766efb13ed06cc14134d644067b34fe03d9b70",
+  "tested_firmware_commit": "9920831252b9ecb3210e8357a52e2bae17acc06e",
+  "passed": ["normal video/audio/controller", "STAGE4B OSD label", "combined blur and scanline", "no horizontal image displacement", "OSD remains sharp and visible"],
+  "reported_failures": [
+    "Blur and scanline requested values sometimes differ from the observed effect, for example OFF appears WEAK",
+    "Mismatch states show APPLY WAITING, not FRAME ACK",
+    "WAITING sometimes resolves quickly, sometimes persists until another controller operation",
+    "Unequal 3/4-output-row spacing of dark scanline bands is distracting"
+  ],
+  "user_selected_remedy": "Keep native224 source-row correspondence and distribute darkness across adjacent output rows",
+  "completion_tag_created": false,
+  "remaining": "Fix and repeat hardware testing before completing stage4b or starting stage5"
+}

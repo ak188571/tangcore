@@ -1,0 +1,48 @@
+[  3%] Built target mm
+[  6%] Built target fatfs
+[ 12%] Built target freertos
+[ 12%] Building CXX object CMakeFiles/app.dir/core/cores.cpp.obj
+[ 18%] Built target cherryusb
+[ 19%] Building CXX object CMakeFiles/app.dir/core/gba.cpp.obj
+[ 19%] Building CXX object CMakeFiles/app.dir/core/md.cpp.obj
+[ 20%] Building CXX object CMakeFiles/app.dir/core/nes.cpp.obj
+[ 29%] Built target std
+[ 35%] Built target utils
+[ 35%] Building CXX object CMakeFiles/app.dir/core/pcxt.cpp.obj
+[ 36%] Building CXX object CMakeFiles/app.dir/core/sms.cpp.obj
+[ 62%] Built target libc
+[ 62%] Building CXX object CMakeFiles/app.dir/core/snes.cpp.obj
+[ 84%] Built target lhal
+[ 84%] Building CXX object CMakeFiles/app.dir/ui/menu_manager.cpp.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp: In function 'void menu_input_loop()':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:66:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   66 |             if (active < options.size()-1) active++;
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:69:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   69 |         for (int i = 0; i < options.size(); i++) {
+      |                         ~~^~~~~~~~~~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:90:35: warning: comparison of integer expressions of different signedness: 'std::vector<std::unique_ptr<Menu> >::size_type' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+   90 |             if (menu_stack.size() != depth) {   // menu changed
+      |                 ~~~~~~~~~~~~~~~~~~^~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:92:28: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   92 |                 if (active >= options.size())
+      |                     ~~~~~~~^~~~~~~~~~~~~~~~~
+[ 85%] Building CXX object CMakeFiles/app.dir/ui/ui16_crt.cpp.obj
+[ 86%] Building CXX object CMakeFiles/app.dir/ui/ui16_osd_menu.cpp.obj
+[ 86%] Linking CXX static library build_out/lib/libapp.a
+[ 99%] Built target app
+[ 99%] Building CXX object CMakeFiles/tangcore_bl616.elf.dir/main.cpp.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/main.cpp: In function 'int menu_loadrom(const char*)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/main.cpp:158:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<core_info>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  158 |     for (int i = 0; i < core_info_list.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+[100%] Linking CXX executable build_out/tangcore_bl616.elf
+Memory region         Used Size  Region Size  %age Used
+fw_header_memory:         256 B         4 KB      6.25%
+      xip_memory:      210420 B         4 MB      5.02%
+       ram_psram:          0 GB         4 MB      0.00%
+     ram_nocache:       25168 B       447 KB      5.50%
+      ram_memory:      136520 B       447 KB     29.83%
+        ram_wifi:          0 GB        32 KB      0.00%
+Generate D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-console138k-crt-stage1/build_out/tangcore_bl616.bin
+[100%] Built target tangcore_bl616.elf

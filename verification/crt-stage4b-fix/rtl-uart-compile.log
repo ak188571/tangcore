@@ -1,0 +1,254 @@
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'osd_window'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:24:23: ... Location of port declaration
+   24 |     output reg [31:0] osd_window=32'h0000201c,
+      |                       ^~~~~~~~~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.050
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'osd_window_toggle'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:25:16: ... Location of port declaration
+   25 |     output reg osd_window_toggle=0,
+      |                ^~~~~~~~~~~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'overlay_color'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:30:19: ... Location of port declaration
+   30 |     output [14:0] overlay_color,     
+      |                   ^~~~~~~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'hid1'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:33:23: ... Location of port declaration
+   33 |     output reg [15:0] hid1,          
+      |                       ^~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'hid2'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:34:23: ... Location of port declaration
+   34 |     output reg [15:0] hid2,          
+      |                       ^~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'rom_loading'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:37:18: ... Location of port declaration
+   37 |     output [7:0] rom_loading,    
+      |                  ^~~~~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'rom_do'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:38:22: ... Location of port declaration
+   38 |     output reg [7:0] rom_do,         
+      |                      ^~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'rom_do_valid'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:39:16: ... Location of port declaration
+   39 |     output reg rom_do_valid,         
+      |                ^~~~~~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'mgmt_address'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:42:23: ... Location of port declaration
+   42 |     output reg [15:0] mgmt_address,
+      |                       ^~~~~~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'mgmt_read'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:43:23: ... Location of port declaration
+   43 |     output reg        mgmt_read,
+      |                       ^~~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'mgmt_write'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:45:23: ... Location of port declaration
+   45 |     output reg        mgmt_write,
+      |                       ^~~~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'mgmt_writedata'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:46:23: ... Location of port declaration
+   46 |     output reg [15:0] mgmt_writedata,
+      |                       ^~~~~~~~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'kbd_data'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:50:22: ... Location of port declaration
+   50 |     output reg [7:0] kbd_data,
+      |                      ^~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:10:36: Instance has missing pin: 'kbd_data_valid'
+   10 |     iosys_bl616 #(.FREQ(32000000)) dut(
+      |                                    ^~~
+                     src/iosys\iosys_bl616.v:51:22: ... Location of port declaration
+   51 |     output reg       kbd_data_valid,
+      |                      ^~~~~~~~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:21:62: Instance has missing pin: 'RxD_idle'
+   21 |     async_receiver #(.ClkFrequency(32000000),.Baud(2000000)) monitor(
+      |                                                              ^~~~~~~
+                     build-crt\uart_fixed_test.v:83:9: ... Location of port declaration
+   83 |  output RxD_idle,   
+      |         ^~~~~~~~
+%Warning-PINMISSING: tests/crt\tb_crt_uart.sv:21:62: Instance has missing pin: 'RxD_endofpacket'
+   21 |     async_receiver #(.ClkFrequency(32000000),.Baud(2000000)) monitor(
+      |                                                              ^~~~~~~
+                     build-crt\uart_fixed_test.v:84:13: ... Location of port declaration
+   84 |  output reg RxD_endofpacket = 0   
+      |             ^~~~~~~~~~~~~~~
+%Warning-PINMISSING: src/iosys\iosys_bl616.v:111:3: Instance has missing pin: 'RxD_idle'
+  111 | ) uart_receiver (
+      |   ^~~~~~~~~~~~~
+                     build-crt\uart_fixed_test.v:83:9: ... Location of port declaration
+   83 |  output RxD_idle,   
+      |         ^~~~~~~~
+%Warning-PINMISSING: src/iosys\iosys_bl616.v:111:3: Instance has missing pin: 'RxD_endofpacket'
+  111 | ) uart_receiver (
+      |   ^~~~~~~~~~~~~
+                     build-crt\uart_fixed_test.v:84:13: ... Location of port declaration
+   84 |  output reg RxD_endofpacket = 0   
+      |             ^~~~~~~~~~~~~~~
+%Warning-IMPLICITSTATIC: tests/crt\tb_crt_uart.sv:82:17: Variable's lifetime implicitly set to static (IEEE 1800-2023 6.21)
+                                                       : ... The initializer value will only be set once
+                                                       : ... Suggest use 'static' before variable declaration'
+   82 |             bit queued_status=0;
+      |                 ^~~~~~~~~~~~~
+                         ... For warning description see https://verilator.org/warn/IMPLICITSTATIC?v=5.050
+                         ... Use "/* verilator lint_off IMPLICITSTATIC */" and lint_on around source to disable this message.
+%Warning-IMPLICITSTATIC: tests/crt\tb_crt_uart.sv:92:20: Variable's lifetime implicitly set to static (IEEE 1800-2023 6.21)
+                                                       : ... The initializer value will only be set once
+                                                       : ... Suggest use 'static' before variable declaration'
+   92 |             string reply="";
+      |                    ^~~~~
+%Warning-IMPLICITSTATIC: tests/crt\tb_crt_uart.sv:93:17: Variable's lifetime implicitly set to static (IEEE 1800-2023 6.21)
+                                                       : ... The initializer value will only be set once
+                                                       : ... Suggest use 'static' before variable declaration'
+   93 |             bit marker=0,blur_marker=0,scan_marker=0;
+      |                 ^~~~~~
+%Warning-IMPLICITSTATIC: tests/crt\tb_crt_uart.sv:93:26: Variable's lifetime implicitly set to static (IEEE 1800-2023 6.21)
+                                                       : ... The initializer value will only be set once
+                                                       : ... Suggest use 'static' before variable declaration'
+   93 |             bit marker=0,blur_marker=0,scan_marker=0;
+      |                          ^~~~~~~~~~~
+%Warning-IMPLICITSTATIC: tests/crt\tb_crt_uart.sv:93:40: Variable's lifetime implicitly set to static (IEEE 1800-2023 6.21)
+                                                       : ... The initializer value will only be set once
+                                                       : ... Suggest use 'static' before variable declaration'
+   93 |             bit marker=0,blur_marker=0,scan_marker=0;
+      |                                        ^~~~~~~~~~~
+%Warning-IMPLICIT: src/iosys\iosys_bl616.v:126:15: Signal definition not found, creating implicitly: 'tx_busy'
+  126 |     .TxD_busy(tx_busy)
+      |               ^~~~~~~
+                   ... For warning description see https://verilator.org/warn/IMPLICIT?v=5.050
+                   ... Use "/* verilator lint_off IMPLICIT */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: build-crt\uart_fixed_test.v:131:61: Logical operator LOOPTEST expects 1 bit on the Loop Condition, but Loop Condition's SHIFTR generates 32 bits.
+                                                       : ... note: In instance 'tb_crt_uart.dut.uart_receiver'
+  131 | function integer log2(input integer v); begin log2=0; while(v>>log2) log2=log2+1; end endfunction
+      |                                                             ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.050
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: build-crt\uart_fixed_test.v:192:61: Logical operator LOOPTEST expects 1 bit on the Loop Condition, but Loop Condition's SHIFTR generates 32 bits.
+                                                       : ... note: In instance 'tb_crt_uart.dut.uart_receiver.tickgen'
+  192 | function integer log2(input integer v); begin log2=0; while(v>>log2) log2=log2+1; end endfunction
+      |                                                             ^
+%Warning-WIDTHEXPAND: build-crt\uart_fixed_test.v:134:78: Operator COND expects 3 bits on the Conditional True, but Conditional True's CONST '1'h0' generates 1 bits.
+                                                        : ... note: In instance 'tb_crt_uart.dut.uart_receiver'
+  134 | always @(posedge clk) if(OversamplingTick) OversamplingCnt <= (RxD_state==0) ? 1'd0 : OversamplingCnt + 1'd1;
+      |                                                                              ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.050
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: build-crt\uart_fixed_test.v:135:54: Operator EQ expects 32 or 4 bits on the LHS, but LHS's VARREF 'OversamplingCnt' generates 3 bits.
+                                                        : ... note: In instance 'tb_crt_uart.dut.uart_receiver'
+  135 | wire sampleNow = OversamplingTick && (OversamplingCnt==Oversampling/2-1);
+      |                                                      ^~
+%Warning-WIDTHEXPAND: src/iosys\iosys_bl616.v:83:22: Operator OR expects 32 or 16 bits on the LHS, but LHS's VARREF 'joy1' generates 12 bits.
+                                                   : ... note: In instance 'tb_crt_uart.dut'
+   83 |         else if((joy1|joy2|hid1|hid2)==0)osd_release<=0;
+      |                      ^
+%Warning-WIDTHEXPAND: src/iosys\iosys_bl616.v:83:22: Operator OR expects 32 or 16 bits on the RHS, but RHS's VARREF 'joy2' generates 12 bits.
+                                                   : ... note: In instance 'tb_crt_uart.dut'
+   83 |         else if((joy1|joy2|hid1|hid2)==0)osd_release<=0;
+      |                      ^
+%Warning-WIDTHEXPAND: src/iosys\iosys_bl616.v:322:40: Operator ASSIGNDLY expects 16 bits on the Assign RHS, but Assign RHS's VARREF 'rx_data' generates 8 bits.
+                                                    : ... note: In instance 'tb_crt_uart.dut'
+  322 |                         mgmt_writedata <= rx_data;
+      |                                        ^~
+%Warning-WIDTHTRUNC: src/iosys\iosys_bl616.v:419:31: Operator ASSIGNDLY expects 20 bits on the Assign RHS, but Assign RHS's VARREF 'JOY_UPDATE_INTERVAL' generates 32 or 26 bits.
+                                                   : ... note: In instance 'tb_crt_uart.dut'
+  419 |                     joy_timer <= JOY_UPDATE_INTERVAL;
+      |                               ^~
+%Warning-WIDTHEXPAND: src/iosys\iosys_bl616.v:420:30: Operator ASSIGNDLY expects 16 bits on the Assign RHS, but Assign RHS's VARREF 'joy1' generates 12 bits.
+                                                    : ... note: In instance 'tb_crt_uart.dut'
+  420 |                     joy1_reg <= joy1;
+      |                              ^~
+%Warning-WIDTHEXPAND: src/iosys\iosys_bl616.v:421:30: Operator ASSIGNDLY expects 16 bits on the Assign RHS, but Assign RHS's VARREF 'joy2' generates 12 bits.
+                                                    : ... note: In instance 'tb_crt_uart.dut'
+  421 |                     joy2_reg <= joy2;
+      |                              ^~
+%Warning-WIDTHTRUNC: src/iosys\iosys_bl616.v:442:40: Operator ASSIGNDLY expects 16 bits on the Assign RHS, but Assign RHS's ADD generates 32 bits.
+                                                   : ... note: In instance 'tb_crt_uart.dut'
+  442 |                         resp_frame_len <= STR_LEN + 1;
+      |                                        ^~
+%Warning-WIDTHEXPAND: src/iosys\iosys_bl616.v:418:45: Operator NEQ expects 16 bits on the LHS, but LHS's VARREF 'joy1' generates 12 bits.
+                                                    : ... note: In instance 'tb_crt_uart.dut'
+  418 |                 if (joy_timer == 0 && (joy1 != joy1_reg || joy2 != joy2_reg)) begin
+      |                                             ^~
+%Warning-WIDTHEXPAND: src/iosys\iosys_bl616.v:418:65: Operator NEQ expects 16 bits on the LHS, but LHS's VARREF 'joy2' generates 12 bits.
+                                                    : ... note: In instance 'tb_crt_uart.dut'
+  418 |                 if (joy_timer == 0 && (joy1 != joy1_reg || joy2 != joy2_reg)) begin
+      |                                                                 ^~
+%Warning-WIDTHEXPAND: src/iosys\iosys_bl616.v:480:52: Operator SUB expects 32 bits on the RHS, but RHS's VARREF 'send_idx' generates 7 bits.
+                                                    : ... note: In instance 'tb_crt_uart.dut'
+  480 |                     tx_data <= CONF_STR[8*(STR_LEN - send_idx - 1) +: 8];
+      |                                                    ^
+%Warning-WIDTHEXPAND: src/iosys\iosys_bl616.v:483:34: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'send_idx' generates 7 bits.
+                                                    : ... note: In instance 'tb_crt_uart.dut'
+  483 |                     if (send_idx == STR_LEN-1) begin
+      |                                  ^~
+%Warning-WIDTHEXPAND: src/iosys\iosys_bl616.v:531:34: Operator EQ expects 32 or 9 bits on the LHS, but LHS's VARREF 'send_idx' generates 7 bits.
+                                                    : ... note: In instance 'tb_crt_uart.dut'
+  531 |                     if (send_idx == 511+2) begin
+      |                                  ^~
+%Warning-CASEINCOMPLETE: src/iosys\iosys_bl616.v:241:9: Case values incompletely covered (example pattern 0x0)
+  241 |         case (recv_state)
+      |         ^~~~
+                         ... For warning description see https://verilator.org/warn/CASEINCOMPLETE?v=5.050
+                         ... Use "/* verilator lint_off CASEINCOMPLETE */" and lint_on around source to disable this message.
+make: Entering directory '/d/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/nestang/build-crt/uart'
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o C:/msys64/ucrt64/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o C:/msys64/ucrt64/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o C:/msys64/ucrt64/share/verilator/include/verilated_threads.cpp
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -x c++-header Vtb_crt_uart__pch.h -o Vtb_crt_uart__pch.h.fast.gch
+C:/msys64/ucrt64/share/verilator/include/verilated.cpp:78:10: warning: 'STDOUT_FILENO' redefined
+   78 | # define STDOUT_FILENO _fileno(stdout)
+      |          ^~~~~~~~~~~~~
+In file included from C:/msys64/ucrt64/include/locale.h:12,
+                 from C:/msys64/ucrt64/include/c++/16.2.0/clocale:47,
+                 from C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/c++locale.h:41,
+                 from C:/msys64/ucrt64/include/c++/16.2.0/bits/localefwd.h:42,
+                 from C:/msys64/ucrt64/include/c++/16.2.0/string:48,
+                 from C:/msys64/ucrt64/share/verilator/include/verilatedos.h:653,
+                 from C:/msys64/ucrt64/share/verilator/include/verilated.cpp:51:
+C:/msys64/ucrt64/include/stdio.h:56:9: note: this is the location of the previous definition
+   56 | #define STDOUT_FILENO   1
+      |         ^~~~~~~~~~~~~
+C:/msys64/ucrt64/share/verilator/include/verilated.cpp:79:10: warning: 'STDERR_FILENO' redefined
+   79 | # define STDERR_FILENO _fileno(stderr)
+      |          ^~~~~~~~~~~~~
+C:/msys64/ucrt64/include/stdio.h:57:9: note: this is the location of the previous definition
+   57 | #define STDERR_FILENO   2
+      |         ^~~~~~~~~~~~~
+g++   -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -x c++-header Vtb_crt_uart__pch.h -o Vtb_crt_uart__pch.h.slow.gch
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_crt_uart__pch.h.fast -c Vtb_crt_uart.cpp
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_crt_uart__pch.h.fast -c Vtb_crt_uart___024root__0.cpp
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_crt_uart__pch.h.fast -c Vtb_crt_uart___024root__1.cpp
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_crt_uart__pch.h.fast -c Vtb_crt_uart__main.cpp
+g++   -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_crt_uart__pch.h.slow -c Vtb_crt_uart__ConstPool__0__Slow.cpp
+g++   -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_crt_uart__pch.h.slow -c Vtb_crt_uart___024root__Slow.cpp
+g++   -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_crt_uart__pch.h.slow -c Vtb_crt_uart___024root__0__Slow.cpp
+g++   -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_crt_uart__pch.h.slow -c Vtb_crt_uart__Syms__Slow.cpp
+g++    verilated.o verilated_timing.o verilated_threads.o Vtb_crt_uart__ALL.a   -BC:/msys64/ucrt64/bin/ -mconsole  -pthread -lpthread -latomic   -o Vtb_crt_uart
+rm Vtb_crt_uart__ALL.verilator_deplist.tmp
+make: Leaving directory '/d/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/nestang/build-crt/uart'
+- V e r i l a t i o n   R e p o r t: Verilator 5.050 2026-07-01 rev vUNKNOWN-built20260702
+- Verilator: Built from 0.165 MB sources in 8 modules, into 0.638 MB in 8 C++ files needing 0.005 MB
+- Verilator: Walltime 7.175 s (elab=0.006, cvt=0.039, bld=7.100); cpu 0.000 s on 4 threads; allocated 24.203 MB
