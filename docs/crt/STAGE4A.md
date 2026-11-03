@@ -50,7 +50,11 @@ CRT ENABLEがONでも、H BLURがOFFならbypassとなる。新しいゲーム�
 
 Console138K向けfirmwareとNES imageのbuildが成功した。FPGAのsetup違反・hold違反はともに0件で、report掲載の最小pulse幅にも負の余裕はなかった。clockと制約は基準版から変更していない。既存のPLL VCO等の警告は残る。16 bitのframe buffer addressへ切り詰める幅の警告も出るが、従来と同じaddress bus幅であり、表示範囲内のaddressはframe bufferに収まる。警告と資源量の詳細はbuild記録へ保存する。
 
-firmwareは220,912 byte、NES imageは4,627,550 byte。buildと試験の記録は `verification/crt-stage4a/` に保存する。実機での画質・音声・操作の確認は未実施。
+firmwareは220,912 byte、NES imageは4,627,550 byte。buildと試験の記録は `verification/crt-stage4a/` に保存する。
+
+2026年11月3日、対象のConsole138KへfirmwareとNES imageを反映した。firmwareの基板側SHA-256と4 MiB全体の読み戻しを照合し、0x40000未満と0x80000以降が退避版と一致することを確認した。microSDは今回の58ファイルを退避してからNESだけを置換し、他の57ファイルは一致した。flash復旧用には、直前に実機確認した版の検証済み全flash読み戻しをコピーして保存した。これは今回新たに書き込み前の実機読み取りを行ったという意味ではない。
+
+導入記録は `verification/crt-stage4a/deployment.json` を参照する。実機での画質・音声・操作の確認は利用者の試験結果待ち。
 
 ## 実機試験
 
