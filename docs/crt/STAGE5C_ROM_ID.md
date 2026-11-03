@@ -46,3 +46,9 @@ firmwareのみ更新し、CSV/ROM/NES/monitor/font/既存logを維持する。SD
 2026-11-03T23:39:57.003243+09:00、既知Console138Kへfirmwareだけを反映した。基板SHA、新FW全byte、4MiB全flash読戻しと更新範囲外を照合した。SD全59filesを新たに退避し、CSV/ROM/NES/monitor/font/既存logを含む全fileが同一と確認した。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定を元のbyteへ復帰した。
 
 復旧用には実機合格第5bの全読戻しをコピーして保持する。新たな書込み前flash読取を行ったとは記録しない。導入照合はverification/crt-stage5c-romid/deployment.json。通常起動と2本のROM ID表示、CSV推奨値とFRAME ACK、IDの保持・切替・再取得は利用者の実機確認待ちである。第5c完了tagはまだ作らない。
+
+## 起動・CRC照合の実機結果
+
+利用者が「1-3 正常」と回答した。日本語一覧と順序、Dr. Marioの起動・映像・音声・操作、STAGE5C表示、CRC7623dffdとPC計算値の一致、CSV ON/WEAK/STANDARD・FRAME ACK、OSD1で一覧へ戻りPac-Manを起動し、CRCebbb19bf・DEFAULT全OFF・FRAME ACKになることを確認した。結果はverification/crt-stage5c-romid/hardware-results.json。
+
+起動時間の数値測定や、改名・別volumeの実機試験を確認済みとはしない。同ゲームでOSDを開き直した際のID保持と、Dr. Marioを改めて起動した際の同じCRC再取得は残りの確認とする。追加書込みは不要。第5c完了tagはまだ作らない。

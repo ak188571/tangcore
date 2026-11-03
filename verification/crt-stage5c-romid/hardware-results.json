@@ -1,0 +1,26 @@
+{
+  "date_jst": "2026-11-03",
+  "hardware_test_status": "startup_and_two_rom_crcs_passed_reopen_and_relaunch_pending",
+  "firmware_commit": "83d7055ceece5e3b043b86eda986e464aeee6905",
+  "firmware_sha256": "409f25cc861182e2778dc82f777050cc349b6a82c98b3cd18cd189132f0df32f",
+  "reports": [
+    {
+      "user_report": "1-3 正常",
+      "scope": "Japanese list, Dr.Mario and Pac-Man startup/video/audio/controls, PC CRC matches, CSV/default settings and FRAME ACK"
+    }
+  ],
+  "checks": {
+    "japanese_nes_list_and_order": true,
+    "dr_mario_launch_video_audio_controls": true,
+    "stage5c_identifier": true,
+    "dr_mario_crc_7623dffd": true,
+    "dr_mario_csv_on_weak_standard_frame_ack": true,
+    "osd1_return_and_pac_man_launch": true,
+    "pac_man_video_audio_controls": true,
+    "pac_man_crc_ebbb19bf": true,
+    "pac_man_all_off_default_frame_ack": true,
+    "same_game_id_retained_when_reopening_osd": null,
+    "relaunch_recomputes_same_id": null
+  },
+  "limitations": "Reopen/relaunch checks remain pending. No quantified startup timing, rename/other volume hardware validation, persistence, Reset or defaults-file validation is claimed."
+}
