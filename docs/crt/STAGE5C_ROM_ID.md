@@ -40,3 +40,9 @@ compilerのstack usageではID読取り関数は96bytes（下位のFatFs/driver�
 firmwareのみ更新し、CSV/ROM/NES/monitor/font/既存logを維持する。SD全体と直前の実機確認済み第5b全flashを保全する。
 
 通常起動と日本語一覧・順序、Dr. MarioとPac-Manの起動・映像・音声・操作、CRC表示がPC値と一致することを確認する。Dr. MarioはCSV推奨ON/WEAK/STANDARD・INITIAL CSV・FRAME ACK、Pac-Manは全OFF・INITIAL DEFAULT・FRAME ACKを期待する。同ゲームでOSDを開き直した際のID保持、別ゲームでの切替、再起動して同じCRCになることも確認する。保存試験・SD抜去・電源断中の書込み試験は行わない。
+
+## 第5c版の実機反映
+
+2026-11-03T23:39:57.003243+09:00、既知Console138Kへfirmwareだけを反映した。基板SHA、新FW全byte、4MiB全flash読戻しと更新範囲外を照合した。SD全59filesを新たに退避し、CSV/ROM/NES/monitor/font/既存logを含む全fileが同一と確認した。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定を元のbyteへ復帰した。
+
+復旧用には実機合格第5bの全読戻しをコピーして保持する。新たな書込み前flash読取を行ったとは記録しない。導入照合はverification/crt-stage5c-romid/deployment.json。通常起動と2本のROM ID表示、CSV推奨値とFRAME ACK、IDの保持・切替・再取得は利用者の実機確認待ちである。第5c完了tagはまだ作らない。
