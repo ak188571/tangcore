@@ -26,3 +26,7 @@
 作業branchの第5段階sourceと不合格記録は調査用に保持し、基板に現在動作するrevisionと混同しない。新たな実機完了tagは作らない。第5段階の実装を再開するときは、回復を確認した第4b基準から変更を小さく分けて原因を絞る。広範囲のJTAG変更を再投入する前に、既存の動作経路との差を説明できるようにする。
 
 生の起動記録はverification/crt-stage5-recovery4b/boot-diagnostic.log、復旧照合は同deployment.json。個別の試験不合格はverification/crt-stage5-jtag2/hardware-results.jsonを参照する。
+
+## 復旧後の実機確認
+
+利用者から「1, 2正常」と返信があり、通常起動後の日本語NES一覧、およびドクター・マリオの起動・映像・音声・操作が正常に戻ったことを確認した。今回の回復結果をverification/crt-stage5-recovery4b/hardware-results.jsonに記録した。第5段階の推奨値・保存・Resetは未確認のままで、完了扱いにしない。次の変更を導入する前に、第4bの経路を基準として第5段階で増えた処理を切り分ける。

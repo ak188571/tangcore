@@ -1,0 +1,15 @@
+{
+  "date_jst": "2026-11-03",
+  "hardware_test_status": "recovery_confirmed_by_user",
+  "user_report": "1, 2正常",
+  "checks": {
+    "japanese_nes_list_visible": true,
+    "dr_mario_rom_load_and_launch": true,
+    "video_audio_controls_normal": true
+  },
+  "deployed_firmware_commit": "4708296db351b369587cfb185e5c444a4f84c249",
+  "deployed_firmware_sha256": "be73e95967114f96d0c4aa829c9cef125c4756c90191bdbdde87b9a604c7d9a0",
+  "baseline_hardware_tag": "crt-stage4b-hw-20261103",
+  "scope": "Recovery of the Japanese NES list and Dr. Mario video/audio/controls only; prior full stage4b checks remain in their existing records.",
+  "stage5_status": "incomplete; no new deployment authorized by this recovery result alone"
+}

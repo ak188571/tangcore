@@ -15,11 +15,12 @@
   "nes_monitor_rom_unchanged": true,
   "sdk_settings_restored": true,
   "prewrite_flash_snapshot_origin": "reused_verified_post_stage5_jtag2_readback_not_a_new_prewrite_read",
-  "normal_boot_hardware_check": "pending",
+  "normal_boot_hardware_check": "recovery_confirmed_by_user",
   "readback_connection": {
     "first_mode2_read_failed": true,
     "mode0_read_only_retry_succeeded": true,
     "reprogrammed_after_verified_restore": false
   },
-  "boot_diagnostic_sha256": "b2b08b2f592b9e8e3cc5c14fa2093b90d1ccce6120fdb50e4a415e16449f7f5d"
+  "boot_diagnostic_sha256": "b2b08b2f592b9e8e3cc5c14fa2093b90d1ccce6120fdb50e4a415e16449f7f5d",
+  "normal_boot_hardware_record": "hardware-results.json"
 }
