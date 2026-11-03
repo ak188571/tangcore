@@ -60,4 +60,6 @@ Console138K向けのFPGAは `gw_sh build.tcl console138k`、firmwareは `UI16_SY
 
 ## 次の段階
 
+作業順序とcommitの区切りは `IMPLEMENTATION_STEPS.md` に従う。本書の第1段階は、その表の1〜3に相当する。
+
 実機で確認済みのこの版を基準に、水平blurを一つ追加し、OFF時の一致と画素の端処理を再検証する。次にscanline、推奨値、ゲーム別保存へ進む。
