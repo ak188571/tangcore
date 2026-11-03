@@ -54,7 +54,11 @@ firmwareは220,912 byte、NES imageは4,627,550 byte。buildと試験の記録�
 
 2026年11月3日、対象のConsole138KへfirmwareとNES imageを反映した。firmwareの基板側SHA-256と4 MiB全体の読み戻しを照合し、0x40000未満と0x80000以降が退避版と一致することを確認した。microSDは今回の58ファイルを退避してからNESだけを置換し、他の57ファイルは一致した。flash復旧用には、直前に実機確認した版の検証済み全flash読み戻しをコピーして保存した。これは今回新たに書き込み前の実機読み取りを行ったという意味ではない。
 
-導入記録は `verification/crt-stage4a/deployment.json` を参照する。実機での画質・音声・操作の確認は利用者の試験結果待ち。
+導入記録は `verification/crt-stage4a/deployment.json` を参照する。
+
+同日、最初に依頼した3項目について利用者から「すべて正常」と報告された。NESの映像・音声・操作、OSD2の対応表示、3強度の輪郭変化とFRAME ACK、CRT ENABLEによる切替、ON／OFF時の画像位置維持、OSD文字にぼかしが掛からないこと、項目切替時にOSDが消えないことを確認済みとする。記録は `verification/crt-stage4a/hardware-results.json` を参照する。
+
+画面端と動く場面、5位置の表示と入力制御、同じゲームでの保持・一覧への復帰・別ゲームでの初期化については追加の確認待ち。使用controllerと接続先は未申告のため、他の入力sourceや他coreまで検証済みとはしない。
 
 ## 実機試験
 

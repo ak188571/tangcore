@@ -25,5 +25,6 @@
   "nes_core_written": true,
   "other_sd_files_unchanged": 57,
   "sdk_defaults_restored": true,
-  "hardware_test_status": "awaiting user"
+  "hardware_test_status": "initial_three_test_groups_passed_remaining_groups_pending",
+  "hardware_test_record": "hardware-results.json"
 }
