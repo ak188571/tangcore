@@ -25,7 +25,7 @@
   "nes_core_written": true,
   "other_sd_files_unchanged": 57,
   "sdk_defaults_restored": true,
-  "hardware_test_status": "awaiting user",
+  "hardware_test_status": "all_requested_stage4b_hardware_checks_passed_current_console138k_nes_setup",
   "readback_recovery": {
     "initial_mode0_handshake_failed": true,
     "mode2_read_only_retry_succeeded": true,
@@ -36,5 +36,6 @@
     "successful_logs": [
       "post-stage4b-fix-eb76411c.log"
     ]
-  }
+  },
+  "hardware_test_record": "hardware-results.json"
 }

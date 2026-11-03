@@ -1,35 +1,83 @@
 {
   "date_jst": "2026-11-03",
-  "source": "User reply to the first hardware retest request in this chat",
-  "user_reply_verbatim": "1-3について確認した",
-  "interpretation": "The requested groups 1-3 are confirmed with no issue reported; no additional qualitative preference was stated",
-  "hardware_test_status": "partial_confirmed_remaining_checks_pending",
+  "source": "User reports for both requested retest batches in this chat",
+  "hardware_test_status": "all_requested_stage4b_hardware_checks_passed_current_console138k_nes_setup",
   "firmware_commit": "4708296db351b369587cfb185e5c444a4f84c249",
   "nes_commit": "c8df819ae6b96f1bc645b2d03b9e7714d8a9117e",
   "confirmed_groups": [
     {
       "group": 1,
-      "checks": ["normal video/audio/controller", "SELECT+Left opens OSD2"]
+      "checks": [
+        "normal video/audio/controller",
+        "SELECT+Left opens OSD2"
+      ]
     },
     {
       "group": 2,
-      "checks": ["all blur and scanline strengths including return to OFF", "WAITING converges to FRAME ACK after input stops", "displayed values match effects", "OSD follows changes while confirm button is held"]
+      "checks": [
+        "all blur and scanline strengths including return to OFF",
+        "WAITING converges to FRAME ACK after input stops",
+        "displayed values match effects",
+        "OSD follows changes while confirm button is held"
+      ]
     },
     {
       "group": 3,
-      "checks": ["native224 fractional scanline spacing appearance checked", "combined blur and scanline", "no horizontal image displacement", "OSD remains sharp and visible"]
+      "checks": [
+        "native224 fractional scanline spacing appearance checked",
+        "combined blur and scanline",
+        "no horizontal image displacement",
+        "OSD remains sharp and visible"
+      ]
     }
   ],
   "additional_scanline_quality_comment": null,
-  "remaining": [
-    "moving scenes and left/right image boundaries with both effects enabled",
-    "five OSD2 positions and OSD1 exclusion/center",
-    "game input blocking and all-buttons-release gating after close",
-    "same-game session settings and position retained",
-    "Japanese menu and titles.csv ordering after returning to list",
-    "different-game effect settings reset to OFF with FRAME ACK"
-  ],
+  "remaining": [],
   "controller_model_and_connection": "not reported for this retest",
-  "completion_tag_created": false,
-  "stage5_started": false
+  "stage5_started": false,
+  "reports": [
+    {
+      "date_jst": "2026-11-03",
+      "test_batch": "Initial three groups: normal operation, settings/ACK/held confirm, scanline/combined effects/OSD stability",
+      "user_reply_verbatim": "1-3について確認した",
+      "interpretation": "The requested groups 1-3 are confirmed with no issue reported; no additional qualitative preference was stated"
+    },
+    {
+      "date_jst": "2026-11-03",
+      "test_batch": "Remaining three groups: motion/edges, placement/ownership/input release, session/menu/different-game reset",
+      "user_reply_verbatim": "1-3正常",
+      "interpretation": "All three remaining requested test groups explicitly reported normal"
+    }
+  ],
+  "final_confirmed_groups": [
+    {
+      "group": 1,
+      "checks": [
+        "both effects STRONG during moving scenes",
+        "no unrelated line color at left/right edges",
+        "no new abnormal streaks or flicker"
+      ]
+    },
+    {
+      "group": 2,
+      "checks": [
+        "five OSD2 positions without clipped text",
+        "opposite hotkey does not open OSD1 or change settings",
+        "game input blocked during OSD",
+        "game input stays blocked while close button is held",
+        "game input resumes after all buttons are released",
+        "OSD1 opens centered after OSD2 closes"
+      ]
+    },
+    {
+      "group": 3,
+      "checks": [
+        "same-game effect values and POS retained across reopen",
+        "Japanese menu and titles.csv order after return to list",
+        "different NES game starts with CRT enable/blur/scanline OFF and FRAME ACK"
+      ]
+    }
+  ],
+  "validation_tag": "crt-stage4b-hw-20261103",
+  "scope": "User confirmed both requested retest batches on the current Console138K/NES setup. Controller model and connection were not reported. Other cores/input sources/display devices and per-game POS reset were not tested. Persistence across power cycles is not implemented in stage4b."
 }
