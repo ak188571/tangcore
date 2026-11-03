@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-11-03T14:20:13.268765+09:00",
+  "firmware_commit": "5bd8a4404bd2ebe7496d7a28e62a3cbf2aea3f76",
+  "firmware_bytes": 220560,
+  "firmware_sha256": "c14f474dc3305b759d3ee36e99abc8193c57f5b9e3714532b1b835472ad5c136",
+  "rollback_origin": "previous verified stage1 full flash readback",
+  "rollback_full_flash_sha256": "7df038c3fd56eea4c624109ec1bc51dce2214ea07764e40ae18804c777fc06de",
+  "firmware_written": true,
+  "full_flash_readback_verified": true,
+  "boot_area_unchanged": true,
+  "from_0x80000_unchanged": true,
+  "sd_modified": false,
+  "nes_core_unchanged": true,
+  "sdk_defaults_restored": true,
+  "hardware_retest_status": "awaiting user"
+}

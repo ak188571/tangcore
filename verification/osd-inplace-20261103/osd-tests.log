@@ -1,0 +1,2 @@
+OSD host tests passed: dynamic dimensions, five anchors, stable width, scrolling, in-place selection/value changes, no hide/clear, dialog cache recovery, Main Menu/resume
+Actual OSD driver passed: window/key packets, neutral-before-open/close, task-owned capture, marker parser, old-core rejection, bounded capability wait
