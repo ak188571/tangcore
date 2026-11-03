@@ -35,3 +35,7 @@ submoduleを変更した場合は、対象submoduleで先にcommitし、親repos
 ## 復旧後の第5段階の切り分け
 
 第4bへの復旧と通常起動を確認した後は、まず第5aとしてCSV読込みだけを分離して再開する。関連7試験とfirmware buildは成功、実機は未確認。詳細はSTAGE5A_CSV_ISOLATION.mdとverification/crt-stage5a-csv/。第5段階全体の完了とは区別し、元の不合格版と修正版も履歴に保持する。
+
+## 第5b段階
+
+第5aの依頼した実機試験はすべて正常と確認し、local tag crt-stage5a-hw-20261103を作成した。次はCSVの推奨値を選択時にコピーして起動成功後のCRT設定へ渡す部分のみ。関連7試験・firmware buildは成功、実機試験待ち。保存・Reset・ROM CRC・追加のSDアクセスは含まない。STAGE5B_CSV_RECOMMENDATION.mdとverification/crt-stage5b-recommended/を参照。

@@ -1,0 +1,5 @@
+Stage5b selected CSV recommendation on launch: seven related scripts and firmware build PASS; hardware PENDING.
+Firmware 95113b138e4cc869933df34bb18bff05d711adf1; 222352 bytes; SHA d8d53ed8f47d43db6e1b5dc0389cca38a983b516effc13f1e05f220b253e10f1.
+JTAG, FPGA and ROM loader sources are unchanged. No extra SD access, ROM CRC, defaults, persistence or Reset.
+Actual browser/CSV mapping, actual main success handoff, actual CRT seed/ACK/reset behavior tested.
+Stage5a hardware has passed. Earlier stage5 launch failure root cause remains unknown.
