@@ -58,7 +58,9 @@ firmwareは220,912 byte、NES imageは4,627,550 byte。buildと試験の記録�
 
 同日、最初に依頼した3項目について利用者から「すべて正常」と報告された。NESの映像・音声・操作、OSD2の対応表示、3強度の輪郭変化とFRAME ACK、CRT ENABLEによる切替、ON／OFF時の画像位置維持、OSD文字にぼかしが掛からないこと、項目切替時にOSDが消えないことを確認済みとする。記録は `verification/crt-stage4a/hardware-results.json` を参照する。
 
-画面端と動く場面、5位置の表示と入力制御、同じゲームでの保持・一覧への復帰・別ゲームでの初期化については追加の確認待ち。使用controllerと接続先は未申告のため、他の入力sourceや他coreまで検証済みとはしない。
+続けて依頼した残りの3項目にも、利用者から「すべて正常」と報告された。STRONGでの画面端と動く場面、5位置の表示、入力遮断と全button解放後の復帰、同じゲームでの要求値・位置保持、一覧へ戻った際の日本語表示・titles.csv順序、別のNESゲームでCRT ENABLE・H BLURがOFFとなりFRAME ACKになることを確認済みとする。これで今回依頼した4aの実機試験は完了。
+
+実機確認済みのlocal tagは `crt-stage4a-hw-20261103` とする。使用controllerと接続先は未申告のため、他の入力sourceや他coreまで検証済みとはしない。別ゲームでのPOS初期化は試験対象に含めていない。
 
 ## 実機試験
 
