@@ -39,3 +39,7 @@ submoduleを変更した場合は、対象submoduleで先にcommitし、親repos
 ## 第5b段階
 
 第5aの依頼した実機試験はすべて正常と確認し、local tag crt-stage5a-hw-20261103を作成した。次はCSVの推奨値を選択時にコピーして起動成功後のCRT設定へ渡す部分のみ。関連7試験・firmware build・導入照合と依頼した全実機試験が成功。同ゲームの変更保持、再起動時のCSV推奨値復帰も確認済み。local tagはcrt-stage5b-hw-20261103。今回の起動時適用のみを完了し、保存・Reset・ROM CRC・追加のSDアクセスは含まない。第5段階全体は未完了。STAGE5B_CSV_RECOMMENDATION.mdとverification/crt-stage5b-recommended/を参照。
+
+## 第5c段階
+
+実機合格第5bを基準に、ROM内容のCRC32/size/system/volumeによるID取得だけを追加。関連8試験とfirmware buildは成功、実機は未確認。読取り専用で、保存/Reset/defaultsは未実装のまま。STAGE5C_ROM_ID.mdとverification/crt-stage5c-romid/を参照。

@@ -1,0 +1,5 @@
+Stage5c read-only ROM identity: eight scripts and firmware build PASS; hardware PENDING.
+Firmware 83d7055ceece5e3b043b86eda986e464aeee6905, 223104 bytes, SHA 409f25cc861182e2778dc82f777050cc349b6a82c98b3cd18cd189132f0df32f.
+No JTAG/FPGA/core-loader/input changes. One read-only pass before ROM load, using existing noncacheable loader file/buffer. No persistence/reset/defaults.
+Host checks: IEEE vector, all-byte CRC, exact size, rename/volume/system separation, chunk boundaries, I/O failures, actual launch handoff and CRT identity display.
+Expected device CRCs: Dr.Mario 7623dffd; Pac-Man ebbb19bf. ROM bytes are not included in the distribution.

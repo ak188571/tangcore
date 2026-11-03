@@ -1,0 +1,28 @@
+[  2%] Built target mm
+[  8%] Built target utils
+[ 12%] Built target fatfs
+[ 14%] Building CXX object CMakeFiles/app.dir/ui/ui16_crt.cpp.obj
+[ 18%] Built target freertos
+[ 24%] Built target cherryusb
+[ 25%] Building CXX object CMakeFiles/app.dir/ui/ui16_rom_id.cpp.obj
+[ 25%] Building CXX object CMakeFiles/app.dir/ui/ui16_osd_menu.cpp.obj
+[ 34%] Built target std
+[ 61%] Built target libc
+[ 83%] Built target lhal
+[ 83%] Linking CXX static library build_out/lib/libapp.a
+[ 99%] Built target app
+[ 99%] Building CXX object CMakeFiles/tangcore_bl616.elf.dir/main.cpp.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/main.cpp: In function 'int menu_loadrom(const char*)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/main.cpp:159:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<core_info>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  159 |     for (int i = 0; i < core_info_list.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+[100%] Linking CXX executable build_out/tangcore_bl616.elf
+Memory region         Used Size  Region Size  %age Used
+fw_header_memory:         256 B         4 KB      6.25%
+      xip_memory:      212388 B         4 MB      5.06%
+       ram_psram:          0 GB         4 MB      0.00%
+     ram_nocache:       25168 B       447 KB      5.50%
+      ram_memory:      136584 B       447 KB     29.84%
+        ram_wifi:          0 GB        32 KB      0.00%
+Generate D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-console138k-crt-stage1/build_out/tangcore_bl616.bin
+[100%] Built target tangcore_bl616.elf
