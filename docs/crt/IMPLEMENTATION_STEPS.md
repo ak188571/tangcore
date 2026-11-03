@@ -9,7 +9,7 @@
 | 3 | OSD2の最小構成 | OSD1との排他、項目操作、入力遮断、解放待ち | 完了。既存の1〜3の統合commitとOSD表示維持の修正で確認済み |
 | 4a | 水平ぼかし | OSD2から実映像を調整でき、OFF時は基準映像と一致する。画面端の処理も正しい | 実装・自動試験・build・導入と依頼した全実機試験が完了。local tagはcrt-stage4a-hw-20261103。STAGE4A.mdとverification/crt-stage4a/を参照 |
 | 4b | 走査線 | OSD2から実映像を調整でき、OFF時と水平ぼかし併用時も正しい | 修正版の実装・自動試験・build・導入と依頼した全実機再試験が完了。WAITING修正、元224行の明暗配分、表示端・入力・ゲーム切替も確認済み。local tagはcrt-stage4b-hw-20261103。STAGE4B.mdとverification/crt-stage4b-fix/を参照 |
-| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 未実装。4から分けて実装・検証・commitを行う |
+| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | BL616側の実装・関連7本の自動試験・firmware build完了。NESは実機確認済み4bを再利用。実機導入・再起動試験待ち。STAGE5.mdとverification/crt-stage5/を参照。4bから分けてcommitを行う |
 
 ## 完了済みの履歴
 

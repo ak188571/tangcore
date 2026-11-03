@@ -1,0 +1,15 @@
+{
+  "reused_without_rebuild": true,
+  "source_commit": "c8df819ae6b96f1bc645b2d03b9e7714d8a9117e",
+  "artifact": {
+    "file": "cores/console138k/nestang.bin",
+    "bytes": 4640660,
+    "sha256": "745ad31b4d1707f6b9ddf5a6d9e9c4964b41a2ab59ce6b0018f38545fdb5b1ec"
+  },
+  "timing": {
+    "Numbers of Setup Violated Endpoints": 0,
+    "Numbers of Hold Violated Endpoints": 0
+  },
+  "source_validation_tag": "crt-stage4b-hw-20261103",
+  "reason": "Stage5 changes BL616 only; NES config fields and HDL are unchanged."
+}
