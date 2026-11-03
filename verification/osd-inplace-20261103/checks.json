@@ -19,5 +19,6 @@
     "tests/ui16/osd_test.cpp": "18105c2d50b58e9ab974acba419f5fd67629d5de6d5790a0f3b799a5875ba42a"
   },
   "fpga_changes": false,
-  "hardware_retest": "pending"
+  "hardware_retest": "passed_for_selection_value_visibility_and_frame_ack",
+  "hardware_retest_log": "hardware-retest.json"
 }
