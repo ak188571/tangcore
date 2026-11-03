@@ -1,0 +1,6 @@
+jtag2 t=650717 phase=program-begin id=00000000 first=00000000 status=00000000 user=00000000 tries=0 poll=00000000/00000000/00000000 n=0 sd:cores/console138k/monitor.bin
+jtag2 t=4871933 phase=program-failed id=0001081b first=00000622 status=00000622 user=00000000 tries=3 poll=00000080/00000000/00000020 n=1 sd:cores/console138k/monitor.bin
+jtag2 t=649734 phase=program-begin id=00000000 first=00000000 status=00000000 user=00000000 tries=0 poll=00000000/00000000/00000000 n=0 sd:cores/console138k/monitor.bin
+jtag2 t=4864076 phase=program-failed id=0001081b first=00000622 status=00000622 user=00000000 tries=3 poll=00000080/00000000/00000020 n=1 sd:cores/console138k/monitor.bin
+jtag2 t=649725 phase=program-begin id=00000000 first=00000000 status=00000000 user=00000000 tries=0 poll=00000000/00000000/00000000 n=0 sd:cores/console138k/monitor.bin
+jtag2 t=4863796 phase=program-failed id=0001081b first=00000622 status=00000622 user=00000000 tries=3 poll=00000080/00000000/00000020 n=1 sd:cores/console138k/monitor.bin

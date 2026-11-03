@@ -1,5 +1,7 @@
 # 第5段階の起動停止・追加修正と診断
 
+追記：この診断版c166944の実機試験も不合格。利用者から「電源投入直後から一覧も出ない」「信号なし」と報告された。microSDの記録ではmonitor.binのprogram-failed、ID=0x0001081b、status=0x00000622、UserCode=0、3回確認でも不成立だった。DONEがなく、bad-command bitが立っている。以前のNES選択後の停止に加え、monitor起動にも影響が出た退行として扱う。PC試験成功は実機の動作保証にならなかった。確認済み第4b段階への復旧を優先し、診断版を継続使用しない。実機原文と値はverification/crt-stage5-jtag2/hardware-results.jsonを参照する。第5段階の元の起動停止の原因はなお未確定である。
+
 ## 実機で分かったこと
 
 2026年11月3日、最初の起動修正版01f38f4でも停止が続くと利用者から報告された。表示は初版のUsercode=0からUsercode=0x0000e613へ変わり、status=0、他のNESゲームでも停止する。原文はverification/crt-stage5-fix/hardware-results.jsonに保存した。
