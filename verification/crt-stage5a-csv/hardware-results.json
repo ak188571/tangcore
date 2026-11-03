@@ -1,0 +1,16 @@
+{
+  "date_jst": "2026-11-03",
+  "user_report": "1-3正常",
+  "hardware_test_status": "all_requested_stage5a_checks_passed",
+  "firmware_commit": "40fe027b420d97f9d926d60695ec3b65ef200d92",
+  "firmware_sha256": "1bf670d8db9c1af3791ed6fbb58450fdd5c252d04da175e0d484de006f9a80ca",
+  "checks": {
+    "japanese_nes_list_and_csv_order": true,
+    "dr_mario_launch_video_audio_controls": true,
+    "osd2_stage5a_identifier": true,
+    "initial_crt_blur_scanline_all_off": true,
+    "frame_ack": true,
+    "osd1_return_to_list_and_another_nes_launch": true
+  },
+  "limitations": "CSV reading only; recommendation application, ROM identification, persistence and Reset are not validated by this result."
+}
