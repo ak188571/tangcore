@@ -35,3 +35,9 @@ CRT/OSD/launch/titles/folders/scroll/wrapの7本が成功した。実際のCSV p
 最初に通常起動と日本語一覧、Dr. Marioの起動・映像・音声・操作を確認する。OSD2はCRT ENABLE=ON、H BLUR=WEAK、SCANLINE=STANDARD、INITIAL: CSV、APPLY: FRAME ACKを期待する。別NESでは3項目OFF、INITIAL: DEFAULT、FRAME ACKを期待する。
 
 続いて同ゲームの変更→Close→開き直しで保持されること、一覧へ戻ってDr. Marioを再起動するとCSV値へ戻ることを確認する。保存試験とReset試験はこの段階の対象ではない。第5段階全体の完了tagはまだ作らない。
+
+## 第5b版の実機反映
+
+2026-11-03T22:48:43.487035+09:00、既知Console138Kへfirmwareだけを反映した。基板SHA、新firmware全byte、4MiB全flash、更新範囲外を照合した。SD全59filesを新たに退避し、CSV/ROM/NES/monitor/font/既存起動logを含む全fileが同一と確認した。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定は元のbyteへ復帰した。
+
+復旧用には直前の実機合格第5aの検証済み全flashと現在のCSVを保持する。今回新たな書込み前flash読取を行ったとは記録しない。導入照合はverification/crt-stage5b-recommended/deployment.json。通常起動・CSV推奨値適用・別ゲームの全OFF・同ゲーム中の変更保持と再起動時の推奨値復帰は実機確認待ちである。第5段階全体の完了にはしない。
