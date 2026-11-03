@@ -47,3 +47,13 @@ CRT/OSD/launch/titles/folders/scroll/wrapの7本が成功した。実際のCSV p
 利用者が「1-3正常」と回答した。日本語NES一覧と順序、Dr. Marioの起動・映像・音声・操作、STAGE5B識別、ON/WEAK/STANDARD、INITIAL: CSV、FRAME ACK、およびOSD1から一覧へ戻って別NESを起動し全OFF/INITIAL: DEFAULT/FRAME ACKとなることを確認した。結果はverification/crt-stage5b-recommended/hardware-results.json。
 
 同ゲーム中の手動変更保持と、Dr. Marioを起動し直した際のCSV推奨値への復帰は、この返信だけでは確認済みにしない。追加の書込みをせず残りの2項目を実機で確認する。第5b完了tagと第5段階全体の完了tagはまだ作らない。
+
+## 第5b段階の実機試験完了
+
+利用者が残り2項目を「1-2正常」と回答した。同ゲームでH BLUR/SCANLINEをSTRONGへ変えて閉じ、OSD2を開き直しても変更値を保持しFRAME ACKになること、一覧へ戻ってDr. Marioを起動し直すとON/WEAK/STANDARD、INITIAL: CSV、FRAME ACKへ戻ることを確認した。
+
+これにより今回依頼された「CSV推奨値を起動時のCRT設定へ反映する部分のみ」の実装・commit・実機試験を完了とする。基準のlocal tagはcrt-stage5b-hw-20261103。FW95113b1、NES c8df819a、現在の3列試験CSVの組合せで確認した範囲であり、推奨値1:1:2は引き続き動作確認用の仮値である。
+
+保存・Reset・ROM CRC・defaults読込みを含む第5段階全体は未完了で、今回の完了に含めない。過去に停止した初版第5段階の原因も特定済みとはしない。以後の追加変更の前に、この実機確認済み第5b基準へ復帰できるよう保持する。
+
+試験結果はverification/crt-stage5b-recommended/hardware-results.json。本文前半の「実機確認待ち」「tagはまだ作らない」は各時点の経過であり、最新状態は本節を優先する。
