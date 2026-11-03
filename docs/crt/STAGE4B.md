@@ -72,7 +72,15 @@ OSD2はCRT READY - STAGE4B、SESSION ONLY / NO SAVE、CRT ENABLE、H BLUR、SCAN
 
 設定再送、古い返信の拒否、A/B保持中の描画維持、長い能力返信中の設定・OSD受信とpending状態返信も試験する。既存ぼかし、frame一括反映、起動・入力も回帰試験の対象とする。
 
-修正版firmware（221,136 byte）とNES image（4,640,660 byte）のbuildが成功した。FPGAのsetup/hold違反は0/0で、report掲載の最小pulse幅に負の余裕はない。clock制約は4aと同一。修正版の実機書込みと画質・操作の確認は未実施。修正版の記録は `verification/crt-stage4b-fix/` に保存する。初版の自動試験・build・導入記録は `verification/crt-stage4b/` に保持する。初版はsetup/hold違反0/0で導入したが、実機で上記の問題が見つかったため実機確認済みtagを作成していない。
+修正版firmware（221,136 byte）とNES image（4,640,660 byte）のbuildが成功した。FPGAのsetup/hold違反は0/0で、report掲載の最小pulse幅に負の余裕はない。clock制約は4aと同一。修正版の実機導入と読戻し照合は完了。通常起動後の画質・操作は再試験待ち。修正版の記録は `verification/crt-stage4b-fix/` に保存する。初版の自動試験・build・導入記録は `verification/crt-stage4b/` に保持する。初版はsetup/hold違反0/0で導入したが、実機で上記の問題が見つかったため実機確認済みtagを作成していない。
+
+## 修正版の実機導入記録
+
+2026年11月3日19:15頃、Console138Kへ修正版firmwareとNES imageを導入した。microSDの58ファイルを新たに退避し、NES以外の57ファイルの一致を確認した。firmwareの基板側SHA-256と4 MiB全flashの読戻しが一致し、0x40000未満と0x80000以降も直前の検証済みsnapshotと一致した。SDK設定は元のbyteへ復元した。
+
+最初の全flash読取は接続確立に失敗したため、再書込みせず読取方式だけを切り替えて照合した。成功・失敗両logを保存した。復旧用flashは初版4bの検証済み全読戻しをコピーしたもので、今回新たに書込み前のflash読取を実施した意味ではない。初版4bは実機合格版ではなく、最後の実機合格4aの退避も別に維持している。
+
+導入記録は `verification/crt-stage4b-fix/deployment.json` を参照する。通常起動後の利用者による再試験はまだ実施していない。
 
 ## 修正版の実機試験
 
