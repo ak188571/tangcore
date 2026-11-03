@@ -1,0 +1,6 @@
+Wrap tests passed: 30/29 widths, UTF-8 boundaries, forced escapes/errors, directory suffix, indentation, whole-item scrolling, 137 mixed entries, restore, system menu, UART
+....
+----------------------------------------------------------------------
+Ran 4 tests in 3.518s
+
+OK

@@ -1,0 +1,6 @@
+Stage5 additional startup repair and diagnostics: all eight scripts and firmware build PASS.
+Firmware source c166944ba5bc6367d9cb3e0387455fd3f88bc51f
+Bytes 229008; SHA-256 219ab10e8af59e2f27d63320b1d0478345cafaf04b1eece3b135f65cba798603
+No new FPGA build. NES reused from accepted stage4b.
+Previous startup repair FAILED hardware launch; new hardware test PENDING.
+Root cause is not established by these PC tests. Stage5 persistence hardware tests not reached.

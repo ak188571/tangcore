@@ -9,7 +9,7 @@
 | 3 | OSD2の最小構成 | OSD1との排他、項目操作、入力遮断、解放待ち | 完了。既存の1〜3の統合commitとOSD表示維持の修正で確認済み |
 | 4a | 水平ぼかし | OSD2から実映像を調整でき、OFF時は基準映像と一致する。画面端の処理も正しい | 実装・自動試験・build・導入と依頼した全実機試験が完了。local tagはcrt-stage4a-hw-20261103。STAGE4A.mdとverification/crt-stage4a/を参照 |
 | 4b | 走査線 | OSD2から実映像を調整でき、OFF時と水平ぼかし併用時も正しい | 修正版の実装・自動試験・build・導入と依頼した全実機再試験が完了。WAITING修正、元224行の明暗配分、表示端・入力・ゲーム切替も確認済み。local tagはcrt-stage4b-hw-20261103。STAGE4B.mdとverification/crt-stage4b-fix/を参照 |
-| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 初版の実機でFPGA再構成後の起動停止を確認し、JTAG終了状態・失敗時の復帰を修正。関連8試験・firmware build成功、修正版の実機再試験待ち。NESは4bを再利用。STAGE5_STARTUP_FIX.mdとverification/crt-stage5-fix/を参照 |
+| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 初版と最初の起動修正版はいずれも実機起動に失敗。UserCodeはNES imageと一致したがstatus=0。追加修正でidle終了、制御clockの余裕、有限の待ち、SD診断記録を実装。関連8試験・firmware build成功、追加修正版の実機試験待ち。NESは4bを再利用。STAGE5_JTAG_DIAGNOSTICS.mdとverification/crt-stage5-jtag2/を参照 |
 
 ## 完了済みの履歴
 

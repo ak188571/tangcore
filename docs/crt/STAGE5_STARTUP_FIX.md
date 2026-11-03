@@ -1,5 +1,7 @@
 # 第5段階の起動停止とJTAG処理の修正
 
+追記：この最初の修正版でも起動停止が継続し、Usercode=0x0000e613、status=0が報告された。実機結果はverification/crt-stage5-fix/hardware-results.json、次の追加修正と未確定事項はSTAGE5_JTAG_DIAGNOSTICS.mdを参照する。本書中の「再試験待ち」は導入当時の状態であり、起動回復を確認した記録ではない。
+
 ## 実機報告と確認できた範囲
 
 第5段階の初版firmware `e8c617f` を導入後、利用者から、一覧でゲームを選ぶとROMのload画面へ進まず、`Usercode=0x00000000, status=0x0` で停止すると報告された。通常起動し直して別のNESゲームを選んでも同じ症状であった。保存と推奨値の実機試験は未到達であり、第5段階を完了にしない。原文は `verification/crt-stage5/hardware-results.json` に保存する。
