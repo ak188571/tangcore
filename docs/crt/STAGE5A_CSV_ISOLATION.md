@@ -33,3 +33,9 @@ CRT/OSD/起動/日本語titles/folder/scroll/改行の7本が成功した。2列
 firmwareを更新し、退避済みの3列試験CSVを再配置する。表示名と一覧順序は元と同一で、Dr. Marioの行だけに1:1:2が入る。元の2列CSVと現行SDの内容を新たに保全する。NES/monitor/ROM/fontは変更しない。既存crt-boot.logは保全し、この版では追記しない。
 
 通常起動で日本語一覧と順序を確認し、Dr. Marioと別のNESゲームの起動・映像・音声・操作を確認する。OSD2の識別表示と3項目OFF/FRAME ACKを確認する。この結果が正常なら、次にROM識別・推奨値解決・設定適用・保存を段階ごとに追加する。いずれかの起動に失敗した場合は追加を止め、再び4bとの小さい差分を調べる。
+
+## 第5a版の実機反映
+
+2026-11-03T22:22:16.587859+09:00、既知Console138Kへfirmwareと3列試験CSVを反映した。基板SHA、新firmware全byte、4MiB全flash、更新範囲外を照合した。SD全59filesを新たに退避し、CSV以外の58files（NES/monitor/ROM/font/既存crt-boot.logを含む）は同一である。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定は元のbyteへ復帰した。
+
+復旧用には直前の復旧時に検証した第4b全flashと元2列CSVを保持している。新たな書込み前flash読取を行ったとは記録しない。導入照合はverification/crt-stage5a-csv/deployment.json。日本語一覧と2本のNESゲームの起動、OSD2識別表示・初期3項目OFF・FRAME ACKは利用者の確認待ちである。第5段階全体の完了にはしない。
