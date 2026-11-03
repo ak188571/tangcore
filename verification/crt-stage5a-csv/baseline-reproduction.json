@@ -1,0 +1,20 @@
+[
+  {
+    "label": "stage4b",
+    "bytes": 221136,
+    "sha256": "be73e95967114f96d0c4aa829c9cef125c4756c90191bdbdde87b9a604c7d9a0",
+    "expected": "be73e95967114f96d0c4aa829c9cef125c4756c90191bdbdde87b9a604c7d9a0",
+    "byte_identical_to_deployed_build": true,
+    "metadata_source": "SDK board.c __DATE__/__TIME__ pinned to original preprocessed file values",
+    "source_date_epoch": "1793575786"
+  },
+  {
+    "label": "stage5-initial",
+    "bytes": 228048,
+    "sha256": "814f941f9b0cb8b23cc56bc94643543913ad36f7c6c1b69e03b11f34f2711555",
+    "expected": "814f941f9b0cb8b23cc56bc94643543913ad36f7c6c1b69e03b11f34f2711555",
+    "byte_identical_to_deployed_build": true,
+    "metadata_source": "SDK board.c __DATE__/__TIME__ pinned to original preprocessed file values",
+    "source_date_epoch": "1793575786"
+  }
+]

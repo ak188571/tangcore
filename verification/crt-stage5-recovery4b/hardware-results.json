@@ -11,5 +11,5 @@
   "deployed_firmware_sha256": "be73e95967114f96d0c4aa829c9cef125c4756c90191bdbdde87b9a604c7d9a0",
   "baseline_hardware_tag": "crt-stage4b-hw-20261103",
   "scope": "Recovery of the Japanese NES list and Dr. Mario video/audio/controls only; prior full stage4b checks remain in their existing records.",
-  "stage5_status": "incomplete; no new deployment authorized by this recovery result alone"
+  "stage5_status": "incomplete; recovery confirms stage4b only, not stage5 functionality"
 }

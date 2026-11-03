@@ -31,3 +31,7 @@
 submoduleを変更した場合は、対象submoduleで先にcommitし、親repositoryでその参照と関連文書・試験記録をcommitする。これにより、親commitから各段階のfirmwareとFPGA coreの組合せを再現できる。
 
 基準branchは引き続き `tangcore-integrated`。作業は既存の `crt-osd2-stage1` 上で継続し、実機確認済みtagから復帰可能な状態を保つ。GitHubへのpushは、このlocal commit方針には含めない。
+
+## 復旧後の第5段階の切り分け
+
+第4bへの復旧と通常起動を確認した後は、まず第5aとしてCSV読込みだけを分離して再開する。関連7試験とfirmware buildは成功、実機は未確認。詳細はSTAGE5A_CSV_ISOLATION.mdとverification/crt-stage5a-csv/。第5段階全体の完了とは区別し、元の不合格版と修正版も履歴に保持する。

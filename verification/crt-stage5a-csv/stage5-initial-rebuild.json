@@ -1,0 +1,61 @@
+{
+  "revision": "e8c617f3ce95da736bc47699770c9675f4ec6fc8",
+  "name": "stage5-initial",
+  "device_operations": false,
+  "steps": [
+    {
+      "name": "configure",
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "-S",
+        "D:/Users/foobaris/CODEX~1/CHATGP~1/G-P-6A~1/CR78E9~1/FIRMWA~2",
+        "-B",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-stage5-isolation-20261103\\firmware-stage5-initial\\build-isolation",
+        "-G",
+        "MSYS Makefiles",
+        "-DCMAKE_MAKE_PROGRAM=C:/msys64/usr/bin/make.exe",
+        "-DCROSS_COMPILE=D:/Users/foobaris/Documents/Gowin/tangcore/xuantie-gcc-riscv-v2.6.1-windows-x86_64/bin/riscv64-unknown-elf-",
+        "-DTANG_BOARD=console138k",
+        "-DCHIP=bl616",
+        "-DBOARD=bl616dk",
+        "-DUI16_SYSTEM_MENU=ON",
+        "-DUI16_SD_FONT=ON",
+        "-DUI16_UART_SELFTEST=OFF",
+        "-DCONFIG_DEBUG=y",
+        "-DCONFIG_ROMAPI=y",
+        "-DCONFIG_USB_HS=y",
+        "-DCONFIG_TLSF=y",
+        "-DCONFIG_COREDUMP=y",
+        "-DCONFIG_GCC_OPTIMISE_LEVEL=-Os"
+      ],
+      "returncode": 0,
+      "seconds": 2.33
+    },
+    {
+      "name": "compile",
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "--build",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-stage5-isolation-20261103\\firmware-stage5-initial\\build-isolation",
+        "--parallel",
+        "8"
+      ],
+      "returncode": 0,
+      "seconds": 15.84
+    },
+    {
+      "name": "combine",
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "--build",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-stage5-isolation-20261103\\firmware-stage5-initial\\build-isolation",
+        "--target",
+        "combine"
+      ],
+      "returncode": 0,
+      "seconds": 2.11
+    }
+  ],
+  "bytes": 228032,
+  "sha256": "7ae193bd92aed524b006a9d6baf51620dfaca0db27951b57a37024c266e86faf"
+}
