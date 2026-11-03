@@ -52,3 +52,13 @@ firmwareのみ更新し、CSV/ROM/NES/monitor/font/既存logを維持する。SD
 利用者が「1-3 正常」と回答した。日本語一覧と順序、Dr. Marioの起動・映像・音声・操作、STAGE5C表示、CRC7623dffdとPC計算値の一致、CSV ON/WEAK/STANDARD・FRAME ACK、OSD1で一覧へ戻りPac-Manを起動し、CRCebbb19bf・DEFAULT全OFF・FRAME ACKになることを確認した。結果はverification/crt-stage5c-romid/hardware-results.json。
 
 起動時間の数値測定や、改名・別volumeの実機試験を確認済みとはしない。同ゲームでOSDを開き直した際のID保持と、Dr. Marioを改めて起動した際の同じCRC再取得は残りの確認とする。追加書込みは不要。第5c完了tagはまだ作らない。
+
+## 第5c段階の実機試験完了
+
+利用者が残り2項目を「1,2正常」と回答した。Pac-ManでOSD2を閉じて開き直してもCRCebbb19bf、DEFAULT全OFF、FRAME ACKが保たれること、一覧へ戻ってDr. Marioを起動し直すとCRC7623dffd、CSV ON/WEAK/STANDARD、FRAME ACKとなることを確認した。初回の2本の起動・CRC照合と合わせ、依頼した第5cの実機試験はすべて正常である。
+
+第5cの実装・関連8試験・build・導入照合・依頼した実機試験を完了し、local tag crt-stage5c-hw-20261103を基準として保持する。FW83d7055、NES c8df819a、現在の試験CSVと2本の記録済みROMの組合せで確認した範囲である。改名や別volumeでのID分離はPC試験で扱ったもので、実機でも確認済みとはしない。
+
+保存・Reset・defaultsは未実装のままで、第5段階全体は未完了。過去の初版第5段階の停止原因も特定済みとはしない。以後の追加変更前に、この実機確認済み第5cへ復帰できる状態を保持する。
+
+試験結果はverification/crt-stage5c-romid/hardware-results.json。本文前半の確認待ち記述は各時点の経過であり、最新状態は本節を優先する。

@@ -9,7 +9,7 @@
 | 3 | OSD2の最小構成 | OSD1との排他、項目操作、入力遮断、解放待ち | 完了。既存の1〜3の統合commitとOSD表示維持の修正で確認済み |
 | 4a | 水平ぼかし | OSD2から実映像を調整でき、OFF時は基準映像と一致する。画面端の処理も正しい | 実装・自動試験・build・導入と依頼した全実機試験が完了。local tagはcrt-stage4a-hw-20261103。STAGE4A.mdとverification/crt-stage4a/を参照 |
 | 4b | 走査線 | OSD2から実映像を調整でき、OFF時と水平ぼかし併用時も正しい | 修正版の実装・自動試験・build・導入と依頼した全実機再試験が完了。WAITING修正、元224行の明暗配分、表示端・入力・ゲーム切替も確認済み。local tagはcrt-stage4b-hw-20261103。STAGE4B.mdとverification/crt-stage4b-fix/を参照 |
-| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 未完了。初版と最初の修正版はNES起動に失敗。追加診断版は電源投入直後から信号なしで、monitor書込み確認失敗を記録。実機合格4bの全flashと元2列CSVへ復旧・全byte照合済み。復旧後の日本語一覧・NES起動・映像・音声・操作の正常復帰を実機確認済み。STAGE5_RECOVERY4B.mdとverification/crt-stage5-recovery4b/を参照 |
+| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 全体は未完了。初版等の起動不合格から復旧し、5a CSV読込み、5b 起動時推奨値適用、5c 読取り専用ROM IDは各段階の依頼実機試験まで完了。最新の実機確認基準はcrt-stage5c-hw-20261103。保存・Reset・defaultsは今後の対象。各STAGE5A〜5C文書とverificationを参照 |
 
 ## 完了済みの履歴
 
@@ -42,4 +42,4 @@ submoduleを変更した場合は、対象submoduleで先にcommitし、親repos
 
 ## 第5c段階
 
-実機合格第5bを基準に、ROM内容のCRC32/size/system/volumeによるID取得だけを追加。関連8試験とfirmware buildは成功、実機は未確認。読取り専用で、保存/Reset/defaultsは未実装のまま。STAGE5C_ROM_ID.mdとverification/crt-stage5c-romid/を参照。
+実機合格第5bを基準に、ROM内容のCRC32/size/system/volumeによるID取得だけを追加。関連8試験・firmware build・導入照合と依頼した実機試験がすべて正常。2本のCRCがPC値と一致し、OSD開き直しでの保持と起動し直した際の再取得も確認。local tagはcrt-stage5c-hw-20261103。読取り専用で、保存/Reset/defaultsは未実装のまま。STAGE5C_ROM_ID.mdとverification/crt-stage5c-romid/を参照。

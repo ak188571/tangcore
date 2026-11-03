@@ -28,7 +28,7 @@
   "titles_test_fixture_verified": true,
   "sd_files_unchanged": 59,
   "sdk_defaults_restored": true,
-  "hardware_test_status": "awaiting user",
+  "hardware_test_status": "all_requested_stage5c_hardware_checks_passed_current_console138k_nes_setup",
   "readback_connection": {
     "initial_mode0_failed": true,
     "read_only_retry_mode2_succeeded": true,
@@ -40,5 +40,7 @@
       "post-stage5c-romid-7c86a506.log"
     ]
   },
-  "installed_full_flash_sha256": "67ee2698f09976b823a20c8dec788cce4de3981099df5f18e595787c1acb0d37"
+  "installed_full_flash_sha256": "67ee2698f09976b823a20c8dec788cce4de3981099df5f18e595787c1acb0d37",
+  "hardware_test_record": "hardware-results.json",
+  "validation_tag": "crt-stage5c-hw-20261103"
 }
