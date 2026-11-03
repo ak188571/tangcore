@@ -1,0 +1,194 @@
+{
+  "target": "Console138K NES",
+  "command": [
+    "C:/Gowin/Gowin_V1.9.12.03_x64/IDE/bin/gw_sh.exe",
+    "build.tcl",
+    "console138k"
+  ],
+  "exit_code": 0,
+  "seconds": 1368.34,
+  "source_hashes": {
+    "src/nes2hdmi.sv": "e6f74c680cdfcc8266fef5ad8376cb5b708a27033a62163fe839abd8457d9203",
+    "src/iosys/crt_filter.sv": "236c19154acea753ba6d5bd67d3c43f272e678bbde650b358c2112134d9e8321",
+    "src/iosys/iosys_bl616.v": "98015d8438f04f71044ff7c50dc5ad9d3844d3f59cbc593c18ade518410caa23"
+  },
+  "device_programming_performed": false,
+  "hardware_test_status": "pending",
+  "timing": {
+    "Numbers of Setup Violated Endpoints": 0,
+    "Numbers of Hold Violated Endpoints": 0
+  },
+  "synthesis_resources": {
+    "T_Register": 19631,
+    "T_Alu": 1709,
+    "T_Lut": 39676,
+    "T_MULT12X12": 1,
+    "T_MULT27X36": 4,
+    "T_MULTADDALU12X12": 1,
+    "T_Bsram": 31
+  },
+  "reported_minimum_pulse_width_rows": [
+    [
+      "1",
+      "2.336",
+      "3.236",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "2",
+      "2.341",
+      "3.241",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "3",
+      "2.425",
+      "3.325",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "4",
+      "2.430",
+      "3.330",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "5",
+      "2.439",
+      "3.339",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "6",
+      "2.444",
+      "3.344",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "7",
+      "2.550",
+      "3.450",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "8",
+      "2.555",
+      "3.455",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "9",
+      "2.991",
+      "3.216",
+      "0.225",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/enumeration/memory[78]_5_s0"
+    ],
+    [
+      "10",
+      "2.991",
+      "3.216",
+      "0.225",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/enumeration/memory[78]_6_s0"
+    ]
+  ],
+  "artifact_bytes": 4659294,
+  "artifact_sha256": "44a801ebfc1ec216a79f2267bac00b856ec2d1eadabebd94129f06aa0d32fb10",
+  "warning_counts": {
+    "EX2478": 74,
+    "EX3638": 9,
+    "EX3680": 1,
+    "EX3628": 1,
+    "EX3069": 1,
+    "EX2830": 2,
+    "EX3671": 2,
+    "EX3073": 7,
+    "EX3791": 39,
+    "EX3670": 63,
+    "EX2882": 1,
+    "EX3780": 33,
+    "EX2565": 216,
+    "EX1998": 12,
+    "EX0211": 1,
+    "CV0016": 2,
+    "NL0002": 24,
+    "CK3000": 5,
+    "PA1019": 3,
+    "PR1014": 1
+  },
+  "source_commit": "08766efb13ed06cc14134d644067b34fe03d9b70",
+  "base_hardware_tag": "crt-stage4a-hw-20261103",
+  "tested_source_hashes_unchanged": true,
+  "constraints_unchanged_from_stage4a": true,
+  "baseline_warning_counts": {
+    "EX2478": 74,
+    "EX3638": 9,
+    "EX3680": 1,
+    "EX3628": 1,
+    "EX3069": 1,
+    "EX2830": 2,
+    "EX3671": 2,
+    "EX3073": 7,
+    "EX3791": 39,
+    "EX3670": 63,
+    "EX2882": 1,
+    "EX3780": 33,
+    "EX2565": 216,
+    "EX1998": 12,
+    "EX0211": 1,
+    "CV0016": 2,
+    "NL0002": 23,
+    "CK3000": 5,
+    "PA1019": 3,
+    "PR1014": 1
+  },
+  "warning_notes": [
+    "Existing PLL VCO, clock relationship and address-width warnings remain. See the complete build log and recorded timing constraints."
+  ],
+  "prior_timing_attempts": [
+    {
+      "attempt": 1,
+      "setup_violated_endpoints": 1961,
+      "hold_violated_endpoints": 0,
+      "device_programming_performed": false
+    },
+    {
+      "attempt": 2,
+      "status": "canceled before completion to isolate combinational paths",
+      "device_programming_performed": false
+    },
+    {
+      "attempt": 3,
+      "setup_violated_endpoints": 508,
+      "hold_violated_endpoints": 0,
+      "device_programming_performed": false
+    }
+  ]
+}

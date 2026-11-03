@@ -1,0 +1,133 @@
+{
+  "date_jst": "2026-11-03",
+  "firmware_commit": "9920831252b9ecb3210e8357a52e2bae17acc06e",
+  "base_hardware_tag": "crt-stage4a-hw-20261103",
+  "evidence_source": "Successful command outputs observed during this implementation session; compiler logs retained separately.",
+  "tests": [
+    {
+      "cwd": "firmware-bl616",
+      "command": "bash tools/ui16/test_crt.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "checks": [
+        "scanline control and wrap",
+        "combined parameter bits",
+        "close index",
+        "new/old menus",
+        "FRAME ACK",
+        "session reset"
+      ]
+    },
+    {
+      "cwd": "firmware-bl616",
+      "command": "bash tools/ui16/test_osd.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "checks": [
+        "in-place redraw",
+        "five positions",
+        "actual capability parser",
+        "4b-to-4a fallback",
+        "incomplete capabilities rejected",
+        "query timeout"
+      ]
+    },
+    {
+      "cwd": "firmware-bl616",
+      "command": "bash tools/ui16/test_launch.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "checks": [
+        "launch recovery",
+        "actual HID adapters",
+        "main task syntax",
+        "popup input flow"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_blur.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "pixel_checks": 29568,
+      "checks": [
+        "unchanged blur integer reference",
+        "edges",
+        "strengths",
+        "rounding",
+        "reset"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_config.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "bypass_rgb_samples": 65536,
+      "checks": [
+        "frame atomicity",
+        "coalescing",
+        "reset"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_integration.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "pixel_checks": 9000000,
+      "bypass_checks": 5287496,
+      "checks": [
+        "real UART",
+        "capability string includes CRTSCN1",
+        "packet guards",
+        "blur regression",
+        "OSD unchanged"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_scanline.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "gain_pixel_checks": 4096,
+      "video_pixel_checks": 53212437,
+      "legacy_bypass_checks": 8662437,
+      "pinned_stage4a_checks": 16087437,
+      "phase_frames_checked": 43,
+      "dark_rows_per_720": 224,
+      "checks": [
+        "all 16 blur/scan combinations",
+        "independent gain reference for all channel values",
+        "independent source row mapping",
+        "pinned stage4a equality when scanline OFF",
+        "legacy equality with both effects OFF",
+        "live writes with scanline only",
+        "OSD unchanged"
+      ],
+      "pinned_stage4a_commit": "a0c49be884f765c323c6ff3b7342fde995f244f4",
+      "pinned_legacy_commit": "724994b64e598edf9d11e8824e45895cc2d851a3",
+      "limitation": "Framebuffer writes frozen during spatial blur comparison; scanline-only and bypass also tested with continuous writes."
+    }
+  ],
+  "source_hashes": {
+    "firmware-bl616/main.cpp": "5d9603db781c0570104cf331c408c432750f92b73c3e86ae0bc36b868ee53711",
+    "firmware-bl616/ui/ui16_crt.h": "1950c571dded2010ffbdbc4ebb8a3a73583dc152220094e57cb7a9f5328d428e",
+    "firmware-bl616/ui/ui16_crt.cpp": "fef15803e10624d5b574c4b32278bae9b84f6e1ede16898ffafba3804b5739e8",
+    "firmware-bl616/tests/ui16/crt_test.cpp": "9ed8d468c8f39c6cde2b27cb25ead4ac322de249542b9bd3024cb6e2a6e4ff9a",
+    "firmware-bl616/tools/ui16/test_osd_driver.py": "1c44ca7840db5c25fe40f3ecd69d0b2b029ad4e9542da1e42e84ec297d2f1ff6",
+    "firmware-bl616/tools/ui16/test_launch_adapters.py": "d5c2ff42397248efe10ee362725e51093b13b090702d5fa20b43f2d8ce29fce4",
+    "nestang/src/nes2hdmi.sv": "e6f74c680cdfcc8266fef5ad8376cb5b708a27033a62163fe839abd8457d9203",
+    "nestang/src/iosys/crt_filter.sv": "236c19154acea753ba6d5bd67d3c43f272e678bbde650b358c2112134d9e8321",
+    "nestang/src/iosys/iosys_bl616.v": "98015d8438f04f71044ff7c50dc5ad9d3844d3f59cbc593c18ade518410caa23",
+    "nestang/tests/crt/tb_crt_blur.sv": "aa7cadbe697b25a0a584208d8ffb8be67b8f1453cc47d889c037dad9815bf478",
+    "nestang/tests/crt/tb_crt_config.sv": "c3de37b88006692e355168abb90fd2dd3ac7a62270bac7c2a492c4a0049fa258",
+    "nestang/tests/crt/tb_crt_uart.sv": "8735f3eb5c19e55b8a34d89f2a681e7b3e5c659ed53c24ad8c1d98c84299bc0d",
+    "nestang/tests/crt/tb_crt_video.sv": "572e9b76c444fc4d2d825f99bff36281d37d78b032a14d0aae46ab1288ef35f4",
+    "nestang/tests/crt/tb_crt_scanline.sv": "881db30ee412d0248745bcf550f49e4684a091fcaaa3caa22b6649d36eab1147",
+    "nestang/tests/crt/tb_crt_scan_video.sv": "5627b3374b4939b2598b4690507c0116886c7d9d4ab9415f40b9a69a1b548912",
+    "nestang/tests/crt/test_scanline.sh": "f7b0157ba3d4f00ddc4b5c163b684bd563062e6778e41bd927896dcdfe8252a5"
+  },
+  "device_programming_performed": false,
+  "hardware_test_status": "pending"
+}
