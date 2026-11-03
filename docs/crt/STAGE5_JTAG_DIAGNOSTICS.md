@@ -36,3 +36,11 @@ NESは実機合格4bと同じimageを再利用する。今回のFPGA buildや新
 ## 実機再試験
 
 まずDr. Marioと別のNESゲームの起動だけを確認する。成功後に推奨値表示と保存試験へ進む。停止した場合は画面の全文と、通常のROM load表示へ進んだかを記録し、電源断後にmicroSDのcrt-boot.logをPCで読む。最後の段階とstatus/IDの組合せから次の調査箇所を決める。修正前の不合格版をrollbackの実機合格基準にしない。
+
+## 追加修正版の実機反映
+
+2026-11-03T21:48:42.915172+09:00、既知Console138Kへfirmwareを反映した。基板SHAと4 MiB全flashの読戻しが一致し、0x40000未満と0x80000以降を直前の検証済みsnapshotと照合した。microSD全58filesを新たに退避し、NES/CSV/ROMを含む全fileが同一であることを確認した。SDファイルは書き換えていない。通常起動後には診断logの追記を想定する。
+
+全flashの初回読取りはmode0の接続確立に失敗し、再programせずmode2の読取りで成功した。SDK設定は元のbyteへ復元済み。直前の復旧snapshotは最初の起動修正版であり、実機合格版ではない。最後の合格4bと元の2列CSVは別に保持する。
+
+導入記録はverification/crt-stage5-jtag2/deployment.json。今回の起動回復と保存成功はまだ確認していない。まず2本のNESゲームの起動だけを再試験する。
