@@ -72,7 +72,7 @@ OSD2はCRT READY - STAGE4B、SESSION ONLY / NO SAVE、CRT ENABLE、H BLUR、SCAN
 
 設定再送、古い返信の拒否、A/B保持中の描画維持、長い能力返信中の設定・OSD受信とpending状態返信も試験する。既存ぼかし、frame一括反映、起動・入力も回帰試験の対象とする。
 
-修正版firmware（221,136 byte）とNES image（4,640,660 byte）のbuildが成功した。FPGAのsetup/hold違反は0/0で、report掲載の最小pulse幅に負の余裕はない。clock制約は4aと同一。修正版の実機導入と読戻し照合は完了。通常起動後の画質・操作は再試験待ち。修正版の記録は `verification/crt-stage4b-fix/` に保存する。初版の自動試験・build・導入記録は `verification/crt-stage4b/` に保持する。初版はsetup/hold違反0/0で導入したが、実機で上記の問題が見つかったため実機確認済みtagを作成していない。
+修正版firmware（221,136 byte）とNES image（4,640,660 byte）のbuildが成功した。FPGAのsetup/hold違反は0/0で、report掲載の最小pulse幅に負の余裕はない。clock制約は4aと同一。修正版の実機導入と読戻し照合は完了。再試験では通常動作・設定反映と効果の一致・OSD表示維持等が確認され、表示端・入力・ゲーム切替等の残確認を待つ。修正版の記録は `verification/crt-stage4b-fix/` に保存する。初版の自動試験・build・導入記録は `verification/crt-stage4b/` に保持する。初版はsetup/hold違反0/0で導入したが、実機で上記の問題が見つかったため実機確認済みtagを作成していない。
 
 ## 修正版の実機導入記録
 
@@ -80,7 +80,11 @@ OSD2はCRT READY - STAGE4B、SESSION ONLY / NO SAVE、CRT ENABLE、H BLUR、SCAN
 
 最初の全flash読取は接続確立に失敗したため、再書込みせず読取方式だけを切り替えて照合した。成功・失敗両logを保存した。復旧用flashは初版4bの検証済み全読戻しをコピーしたもので、今回新たに書込み前のflash読取を実施した意味ではない。初版4bは実機合格版ではなく、最後の実機合格4aの退避も別に維持している。
 
-導入記録は `verification/crt-stage4b-fix/deployment.json` を参照する。通常起動後の利用者による再試験はまだ実施していない。
+導入記録は `verification/crt-stage4b-fix/deployment.json` を参照する。通常起動後の利用者による再試験は、下記の最初の3組の確認まで進んだ。
+
+2026年11月3日、利用者から「1-3について確認した」との返信を受けた。依頼した①通常の映像・音声・操作とOSD2起動、②全強度とOFFへの復帰・無操作でのFRAME ACK収束・表示値と効果の一致・A/B保持中の表示追従、③走査線間隔の見え方・効果併用・画像位置とOSDの表示維持について、問題の報告なしに確認されたものとして記録する。走査線の見え方について追加の感想や好みは述べられておらず、完全に等間隔になったとの評価には読み替えない。
+
+残る確認は、動く場面と左右端、5位置・OSD1との排他・入力遮断と全解放待ち、同ゲームでの保持と別ゲームでのOFF初期化、日本語メニューとtitles.csv順序である。4bの完了tagはまだ作成しない。利用者の原文と確認範囲は `verification/crt-stage4b-fix/hardware-results.json` に保存する。
 
 ## 修正版の実機試験
 
