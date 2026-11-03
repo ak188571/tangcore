@@ -20,5 +20,7 @@
   },
   "fpga_changes": false,
   "hardware_retest": "passed_for_selection_value_visibility_and_frame_ack",
-  "hardware_retest_log": "hardware-retest.json"
+  "hardware_retest_log": "hardware-retest.json",
+  "hardware_stage1": "all_requested_checks_passed_current_console138k_nes_setup",
+  "hardware_stage1_log": "hardware-stage1.json"
 }

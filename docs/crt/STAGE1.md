@@ -56,8 +56,8 @@ NESの `tests/crt/test_integration.sh` は実際のUART回路でpacketを送り�
 
 Console138K向けのFPGAは `gw_sh build.tcl console138k`、firmwareは `UI16_SYSTEM_MENU=ON`、`UI16_SD_FONT=ON`、`-Os` の既存構成でbuildする。SDCの追加例外は、保持期間を保証するmailboxのbus受信registerと同期器の第1段に限定する。
 
-今回、実機への書き込み、ROMでの起動確認、HDMI表示機器での確認は行っていない。生成物は第1段階の検証用であり、画質機能の完成版ではない。build結果と試験記録は `verification/crt-stage1/` を参照する。
+初版作成時には実機への書き込み、ROMでの起動確認、HDMI表示機器での確認は未実施だった。2026年11月3日にConsole138K／NESで実機試験を行い、OSDの一瞬の消失を修正した後、依頼した全項目の正常動作が利用者から報告された。対象の版と確認範囲は `HARDWARE_STAGE1_20261103.md` を参照する。生成物は第1段階の検証用であり、画質機能の完成版ではない。初版のbuild結果と試験記録は `verification/crt-stage1/` を参照する。
 
 ## 次の段階
 
-最初に実機で、基準映像を維持すること、OSD1とOSD2の独立起動、配置、入力解放、APPLYの確認を行う。その基準を確保してから水平blurを一つ追加し、OFF時の一致と画素の端処理を再検証する。次にscanline、推奨値、ゲーム別保存へ進む。
+実機で確認済みのこの版を基準に、水平blurを一つ追加し、OFF時の一致と画素の端処理を再検証する。次にscanline、推奨値、ゲーム別保存へ進む。
