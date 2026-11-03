@@ -1,0 +1,59 @@
+{
+  "completed_at": "2026-11-03T20:44:20.666845+09:00",
+  "board": "Console138K",
+  "source_commits": {
+    ".": "cfa8dde295624698bff8b81baabffaf27320f12f",
+    "firmware-bl616": "e8c617f3ce95da736bc47699770c9675f4ec6fc8",
+    "nestang": "c8df819ae6b96f1bc645b2d03b9e7714d8a9117e"
+  },
+  "firmware": {
+    "file": "firmware/tangcore_bl616.bin",
+    "bytes": 228048,
+    "sha256": "814f941f9b0cb8b23cc56bc94643543913ad36f7c6c1b69e03b11f34f2711555"
+  },
+  "nes": {
+    "file": "cores/console138k/nestang.bin",
+    "bytes": 4640660,
+    "sha256": "745ad31b4d1707f6b9ddf5a6d9e9c4964b41a2ab59ce6b0018f38545fdb5b1ec"
+  },
+  "rollback_origin": "previous_verified_full_flash_readback_of_user_tested_stage4b_repair",
+  "rollback_full_flash_sha256": "f1bbe0c2f3e001e2deec837b6683100d86c684d13f92092c87975f05b395a0ea",
+  "firmware_written": true,
+  "full_flash_readback_verified": true,
+  "boot_area_unchanged": true,
+  "from_0x80000_unchanged": true,
+  "nes_core_written": false,
+  "nes_reused_verified": true,
+  "titles_test_fixture_written": true,
+  "other_sd_files_unchanged": 57,
+  "sdk_defaults_restored": true,
+  "hardware_test_status": "awaiting user",
+  "sd_test_fixture": {
+    "file": "sd-test/nes/titles.csv",
+    "target": "nes/titles.csv",
+    "before_sha256": "4f5a576757f68ebad58f9b5b20ef42fc7449470a0fd79076c0897034ca1e30fe",
+    "sha256": "e930b82e2fab555d20935b4150675abd20d13f3552037ded1a8188151b747d1e",
+    "game_filename": "Dr. Mario (Japan, USA) (Rev 1).nes",
+    "display_title": "ドクター・マリオ",
+    "recommended": [
+      1,
+      1,
+      2
+    ],
+    "purpose": "Hardware test fixture, not a game-specific endorsed preset",
+    "rom_relative_path": "nes/Dr. Mario (Japan, USA) (Rev 1).nes",
+    "rom_sha256": "479059e174013a743a4b319cc5b39d8b1fe452e303e2655af6a58bf86a4e8219",
+    "names_titles_order_preserved": true
+  },
+  "readback_recovery": {
+    "initial_mode0_handshake_failed": true,
+    "mode2_read_only_retry_succeeded": true,
+    "reprogrammed_after_verified_write": false,
+    "failed_logs": [
+      "post-stage5-39d7364f.log"
+    ],
+    "successful_logs": [
+      "post-stage5-39405f51.log"
+    ]
+  }
+}

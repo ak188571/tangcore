@@ -2,7 +2,7 @@
 
 ## 対象と現在の状態
 
-実機確認済み `crt-stage4b-hw-20261103` を基準に、BL616 firmwareへ保存機能を追加する。対象は現在CRTに対応するConsole138K／NES。NESの映像・UART・設定bit配置は変更せず、実機確認済み4bのNES imageをそのまま組み合わせる。第5段階の自動試験とfirmware buildは成功したが、実機導入・保存の再起動試験は未実施。記録は `verification/crt-stage5/` に保存する。
+実機確認済み `crt-stage4b-hw-20261103` を基準に、BL616 firmwareへ保存機能を追加する。対象は現在CRTに対応するConsole138K／NES。NESの映像・UART・設定bit配置は変更せず、実機確認済み4bのNES imageをそのまま組み合わせる。第5段階の自動試験とfirmware build、実機導入・全flash読戻し照合は完了した。通常起動後の保存・再起動試験は利用者の確認待ち。記録は `verification/crt-stage5/` に保存する。
 
 日本語一覧、16×16 font、titles.csv順序、OSDの5位置・排他・入力遮断・終了後の全解放待ちを既存の前提とする。GitHubへのpushは行わない。
 
@@ -69,6 +69,14 @@ SAVEはSAVED、RECOMMENDED、UNSAVED、FAILED、NO ROM ID等を区別する。SO
 ## Reset to Recommended
 
 ゲーム自体のResetは行わない。保存済み個別値を無視し、起動時に解決した推奨値へRAM値を戻してFPGAへ送り直す。Close時には推奨値そのものを固定保存せず、overrideを無効にするtombstoneを新世代へ保存する。このため後日の推奨値更新に追従できる。Reset後に再調整して推奨値と異なる値にした場合は、その一式を個別値として保存する。
+
+## 実機導入記録
+
+2026年11月3日20:44頃、既知のConsole138KとTANGCONSOLEのmicroSDを確認し、58ファイルを新たに退避した。firmwareと試験用のnes/titles.csvだけを更新した。NES imageを含む他57ファイルは退避時と一致した。firmwareの基板側SHA-256と4 MiB全flashの読戻しを照合し、0x40000未満と0x80000以降が直前の実機確認済み4bと一致した。SDK設定も元のbyteへ復元した。
+
+最初の全flash読取は接続確立に失敗したため、firmwareを再書込みせず、読取方式を切り替えて照合した。成功・失敗のlogを保持している。復旧用flashは前回の実機合格4bの検証済み全読戻しからコピーしたもので、今回書込み前に新しく読取を行った意味ではない。元の2列CSVも今回のSD退避に保存した。
+
+導入実績は `verification/crt-stage5/deployment.json` を参照する。通常起動後の画質・保存・再起動試験はまだ実施していない。試験用ZIPとそのmanifestはbuild時点のsnapshotとして保持する。
 
 ## 自動試験と実機試験
 
