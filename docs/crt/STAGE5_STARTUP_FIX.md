@@ -23,4 +23,14 @@
 
 第5段階の保存・推奨値・Reset、日本語一覧、OSD、起動、folder、scroll、改行の試験も合わせて8本を実行し、すべて成功した。firmware buildは成功。NES imageと試験用CSVは初版第5段階から変更しない。FPGAの新buildや新しいtiming検証を行ったと記録しない。
 
-新しい記録は `verification/crt-stage5-fix/`、初版とその失敗記録は `verification/crt-stage5/` に分けて保持する。修正版の実機導入・起動と保存試験は未実施である。
+新しい記録は `verification/crt-stage5-fix/`、初版とその失敗記録は `verification/crt-stage5/` に分けて保持する。修正版の実機導入・全flash読戻し照合は完了。通常起動と保存は利用者の再試験待ちである。
+
+## 修正版の実機反映
+
+2026年11月3日21:23頃、既知Console138Kへ修正版firmwareを反映した。microSDの58ファイルを新たに退避し、NES image・試験用CSV・ROMを含む全58ファイルが変更されていないことを照合した。SDファイルの更新は行っていない。
+
+firmwareの基板側SHA-256と4 MiB全flashの読戻しが一致し、0x40000未満と0x80000以降が直前の検証済み初版第5段階snapshotと一致した。SDK設定は元のbyteへ復元した。初回の全flash読取は接続確立に失敗し、firmwareの再書込みをせず読取方式を切り替えて成功した。両logを保存している。
+
+即前の復旧用flashは、初版第5段階の検証済み全読戻しをコピーしたもので、初版が実機合格版という意味ではない。最後の実機合格4bのflashと元の2列CSVも別に保持する。今回新たに書込み前のflash読取を行ったとは記録しない。
+
+実績は `verification/crt-stage5-fix/deployment.json` を参照する。ゲーム起動が回復したことと保存が動くことは、通常起動後に改めて確認する。第5段階の実機完了tagはまだ作成しない。
