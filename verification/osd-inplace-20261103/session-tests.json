@@ -1,0 +1,15 @@
+{
+  "date_jst": "2026-11-03",
+  "reported_by": "user",
+  "firmware_commit": "5bd8a4404bd2ebe7496d7a28e62a3cbf2aea3f76",
+  "user_report": "すべて正常",
+  "requested_checks": {
+    "same_game_session_values_retained": true,
+    "same_game_session_position_retained": true,
+    "japanese_menu_after_return": true,
+    "titles_csv_order_after_return": true,
+    "new_game_values_reset": true,
+    "new_game_frame_ack": true
+  },
+  "scope": "All three requested session/menu test groups passed by user report on Console138K/NES. New-game position reset and other input sources were not tested."
+}

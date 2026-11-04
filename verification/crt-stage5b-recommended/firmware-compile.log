@@ -1,0 +1,78 @@
+[  3%] Built target mm
+[  3%] Building CXX object CMakeFiles/app.dir/core/cores.cpp.obj
+[  4%] Building CXX object CMakeFiles/app.dir/core/gba.cpp.obj
+[ 13%] Built target std
+[ 35%] Built target lhal
+[ 61%] Built target libc
+[ 67%] Built target freertos
+[ 67%] Building CXX object CMakeFiles/app.dir/core/md.cpp.obj
+[ 70%] Built target fatfs
+[ 71%] Building CXX object CMakeFiles/app.dir/core/nes.cpp.obj
+[ 71%] Building CXX object CMakeFiles/app.dir/core/pcxt.cpp.obj
+[ 77%] Built target cherryusb
+[ 78%] Building CXX object CMakeFiles/app.dir/core/sms.cpp.obj
+[ 78%] Building CXX object CMakeFiles/app.dir/core/snes.cpp.obj
+[ 84%] Built target utils
+[ 85%] Building CXX object CMakeFiles/app.dir/fpga/programmer.cpp.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:173: warning: "GPIO_DRV_3" redefined
+  173 | #define GPIO_DRV_3       (3<<2)
+      | 
+In file included from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/utils/utils.h:7,
+                 from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:16:
+D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal/include/bflb_gpio.h:189: note: this is the location of the previous definition
+  189 | #define GPIO_DRV_3                           (3 << GPIO_DRV_SHIFT)
+      | 
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:173: warning: "GPIO_DRV_3" redefined
+  173 | #define GPIO_DRV_3       (3<<2)
+      | 
+In file included from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/utils/utils.h:7,
+                 from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:16:
+D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal/include/bflb_gpio.h:189: note: this is the location of the previous definition
+  189 | #define GPIO_DRV_3                           (3 << GPIO_DRV_SHIFT)
+      | 
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp: In function 'int jtag_writeTDI(const uint8_t*, uint8_t*, int, bool)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:143:25: warning: comparison of integer expressions of different signedness: 'uint32_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+  143 |  for (uint32_t i = 0; i < len; i++) {
+      |                       ~~^~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:144:17: warning: comparison of integer expressions of different signedness: 'uint32_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+  144 |   if (end && (i == len - 1)) {
+      |               ~~^~~~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp: In function 'bool fpga_program(const char*)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:1016:66: warning: comparison of integer expressions of different signedness: 'UINT' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+ 1016 |         jtag_writeTDI_msb_first_gpio_out_mode(fbuf, bytes, total >= len);
+      |                                                            ~~~~~~^~~~~~
+[ 85%] Building CXX object CMakeFiles/app.dir/ui/menu_manager.cpp.obj
+[ 85%] Building CXX object CMakeFiles/app.dir/ui/ui16_browser.cpp.obj
+[ 86%] Building CXX object CMakeFiles/app.dir/ui/ui16_crt.cpp.obj
+[ 87%] Building CXX object CMakeFiles/app.dir/ui/ui16_launch.cpp.obj
+[ 88%] Building CXX object CMakeFiles/app.dir/ui/ui16_osd_menu.cpp.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp: In function 'void menu_input_loop()':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:66:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   66 |             if (active < options.size()-1) active++;
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:69:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   69 |         for (int i = 0; i < options.size(); i++) {
+      |                         ~~^~~~~~~~~~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:90:35: warning: comparison of integer expressions of different signedness: 'std::vector<std::unique_ptr<Menu> >::size_type' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+   90 |             if (menu_stack.size() != depth) {   // menu changed
+      |                 ~~~~~~~~~~~~~~~~~~^~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:92:28: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   92 |                 if (active >= options.size())
+      |                     ~~~~~~~^~~~~~~~~~~~~~~~~
+[ 88%] Linking CXX static library build_out/lib/libapp.a
+[ 99%] Built target app
+[ 99%] Building CXX object CMakeFiles/tangcore_bl616.elf.dir/main.cpp.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/main.cpp: In function 'int menu_loadrom(const char*)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/main.cpp:158:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<core_info>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  158 |     for (int i = 0; i < core_info_list.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+[100%] Linking CXX executable build_out/tangcore_bl616.elf
+Memory region         Used Size  Region Size  %age Used
+fw_header_memory:         256 B         4 KB      6.25%
+      xip_memory:      211636 B         4 MB      5.05%
+       ram_psram:          0 GB         4 MB      0.00%
+     ram_nocache:       25168 B       447 KB      5.50%
+      ram_memory:      136520 B       447 KB     29.83%
+        ram_wifi:          0 GB        32 KB      0.00%
+Generate D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-console138k-crt-stage1/build_out/tangcore_bl616.bin
+[100%] Built target tangcore_bl616.elf

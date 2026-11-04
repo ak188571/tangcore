@@ -1,0 +1,7 @@
+Stage5e explicit game settings SAVE: implementation, 10 host scripts, firmware build, deployment/full-flash readback, all requested hardware checks and final SD audit PASS.
+FW0051516f442552b68677adec064a8a0c62daea61 SHAe7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da63a41ebdc3aa6e223.
+Local validation tag: crt-stage5e-hw-20261104.
+SAVE stays open; X/Y discards unsaved live preview to last successful SAVE or launch baseline. Restore, game separation, explicit OFF, OSD/input and normal power cycle verified.
+Read-only denied-write FAILED/stay-open/retry/discard and attribute restoration/save recovery verified on hardware. Other I/O fault classes are host-only.
+Final SD63 files freshly backed up; Dr.Mario a generation5 ON/STRONG/WEAK, b generation4 unchanged; two unchanged SAVE presses add no generation. Pac-Man records unchanged, latest explicit OFF. Original59 files and all original attributes unchanged.
+Actual user-save records retained on card. No new FPGA build. Reset/tombstone creation/defaults excluded; overall stage5 incomplete.

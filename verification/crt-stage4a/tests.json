@@ -1,0 +1,117 @@
+{
+  "date_jst": "2026-11-03",
+  "evidence_source": "Successful command outputs observed in the current implementation session. Full compiler logs retained separately.",
+  "firmware_commit": "d8f63d836743551c5b18d2c567328c44a7d290f2",
+  "tests": [
+    {
+      "cwd": "firmware-bl616",
+      "command": "bash tools/ui16/test_crt.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "checks": [
+        "independent chords",
+        "preserved bits",
+        "frame ACK",
+        "session reset",
+        "effect-capable menu",
+        "scanline not selectable",
+        "close index"
+      ]
+    },
+    {
+      "cwd": "firmware-bl616",
+      "command": "bash tools/ui16/test_osd.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "checks": [
+        "in-place redraw",
+        "five anchors",
+        "capture ownership",
+        "actual new/old capability parser",
+        "query timeout"
+      ]
+    },
+    {
+      "cwd": "firmware-bl616",
+      "command": "bash tools/ui16/test_launch.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "checks": [
+        "launch recovery",
+        "actual HID adapters",
+        "image path",
+        "main task syntax",
+        "popup loop"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_blur.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "pixel_checks": 29568,
+      "checks": [
+        "independent integer reference",
+        "3 strengths",
+        "disabled bypass",
+        "zero-strength bypass",
+        "rounding",
+        "all widths 1..32",
+        "edge clamps",
+        "reset"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_config.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "bypass_rgb_samples": 65536,
+      "checks": [
+        "frame atomicity",
+        "coalescing",
+        "reset"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_integration.sh",
+      "exit_code": 0,
+      "status": "passed",
+      "pixel_checks": 9000000,
+      "bypass_checks": 5287496,
+      "game_pixels": 4496496,
+      "osd_pixels": 740160,
+      "checks": [
+        "real UART packets",
+        "length guard",
+        "capabilities",
+        "input blocking",
+        "legacy scaler reference",
+        "exact bypass RGB and phase",
+        "3 strength formulas",
+        "OSD unchanged"
+      ],
+      "reference_commit": "724994b64e598edf9d11e8824e45895cc2d851a3",
+      "limitation": "Framebuffer writes frozen during enabled spatial reference comparison; bypass also compared during live writes."
+    }
+  ],
+  "source_hashes": {
+    "firmware-bl616/main.cpp": "b30e202ee840561af9aee2707e2c7921c198c6d864e3f4b91a41c2411b28393a",
+    "firmware-bl616/ui/ui16_crt.h": "6fa866ab78c090aa9ff829cf5ecffc93201503ba6bf8075ab6f09c3633e30c07",
+    "firmware-bl616/ui/ui16_crt.cpp": "61a0154c9079ad59f9e6c77be831a88911fa597fb15c18a591a96524f5bf51f2",
+    "firmware-bl616/tests/ui16/crt_test.cpp": "b8ae1426d4edb0efb6324df62acdfb09762973d1ff2ea03dee4a44f9fdb373fe",
+    "firmware-bl616/tools/ui16/test_osd_driver.py": "6cfefd0be4456250cffd2d6d42104bb9fdfac6b03c9caaa69bfdecbe504d62f8",
+    "firmware-bl616/tools/ui16/test_launch_adapters.py": "72f7f988efb9bfbbdd7172258ba552335539c7037d3d45e66e86fa31184ed4ee",
+    "nestang/src/nes2hdmi.sv": "0db58e49ffcda9239f08b9732851aadfc826d598f9a10037574c2a65e09834c1",
+    "nestang/src/iosys/crt_filter.sv": "27ab1db999c9608470e953055350844dccb2e5e9a3d0da793cf9b62d7c43c7fa",
+    "nestang/src/iosys/iosys_bl616.v": "1f6372cc51788380c6c6d37a924cc9f7856615a315447f0c894d50b7b06f45cd",
+    "nestang/tests/crt/tb_crt_blur.sv": "995915edfeabcd19cb0bcd5bb8739247a526cec2940c3179b74f87806ffa5b5c",
+    "nestang/tests/crt/test_blur.sh": "d2ab81ec8865b225b30cda7951cba1964a4a17859e02171d6b7fb1185b6f1f82",
+    "nestang/tests/crt/tb_crt_video.sv": "c993db7dbd17ef2cd157a2538e43f06c1171631dea523c8039d62377c15fd725",
+    "nestang/tests/crt/tb_crt_config.sv": "24f441824362077fac9970fccc9fc7e6c9206c1a8dfc092cbf5eeee16e49910b",
+    "nestang/tests/crt/tb_crt_uart.sv": "44dc1884551b7d7d0bfe2a847f134c44723b79b664ac9c8dfa01ba1454fb702f"
+  },
+  "device_programming_performed": false,
+  "hardware_test_status": "pending"
+}

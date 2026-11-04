@@ -1,0 +1,16 @@
+{
+  "date_jst": "2026-11-03",
+  "reported_by": "user",
+  "firmware_commit": "5bd8a4404bd2ebe7496d7a28e62a3cbf2aea3f76",
+  "user_report": "すべて正常",
+  "requested_checks": {
+    "five_positions": true,
+    "osd1_centered": true,
+    "exclusive_osd_ownership": true,
+    "game_input_blocked_while_osd_open": true,
+    "resume_after_all_buttons_released": true
+  },
+  "controller_model": null,
+  "controller_connection": null,
+  "scope": "User confirmed all four requested functional test groups on the current NES setup. Controller model and connection were not specified; no claim is made for other input sources."
+}

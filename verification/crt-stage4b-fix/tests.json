@@ -1,0 +1,140 @@
+{
+  "date_jst": "2026-11-03",
+  "firmware_commit": "4708296db351b369587cfb185e5c444a4f84c249",
+  "base_hardware_tag": "crt-stage4a-hw-20261103",
+  "evidence_source": "Successful command outputs observed in this implementation session; compiler logs retained separately.",
+  "tests": [
+    {
+      "cwd": "firmware-bl616",
+      "command": "bash tools/ui16/test_crt.sh",
+      "exit_code": 0,
+      "checks": [
+        "250ms retry without user input",
+        "matching status stops retries",
+        "stale status cannot acknowledge new settings",
+        "existing parameter bits/session reset/old core menus"
+      ]
+    },
+    {
+      "cwd": "firmware-bl616",
+      "command": "bash tools/ui16/test_osd.sh",
+      "exit_code": 0,
+      "checks": [
+        "held confirm renders updated value",
+        "single change on press edge",
+        "differential redraw without hiding/clearing",
+        "dialog cache recovery",
+        "five positions",
+        "actual OSD driver and capability parser"
+      ]
+    },
+    {
+      "cwd": "firmware-bl616",
+      "command": "bash tools/ui16/test_launch.sh",
+      "exit_code": 0,
+      "checks": [
+        "launch recovery",
+        "actual HID adapters",
+        "main task syntax",
+        "popup ownership and input flow"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_blur.sh",
+      "exit_code": 0,
+      "pixel_checks": 29568,
+      "checks": [
+        "all blur strengths",
+        "edge clamps",
+        "rounding",
+        "reset"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_config.sh",
+      "exit_code": 0,
+      "bypass_rgb_samples": 65536,
+      "checks": [
+        "frame atomicity",
+        "latest value coalescing",
+        "reset"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_integration.sh",
+      "exit_code": 0,
+      "pixel_checks": 9000000,
+      "bypass_checks": 5287496,
+      "checks": [
+        "real UART bidirectional overlap",
+        "immediate config after status query",
+        "long capability reply with config and drawing RX",
+        "coalesced pending status reply",
+        "no acknowledgement before frame",
+        "old video equality and blur regression"
+      ]
+    },
+    {
+      "cwd": "nestang",
+      "command": "bash tests/crt/test_scanline.sh",
+      "exit_code": 0,
+      "gain_pixel_checks": 18432,
+      "video_pixel_checks": 53212437,
+      "legacy_bypass_checks": 8662437,
+      "pinned_stage4a_checks": 16087437,
+      "phase_frames_checked": 43,
+      "integrated_depth_per_720": [
+        0,
+        448,
+        896,
+        1792
+      ],
+      "checks": [
+        "all 16 blur/scan combinations",
+        "all 8-bit values and depths0..8",
+        "independent overlap-integral/rounding formula",
+        "native224 source phase stable across frames",
+        "scan OFF equality with fixed stage4a",
+        "live scan-only writes with independent early-read model",
+        "OSD unchanged"
+      ],
+      "pinned_stage4a_commit": "a0c49be884f765c323c6ff3b7342fde995f244f4",
+      "pinned_legacy_commit": "724994b64e598edf9d11e8824e45895cc2d851a3",
+      "limitation": "Spatial blur reference uses frozen writes. Scanline-only and bypass also use continuous writes; scanline-only is compared with its compensated one-clock-early schedule, not with the original read time."
+    }
+  ],
+  "regression_proof": {
+    "old_nes_commit": "08766efb13ed06cc14134d644067b34fe03d9b70",
+    "expected_failure": "status reply blocked following config packet",
+    "log": "uart-old-expected-failure.log",
+    "fixed_test_status": "passed"
+  },
+  "source_hashes": {
+    "firmware-bl616/ui/menu_manager.h": "7fdb0f3a12c91aaf032e678bf4e53ae9706cec76949ad0f763c990859b01fe49",
+    "firmware-bl616/ui/ui16_crt.h": "1950c571dded2010ffbdbc4ebb8a3a73583dc152220094e57cb7a9f5328d428e",
+    "firmware-bl616/ui/ui16_crt.cpp": "fb019458181eaa42ff80438a6233f9fd1a6bbc968c7dc3f62aa4259aca62ecac",
+    "firmware-bl616/ui/ui16_osd_menu.cpp": "d0aa84527eead91c49cae37df23e664afc514f764db921a7f6b5e0cac83448da",
+    "firmware-bl616/tests/ui16/crt_test.cpp": "0ac737cabf1a8baf6cdd94ef84250e77bd2aeb7a50670f12a365764cdc440e96",
+    "firmware-bl616/tests/ui16/osd_test.cpp": "3009bd91e630946086c48f868f9cc458958520e6269ea08e679528cc9e31c07a",
+    "firmware-bl616/tools/ui16/test_crt.sh": "e9b969447b76228ec1db9a8f9d10133d2ba1d48e83aecc2b803a9aa7ca7ecbd0",
+    "firmware-bl616/tools/ui16/test_osd.sh": "20bc06669d24839b0be9cf9d8edf3fd112688dc422308692206bf4b85281f585",
+    "firmware-bl616/tools/ui16/test_launch.sh": "c135c79a9914bfffed567e6f52783372198a8af96c1d6ca6e3e629d6fa429f24",
+    "nestang/src/nes2hdmi.sv": "893aff7e731d7635f1f108f0be404e4bfdfce40636ae9549596f73b6b95de290",
+    "nestang/src/iosys/crt_filter.sv": "2b12115a87fbf4fed0942ddf13332c735fdd91d8c4a4f3ffaeec73ef7c6769fc",
+    "nestang/src/iosys/iosys_bl616.v": "8dba6e0928199fcda678845f9f765a65e0332b81404d30ea4141b5cf725cbec4",
+    "nestang/src/iosys/tc_crt_config.sv": "dc78f3fa455826ceb6c64a1535a14f6405e6bbd2c905d6e2b09a448fbcc09a85",
+    "nestang/tests/crt/tb_crt_blur.sv": "3ea51d380da90c6c539213200f50af2091874e25bf512e5a11953b1c725093b3",
+    "nestang/tests/crt/tb_crt_config.sv": "22ce00c041eb3018b5dca33c0ae307851690a3215e74cdfe115bf5b3c314853f",
+    "nestang/tests/crt/tb_crt_uart.sv": "a781e054750a3a35c1637c76e91b2bcbf25aa666aa5cfa8b3e01e16c92896e07",
+    "nestang/tests/crt/tb_crt_video.sv": "572e9b76c444fc4d2d825f99bff36281d37d78b032a14d0aae46ab1288ef35f4",
+    "nestang/tests/crt/tb_crt_scanline.sv": "64a4aae1cf602eea6592fe5fd9724fc50836e4fefcf6c256757a5bd5077344e8",
+    "nestang/tests/crt/tb_crt_scan_video.sv": "43e4bcab1cbda10622925df86e3140e39d5c6eb585130bb200885c64b2d244ac",
+    "nestang/tests/crt/test_scanline.sh": "f7b0157ba3d4f00ddc4b5c163b684bd563062e6778e41bd927896dcdfe8252a5",
+    "nestang/tests/crt/test_integration.sh": "adcaf35a19d1829e4cccf2353be868ae5cdcd352db01c5fb0a8d2b14a0fad07d"
+  },
+  "device_programming_performed": false,
+  "hardware_test_status": "pending"
+}

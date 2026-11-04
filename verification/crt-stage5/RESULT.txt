@@ -1,0 +1,6 @@
+Stage5 build and seven relevant tests PASS; hardware tests PENDING.
+Firmware commit: e8c617f3ce95da736bc47699770c9675f4ec6fc8
+Firmware bytes: 228048, SHA-256: 814f941f9b0cb8b23cc56bc94643543913ad36f7c6c1b69e03b11f34f2711555
+NES reused from crt-stage4b-hw-20261103, no new FPGA build.
+Settings hierarchy, two-generation persistence, reset tombstone, failure UI, TSV extension and existing menus tested.
+Physical SD power-cut behavior and hardware persistence are not yet verified.

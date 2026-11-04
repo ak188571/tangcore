@@ -1,0 +1,3 @@
+[153650000] %Fatal: tb_crt_uart.sv:70: Assertion failed in tb_crt_uart: status reply blocked following config packet
+%Error: tests/crt\tb_crt_uart.sv:70: Verilog $stop
+Aborting...

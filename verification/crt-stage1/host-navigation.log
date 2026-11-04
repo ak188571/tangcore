@@ -1,0 +1,3 @@
+UI16 navigation tests passed: taps, repeat 400/100ms, release, reversal, bounded edges, simultaneous input, timer wrap, 8 selections, 1988-byte frames, display ownership
+UART ownership test passed: legacy / debug-only UI16 / restored legacy; payload unchanged
+UART ownership test passed: legacy / debug-only UI16 / restored legacy; payload unchanged

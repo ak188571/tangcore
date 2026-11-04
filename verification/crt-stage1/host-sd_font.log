@@ -1,0 +1,8 @@
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.077s
+
+OK
+Font pack: build-ui16-host/test_sd_font.ui16 (7089 glyphs, 255236 bytes)
+copy to microSD only AFTER firmware and monitor support this format
+BL616 FatFs SD font reader: CRC, Unicode, RAM index, one-record lookup, I/O failures, fallback OK

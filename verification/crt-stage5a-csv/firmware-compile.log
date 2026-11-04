@@ -1,0 +1,33 @@
+[  6%] Built target freertos
+[  6%] Building CXX object CMakeFiles/app.dir/ui/ui16_browser.cpp.obj
+[ 12%] Built target cherryusb
+[ 21%] Built target std
+[ 23%] Building CXX object CMakeFiles/app.dir/ui/ui16_crt.cpp.obj
+[ 25%] Built target fatfs
+[ 25%] Building CXX object CMakeFiles/app.dir/ui/ui16_game_list.cpp.obj
+[ 51%] Built target libc
+[ 54%] Built target mm
+[ 55%] Building CXX object CMakeFiles/app.dir/ui/ui16_launch.cpp.obj
+[ 77%] Built target lhal
+[ 79%] Building CXX object CMakeFiles/app.dir/ui/ui16_navigation.cpp.obj
+[ 79%] Building CXX object CMakeFiles/app.dir/ui/ui16_osd_menu.cpp.obj
+[ 79%] Building CXX object CMakeFiles/app.dir/ui/ui16_system_menu.cpp.obj
+[ 85%] Built target utils
+[ 86%] Building CXX object CMakeFiles/app.dir/ui/ui16_titles.cpp.obj
+[ 86%] Linking CXX static library build_out/lib/libapp.a
+[ 99%] Built target app
+[ 99%] Building CXX object CMakeFiles/tangcore_bl616.elf.dir/main.cpp.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-stage5-isolation-20261103/firmware-stage4b/main.cpp: In function 'int menu_loadrom(const char*)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-stage5-isolation-20261103/firmware-stage4b/main.cpp:158:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<core_info>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  158 |     for (int i = 0; i < core_info_list.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+[100%] Linking CXX executable build_out/tangcore_bl616.elf
+Memory region         Used Size  Region Size  %age Used
+fw_header_memory:         256 B         4 KB      6.25%
+      xip_memory:      211316 B         4 MB      5.04%
+       ram_psram:          0 GB         4 MB      0.00%
+     ram_nocache:       25168 B       447 KB      5.50%
+      ram_memory:      136520 B       447 KB     29.83%
+        ram_wifi:          0 GB        32 KB      0.00%
+Generate D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-stage5-isolation-20261103/firmware-stage4b/build-isolation/build_out/tangcore_bl616.bin
+[100%] Built target tangcore_bl616.elf

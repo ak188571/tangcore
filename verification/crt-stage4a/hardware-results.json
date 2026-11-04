@@ -1,0 +1,46 @@
+{
+  "date_jst": "2026-11-03",
+  "board": "Console138K",
+  "core": "NES",
+  "reported_by": "user",
+  "user_report": "すべて正常",
+  "source_commits": {
+    ".": "81585d86f8196b04fe19907fc421f4602720d9ee",
+    "firmware-bl616": "d8f63d836743551c5b18d2c567328c44a7d290f2",
+    "nestang": "a0c49be884f765c323c6ff3b7342fde995f244f4"
+  },
+  "status": "all_requested_stage4a_hardware_checks_passed_current_console138k_nes_setup",
+  "observations": {
+    "nes_video_audio_and_control": true,
+    "osd2_opens_with_stage4a_label": true,
+    "blur_strength_changes_visible": true,
+    "frame_ack_after_parameter_change": true,
+    "crt_enable_switches_blur": true,
+    "image_position_stable_across_on_off": true,
+    "osd_text_unblurred": true,
+    "osd_stays_visible_on_updates": true,
+    "edges_and_motion_without_new_artifacts": true,
+    "five_positions": true,
+    "game_input_blocked_while_osd_open": true,
+    "resume_after_all_buttons_released": true,
+    "same_game_values_and_position_retained": true,
+    "japanese_menu_and_titles_csv_order_after_return": true,
+    "new_game_enable_and_blur_off_with_frame_ack": true
+  },
+  "controller_model": null,
+  "controller_connection": null,
+  "scope": "User confirmed all six requested stage4a hardware test groups on the current Console138K/NES setup. Controller model and connection are unspecified; other input sources/cores and new-game POS reset were not tested.",
+  "reports": [
+    {
+      "date_jst": "2026-11-03",
+      "test_group": "Initial three groups: normal operation, blur adjustment/ACK, position/OSD stability",
+      "user_report": "すべて正常"
+    },
+    {
+      "date_jst": "2026-11-03",
+      "test_group": "Remaining three groups: edges/motion, placement/input release, session/menu/new-game reset",
+      "user_report": "すべて正常"
+    }
+  ],
+  "validation_tag": "crt-stage4a-hw-20261103"
+}

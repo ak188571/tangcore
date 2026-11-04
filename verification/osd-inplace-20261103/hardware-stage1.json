@@ -1,0 +1,75 @@
+{
+  "date_jst": "2026-11-03",
+  "status": "all_requested_stage1_hardware_checks_passed_current_console138k_nes_setup",
+  "deployment_verified": true,
+  "observations": {
+    "normal_boot_and_japanese_menu": true,
+    "nes_video_audio_and_controller": true,
+    "osd1_centered": true,
+    "osd2_independent_open": true,
+    "frame_ack_after_parameter_change": true,
+    "five_positions": true,
+    "exclusive_osd_ownership": true,
+    "game_input_blocked_while_osd_open": true,
+    "resume_after_all_buttons_released": true,
+    "same_game_session_values_retained": true,
+    "new_game_values_reset": true,
+    "normal_boot": true,
+    "osd2_visible_during_selection_and_value_updates": true,
+    "same_game_session_position_retained": true,
+    "japanese_menu_after_return": true,
+    "titles_csv_order_after_return": true,
+    "new_game_frame_ack": true
+  },
+  "issues": [
+    {
+      "id": "OSD-REDRAW-FLICKER",
+      "reported_by": "user",
+      "description": "OSD briefly disappears on each selection change; the game background becomes visible.",
+      "status": "resolved_user_verified",
+      "fix_firmware_commit": "5bd8a4404bd2ebe7496d7a28e62a3cbf2aea3f76",
+      "deployment_record": "../crt-osd-inplace-hardware-20261103/deployment_result.json",
+      "retest": {
+        "date_jst": "2026-11-03",
+        "reported_by": "user",
+        "firmware_commit": "5bd8a4404bd2ebe7496d7a28e62a3cbf2aea3f76",
+        "user_report": "OSDが消えなくなり、FRAME ACKも正常",
+        "selection_and_value_updates_keep_osd_visible": true,
+        "frame_ack_after_parameter_change": true,
+        "scope": "Requested NES OSD2 selection and value-change retest; other hardware checks remain unconfirmed."
+      }
+    }
+  ],
+  "functional_test_report": {
+    "date_jst": "2026-11-03",
+    "reported_by": "user",
+    "firmware_commit": "5bd8a4404bd2ebe7496d7a28e62a3cbf2aea3f76",
+    "user_report": "すべて正常",
+    "requested_checks": {
+      "five_positions": true,
+      "osd1_centered": true,
+      "exclusive_osd_ownership": true,
+      "game_input_blocked_while_osd_open": true,
+      "resume_after_all_buttons_released": true
+    },
+    "controller_model": null,
+    "controller_connection": null,
+    "scope": "User confirmed all four requested functional test groups on the current NES setup. Controller model and connection were not specified; no claim is made for other input sources."
+  },
+  "session_test_report": {
+    "date_jst": "2026-11-03",
+    "reported_by": "user",
+    "firmware_commit": "5bd8a4404bd2ebe7496d7a28e62a3cbf2aea3f76",
+    "user_report": "すべて正常",
+    "requested_checks": {
+      "same_game_session_values_retained": true,
+      "same_game_session_position_retained": true,
+      "japanese_menu_after_return": true,
+      "titles_csv_order_after_return": true,
+      "new_game_values_reset": true,
+      "new_game_frame_ack": true
+    },
+    "scope": "All three requested session/menu test groups passed by user report on Console138K/NES. New-game position reset and other input sources were not tested."
+  },
+  "scope": "User-reported Console138K/NES checks on the current setup; controller identity and connection unspecified. Not all input sources or other cores."
+}

@@ -1,0 +1,171 @@
+# Console 138K PLL outputs: 50 * 40 / 31 = 64.516129 MHz,
+# with a 3:1 relationship to the NES clock (50 * 40 / 93).
+# These constraints describe the existing PLL configuration; they do not retune it.
+create_clock -name sys_clk -period 20 -waveform {0 10} [get_ports {sys_clk}]
+create_clock -name fclk -period 15.5 -waveform {0 7.75} [get_nets {fclk}]
+create_generated_clock -name clk -source [get_nets {fclk}] -divide_by 3 [get_nets {clk}]
+
+# HDMI: 27 * 55 / 4 = 371.25 MHz; CLKDIV divides this by five.
+create_clock -name hclk5 -period 2.693602694 -waveform {0 1.346801347} [get_nets {hclk5}]
+create_generated_clock -name hclk -source [get_nets {hclk5}] -master_clock hclk5 -divide_by 5 [get_nets {hclk}]
+
+# NES/iosys to SDRAM, 3 fclk cycles.
+set_multicycle_path 3 -end -setup -from [get_clocks {clk}] -to [get_clocks {fclk}]
+set_multicycle_path 2 -end -hold -from [get_clocks {clk}] -to [get_clocks {fclk}]
+
+# SDRAM to NES/iosys, 2 fclk cycles.
+set_multicycle_path 2 -start -setup -from [get_clocks {fclk}] -to [get_clocks {clk}]
+set_multicycle_path 1 -start -hold -from [get_clocks {fclk}] -to [get_clocks {clk}]
+
+# Independent 12 MHz USB PLL. Only the implemented mailbox crossings below are excepted.
+create_clock -name clk12 -period 83.333333333 -waveform {0 41.6666666665} [get_nets {clk12}]
+# USB clock is derived from the 50 MHz PLL by Gowin auto-clock inference.
+# Acknowledged mailbox: src_hold is held through destination capture and returned acknowledgement.
+set_false_path -to [get_regs {
+    joy_usb1_cdc/toggle_sync_0_s0
+    joy_usb1_cdc/ack_sync_0_s0
+    joy_usb1_cdc/dst_data_0_s0
+    joy_usb1_cdc/dst_data_1_s0
+    joy_usb1_cdc/dst_data_2_s0
+    joy_usb1_cdc/dst_data_3_s0
+    joy_usb1_cdc/dst_data_4_s0
+    joy_usb1_cdc/dst_data_5_s0
+    joy_usb1_cdc/dst_data_6_s0
+    joy_usb1_cdc/dst_data_7_s0
+    joy_usb1_cdc/dst_data_8_s0
+    joy_usb1_cdc/dst_data_9_s0
+    joy_usb1_cdc/dst_data_10_s0
+    joy_usb1_cdc/dst_data_11_s0
+    joy_usb2_cdc/toggle_sync_0_s0
+    joy_usb2_cdc/ack_sync_0_s0
+    joy_usb2_cdc/dst_data_0_s0
+    joy_usb2_cdc/dst_data_1_s0
+    joy_usb2_cdc/dst_data_2_s0
+    joy_usb2_cdc/dst_data_3_s0
+    joy_usb2_cdc/dst_data_4_s0
+    joy_usb2_cdc/dst_data_5_s0
+    joy_usb2_cdc/dst_data_6_s0
+    joy_usb2_cdc/dst_data_7_s0
+    joy_usb2_cdc/dst_data_8_s0
+    joy_usb2_cdc/dst_data_9_s0
+    joy_usb2_cdc/dst_data_10_s0
+    joy_usb2_cdc/dst_data_11_s0
+}]
+
+# FS asynchronous pin capture and acknowledged FS->12 MHz mailboxes.
+set_false_path -to [get_regs {
+ usb_hid_host/owner_sync_0_s0
+ usb_hid_host/fs/dp_meta_s0
+ usb_hid_host/fs/dm_meta_s0
+ usb_hid_host/fs/phy/dp_meta_s0
+ usb_hid_host/fs/phy/dm_meta_s0
+ usb_hid_host/fs_to_ls/toggle_sync_0_s0
+ usb_hid_host/fs_to_ls/ack_sync_0_s0
+ usb_hid_host/fs_to_ls/dst_data_0_s0
+ usb_hid_host/fs_to_ls/dst_data_1_s0
+ usb_hid_host/fs_to_ls/dst_data_2_s0
+ usb_hid_host/fs_to_ls/dst_data_3_s0
+ usb_hid_host/fs_to_ls/dst_data_4_s0
+ usb_hid_host/fs_to_ls/dst_data_5_s0
+ usb_hid_host/fs_to_ls/dst_data_6_s0
+ usb_hid_host/fs_to_ls/dst_data_7_s0
+ usb_hid_host/fs_to_ls/dst_data_8_s0
+ usb_hid_host/fs_to_ls/dst_data_9_s0
+ usb_hid_host/fs_to_ls/dst_data_10_s0
+ usb_hid_host/fs_to_ls/dst_data_11_s0
+ usb_hid_host/fs_to_ls/dst_data_12_s0
+ usb_hid_host2/owner_sync_0_s0
+ usb_hid_host2/fs/dp_meta_s0
+ usb_hid_host2/fs/dm_meta_s0
+ usb_hid_host2/fs/phy/dp_meta_s0
+ usb_hid_host2/fs/phy/dm_meta_s0
+ usb_hid_host2/fs_to_ls/toggle_sync_0_s0
+ usb_hid_host2/fs_to_ls/ack_sync_0_s0
+ usb_hid_host2/fs_to_ls/dst_data_0_s0
+ usb_hid_host2/fs_to_ls/dst_data_1_s0
+ usb_hid_host2/fs_to_ls/dst_data_2_s0
+ usb_hid_host2/fs_to_ls/dst_data_3_s0
+ usb_hid_host2/fs_to_ls/dst_data_4_s0
+ usb_hid_host2/fs_to_ls/dst_data_5_s0
+ usb_hid_host2/fs_to_ls/dst_data_6_s0
+ usb_hid_host2/fs_to_ls/dst_data_7_s0
+ usb_hid_host2/fs_to_ls/dst_data_8_s0
+ usb_hid_host2/fs_to_ls/dst_data_9_s0
+ usb_hid_host2/fs_to_ls/dst_data_10_s0
+ usb_hid_host2/fs_to_ls/dst_data_11_s0
+ usb_hid_host2/fs_to_ls/dst_data_12_s0
+}]
+
+set_false_path -to [get_regs {usb_hid_host/fs_to_ls/dst_data_13_s0 usb_hid_host2/fs_to_ls/dst_data_13_s0}]
+
+# Explicit PLL output clock, following the existing clk12 output-clock policy.
+create_clock -name clk96 -period 10.416666667 -waveform {0 5.2083333335} [get_nets {clk96}]
+
+# CRT stage1 acknowledged frame-boundary mailbox.
+set_false_path -to [get_regs {u_hdmi/crt_config/req_sync_0_s0 u_hdmi/crt_config/ack_sync_0_s0}]
+set_false_path -to [get_regs {
+ u_hdmi/crt_config/pending_0_s0
+ u_hdmi/crt_config/pending_1_s0
+ u_hdmi/crt_config/pending_2_s0
+ u_hdmi/crt_config/pending_3_s0
+ u_hdmi/crt_config/pending_4_s0
+ u_hdmi/crt_config/pending_5_s0
+ u_hdmi/crt_config/pending_6_s0
+ u_hdmi/crt_config/pending_7_s0
+ u_hdmi/crt_config/pending_8_s0
+ u_hdmi/crt_config/pending_9_s0
+ u_hdmi/crt_config/pending_10_s0
+ u_hdmi/crt_config/pending_11_s0
+ u_hdmi/crt_config/pending_12_s0
+ u_hdmi/crt_config/pending_13_s0
+ u_hdmi/crt_config/pending_14_s0
+ u_hdmi/crt_config/pending_15_s0
+ u_hdmi/crt_config/pending_16_s0
+ u_hdmi/crt_config/pending_17_s0
+ u_hdmi/crt_config/pending_18_s0
+ u_hdmi/crt_config/pending_19_s0
+ u_hdmi/crt_config/pending_20_s0
+ u_hdmi/crt_config/pending_21_s0
+ u_hdmi/crt_config/pending_22_s0
+ u_hdmi/crt_config/pending_23_s0
+ u_hdmi/crt_config/pending_24_s0
+ u_hdmi/crt_config/pending_25_s0
+ u_hdmi/crt_config/pending_26_s0
+ u_hdmi/crt_config/pending_27_s0
+ u_hdmi/crt_config/pending_28_s0
+ u_hdmi/crt_config/pending_29_s0
+ u_hdmi/crt_config/pending_30_s0
+ u_hdmi/crt_config/pending_31_s0
+ u_hdmi/crt_config/applied_config_0_s0
+ u_hdmi/crt_config/applied_config_1_s0
+ u_hdmi/crt_config/applied_config_2_s0
+ u_hdmi/crt_config/applied_config_3_s0
+ u_hdmi/crt_config/applied_config_4_s0
+ u_hdmi/crt_config/applied_config_5_s0
+ u_hdmi/crt_config/applied_config_6_s0
+ u_hdmi/crt_config/applied_config_7_s0
+ u_hdmi/crt_config/applied_config_8_s0
+ u_hdmi/crt_config/applied_config_9_s0
+ u_hdmi/crt_config/applied_config_10_s0
+ u_hdmi/crt_config/applied_config_11_s0
+ u_hdmi/crt_config/applied_config_12_s0
+ u_hdmi/crt_config/applied_config_13_s0
+ u_hdmi/crt_config/applied_config_14_s0
+ u_hdmi/crt_config/applied_config_15_s0
+ u_hdmi/crt_config/applied_config_16_s0
+ u_hdmi/crt_config/applied_config_17_s0
+ u_hdmi/crt_config/applied_config_18_s0
+ u_hdmi/crt_config/applied_config_19_s0
+ u_hdmi/crt_config/applied_config_20_s0
+ u_hdmi/crt_config/applied_config_21_s0
+ u_hdmi/crt_config/applied_config_22_s0
+ u_hdmi/crt_config/applied_config_23_s0
+ u_hdmi/crt_config/applied_config_24_s0
+ u_hdmi/crt_config/applied_config_25_s0
+ u_hdmi/crt_config/applied_config_26_s0
+ u_hdmi/crt_config/applied_config_27_s0
+ u_hdmi/crt_config/applied_config_28_s0
+ u_hdmi/crt_config/applied_config_29_s0
+ u_hdmi/crt_config/applied_config_30_s0
+ u_hdmi/crt_config/applied_config_31_s0
+}]

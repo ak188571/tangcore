@@ -1,0 +1,1 @@
+CRT save PASS: alternate-slot sync/close/exact readback, explicit OFF, generation wrap, torn writes, all write/verification failures, retry protects uncertain generation, corrupt recovery, I/O/schema/conflict refusal and invalid identity

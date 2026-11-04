@@ -1,0 +1,13 @@
+{
+  "date_jst": "2026-11-03",
+  "hardware_test_status": "failed_pending_further_diagnosis",
+  "firmware_commit": "01f38f4cfdf4df6ac78df4495026d174f7b12074",
+  "firmware_sha256": "46ca8dfeedafd6de084fddea9b576ca66809d91e8892ccdd54b01eefa17ad3a3",
+  "user_report": "依然として同じ箇所で止まるが表示はUsercode=0x0000e613, status=0x0と変化した。他のゲームも同じである",
+  "nes_image_expected_usercode": "0x0000E613",
+  "nes_image_usercode_source": "nestang/impl/pnr/nestang_console138k_ds2.fs:11",
+  "interpretation": "UserCode now matches the image. This does not establish DONE, valid status, normal FPGA operation or successful ROM loading.",
+  "persistence_hardware_checks": "not reached",
+  "last_accepted_hardware_tag": "crt-stage4b-hw-20261103",
+  "completion_tag_created": false
+}

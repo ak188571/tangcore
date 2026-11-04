@@ -1,0 +1,37 @@
+[  4%] Built target fatfs
+[  7%] Building CXX object CMakeFiles/app.dir/fpga/programmer.cpp.obj
+[ 14%] Built target std
+[ 41%] Built target libc
+[ 63%] Built target lhal
+[ 65%] Built target mm
+[ 71%] Built target cherryusb
+[ 76%] Built target freertos
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:135: warning: "GPIO_DRV_3" redefined
+  135 | #define GPIO_DRV_3       (3<<2)
+      | 
+In file included from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/utils/utils.h:7,
+                 from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:16:
+D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal/include/bflb_gpio.h:189: note: this is the location of the previous definition
+  189 | #define GPIO_DRV_3                           (3 << GPIO_DRV_SHIFT)
+      | 
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:135: warning: "GPIO_DRV_3" redefined
+  135 | #define GPIO_DRV_3       (3<<2)
+      | 
+In file included from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/utils/utils.h:7,
+                 from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:16:
+D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal/include/bflb_gpio.h:189: note: this is the location of the previous definition
+  189 | #define GPIO_DRV_3                           (3 << GPIO_DRV_SHIFT)
+      | 
+[ 82%] Built target utils
+[ 82%] Linking CXX static library build_out/lib/libapp.a
+[ 99%] Built target app
+[100%] Linking CXX executable build_out/tangcore_bl616.elf
+Memory region         Used Size  Region Size  %age Used
+fw_header_memory:         256 B         4 KB      6.25%
+      xip_memory:      218284 B         4 MB      5.20%
+       ram_psram:          0 GB         4 MB      0.00%
+     ram_nocache:       25168 B       447 KB      5.50%
+      ram_memory:      136712 B       447 KB     29.87%
+        ram_wifi:          0 GB        32 KB      0.00%
+Generate D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-console138k-crt-stage1/build_out/tangcore_bl616.bin
+[100%] Built target tangcore_bl616.elf

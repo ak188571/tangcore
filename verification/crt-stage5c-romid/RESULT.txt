@@ -1,0 +1,5 @@
+Stage5c read-only ROM identity: implementation, eight scripts, build, deployment/readback and all requested hardware checks PASS.
+FW83d7055ceece5e3b043b86eda986e464aeee6905 SHA409f25cc861182e2778dc82f777050cc349b6a82c98b3cd18cd189132f0df32f.
+Local validation tag: crt-stage5c-hw-20261103.
+Japanese list/order; Dr.Mario CRC7623dffd and CSV values; Pac-Man CRCebbb19bf and defaults; both video/audio/controls/FRAME ACK; reopen retains ID; relaunch recomputes same ID.
+No new FPGA build. No hardware rename/other-volume or quantified timing claim. Persistence/Reset/defaults remain outside this completed stage. Overall stage5 incomplete.

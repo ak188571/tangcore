@@ -1,0 +1,66 @@
+{
+  "date_jst": "2026-11-04",
+  "hardware_test_status": "all_requested_stage5f_hardware_checks_passed_current_console138k_nes_setup",
+  "firmware_commit": "e82e5ea61d318b9511bf5ed76e2e8cc790458cdf",
+  "firmware_sha256": "44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b",
+  "reports": [
+    {
+      "user_report": "1-3正常",
+      "phase": "Initial boot without Reset/SAVE/edits",
+      "scope": "Japanese NES list/order; two games launch/video/audio/controls; STAGE5F and Reset row; Dr.Mario old USER ON/STRONG/WEAK and Pac-Man old USER OFF; ROM IDs, SAVED and FRAME ACK; X/Y and OSD1 return normal"
+    },
+    {
+      "user_report": "1-3正常",
+      "phase": "Reset preview/cancel and explicit confirmation",
+      "scope": "Dr.Mario Reset previews CSV ON/WEAK/STANDARD without SAVE; X and Y each restore old user ON/STRONG/WEAK; confirmed Reset SAVE stays open and two unchanged SAVE presses normal; relaunch follows CSV with STORE RESET; Pac-Man equal numeric OFF becomes UNSAVED on Reset and confirmed/relaunched mode follows builtin with STORE RESET"
+    },
+    {
+      "user_report": "1-2正常",
+      "phase": "Reset mode power cycle and OSD regression",
+      "scope": "Normal power cycle restores Dr.Mario CSV ON/WEAK/STANDARD and Pac-Man builtin OFF, both STORE RESET/SAVED/FRAME ACK and normal video/audio/controls; all five positions including new Reset row, OSD1 exclusion/centering and game input block/release normal"
+    },
+    {
+      "user_report": "1-3正常",
+      "phase": "Changed CSV following and manual override after Reset",
+      "scope": "Without Reset/SAVE, Dr.Mario follows temporary CSV ON/STANDARD/STRONG with INITIAL CSV/STORE RESET/SAVED/FRAME ACK; manual ON/STRONG/WEAK SAVE then relaunch restores USER override over CSV; Pac-Man remains builtin OFF/STORE RESET with normal video/audio/controls and Japanese names/order intact"
+    },
+    {
+      "user_report": "1-3正常",
+      "phase": "Read-only Reset SAVE failure and cancellation",
+      "scope": "Dr.Mario old USER ON/STRONG/WEAK loads; Reset previews original CSV ON/WEAK/STANDARD; SAVE FAILED stays open and retry FAILED; X and Y each cancel values and Reset intent to USER baseline; relaunch retains USER/SAVED/FRAME ACK with normal video/audio/controls"
+    },
+    {
+      "user_report": "1-2正常",
+      "phase": "Reset SAVE recovery after original attributes restored",
+      "scope": "Reset SAVE once succeeds/stays open/SAVED/FRAME ACK; two unchanged SAVE presses and X/reopen retain recommendation; relaunch and normal power cycle restore Dr.Mario CSV ON/WEAK/STANDARD STORE RESET; Pac-Man builtin OFF/STORE RESET unchanged; both games video/audio/controls normal"
+    }
+  ],
+  "checks": {
+    "initial_japanese_list_order_and_two_game_launch_video_audio_controls": true,
+    "stage5f_and_reset_row": true,
+    "initial_dr_mario_user_strong_weak_and_id": true,
+    "initial_pac_man_user_off_and_id": true,
+    "initial_saved_frame_ack_and_osd1_return": true,
+    "reset_preview_uses_launch_csv_and_x_y_cancel_values_and_intent": true,
+    "dr_mario_reset_save_stays_open_and_relaunch_follows_csv": true,
+    "pac_man_equal_numeric_off_reset_is_dirty_and_relaunch_follows_builtin": true,
+    "normal_power_cycle_restores_recommended_mode": true,
+    "osd_five_positions_exclusion_input_block_and_release": true,
+    "pc_tombstone_crc_key_size_kind_zero_value_and_generation": true,
+    "confirmed_reset_repeated_save_does_not_advance_generation": true,
+    "changed_csv_followed_after_reset": true,
+    "manual_adjustment_after_reset_saves_user_override": true,
+    "reset_save_failure_retry_and_x_y_cancel": true,
+    "test_attributes_and_csv_restored": true,
+    "save_recovery_after_attributes_restored": true,
+    "final_sd_records_and_unrelated_files_verified": true
+  },
+  "limitations": "Verified on current Console138K/NES and two recorded ROMs. Reset previews/cancellation, CSV/builtin following, changed-CSV following, manual override, read-only denied-write failure/retry/cancellation/recovery and final tombstone/CRC/generation audit passed. Other I/O fault classes and conflict/unknown-schema cases are host-tested only. No raw-sector or other-core ownership claim. System/global defaults remain outside this stage; initial monolithic stage5 boot-failure root cause remains undetermined.",
+  "pc_record_audit": "record-inspection.json",
+  "csv_trial_record": "csv-trial-installation.json",
+  "manual_override_pc_record": "post-csv-trial-verification.json",
+  "read_only_test_record": "read-only-protection.json",
+  "post_failure_sd_record": "post-failure-sd-verification.json",
+  "validation_tag": "crt-stage5f-hw-20261104",
+  "final_sd_record": "final-sd-verification.json"
+}

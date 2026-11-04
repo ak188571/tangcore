@@ -1,0 +1,2 @@
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/ui16_crt_restore.cpp:10:15:uint64_t {anonymous}::number(const Record&, unsigned int, unsigned int)	32	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/ui16_crt_restore.cpp:34:16:Ui16CrtRestore ui16_read_crt_override(const Ui16RomIdentity&, FIL&, void*, UINT)	240	static

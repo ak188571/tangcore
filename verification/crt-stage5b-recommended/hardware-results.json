@@ -1,0 +1,30 @@
+{
+  "date_jst": "2026-11-03",
+  "hardware_test_status": "all_requested_stage5b_hardware_checks_passed_current_console138k_nes_setup",
+  "firmware_commit": "95113b138e4cc869933df34bb18bff05d711adf1",
+  "firmware_sha256": "d8d53ed8f47d43db6e1b5dc0389cca38a983b516effc13f1e05f220b253e10f1",
+  "reports": [
+    {
+      "user_report": "1-3正常",
+      "scope": "Initial startup and preset checks"
+    },
+    {
+      "user_report": "1-2正常",
+      "scope": "Same-game edits retained with FRAME ACK; relaunch restores ON/WEAK/STANDARD, INITIAL CSV and FRAME ACK"
+    }
+  ],
+  "checks": {
+    "japanese_nes_list_and_order": true,
+    "dr_mario_launch_video_audio_controls": true,
+    "osd2_stage5b_identifier": true,
+    "dr_mario_enabled_weak_standard": true,
+    "initial_csv_label": true,
+    "dr_mario_frame_ack": true,
+    "osd1_return_and_other_nes_launch": true,
+    "other_game_all_off_default_frame_ack": true,
+    "same_game_manual_changes_retained": true,
+    "relaunch_restores_csv_recommendation": true
+  },
+  "limitations": "Verified on the current Console138K/NES setup only. Persistence, Reset, ROM CRC and defaults-file support remain outside stage5b. Earlier stage5 startup failure root cause remains undetermined.",
+  "validation_tag": "crt-stage5b-hw-20261103"
+}

@@ -1,0 +1,26 @@
+{
+  "firmware_commit": "5bd8a4404bd2ebe7496d7a28e62a3cbf2aea3f76",
+  "tests": {
+    "osd": {
+      "log": "osd-tests.log",
+      "status": "passed"
+    },
+    "crt": {
+      "log": "crt-tests.log",
+      "status": "passed"
+    },
+    "launch": {
+      "log": "launch-tests.log",
+      "status": "passed"
+    }
+  },
+  "source_hashes": {
+    "ui/ui16_osd_menu.cpp": "0d42e1c7f26689b4afac6a159e652f5d5a65f46906464d8f00dd673a0e1248da",
+    "tests/ui16/osd_test.cpp": "18105c2d50b58e9ab974acba419f5fd67629d5de6d5790a0f3b799a5875ba42a"
+  },
+  "fpga_changes": false,
+  "hardware_retest": "passed_for_selection_value_visibility_and_frame_ack",
+  "hardware_retest_log": "hardware-retest.json",
+  "hardware_stage1": "all_requested_checks_passed_current_console138k_nes_setup",
+  "hardware_stage1_log": "hardware-stage1.json"
+}

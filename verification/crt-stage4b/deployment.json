@@ -1,0 +1,29 @@
+{
+  "completed_at": "2026-11-03T18:02:45.407381+09:00",
+  "board": "Console138K",
+  "source_commits": {
+    ".": "03cb435c0f2c2c8f9d2564ac5f2a4434b1df5d22",
+    "firmware-bl616": "9920831252b9ecb3210e8357a52e2bae17acc06e",
+    "nestang": "08766efb13ed06cc14134d644067b34fe03d9b70"
+  },
+  "firmware": {
+    "file": "firmware/tangcore_bl616.bin",
+    "bytes": 221024,
+    "sha256": "d827b158ab6aa49a79f1f17066753cb1ba1b37fff095cb15ea8c896810e4bd12"
+  },
+  "nes": {
+    "file": "cores/console138k/nestang.bin",
+    "bytes": 4659294,
+    "sha256": "44a801ebfc1ec216a79f2267bac00b856ec2d1eadabebd94129f06aa0d32fb10"
+  },
+  "rollback_origin": "previous_verified_full_flash_readback_of_user_tested_stage4a",
+  "rollback_full_flash_sha256": "7ed4de7009c6551839877c45c3e61c24e3a8837eeb1ad1f40984bf8317b14912",
+  "firmware_written": true,
+  "full_flash_readback_verified": true,
+  "boot_area_unchanged": true,
+  "from_0x80000_unchanged": true,
+  "nes_core_written": true,
+  "other_sd_files_unchanged": 57,
+  "sdk_defaults_restored": true,
+  "hardware_test_status": "awaiting user"
+}

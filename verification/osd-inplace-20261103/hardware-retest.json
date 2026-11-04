@@ -1,0 +1,9 @@
+{
+  "date_jst": "2026-11-03",
+  "reported_by": "user",
+  "firmware_commit": "5bd8a4404bd2ebe7496d7a28e62a3cbf2aea3f76",
+  "user_report": "OSDが消えなくなり、FRAME ACKも正常",
+  "selection_and_value_updates_keep_osd_visible": true,
+  "frame_ack_after_parameter_change": true,
+  "scope": "Requested NES OSD2 selection and value-change retest; other hardware checks remain unconfirmed."
+}

@@ -1,0 +1,154 @@
+{
+  "target": "Console138K NES",
+  "command": [
+    "C:/Gowin/Gowin_V1.9.12.03_x64/IDE/bin/gw_sh.exe",
+    "build.tcl",
+    "console138k"
+  ],
+  "exit_code": 0,
+  "seconds": 1445.91,
+  "source_hashes": {
+    "src/nes2hdmi.sv": "893aff7e731d7635f1f108f0be404e4bfdfce40636ae9549596f73b6b95de290",
+    "src/iosys/crt_filter.sv": "2b12115a87fbf4fed0942ddf13332c735fdd91d8c4a4f3ffaeec73ef7c6769fc",
+    "src/iosys/iosys_bl616.v": "8dba6e0928199fcda678845f9f765a65e0332b81404d30ea4141b5cf725cbec4"
+  },
+  "device_programming_performed": false,
+  "hardware_test_status": "pending",
+  "timing": {
+    "Numbers of Setup Violated Endpoints": 0,
+    "Numbers of Hold Violated Endpoints": 0
+  },
+  "synthesis_resources": {
+    "T_Register": 19667,
+    "T_Alu": 1692,
+    "T_Lut": 39972,
+    "T_MULT12X12": 4,
+    "T_MULT27X36": 4,
+    "T_MULTADDALU12X12": 1,
+    "T_Bsram": 32
+  },
+  "reported_minimum_pulse_width_rows": [
+    [
+      "1",
+      "2.336",
+      "3.236",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "2",
+      "2.341",
+      "3.241",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "3",
+      "2.425",
+      "3.325",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "4",
+      "2.430",
+      "3.330",
+      "0.900",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "5",
+      "2.439",
+      "3.339",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "6",
+      "2.444",
+      "3.344",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "7",
+      "2.550",
+      "3.450",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "8",
+      "2.555",
+      "3.455",
+      "0.900",
+      "Low Pulse Width",
+      "clk96",
+      "usb_hid_host2/fs/control/memory_memory_0_0_s"
+    ],
+    [
+      "9",
+      "2.993",
+      "3.218",
+      "0.225",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/enumeration/memory[186]_2_s0"
+    ],
+    [
+      "10",
+      "2.993",
+      "3.218",
+      "0.225",
+      "High Pulse Width",
+      "clk96",
+      "usb_hid_host/fs/enumeration/memory[187]_2_s0"
+    ]
+  ],
+  "artifact_bytes": 4640660,
+  "artifact_sha256": "745ad31b4d1707f6b9ddf5a6d9e9c4964b41a2ab59ce6b0018f38545fdb5b1ec",
+  "warning_counts": {
+    "EX2478": 74,
+    "EX3638": 9,
+    "EX3680": 1,
+    "EX3628": 1,
+    "EX3069": 1,
+    "EX2830": 2,
+    "EX3671": 2,
+    "EX3073": 7,
+    "EX3791": 39,
+    "EX3670": 63,
+    "EX2882": 1,
+    "EX3780": 33,
+    "EX2565": 216,
+    "EX1998": 12,
+    "EX0211": 1,
+    "CV0016": 2,
+    "NL0002": 25,
+    "CK3000": 5,
+    "PA1019": 3,
+    "PR1014": 1
+  },
+  "source_commit": "c8df819ae6b96f1bc645b2d03b9e7714d8a9117e",
+  "base_hardware_tag": "crt-stage4a-hw-20261103",
+  "tested_source_hashes_unchanged": true,
+  "constraints_unchanged_from_stage4a": true,
+  "original_stage4b_hardware_test_status": "failed_pending_fix",
+  "warning_notes": [
+    "Existing PLL VCO and clock relationship/address-width warnings remain; see full build log and unchanged SDC."
+  ]
+}

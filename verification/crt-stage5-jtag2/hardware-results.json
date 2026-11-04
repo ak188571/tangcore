@@ -1,0 +1,25 @@
+{
+  "date_jst": "2026-11-03",
+  "hardware_test_status": "failed_monitor_startup_no_video_signal",
+  "firmware_commit": "c166944ba5bc6367d9cb3e0387455fd3f88bc51f",
+  "firmware_sha256": "219ab10e8af59e2f27d63320b1d0478345cafaf04b1eece3b135f65cba798603",
+  "user_reports": [
+    "正常に起動しない。画面に「信号なし」と表示される",
+    "電源投入直後から一覧も出ない"
+  ],
+  "diagnostic_volume_file": "/crt-boot.log",
+  "diagnostic_phase": "program-failed",
+  "diagnostic_image": "sd:cores/console138k/monitor.bin",
+  "diagnostic_id": "0x0001081b",
+  "diagnostic_first_status": "0x00000622",
+  "diagnostic_final_status": "0x00000622",
+  "diagnostic_usercode": "0x00000000",
+  "diagnostic_verify_attempts": 3,
+  "diagnostic_poll_mask": "0x00000080",
+  "diagnostic_poll_expected": "0x00000000",
+  "diagnostic_poll_status": "0x00000020",
+  "interpretation": "Monitor programming verification failed before the menu. DONE is absent and bad-command bit is set. This is an additional regression in the diagnostic version; the earlier NES-only failure still has no established root cause.",
+  "recovery_target": "crt-stage4b-hw-20261103",
+  "persistence_hardware_checks": "not reached",
+  "completion_tag_created": false
+}

@@ -1,0 +1,22 @@
+{
+  "completed_at": "2026-11-04T18:12:16.365770+09:00",
+  "verified_total_files": 64,
+  "changed_files": [
+    "crt/01-ebbb19bf-0000000000006010.b"
+  ],
+  "pac_man_latest_record": {
+    "file": "crt/01-ebbb19bf-0000000000006010.b",
+    "generation": 4,
+    "kind": 0,
+    "value": 23,
+    "settings": "ON/STRONG/STANDARD",
+    "record_crc32": "fc0c9d51",
+    "sha256": "e44346fdad8a75305c418528e4f94f3b4f7b7f0e711fbc48449d457a2efba276"
+  },
+  "four_record_crc_key_generation_verified": true,
+  "other_63_files_and_all_attributes_unchanged": true,
+  "defaults_file_unchanged_by_firmware": true,
+  "original_csv_unchanged": true,
+  "one_save_advanced_one_generation": true,
+  "cancelled_reset_previews_did_not_write": true
+}

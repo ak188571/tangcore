@@ -1,0 +1,50 @@
+{
+  "date_jst": "2026-11-04",
+  "hardware_test_status": "all_requested_stage5d_hardware_checks_passed_current_console138k_nes_setup",
+  "firmware_commit": "42359d6976edf98089bdbc91ac8725fce2fd0bef",
+  "firmware_sha256": "9609a2dabb64f1e5c1fff3caf3622680b5c73487c0867eed8ffd4e13b69996e7",
+  "reports": [
+    {
+      "user_report": "1-3正常",
+      "phase": "A: no settings records",
+      "scope": "Japanese NES list/order, Dr.Mario and Pac-Man startup/video/audio/controls, stage5d and ROM IDs, CSV/default settings, STORE MISSING and FRAME ACK"
+    },
+    {
+      "user_report": "1-2正常",
+      "phase": "A: no settings records",
+      "scope": "Dr.Mario adjusted STRONG/STRONG retained across OSD close/reopen, relaunch restores CSV ON/WEAK/STANDARD; ROM ID/INITIAL CSV/STORE MISSING/FRAME ACK normal"
+    },
+    {
+      "user_report": "1-3正常",
+      "phase": "B: synthetic records",
+      "scope": "Japanese list/order and Dr.Mario/Pac-Man launch/video/audio/controls; newest generation2 override ON/STRONG/WEAK INITIAL USER STORE USER; corrupt record rejected with DEFAULT all OFF STORE BAD SAVE; correct ROM IDs and FRAME ACK"
+    },
+    {
+      "user_report": "1-3正常",
+      "phase": "B: reopen/relaunch, OSD regression and normal power cycle",
+      "scope": "Adjusted WEAK/STRONG retained on OSD reopen; relaunch restores saved ON/STRONG/WEAK; all five positions, input blocking/release wait, OSD1 exclusion/centering normal; after normal power cycle Dr.Mario USER and Pac-Man BAD SAVE fallback, FRAME ACK, video/audio/controls normal"
+    }
+  ],
+  "checks": {
+    "japanese_nes_list_and_order": true,
+    "dr_mario_launch_video_audio_controls": true,
+    "stage5d_identifier": true,
+    "dr_mario_crc_7623dffd": true,
+    "dr_mario_csv_on_weak_standard_store_missing_frame_ack": true,
+    "osd1_return_and_pac_man_launch": true,
+    "pac_man_video_audio_controls": true,
+    "pac_man_crc_ebbb19bf": true,
+    "pac_man_all_off_default_store_missing_frame_ack": true,
+    "phase_a_same_game_adjusted_values_retained_on_reopen": true,
+    "phase_a_relaunch_restores_csv": true,
+    "phase_b_newest_saved_override_restored": true,
+    "phase_b_corrupt_record_fallback": true,
+    "phase_b_reopen_relaunch_and_power_cycle": true,
+    "phase_b_osd_positions_input_and_mutual_exclusion": true,
+    "phase_b_sd_unchanged_after_test": true,
+    "phase_b_test_records_removed_after_preservation": true
+  },
+  "limitations": "Confirmed on current Console138K/NES with the two recorded ROMs. Firmware writes, Reset UI and defaults files remain unimplemented. Tombstones, I/O errors, schema/generation conflicts and other-volume separation are host-tested, not hardware-tested. Earlier initial stage5 boot-failure root cause remains undetermined.",
+  "validation_tag": "crt-stage5d-hw-20261104",
+  "post_test_sd_record": "post-test-sd-verification.json"
+}

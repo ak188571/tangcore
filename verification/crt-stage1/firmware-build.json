@@ -1,0 +1,61 @@
+{
+  "target": "console138k",
+  "steps": [
+    {
+      "step": "configure",
+      "exit_code": 0,
+      "seconds": 0.92,
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "-S",
+        "D:/Users/foobaris/CODEX~1/CHATGP~1/G-P-6A~1/CRT-OS~1/FIRMWA~1",
+        "-B",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-osd2-20261101\\firmware-bl616\\build-console138k-crt-stage1",
+        "-G",
+        "MSYS Makefiles",
+        "-DCMAKE_MAKE_PROGRAM=C:/msys64/usr/bin/make.exe",
+        "-DCROSS_COMPILE=D:/Users/foobaris/Documents/Gowin/tangcore/xuantie-gcc-riscv-v2.6.1-windows-x86_64/bin/riscv64-unknown-elf-",
+        "-DTANG_BOARD=console138k",
+        "-DCHIP=bl616",
+        "-DBOARD=bl616dk",
+        "-DUI16_SYSTEM_MENU=ON",
+        "-DUI16_SD_FONT=ON",
+        "-DUI16_UART_SELFTEST=OFF",
+        "-DCONFIG_DEBUG=y",
+        "-DCONFIG_ROMAPI=y",
+        "-DCONFIG_USB_HS=y",
+        "-DCONFIG_TLSF=y",
+        "-DCONFIG_COREDUMP=y",
+        "-DCONFIG_GCC_OPTIMISE_LEVEL=-Os"
+      ]
+    },
+    {
+      "step": "compile",
+      "exit_code": 0,
+      "seconds": 3.99,
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "--build",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-osd2-20261101\\firmware-bl616\\build-console138k-crt-stage1",
+        "--parallel",
+        "8"
+      ]
+    },
+    {
+      "step": "combine",
+      "exit_code": 0,
+      "seconds": 2.03,
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "--build",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-osd2-20261101\\firmware-bl616\\build-console138k-crt-stage1",
+        "--target",
+        "combine"
+      ]
+    }
+  ],
+  "device_programming_performed": false,
+  "bytes": 220416,
+  "sha256": "5582848b795e7ac17954f43c21a5de9a43bf4337a77e669f5808bcb9d596e728",
+  "source_commit": "b77930d60db63e675a855b29f9f076fa556d108f"
+}

@@ -1,0 +1,72 @@
+{
+  "target": "console138k",
+  "steps": [
+    {
+      "step": "configure",
+      "exit_code": 0,
+      "seconds": 1.49,
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "-S",
+        "D:/Users/foobaris/CODEX~1/CHATGP~1/G-P-6A~1/CRT-OS~1/FIRMWA~1",
+        "-B",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-osd2-20261101\\firmware-bl616\\build-console138k-crt-stage1",
+        "-G",
+        "MSYS Makefiles",
+        "-DCMAKE_MAKE_PROGRAM=C:/msys64/usr/bin/make.exe",
+        "-DCROSS_COMPILE=D:/Users/foobaris/Documents/Gowin/tangcore/xuantie-gcc-riscv-v2.6.1-windows-x86_64/bin/riscv64-unknown-elf-",
+        "-DTANG_BOARD=console138k",
+        "-DCHIP=bl616",
+        "-DBOARD=bl616dk",
+        "-DUI16_SYSTEM_MENU=ON",
+        "-DUI16_SD_FONT=ON",
+        "-DUI16_UART_SELFTEST=OFF",
+        "-DCONFIG_DEBUG=y",
+        "-DCONFIG_ROMAPI=y",
+        "-DCONFIG_USB_HS=y",
+        "-DCONFIG_TLSF=y",
+        "-DCONFIG_COREDUMP=y",
+        "-DCONFIG_GCC_OPTIMISE_LEVEL=-Os"
+      ]
+    },
+    {
+      "step": "compile",
+      "exit_code": 0,
+      "seconds": 8.3,
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "--build",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-osd2-20261101\\firmware-bl616\\build-console138k-crt-stage1",
+        "--parallel",
+        "8"
+      ]
+    },
+    {
+      "step": "combine",
+      "exit_code": 0,
+      "seconds": 2.22,
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "--build",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-osd2-20261101\\firmware-bl616\\build-console138k-crt-stage1",
+        "--target",
+        "combine"
+      ]
+    }
+  ],
+  "device_programming_performed": false,
+  "bytes": 221136,
+  "sha256": "be73e95967114f96d0c4aa829c9cef125c4756c90191bdbdde87b9a604c7d9a0",
+  "source_commit": "4708296db351b369587cfb185e5c444a4f84c249",
+  "source_hashes": {
+    "firmware-bl616/ui/menu_manager.h": "7fdb0f3a12c91aaf032e678bf4e53ae9706cec76949ad0f763c990859b01fe49",
+    "firmware-bl616/ui/ui16_crt.h": "1950c571dded2010ffbdbc4ebb8a3a73583dc152220094e57cb7a9f5328d428e",
+    "firmware-bl616/ui/ui16_crt.cpp": "fb019458181eaa42ff80438a6233f9fd1a6bbc968c7dc3f62aa4259aca62ecac",
+    "firmware-bl616/ui/ui16_osd_menu.cpp": "d0aa84527eead91c49cae37df23e664afc514f764db921a7f6b5e0cac83448da",
+    "firmware-bl616/tests/ui16/crt_test.cpp": "0ac737cabf1a8baf6cdd94ef84250e77bd2aeb7a50670f12a365764cdc440e96",
+    "firmware-bl616/tests/ui16/osd_test.cpp": "3009bd91e630946086c48f868f9cc458958520e6269ea08e679528cc9e31c07a",
+    "firmware-bl616/tools/ui16/test_crt.sh": "e9b969447b76228ec1db9a8f9d10133d2ba1d48e83aecc2b803a9aa7ca7ecbd0",
+    "firmware-bl616/tools/ui16/test_osd.sh": "20bc06669d24839b0be9cf9d8edf3fd112688dc422308692206bf4b85281f585",
+    "firmware-bl616/tools/ui16/test_launch.sh": "c135c79a9914bfffed567e6f52783372198a8af96c1d6ca6e3e629d6fa429f24"
+  }
+}

@@ -1,0 +1,22 @@
+[  4%] Built target fatfs
+[  5%] Building CXX object CMakeFiles/app.dir/ui/ui16_crt.cpp.obj
+[ 14%] Built target std
+[ 20%] Built target utils
+[ 20%] Building CXX object CMakeFiles/app.dir/ui/ui16_crt_store.cpp.obj
+[ 25%] Built target freertos
+[ 27%] Built target mm
+[ 54%] Built target libc
+[ 60%] Built target cherryusb
+[ 82%] Built target lhal
+[ 82%] Linking CXX static library build_out/lib/libapp.a
+[ 99%] Built target app
+[100%] Linking CXX executable build_out/tangcore_bl616.elf
+Memory region         Used Size  Region Size  %age Used
+fw_header_memory:         256 B         4 KB      6.25%
+      xip_memory:      217332 B         4 MB      5.18%
+       ram_psram:          0 GB         4 MB      0.00%
+     ram_nocache:       25168 B       447 KB      5.50%
+      ram_memory:      136648 B       447 KB     29.85%
+        ram_wifi:          0 GB        32 KB      0.00%
+Generate D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-console138k-crt-stage1/build_out/tangcore_bl616.bin
+[100%] Built target tangcore_bl616.elf

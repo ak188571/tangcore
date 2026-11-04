@@ -1,0 +1,94 @@
+{
+  "date_jst": "2026-11-04",
+  "hardware_test_status": "all_requested_stage5g_hardware_checks_passed_current_console138k_nes_setup",
+  "firmware_commit": "8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381",
+  "firmware_sha256": "27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f",
+  "reports": [
+    {
+      "user_report": "1-3正常",
+      "phase": "Initial boot with no defaults file",
+      "scope": "Japanese NES list/order, both games launch/video/audio/controls; STAGE5G and DEFAULTS MISSING; Dr.Mario CSV ON/WEAK/STANDARD and Pac-Man builtin OFF; IDs/STORE RESET/SAVED/FRAME ACK and OSD1 return normal"
+    },
+    {
+      "user_report": "1-3正常。項目の順序はOSDに表示される順序に揃えてください",
+      "phase": "System defaults initial boot and CSV priority",
+      "scope": "Japanese NES list/order, Dr.Mario and Pac-Man launch/video/audio/controls normal; Dr.Mario retains CSV ON/WEAK/STANDARD; Pac-Man uses SYSTEM ON/STANDARD/WEAK; STAGE5G, ROM IDs, STORE RESET, SAVE SAVED, DEFAULTS OK and FRAME ACK confirmed. No setting change, Reset or SAVE requested."
+    },
+    {
+      "user_report": "1-4正常",
+      "phase": "User override, system Reset preview cancellation and OSD regression",
+      "scope": "Pac-Man manually saved ON/STRONG/STANDARD once; SAVE stayed open and SAVED; relaunch restored USER/USER and values with FRAME ACK. Reset preview selected ON/STANDARD/WEAK; both X and Y discarded it and restored saved user values. Five OSD positions including new DEFAULTS row, OSD1 exclusion/centering, input blocking and all-button release wait passed. No extra SAVE requested; PC verification of generation and file integrity remains pending."
+    },
+    {
+      "user_report": "1-4正常",
+      "phase": "Global inheritance, user priority, Reset SAVE and power cycle",
+      "scope": "Japanese list/order and both games video/audio/controls normal. Pac-Man initially retained USER ON/STRONG/STANDARD above global defaults. Reset preview inherited global ON/WEAK/STRONG from blank NES row; one SAVE stayed open and SAVED. Relaunch and power cycle restored GLOBAL/RESET/SAVED with ON/WEAK/STRONG, expected ROM ID, DEFAULTS OK and FRAME ACK. Dr.Mario retained CSV ON/WEAK/STANDARD, RESET/SAVED, expected ROM ID, DEFAULTS OK and FRAME ACK. PC verification of the new Reset generation and unchanged files remains pending."
+    },
+    {
+      "user_report": "1-3正常",
+      "phase": "Invalid unselected-system row rejects the entire defaults file",
+      "scope": "Japanese NES list/order and both games launch/video/audio/controls normal. Dr.Mario retained SAVED/CSV/ON/WEAK/STANDARD/RESET/FRAME ACK/ROM ID 7623dffd with DEFAULTS BAD FILE. Pac-Man used SAVED/DEFAULT/OFF/OFF/OFF/RESET/FRAME ACK/ROM ID ebbb19bf with DEFAULTS BAD FILE, rejecting otherwise-valid global and NES rows too. No setting change, Reset or SAVE requested."
+    },
+    {
+      "user_report": "1-4正常",
+      "phase": "User save and Reset under invalid defaults",
+      "scope": "Dr.Mario manually saved ON/STRONG/WEAK once; SAVE stayed open and SAVED, then relaunch restored USER/USER, values, expected ROM ID, DEFAULTS BAD FILE and FRAME ACK. Reset preview used CSV ON/WEAK/STANDARD; both X/Y discarded it and restored saved user values. Reset then SAVE once and relaunch restored CSV/RESET/SAVED and recommended values with BAD FILE/FRAME ACK. Pac-Man repeated Reset retained SAVED/DEFAULT/all OFF/RESET/expected ROM ID/BAD FILE/FRAME ACK with no SAVE, as the same Reset mode was already persisted. Both games video/audio/controls normal. Record generations and unrelated-file integrity await final PC audit."
+    },
+    {
+      "user_report": "1-3正常",
+      "phase": "Final boot after test defaults removal",
+      "scope": "Japanese NES list/order and both games launch/video/audio/controls normal. Dr.Mario restored SAVED/CSV/ON/WEAK/STANDARD/RESET/FRAME ACK/ROM ID 7623dffd/DEFAULTS MISSING. Pac-Man restored SAVED/DEFAULT/OFF/OFF/OFF/RESET/FRAME ACK/ROM ID ebbb19bf/DEFAULTS MISSING. No value change, Reset or SAVE requested."
+    }
+  ],
+  "checks": {
+    "initial_missing_defaults_boot_csv_builtin_and_existing_reset_records": true,
+    "system_defaults_applied_without_game_csv": true,
+    "game_csv_overrides_system_defaults": true,
+    "saved_user_overrides_system_and_global_defaults": true,
+    "reset_preview_system_and_x_y_cancel_user": true,
+    "blank_system_inherits_global": true,
+    "reset_save_power_cycle_follows_global": true,
+    "invalid_nonselected_row_rejects_entire_defaults_file": true,
+    "bad_defaults_preserve_game_csv_and_user_values": true,
+    "reset_under_bad_defaults_uses_csv_or_builtin": true,
+    "osd_positions_exclusion_input_and_release": true,
+    "defaults_read_only_and_unrelated_file_integrity": true,
+    "test_defaults_removed_original_csv_attributes_restored": true,
+    "final_missing_defaults_boot_recommendations_restored": true,
+    "final_sd_record_crc_and_baseline_integrity": true,
+    "saved_user_overrides_system_defaults": true,
+    "system_trial_defaults_read_only_and_other_files_unchanged": true,
+    "system_trial_saved_record_crc_generation_and_cancel_no_write": true,
+    "game_csv_overrides_global_defaults": true,
+    "global_trial_defaults_read_only_and_other_files_unchanged": true,
+    "global_trial_reset_record_crc_and_generation": true,
+    "bad_defaults_preserve_game_csv_and_builtin_fallback": true,
+    "bad_defaults_reset_x_y_cancel_user": true,
+    "repeated_builtin_reset_preview_remains_saved": true
+  },
+  "limitations": "Verified on current Console138K/NES and two recorded ROMs. Eleven host scripts and firmware build passed. System/global/blank inheritance, CSV/user priorities, Reset preview/SAVE/X/Y cancellation, OSD layout/input, whole-file rejection and CSV/user/builtin fallback, staged SD audits and test-file cleanup plus final normal boot passed. Other cores and USB-volume hardware behavior and storage I/O fault classes are not newly hardware-validated. Stage5e/5f contain prior denied-write/recovery tests. No raw-sector identity claim; initial monolithic stage5 boot-failure root cause remains undetermined.",
+  "system_fixture_installation_record": "system-fixture-installation.json",
+  "test_instruction_field_order": [
+    "SAVE status",
+    "INITIAL",
+    "CRT ENABLE",
+    "H BLUR",
+    "SCANLINE",
+    "STORE",
+    "APPLY",
+    "ROM ID",
+    "SAVE action",
+    "RESET TO RECOMMENDED",
+    "DEFAULTS",
+    "POS"
+  ],
+  "system_trial_sd_audit_record": "system-trial-sd-audit.json",
+  "global_fixture_installation_record": "global-fixture-installation.json",
+  "global_trial_sd_audit_record": "global-trial-sd-audit.json",
+  "invalid_fixture_installation_record": "invalid-fixture-installation.json",
+  "final_sd_audit_record": "final-sd-audit.json",
+  "test_defaults_removal_record": "test-defaults-removal.json",
+  "completed_at": "2026-11-04T20:30:27.753881+09:00",
+  "validation_tag": "crt-stage5g-hw-20261104",
+  "stage5_nes_validation_tag": "crt-stage5-nes-hw-20261104"
+}

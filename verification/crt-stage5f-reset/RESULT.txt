@@ -1,0 +1,7 @@
+Stage5f Reset to Recommended: implementation, 10 host scripts, firmware build, deployment/full-flash readback, all requested hardware checks and final SD audit PASS.
+FWe82e5ea61d318b9511bf5ed76e2e8cc790458cdf SHA44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b.
+Local validation tag: crt-stage5f-hw-20261104.
+Reset previews launch recommendation; explicit SAVE writes kind1/value0 tombstone; X/Y cancels unsaved values and Reset intent. Equal-value Reset and manual adjustment back to kind0 verified.
+Changed CSV recommendation followed without touching tombstone, original CSV restored. Read-only Reset FAILED/stay-open/retry/cancel and original attribute recovery/save recovery verified.
+Final SD63 freshly backed up; Dr.Mario b generation8 and Pac-Man a generation3 kind1/value0. Recovery SAVE increments once; two unchanged SAVEs add none. Other slots/original59/CSV/all attributes unchanged.
+Records retained. No new FPGA build. Other fault classes host-only. Defaults excluded; overall stage5 incomplete.

@@ -1,0 +1,26 @@
+{
+  "completed_at": "2026-11-03T21:56:36.219671+09:00",
+  "hardware_tag": "crt-stage4b-hw-20261103",
+  "firmware_sha256": "be73e95967114f96d0c4aa829c9cef125c4756c90191bdbdde87b9a604c7d9a0",
+  "full_flash_sha256": "f1bbe0c2f3e001e2deec837b6683100d86c684d13f92092c87975f05b395a0ea",
+  "full_flash_byte_identical_to_accepted_stage4b": true,
+  "custom_region_bytes": 262144,
+  "custom_address": "0x40000",
+  "outside_custom_unchanged": true,
+  "original_two_column_csv_restored": true,
+  "csv_sha256": "4f5a576757f68ebad58f9b5b20ef42fc7449470a0fd79076c0897034ca1e30fe",
+  "sd_files_count": 59,
+  "sd_files_unchanged_except_csv": 58,
+  "diagnostic_log_preserved": true,
+  "nes_monitor_rom_unchanged": true,
+  "sdk_settings_restored": true,
+  "prewrite_flash_snapshot_origin": "reused_verified_post_stage5_jtag2_readback_not_a_new_prewrite_read",
+  "normal_boot_hardware_check": "recovery_confirmed_by_user",
+  "readback_connection": {
+    "first_mode2_read_failed": true,
+    "mode0_read_only_retry_succeeded": true,
+    "reprogrammed_after_verified_restore": false
+  },
+  "boot_diagnostic_sha256": "b2b08b2f592b9e8e3cc5c14fa2093b90d1ccce6120fdb50e4a415e16449f7f5d",
+  "normal_boot_hardware_record": "hardware-results.json"
+}

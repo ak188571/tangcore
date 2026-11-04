@@ -1,0 +1,31 @@
+make: Entering directory '/d/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/nestang/build-crt/config'
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o C:/msys64/ucrt64/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o C:/msys64/ucrt64/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o C:/msys64/ucrt64/share/verilator/include/verilated_threads.cpp
+python3 C:/msys64/ucrt64/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtb_crt_config.cpp Vtb_crt_config___024root__0.cpp Vtb_crt_config__main.cpp Vtb_crt_config___024root__Slow.cpp Vtb_crt_config___024root__0__Slow.cpp Vtb_crt_config__Syms__Slow.cpp > Vtb_crt_config__ALL.cpp
+g++ -Os  -I.  -MMD -IC:/msys64/ucrt64/share/verilator/include -IC:/msys64/ucrt64/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -DVM_TRACE_SAIF=0 -DVM_VPI=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -BC:/msys64/ucrt64/bin/ -std=c++17 -DVL_TIME_CONTEXT   -fcoroutines -c -o Vtb_crt_config__ALL.o Vtb_crt_config__ALL.cpp
+C:/msys64/ucrt64/share/verilator/include/verilated.cpp:78:10: warning: 'STDOUT_FILENO' redefined
+   78 | # define STDOUT_FILENO _fileno(stdout)
+      |          ^~~~~~~~~~~~~
+In file included from C:/msys64/ucrt64/include/locale.h:12,
+                 from C:/msys64/ucrt64/include/c++/16.2.0/clocale:47,
+                 from C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/c++locale.h:41,
+                 from C:/msys64/ucrt64/include/c++/16.2.0/bits/localefwd.h:42,
+                 from C:/msys64/ucrt64/include/c++/16.2.0/string:48,
+                 from C:/msys64/ucrt64/share/verilator/include/verilatedos.h:653,
+                 from C:/msys64/ucrt64/share/verilator/include/verilated.cpp:51:
+C:/msys64/ucrt64/include/stdio.h:56:9: note: this is the location of the previous definition
+   56 | #define STDOUT_FILENO   1
+      |         ^~~~~~~~~~~~~
+C:/msys64/ucrt64/share/verilator/include/verilated.cpp:79:10: warning: 'STDERR_FILENO' redefined
+   79 | # define STDERR_FILENO _fileno(stderr)
+      |          ^~~~~~~~~~~~~
+C:/msys64/ucrt64/include/stdio.h:57:9: note: this is the location of the previous definition
+   57 | #define STDERR_FILENO   2
+      |         ^~~~~~~~~~~~~
+g++    verilated.o verilated_timing.o verilated_threads.o Vtb_crt_config__ALL.a   -BC:/msys64/ucrt64/bin/ -mconsole  -pthread -lpthread -latomic   -o Vtb_crt_config
+rm Vtb_crt_config__ALL.verilator_deplist.tmp
+make: Leaving directory '/d/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/nestang/build-crt/config'
+- V e r i l a t i o n   R e p o r t: Verilator 5.050 2026-07-01 rev vUNKNOWN-built20260702
+- Verilator: Built from 0.069 MB sources in 4 modules, into 0.078 MB in 6 C++ files needing 0.001 MB
+- Verilator: Walltime 4.330 s (elab=0.001, cvt=0.009, bld=4.305); cpu 0.000 s on 4 threads; allocated 18.043 MB

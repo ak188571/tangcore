@@ -1,0 +1,16 @@
+{
+  "target": "Console138K NES",
+  "exit_code": 0,
+  "source_commit": "39af62a9042c5561ad8cf520471cff7f84519a2b",
+  "timing": {
+    "Numbers of Setup Violated Endpoints": 0,
+    "Numbers of Hold Violated Endpoints": 0
+  },
+  "artifact_bytes": 4611678,
+  "artifact_sha256": "f273d30b546403e7e330803f0be822b740760ba002d5955dec5b69e5e64189f0",
+  "device_programming_performed": false,
+  "logic": 40777,
+  "registers": 19533,
+  "bsram": 33,
+  "warnings": "Existing PLL VCO and clock-relationship warnings remain. New EX2478 warnings concern output declaration initializers; explicit reset assignments remain in both clock domains. Hardware validation is pending."
+}

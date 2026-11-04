@@ -1,0 +1,2 @@
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/ui16_rom_id.cpp:5:15:uint32_t ui16_rom_crc(uint32_t, const void*, std::size_t)	0	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/ui16_rom_id.cpp:14:17:Ui16RomIdentity ui16_identify_rom(int, const char*, FIL&, void*, UINT, void (*)())	96	static

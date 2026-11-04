@@ -1,0 +1,15 @@
+-- Project SDK Version: 2.0.0
+LINK IN FLASH
+-- [register library : fatfs], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/fs/fatfs
+-- [register library : libc], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/libc
+-- [register library : mm], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/mm
+-- [register library : freertos], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/os/freertos
+-- [register library : cherryusb], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/usb/cherryusb
+-- [register library : utils], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/utils
+-- [register library : lhal], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal
+-- [register extern library : libcsi_xt900p32f_dsp], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal
+-- [register extern library : libpka], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal
+-- [register library : std], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/soc/bl616/std
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-console138k-crt-stage1

@@ -1,0 +1,14 @@
+UI16 font menu: CRC8 rows, RAM glyph cache, FPGA reload, pre-BLANK I/O fault and corrupt pack fallback OK
+test_bad_blank_disables_font_and_protected_rows (__main__.ProtocolTests.test_bad_blank_disables_font_and_protected_rows) ... ok
+test_bad_font_crc_holds_blank (__main__.ProtocolTests.test_bad_font_crc_holds_blank) ... ok
+test_bad_row_crc_holds_blank (__main__.ProtocolTests.test_bad_row_crc_holds_blank) ... ok
+test_bad_show_crc_holds_blank (__main__.ProtocolTests.test_bad_show_crc_holds_blank) ... ok
+test_frame_length_and_crc (__main__.ProtocolTests.test_frame_length_and_crc) ... ok
+test_missing_row_holds_blank (__main__.ProtocolTests.test_missing_row_holds_blank) ... ok
+test_partial_row_never_satisfies_barrier (__main__.ProtocolTests.test_partial_row_never_satisfies_barrier) ... ok
+test_real_sender_packets (__main__.ProtocolTests.test_real_sender_packets) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.008s
+
+OK

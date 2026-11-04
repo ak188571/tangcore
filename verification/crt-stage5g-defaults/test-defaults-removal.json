@@ -1,0 +1,21 @@
+{
+  "completed_at": "2026-11-04T20:10:28.067970+09:00",
+  "removed_file": "crt/defaults.tsv",
+  "removed_file_sha256": "6577f21bd9b7a34246e772966ad8e5bdfe523c3f7483a82eea10ee5b76419c1a",
+  "backup_verified_before_removal": true,
+  "only_new_test_file_removed": true,
+  "originally_absent_defaults_restored": true,
+  "recursive_removal": false,
+  "verified_total_files": 63,
+  "all_other_files_preserved": true,
+  "original_59_files_and_csv_unchanged": true,
+  "all_original_attributes_restored": true,
+  "both_latest_reset_records_preserved": true,
+  "dr_mario_generation": 10,
+  "pac_man_generation": 5,
+  "record_crc_key_generation_verified": true,
+  "firmware_reprogrammed": false,
+  "final_normal_boot_pending": false,
+  "final_normal_boot_user_report": "1-3正常",
+  "final_hardware_record": "hardware-results.json"
+}

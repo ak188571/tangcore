@@ -1,0 +1,28 @@
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:78:12:int jtag_clock(bool, bool, bool)	32	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:231:12:int flushTMS(bool)	48	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:251:13:void jtag_toggleClk(int)	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:268:13:void setTMS(unsigned char)	32	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:283:13:void set_state(tapState_t)	48	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:276:13:void go_test_logic_reset()	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:470:12:int read_write(const uint8_t*, unsigned char*, int, char)	64	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:514:12:int shiftDR_end(const uint8_t*, unsigned char*, int, tapState_t)	32	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:144:6:void jtag_enter_gpio_out_mode()	0	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:154:6:void jtag_exit_gpio_out_mode()	0	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:163:6:void jtag_writeTDI_msb_first_gpio_out_mode(const uint8_t*, int, bool)	0	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:602:6:bool send_command(uint8_t)	32	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:609:17:uint32_t readReg32(uint8_t)	32	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:632:6:bool pollFlag(uint32_t, uint32_t)	48	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:647:6:bool enableCfg()	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:653:6:bool disableCfg()	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:660:6:void sendClkUs(unsigned int)	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:675:5:int detectChain(int)	48	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:712:6:bool eraseSRAM()	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:771:6:bool writeSRAM_start()	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:795:6:bool writeSRAM_send(const uint8_t*, uint32_t, bool)	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:806:6:bool writeSRAM_end()	48	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:838:6:void fpga_boot_trace(const char*, const char*)	1152	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:865:6:void fpgaStatus()	32	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:869:6:void fpgaReset()	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:876:6:void enable_jtag_pins()	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:884:6:void disable_jtag_pins()	16	static
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:893:6:bool fpga_program(const char*)	80	static

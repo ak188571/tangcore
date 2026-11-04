@@ -1,0 +1,44 @@
+[  2%] Built target mm
+[  3%] Building CXX object CMakeFiles/app.dir/fpga/programmer.cpp.obj
+[ 27%] Built target fatfs
+[ 29%] Built target lhal
+[ 56%] Built target libc
+[ 62%] Built target cherryusb
+[ 71%] Built target std
+[ 76%] Built target freertos
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:173: warning: "GPIO_DRV_3" redefined
+  173 | #define GPIO_DRV_3       (3<<2)
+      | 
+In file included from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/utils/utils.h:7,
+                 from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:16:
+D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal/include/bflb_gpio.h:189: note: this is the location of the previous definition
+  189 | #define GPIO_DRV_3                           (3 << GPIO_DRV_SHIFT)
+      | 
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:173: warning: "GPIO_DRV_3" redefined
+  173 | #define GPIO_DRV_3       (3<<2)
+      | 
+In file included from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/utils/utils.h:7,
+                 from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:16:
+D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal/include/bflb_gpio.h:189: note: this is the location of the previous definition
+  189 | #define GPIO_DRV_3                           (3 << GPIO_DRV_SHIFT)
+      | 
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp: In function 'int jtag_writeTDI(const uint8_t*, uint8_t*, int, bool)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:143:25: warning: comparison of integer expressions of different signedness: 'uint32_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+  143 |  for (uint32_t i = 0; i < len; i++) {
+      |                       ~~^~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:144:17: warning: comparison of integer expressions of different signedness: 'uint32_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+  144 |   if (end && (i == len - 1)) {
+      |               ~~^~~~~~~~~~
+[ 82%] Built target utils
+[ 82%] Linking CXX static library build_out/lib/libapp.a
+[ 99%] Built target app
+[100%] Linking CXX executable build_out/tangcore_bl616.elf
+Memory region         Used Size  Region Size  %age Used
+fw_header_memory:         256 B         4 KB      6.25%
+      xip_memory:      217156 B         4 MB      5.18%
+       ram_psram:          0 GB         4 MB      0.00%
+     ram_nocache:       25168 B       447 KB      5.50%
+      ram_memory:      136648 B       447 KB     29.85%
+        ram_wifi:          0 GB        32 KB      0.00%
+Generate D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-console138k-crt-stage1/build_out/tangcore_bl616.bin
+[100%] Built target tangcore_bl616.elf

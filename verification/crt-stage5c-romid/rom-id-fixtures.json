@@ -1,0 +1,18 @@
+[
+  {
+    "path": "nes/Dr. Mario (Japan, USA) (Rev 1).nes",
+    "system": 1,
+    "volume": "sd:",
+    "bytes": 65552,
+    "crc32": "7623dffd",
+    "sha256": "479059e174013a743a4b319cc5b39d8b1fe452e303e2655af6a58bf86a4e8219"
+  },
+  {
+    "path": "nes/Pac-Man (Japan) (Rev 2).nes",
+    "system": 1,
+    "volume": "sd:",
+    "bytes": 24592,
+    "crc32": "ebbb19bf",
+    "sha256": "16686937d27ce2340cdb409c4547381e16b504df1fb49aa8f05ee14a2a63567e"
+  }
+]

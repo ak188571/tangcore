@@ -1,0 +1,22 @@
+{
+  "completed_at": "2026-11-04T12:09:28.525863+09:00",
+  "protected_files": [
+    {
+      "file": "crt/01-7623dffd-0000000000010010.a",
+      "original_attributes": 32,
+      "test_attributes": 33,
+      "sha256": "6e3573f7b25ccce21f2cd6d737469b103c333e491672171b2c7b407e46ccec58"
+    },
+    {
+      "file": "crt/01-7623dffd-0000000000010010.b",
+      "original_attributes": 32,
+      "test_attributes": 33,
+      "sha256": "7dba2724fac72396bb7179b296233c318c58343007a6e75aed90142790712ac2"
+    }
+  ],
+  "all_63_file_contents_unchanged": true,
+  "all_other_file_attributes_unchanged": true,
+  "firmware_reprogrammed": false,
+  "attribute_restoration_pending": true,
+  "hardware_failure_test_status": "pending"
+}

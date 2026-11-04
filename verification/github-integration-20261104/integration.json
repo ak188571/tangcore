@@ -1,0 +1,48 @@
+{
+  "prepared_at": "2026-11-04T20:59:45.795405+09:00",
+  "target_branch": "tangcore-integrated",
+  "method": "Two-parent merge commits; submodule references advanced to their integration commits",
+  "repositories": {
+    "firmware": {
+      "url": "https://github.com/ak188571/firmware-bl616.git",
+      "feature_branch": "crt-stage5g-defaults-20261104",
+      "feature": "3d3f429625a3684a79d59ea8bbd25caf36e61606",
+      "previous_integrated": "6f5e0484c8692eed2b25e3672cbe987b89bd0925",
+      "feature_tree": "9573278f27eff27e7f97c20312f9ca9bce45155f",
+      "original_work_head": "8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381",
+      "integrated_commit": "dc5ff3faded02215042ebd4e9cffb7adf480a37d",
+      "integrated_tree": "9573278f27eff27e7f97c20312f9ca9bce45155f",
+      "source_tree_unchanged": true
+    },
+    "nes": {
+      "url": "https://github.com/ak188571/nestang.git",
+      "feature_branch": "crt-osd2-stage1",
+      "feature": "a39e60961d8ac49395676ef7ea41321f01333c5d",
+      "previous_integrated": "724994b64e598edf9d11e8824e45895cc2d851a3",
+      "feature_tree": "a6dbaaff75ddb97d52064c91961de438c308cf5f",
+      "original_work_head": "c8df819ae6b96f1bc645b2d03b9e7714d8a9117e",
+      "integrated_commit": "84b73f76e8a08bdcff45c208349955271bb2d2a1",
+      "integrated_tree": "a6dbaaff75ddb97d52064c91961de438c308cf5f",
+      "source_tree_unchanged": true
+    },
+    "parent": {
+      "url": "https://github.com/ak188571/tangcore.git",
+      "feature_branch": "crt-osd2-stage1",
+      "feature": "c54981127d99132ed7c37ae12f793688fa77b76f",
+      "previous_integrated": "a67003941a26ccc856134f0d9142298d94b34483",
+      "feature_tree": "8c425419d756b6670a59e43cdee062856cf12da8",
+      "original_work_head": "acffc53e41a3d3e0424dbd0b54b1faddbf748ed5"
+    }
+  },
+  "validation": {
+    "firmware_and_nes_trees_identical_to_hardware_validated_sources": true,
+    "host_scripts_passed": 11,
+    "prior_firmware_build_passed": true,
+    "all_requested_stage5g_hardware_checks_passed": true,
+    "new_runtime_code_changes": false,
+    "validation_mode": "Reuse prior tests/build/hardware results after exact tree equality check",
+    "firmware_binary_sha256": "27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f",
+    "hardware_scope": "Current Console138K/NES and two recorded ROMs"
+  },
+  "existing_source_branches_and_validation_tags_preserved": true
+}

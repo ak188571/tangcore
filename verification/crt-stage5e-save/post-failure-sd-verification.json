@@ -1,0 +1,16 @@
+{
+  "verified_at": "2026-11-04T12:33:14.724067+09:00",
+  "verified_total_files": 63,
+  "all_file_contents_unchanged_after_failed_saves": true,
+  "both_protected_records_unchanged": true,
+  "post_test_attributes_match_prepared_state": true,
+  "fresh_post_failure_backup_verified": true,
+  "attribute_restoration_pending": false,
+  "restored_at": "2026-11-04T12:33:48.423107+09:00",
+  "all_file_attributes_restored_to_original": true,
+  "only_dr_mario_two_records_attributes_changed": true,
+  "all_63_file_contents_still_unchanged": true,
+  "firmware_reprogrammed": false,
+  "hardware_successful_save_after_restoration": "confirmed_by_user_1-2_normal",
+  "final_record_verification": "final-sd-verification.json"
+}

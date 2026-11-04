@@ -1,0 +1,10 @@
+CRT UART PASS: real serial packets, frame-applied readback, packet length guard, capability, immediate chord blocking, P1 ownership
+- tests/crt\tb_crt_uart.sv:74: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 314us; walltime 0.032 s; speed 9.976 ms/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 5 MB
+CRT video PASS: RGB/OSD coordinates match pinned baseline pixels=4000000 game=2078212 osd=246720
+- tests/crt\tb_crt_video.sv:42: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 24ms; walltime 1.386 s; speed 17.319 ms/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 5 MB

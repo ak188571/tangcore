@@ -1,0 +1,3 @@
+JTAG TAP PASS: independent 16-state model, MSB stream/chunk boundaries, last-bit exit, next IR/idle transition, empty chunk
+FPGA loader PASS: real loader, success, end/read/short/EOF/open/chain/erase/start/close failures, balanced critical/GPIO/file/allocation cleanup
+FPGA loader PASS: real loader, success, end/read/short/EOF/open/chain/erase/start/close failures, balanced critical/GPIO/file/allocation cleanup

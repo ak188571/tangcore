@@ -1,0 +1,5 @@
+Stage 6 launch tests passed: original paths, single-shot A/B requests, preflight, program/ID/load ordering, failures/recovery/retry, ownership, nested mixed-height selection restore
+Actual main.cpp adapters passed: stat/program/ID timeout/load state, display ownership, unmodified X/Y game HID, OSD chord, neutral packets
+Actual PC image path passed: failed mount/unsupported size rejected, old handle closed, valid image starts
+Actual UI16 main-task branch syntax passed
+Actual popup loop passed: A/B Main Menu, X/Y resume, OSD close, HID source

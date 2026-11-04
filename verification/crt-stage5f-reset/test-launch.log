@@ -1,0 +1,5 @@
+Launch tests passed: original paths, program/ID/load failures and recovery, CSV ordering/selected and nested preset snapshots, absent/invalid-list fallback, mixed-height selection restore
+Actual main.cpp adapters passed: stat/program/ID timeout/load state, display ownership, unmodified X/Y game HID, OSD chord, neutral packets
+Actual PC image path passed: failed mount/unsupported size rejected, old handle closed, valid image starts
+Actual UI16 main-task branch syntax passed
+Actual popup loop passed: A/B Main Menu, X/Y resume, OSD close, HID source
