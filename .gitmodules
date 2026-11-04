@@ -1,12 +1,15 @@
 [submodule "firmware-bl616"]
 	path = firmware-bl616
 	url = ../firmware-bl616.git
+	branch = tangcore-integrated
 [submodule "nestang"]
 	path = nestang
 	url = ../nestang.git
+	branch = tangcore-integrated
 [submodule "snestang"]
 	path = snestang
 	url = ../snestang.git
+	branch = tangcore-integrated
 [submodule "gbatang"]
 	path = gbatang
 	url = https://github.com/ak188571/gbatang.git
@@ -16,6 +19,7 @@
 [submodule "monitor"]
 	path = monitor
 	url = ../monitorcore.git
+	branch = tangcore-integrated
 [submodule "smstang"]
 	path = smstang
 	url = ../smstang.git

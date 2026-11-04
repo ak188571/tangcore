@@ -10,6 +10,10 @@ TangCore is a comprehensive FPGA gaming distribution that brings classic gaming 
 
 Please [file an issue](https://github.com/nand2mario/tangcore/issues) if you run into any problems, like game compatibility and display glitches.
 
+## 開発branch（ak188571版）
+
+`tangcore-integrated`があるrepositoryでは、このbranchを今後の変更の基準にします。対象一覧とsubmoduleの扱いは[開発branchの方針](docs/DEVELOPMENT_BRANCHES.md)を参照してください。
+
 ## 🎮 Supported Systems
 
 <div align="center">
