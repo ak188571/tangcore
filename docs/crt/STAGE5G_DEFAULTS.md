@@ -55,3 +55,9 @@ firmware 227792bytes、SHA256 27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060
 5. POS5位置・OSD1排他・入力遮断/解放待ち、再launch時のsnapshot更新を確認。最後に全SDを新たに退避し、record CRC/key/size/kind/generationと他file不変を照合する。試験用defaults fileは退避して取り外し、元のCSVと原属性を維持する。試験中に作ったuser overrideはResetで推奨追従へ戻して記録する。最終状態で2本の通常起動と推奨値復帰を確認する。
 
 既存defaults fileがあれば上書きせず保全して調査する。file/I/O失敗や他volumeのhost試験成功を実機合格へ読み替えない。現時点で実機は未確認。第5gおよび第5段階全体の完了は必要な実機結果・最終SD復帰照合後に判定する。
+
+## 第5g版の実機反映
+
+2026-11-04T17:29:12.286390+09:00、既知Console138KへFW8faebdeのみを反映した。基板SHA、新FW全byte、4MiB全flash読戻しと更新範囲外を照合した。SD全63fileは新たな退避時および第5f最終退避と同一で、4保存record/CSV/ROM/font/logを維持した。defaults fileはまだ置いていない。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定を元のbyteへ戻した。
+
+復旧用は直前の実機合格第5fの検証済み全読戻しをコピーしたもので、新たな書込み前flash読取りを行ったとはしない。verification/crt-stage5g-defaults/deployment.jsonに記録。まず値変更/Reset/SAVEなしで通常起動と任意defaults file未設定時の従来動作を確認する。defaultsの実機試験は未確認。
