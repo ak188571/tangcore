@@ -83,3 +83,11 @@ POS5位置でSAVE/RESET TO RECOMMENDED/POSを含め文字欠けなし、OSD2中�
 2026-11-04T16:16:20.422697+09:00、退避済みtitles.csvのDr. Mario crt_v1だけを1:1:2から1:2:3（ON/STANDARD/STRONG）へ変更した。表示名・順序・他row・改行を維持し、他62fileの内容と全属性は同一、tombstoneも同一と照合した。firmware書込みは行っていない。csv-trial-installation.jsonとcsv-followingの元/試験CSVに再現情報を残した。試験後は元のCSVへ戻す。
 
 次はReset/SAVEなしに新しいCSV推奨値へ追従することを実機確認し、その後手動調整をON/STRONG/WEAKへSAVEして新CSVよりuser値を優先することを確認する。このCSV追従とuser再保存、元CSV復帰はまだ未実施。
+
+## 変更後CSVへの追従と手動user保存の実機結果
+
+2026年11月4日、利用者がCSV追従試験の3項目を「1-3正常」と回答した。日本語一覧の表示名・順序とDr. Marioの起動は正常。Reset/SAVEを押さずに、新しいCSV推奨値ON/STANDARD/STRONG・INITIAL CSV・STORE RESET・SAVE SAVED・FRAME ACKへ追従した。
+
+その後Resetを押さず手動でON/STRONG/WEAKへ変更して1回SAVEし、OSDを開いたままSAVEDとなった。一覧から再launchすると、手動値ON/STRONG/WEAK・INITIAL USER・STORE USER・SAVED・FRAME ACKへ復元し、CSVよりuser保存値を優先することを確認した。Pac-Manは全OFF・INITIAL DEFAULT・STORE RESET・SAVED・FRAME ACKを維持し、映像・音声・操作も正常だった。
+
+これにより、Reset確定は推奨数値を固定する処理ではなくCSVへ従うモードを保存すること、Reset後の手動SAVEはuser overrideへ戻ることを実機確認した。現在のSDには試験用CSV1:2:3が残っている。次に全SDを新たに退避・record照合し、必ず元CSV1:1:2へ戻してからReset保存失敗試験を準備する。元CSV復帰・属性試験・回復・最終照合は未実施。
