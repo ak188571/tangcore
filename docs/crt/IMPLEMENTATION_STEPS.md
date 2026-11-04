@@ -51,3 +51,7 @@ submoduleを変更した場合は、対象submoduleで先にcommitし、親repos
 ## 第5e段階
 
 第5d確認済み版を基にゲーム別SAVEのみを追加。利用者の指定によりCLOSEをSAVEへ変更し、SAVEで開いたまま保存、X/Yで未保存previewをRAMと実映像から破棄して終了する。関連10試験・build・全flash照合・依頼実機試験・read-only失敗/属性復帰/保存回復・SD最終照合まで完了。同値SAVEで世代が増えないことも実byteで確認。local tagはcrt-stage5e-hw-20261104。Reset UI・tombstone作成・defaultsは別段階。STAGE5E_SAVE.mdとverification/crt-stage5e-saveを参照。
+
+## 第5f段階
+
+第5e確認済み版を基にReset to Recommendedのみを追加。ResetはCSV/builtinのpreview、明示SAVEはkind1/value0 tombstoneで確定、X/Yは未保存Resetの値と意図を取り消す。関連10試験とbuild成功、実機未確認。defaultsは別段階。STAGE5F_RESET.mdとverification/crt-stage5f-resetを参照。
