@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "manual_record_verified_original_csv_restored_reset_save_failure_trial_ready",
+  "hardware_test_status": "reset_save_failure_hardware_passed_post_failure_sd_check_and_attribute_recovery_pending",
   "firmware_commit": "e82e5ea61d318b9511bf5ed76e2e8cc790458cdf",
   "firmware_sha256": "44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b",
   "reports": [
@@ -23,6 +23,11 @@
       "user_report": "1-3正常",
       "phase": "Changed CSV following and manual override after Reset",
       "scope": "Without Reset/SAVE, Dr.Mario follows temporary CSV ON/STANDARD/STRONG with INITIAL CSV/STORE RESET/SAVED/FRAME ACK; manual ON/STRONG/WEAK SAVE then relaunch restores USER override over CSV; Pac-Man remains builtin OFF/STORE RESET with normal video/audio/controls and Japanese names/order intact"
+    },
+    {
+      "user_report": "1-3正常",
+      "phase": "Read-only Reset SAVE failure and cancellation",
+      "scope": "Dr.Mario old USER ON/STRONG/WEAK loads; Reset previews original CSV ON/WEAK/STANDARD; SAVE FAILED stays open and retry FAILED; X and Y each cancel values and Reset intent to USER baseline; relaunch retains USER/SAVED/FRAME ACK with normal video/audio/controls"
     }
   ],
   "checks": {
@@ -40,12 +45,12 @@
     "confirmed_reset_repeated_save_does_not_advance_generation": true,
     "changed_csv_followed_after_reset": true,
     "manual_adjustment_after_reset_saves_user_override": true,
-    "reset_save_failure_retry_and_x_y_cancel": null,
+    "reset_save_failure_retry_and_x_y_cancel": true,
     "test_attributes_and_csv_restored": null,
     "save_recovery_after_attributes_restored": null,
     "final_sd_records_and_unrelated_files_verified": null
   },
-  "limitations": "Manual override generation7/kind0/value15 and unrelated contents verified; original CSV restored byte-for-byte. Only Dr.Mario a/b read-only test attributes active. Reset denied-write failure, attribute restoration/recovery and final SD integrity remain pending. Defaults excluded.",
+  "limitations": "Read-only Reset denied-write/stay-open/retry/X/Y cancellation is hardware-confirmed. Original CSV restored, but two test read-only attributes remain active. Post-failure SD integrity, original attribute restoration, successful Reset SAVE recovery and final audit remain pending. Other write fault classes are host-tested; defaults excluded.",
   "pc_record_audit": "record-inspection.json",
   "csv_trial_record": "csv-trial-installation.json",
   "manual_override_pc_record": "post-csv-trial-verification.json",

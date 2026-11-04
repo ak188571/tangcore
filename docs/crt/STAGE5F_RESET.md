@@ -101,3 +101,11 @@ POS5位置でSAVE/RESET TO RECOMMENDED/POSを含め文字欠けなし、OSD2中�
 2026-11-04T16:26:08.746140+09:00、Dr. Mario a/bの2fileだけへ一時的なread-only属性を追加し、CSV復帰後の全63file内容と他fileの属性が同一と確認した。現在の基準user値ON/STRONG/WEAKを保護した状態である。firmware書込みは行っていない。post-csv-trial-verification.jsonとread-only-protection.jsonに記録した。
 
 次はReset previewで元CSV ON/WEAK/STANDARDへ移り、SAVE FAILED/stay-open/retry、X/Yでuser値とuser意図へ戻せることを実機確認する。試験後はSDを新たに退避・照合し、属性を必ず元へ戻して保存回復を確認する。これらの失敗・属性復帰・回復はまだ未確認。
+
+## Reset保存失敗・再試行・取消しの実機結果
+
+2026年11月4日、利用者がReset保存失敗試験の3項目を「1-3正常」と回答した。read-only状態でもDr. Marioの旧user ON/STRONG/WEAK・USER/SAVED/FRAME ACKは正常に読めた。Resetで元CSV ON/WEAK/STANDARD・UNSAVEDをプレビューし、SAVEするとOSDを開いたままFAILED、再SAVEもFAILEDとなった。
+
+Xで閉じると値と映像が旧user値へ戻り、再表示でSAVED・FRAME ACKを確認した。同じReset/SAVE失敗後にYでも取消しでき、一覧からの再launchでも旧user値とINITIAL USER・STORE USER・SAVED・FRAME ACK、映像・音声・操作が正常だった。Resetの意図も未確定のまま破棄されることを確認した。
+
+失敗の実機確認範囲はread-onlyによる書込み拒否であり、sync/close失敗や途中電源断を実機試験したことにはしない。次はSD全63fileを新たに退避・照合し、Dr. Marioの2fileを元属性へ戻す。その後ResetのSAVEが回復して成功することを確認する。属性復帰・回復・最終SD照合はまだ未実施。
