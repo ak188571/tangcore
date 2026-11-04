@@ -59,3 +59,9 @@ firmwareは226192bytes、SHA256 e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da6
 2026-11-04T11:40:59.086709+09:00、既知Console138KへFW0051516のみを反映した。基板SHA、新FW全byte、4MiB全flash読戻しと更新範囲外を照合した。SD全59fileは退避時と同一で、保存recordの追加はまだない。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定を元のbyteへ戻した。
 
 復旧用は直前の実機合格第5dの検証済み全読戻しをコピーしたもので、新たな書込み前flash読取りを行ったとはしない。verification/crt-stage5e-save/deployment.jsonに記録。通常起動、明示SAVE、X/Y破棄、再起動時復元、保存失敗は利用者の実機確認待ち。
+
+## 初回起動の実機結果
+
+2026年11月4日、利用者が初回3項目を「1-3正常」と回答した。日本語NES一覧と順序、Dr. Mario/Pac-Manの起動・映像・音声・操作、STAGE5EとSAVE行、Dr. MarioのROM ID 7623dffd・CSV ON/WEAK/STANDARD、Pac-ManのROM ID ebbb19bf・DEFAULT全OFF、両方のSAVE RECOMMENDED・STORE MISSING・FRAME ACKが正常だった。X/Yで閉じてOSD1から一覧へ戻る経路も確認した。
+
+今回は値変更やSAVEを依頼していないため、保存および未保存previewの破棄を確認済みとはしない。続いて現在の版で、保存前のX破棄、明示SAVEのstay-openとSAVED表示、保存後の追加調整をYで破棄、再launch時復元と別ゲームへの分離を確認する。追加firmware書込みは不要。
