@@ -109,3 +109,9 @@ microSDの64ファイルを新たに退避した。変更はPac-Manの保存slot
 利用者は不正defaults導入後の初回3項目を「1-3正常」と回答した。日本語NES一覧と順序、両ゲームの起動・映像・音声・操作は正常だった。Dr. MarioはSAVE SAVED・INITIAL CSV・ON/WEAK/STANDARD・STORE RESET・FRAME ACK・ROM ID 7623dffd・DEFAULTS BAD FILEとなり、CSVを維持した。Pac-ManはSAVE SAVED・INITIAL DEFAULT・全OFF・STORE RESET・FRAME ACK・ROM ID ebbb19bf・DEFAULTS BAD FILEとなり、builtin値へ復帰した。
 
 今回選択しないSNES行の不正値により、有効なNES/global行も含むdefaults全体を拒否したことを実機確認した。値変更・Reset・SAVEは依頼していない。次はBAD FILE表示下でUSER保存値を優先し、ResetがCSVまたはbuiltin値を参照することを確認する。最終SD照合と試験ファイルの取り外しは未完了である。
+
+## 不正defaults下のUSER保存・Reset操作の実機結果
+
+利用者は続く4項目を「1-4正常」と回答した。Dr. MarioでON/STRONG/WEAKを手動SAVEし、OSDが開いたままSAVEDとなり、一覧からの起動し直し後もSAVE SAVED・INITIAL USER・保存値・STORE USER・FRAME ACK・正しいROM ID・DEFAULTS BAD FILEを確認した。Reset previewはCSVのON/WEAK/STANDARDを参照し、X/Yのどちらで取り消してもUSER保存値へ戻った。改めてResetをSAVEすると、起動し直し後にCSV・STORE RESET・SAVEDと推奨値へ戻った。
+
+Pac-Manで同じResetを選び直しても、既に保存済みのResetと値が同一なのでSAVED・INITIAL DEFAULT・全OFF・STORE RESET・FRAME ACK・正しいROM ID・DEFAULTS BAD FILEのままだった。この操作ではSAVEを依頼していない。両ゲームの映像・音声・操作も正常だった。予定した機能試験は合格したが、保存記録の最終世代・CRCと他ファイル・全属性のPC照合、試験用defaultsの取り外し、その後の通常起動が残っているため、第5g完了とはしない。

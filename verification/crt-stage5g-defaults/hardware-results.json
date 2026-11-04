@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "invalid_file_atomic_rejection_csv_builtin_passed_user_reset_pending",
+  "hardware_test_status": "invalid_defaults_user_reset_checks_passed_final_sd_cleanup_pending",
   "firmware_commit": "8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381",
   "firmware_sha256": "27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f",
   "reports": [
@@ -28,6 +28,11 @@
       "user_report": "1-3正常",
       "phase": "Invalid unselected-system row rejects the entire defaults file",
       "scope": "Japanese NES list/order and both games launch/video/audio/controls normal. Dr.Mario retained SAVED/CSV/ON/WEAK/STANDARD/RESET/FRAME ACK/ROM ID 7623dffd with DEFAULTS BAD FILE. Pac-Man used SAVED/DEFAULT/OFF/OFF/OFF/RESET/FRAME ACK/ROM ID ebbb19bf with DEFAULTS BAD FILE, rejecting otherwise-valid global and NES rows too. No setting change, Reset or SAVE requested."
+    },
+    {
+      "user_report": "1-4正常",
+      "phase": "User save and Reset under invalid defaults",
+      "scope": "Dr.Mario manually saved ON/STRONG/WEAK once; SAVE stayed open and SAVED, then relaunch restored USER/USER, values, expected ROM ID, DEFAULTS BAD FILE and FRAME ACK. Reset preview used CSV ON/WEAK/STANDARD; both X/Y discarded it and restored saved user values. Reset then SAVE once and relaunch restored CSV/RESET/SAVED and recommended values with BAD FILE/FRAME ACK. Pac-Man repeated Reset retained SAVED/DEFAULT/all OFF/RESET/expected ROM ID/BAD FILE/FRAME ACK with no SAVE, as the same Reset mode was already persisted. Both games video/audio/controls normal. Record generations and unrelated-file integrity await final PC audit."
     }
   ],
   "checks": {
@@ -39,8 +44,8 @@
     "blank_system_inherits_global": true,
     "reset_save_power_cycle_follows_global": true,
     "invalid_nonselected_row_rejects_entire_defaults_file": true,
-    "bad_defaults_preserve_game_csv_and_user_values": null,
-    "reset_under_bad_defaults_uses_csv_or_builtin": null,
+    "bad_defaults_preserve_game_csv_and_user_values": true,
+    "reset_under_bad_defaults_uses_csv_or_builtin": true,
     "osd_positions_exclusion_input_and_release": true,
     "defaults_read_only_and_unrelated_file_integrity": null,
     "test_defaults_removed_original_csv_attributes_restored": null,
@@ -52,9 +57,11 @@
     "game_csv_overrides_global_defaults": true,
     "global_trial_defaults_read_only_and_other_files_unchanged": true,
     "global_trial_reset_record_crc_and_generation": true,
-    "bad_defaults_preserve_game_csv_and_builtin_fallback": true
+    "bad_defaults_preserve_game_csv_and_builtin_fallback": true,
+    "bad_defaults_reset_x_y_cancel_user": true,
+    "repeated_builtin_reset_preview_remains_saved": true
   },
-  "limitations": "NES system/global priorities, Reset and OSD checks passed; system/global PC audits passed. Invalid unselected-row whole-file rejection and CSV/builtin fallback passed on hardware. User priority and Reset actions under BAD FILE, final SD integrity and fixture removal remain pending. Other systems/volumes/I/O failures are host-tested only.",
+  "limitations": "Planned NES hardware functional trials passed, including system/global priorities, Reset, OSD and invalid-defaults fallback/user save/cancellation. Final SD record CRC/generation and file/attribute integrity, removal of the test defaults file, and normal boot after cleanup remain pending. Other systems/volumes/I/O failures are host-tested only.",
   "system_fixture_installation_record": "system-fixture-installation.json",
   "test_instruction_field_order": [
     "SAVE status",
