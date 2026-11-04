@@ -73,3 +73,9 @@ A正常後にmicroSDをPCへ戻して再退避し、未使用の3pathへ試験re
 2026-11-04T10:30:10.486556+09:00、既知Console138Kへfirmwareだけを反映した。基板SHA、新FW全byte、4MiB全flash読戻しと更新範囲外を照合した。SD全59filesを新たに退避し、CSV/ROM/NES/monitor/font/既存logを含む全fileが同一と確認した。保存recordはまだ追加していない。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定を元のbyteへ復帰した。
 
 復旧用は直前の実機合格第5c全読戻しをコピーしたもので、新たな書込み前flash読取りを行ったとはしない。導入照合はverification/crt-stage5d-restore/deployment.json。通常起動・日本語一覧・2本の起動とCSV/defaultへの復帰・STORE MISSING・FRAME ACKは利用者の実機確認待ちである。試験Bと第5d完了tagは未着手。
+
+## 試験A：起動と保存データなしの復帰結果
+
+2026年11月4日、利用者が「1-3正常」と回答した。日本語NES一覧と順序、Dr. Mario/Pac-Manの起動・映像・音声・操作、STAGE5D表示、ROM ID 7623dffd/ebbb19bf、Dr. MarioのCSV ON/WEAK/STANDARD、Pac-ManのDEFAULT全OFF、両方のSTORE MISSINGとFRAME ACKを確認した。OSD1による一覧への復帰と別ゲーム起動も正常だった。結果はverification/crt-stage5d-restore/hardware-results.json。
+
+試験Aの残りは、調整した値がOSD開き直しで保たれることと、ゲームを起動し直すとCSV値へ戻ること。追加書込みは不要。試験B用recordはまだ追加しておらず、保存値の実機復元を確認済みとはしない。第5d完了tagはまだ作らない。
