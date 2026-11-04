@@ -1,0 +1,31 @@
+{
+  "date_jst": "2026-11-04",
+  "hardware_test_status": "initial_boot_without_defaults_passed_system_fixture_pending",
+  "firmware_commit": "8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381",
+  "firmware_sha256": "27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f",
+  "reports": [
+    {
+      "user_report": "1-3正常",
+      "phase": "Initial boot with no defaults file",
+      "scope": "Japanese NES list/order, both games launch/video/audio/controls; STAGE5G and DEFAULTS MISSING; Dr.Mario CSV ON/WEAK/STANDARD and Pac-Man builtin OFF; IDs/STORE RESET/SAVED/FRAME ACK and OSD1 return normal"
+    }
+  ],
+  "checks": {
+    "initial_missing_defaults_boot_csv_builtin_and_existing_reset_records": true,
+    "system_defaults_applied_without_game_csv": null,
+    "game_csv_overrides_system_defaults": null,
+    "saved_user_overrides_system_and_global_defaults": null,
+    "reset_preview_system_and_x_y_cancel_user": null,
+    "blank_system_inherits_global": null,
+    "reset_save_power_cycle_follows_global": null,
+    "invalid_nonselected_row_rejects_entire_defaults_file": null,
+    "bad_defaults_preserve_game_csv_and_user_values": null,
+    "reset_under_bad_defaults_uses_csv_or_builtin": null,
+    "osd_positions_exclusion_input_and_release": null,
+    "defaults_read_only_and_unrelated_file_integrity": null,
+    "test_defaults_removed_original_csv_attributes_restored": null,
+    "final_missing_defaults_boot_recommendations_restored": null,
+    "final_sd_record_crc_and_baseline_integrity": null
+  },
+  "limitations": "Initial missing-file behavior only confirmed on hardware. System/global selection, priorities, Reset, invalid-file atomic fallback and final SD cleanup/integrity remain pending; all-system/other-volume/I/O error cases currently host-tested only."
+}

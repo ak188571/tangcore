@@ -61,3 +61,9 @@ firmware 227792bytes、SHA256 27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060
 2026-11-04T17:29:12.286390+09:00、既知Console138KへFW8faebdeのみを反映した。基板SHA、新FW全byte、4MiB全flash読戻しと更新範囲外を照合した。SD全63fileは新たな退避時および第5f最終退避と同一で、4保存record/CSV/ROM/font/logを維持した。defaults fileはまだ置いていない。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定を元のbyteへ戻した。
 
 復旧用は直前の実機合格第5fの検証済み全読戻しをコピーしたもので、新たな書込み前flash読取りを行ったとはしない。verification/crt-stage5g-defaults/deployment.jsonに記録。まず値変更/Reset/SAVEなしで通常起動と任意defaults file未設定時の従来動作を確認する。defaultsの実機試験は未確認。
+
+## defaults未設定での初回起動の実機結果
+
+2026年11月4日、利用者が初回3項目を「1-3正常」と回答した。日本語NES一覧と順序、Dr. Mario/Pac-Manの起動・映像・音声・操作、CRT DEFAULTS - STAGE5GとDEFAULTS MISSING、Dr. MarioのROM ID 7623dffd・CSV ON/WEAK/STANDARD、Pac-ManのROM ID ebbb19bf・builtin全OFF、両方のSTORE RESET・SAVE SAVED・FRAME ACKを確認した。OSD1からの一覧復帰も正常だった。
+
+defaults fileがない場合の既存動作とReset記録保持を実機確認した段階であり、system/global defaults自体の実機合格とはしない。次はSDを新たに退避し、system.tsv fixtureをcrt/defaults.tsvへ新規追加して、CSV優先とsystem適用を確認する。追加firmware書込みは不要。
