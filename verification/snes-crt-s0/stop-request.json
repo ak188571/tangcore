@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-04",
+  "requested_by": "user",
+  "request": "作業を停止できるところで停止してください。",
+  "build_action": "Interrupt baseline Gowin process tree while in placement, before completion",
+  "build_classification": "interrupted by user request; not a build or timing pass/fail result",
+  "partial_outputs_are_deployable": false,
+  "rtl_modified": false,
+  "firmware_modified": false,
+  "sd_or_flash_written": false,
+  "next_stage_started": false
+}

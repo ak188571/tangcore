@@ -1,0 +1,26 @@
+{
+  "stage": "S0",
+  "date": "2026-11-04",
+  "target": "Console138K SNESTang, existing device installation",
+  "source": "User response in this chat",
+  "user_report": "1-4について正常に動作。コントローラーはsfc風のpid:vid=0079:0006。作業を停止できるところで停止してください。",
+  "reported_pass": [
+    "Japanese game list and titles.csv ordering",
+    "Game video, audio and controls in the requested basic startup trial",
+    "SELECT + RIGHT opens existing OSD1 and returns to the game",
+    "OSD1 << Main Menu returns to the list"
+  ],
+  "controller_description": "SFC-style",
+  "controller_id_as_reported": "pid:vid=0079:0006",
+  "usb_descriptor_verified": false,
+  "game_name": null,
+  "controller_connection": null,
+  "per_player_path_detail": "not recorded",
+  "device_image_hash_verified_this_session": false,
+  "crt_osd2_implemented": false,
+  "crt_osd2_hardware_status": "not tested",
+  "sd_or_flash_written_this_session": false,
+  "nes_regression_tested_this_session": false,
+  "stop_requested_by_user": true,
+  "resume_from": "Recheck remote/local state and finish the unmodified S0 build; then S1+S2 bypass/OSD2 with SNES volatile-only session policy"
+}
