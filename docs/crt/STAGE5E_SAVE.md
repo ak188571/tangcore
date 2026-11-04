@@ -97,3 +97,11 @@ Pac-ManではON/WEAK/STANDARDをSAVEして再launchで復元し、続いて明�
 2026-11-04T12:09:28.525863+09:00、退避と全file再照合後、Dr. Marioのa/bの2fileだけを一時的にread-only属性へ変更した。元の全file属性をprivate sessionへ記録し、全63fileの内容および他fileの属性は同一と確認した。firmware・CSV・ROM・Pac-Man recordは変更していない。記録はrecord-inspection.jsonとread-only-protection.json。前節の確認待ちはこの回答で解消した経過として残す。
 
 次は通常起動し、Dr. Marioの基準ON/WEAK/STANDARDから異なる値をSAVEしてFAILEDとなりOSDが消えないこと、再SAVEでもFAILED、X/Yで基準値へ戻せることを確認する。その後SDをPCへ戻して全fileを新たに退避・照合し、元の属性へ戻す。失敗試験・属性復帰・保存回復はまだ確認待ち。
+
+## read-only属性による保存失敗の実機結果
+
+2026年11月4日、利用者が保存失敗試験の3項目を「1-3正常」と回答した。Dr. Marioの基準ON/WEAK/STANDARD・USER/SAVED/FRAME ACKは正常に読めた。ON/STRONG/STRONGへ変更してSAVEするとOSD2が開いたままSAVE FAILEDとなり、再SAVEもFAILEDだった。Xで閉じると映像と値が基準へ戻り、開き直しでSAVE SAVED・FRAME ACKを確認した。
+
+同じ変更・失敗後にYでも基準へ戻せ、一覧からの再launchでも保存値ON/WEAK/STANDARDとUSER/SAVED/FRAME ACK、映像・音声・操作が正常だった。これによりread-onlyによる書込み拒否時のstay-open、再試行、X/Y破棄を実機で確認した。sync/close失敗や書込み中の電源断を実機試験したことにはしない。
+
+残りは試験後SD全63fileの新たな退避・不変照合、元属性への復帰とその後の保存成功/復元確認、制御した同値SAVEで世代が進まないことのPC確認。Dr. Marioの2fileはまだread-onlyのままであり、保存回復を確認済みとはしない。
