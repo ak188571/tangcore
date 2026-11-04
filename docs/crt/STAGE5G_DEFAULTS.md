@@ -73,3 +73,9 @@ defaults fileがない場合の既存動作とReset記録保持を実機確認�
 初回起動の正常報告後、同じTANGCONSOLE microSDの63ファイルを新たに退避し、導入前と全内容・全属性が一致することを照合した。4個の保存記録のCRC・ROM識別情報・世代・kind・値も確認した。既存defaults.tsvがないことを確認し、試験用system.tsvをcrt/defaults.tsvへ新規作成した。追加後は64ファイルを照合し、元の63ファイル、CSV、保存記録、属性は不変だった。firmwareの追加書込みは行っていない。
 
 試験値はglobal 1:1:3、NES 1:2:1であり、画質推奨を確定したものではない。Dr. MarioのCSV ON/WEAK/STANDARD優先と、Pac-ManのSYSTEM ON/STANDARD/WEAK適用は、これから実機確認する。両ゲームは既存Reset記録のままとする。試験完了後、この新規試験ファイルだけを保全して取り外す。PC照合の根拠はverification/crt-stage5g-defaults/system-fixture-installation.jsonに記録した。
+
+## system適用・CSV優先の実機結果
+
+利用者はsystem試験ファイル追加後の3項目を「1-3正常」と回答した。日本語NES一覧と順序、両ゲームの起動・映像・音声・操作は正常だった。Dr. MarioはCSVのON/WEAK/STANDARD・INITIAL CSVを保持し、Pac-ManはNES用defaultsのON/STANDARD/WEAK・INITIAL SYSTEMとなった。両方のSTORE RESET・SAVE SAVED・DEFAULTS OK・FRAME ACKとROM IDを確認した。これにより、system defaultsの適用とCSV優先を実機確認した。
+
+利用者の指定により、以後の確認手順で画面項目を列挙する際はOSDの上からの表示順に揃える。現在の順序は、見出し、SAVE状態、INITIAL、CRT ENABLE、H BLUR、SCANLINE、STORE、APPLY、ROM ID、SAVE操作行、RESET TO RECOMMENDED、DEFAULTS、POSである。OSD自体の項目順は変更しない。次は手動保存値の優先、ResetのX/Y取消し、および追加行を含む表示・入力を確認する。

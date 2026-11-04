@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "system_fixture_installed_hardware_trial_pending",
+  "hardware_test_status": "system_defaults_and_csv_priority_passed_user_save_reset_cancel_pending",
   "firmware_commit": "8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381",
   "firmware_sha256": "27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f",
   "reports": [
@@ -8,12 +8,17 @@
       "user_report": "1-3正常",
       "phase": "Initial boot with no defaults file",
       "scope": "Japanese NES list/order, both games launch/video/audio/controls; STAGE5G and DEFAULTS MISSING; Dr.Mario CSV ON/WEAK/STANDARD and Pac-Man builtin OFF; IDs/STORE RESET/SAVED/FRAME ACK and OSD1 return normal"
+    },
+    {
+      "user_report": "1-3正常。項目の順序はOSDに表示される順序に揃えてください",
+      "phase": "System defaults initial boot and CSV priority",
+      "scope": "Japanese NES list/order, Dr.Mario and Pac-Man launch/video/audio/controls normal; Dr.Mario retains CSV ON/WEAK/STANDARD; Pac-Man uses SYSTEM ON/STANDARD/WEAK; STAGE5G, ROM IDs, STORE RESET, SAVE SAVED, DEFAULTS OK and FRAME ACK confirmed. No setting change, Reset or SAVE requested."
     }
   ],
   "checks": {
     "initial_missing_defaults_boot_csv_builtin_and_existing_reset_records": true,
-    "system_defaults_applied_without_game_csv": null,
-    "game_csv_overrides_system_defaults": null,
+    "system_defaults_applied_without_game_csv": true,
+    "game_csv_overrides_system_defaults": true,
     "saved_user_overrides_system_and_global_defaults": null,
     "reset_preview_system_and_x_y_cancel_user": null,
     "blank_system_inherits_global": null,
@@ -27,6 +32,20 @@
     "final_missing_defaults_boot_recommendations_restored": null,
     "final_sd_record_crc_and_baseline_integrity": null
   },
-  "limitations": "Initial missing-file behavior only confirmed on hardware. System/global selection, priorities, Reset, invalid-file atomic fallback and final SD cleanup/integrity remain pending; all-system/other-volume/I/O error cases currently host-tested only.",
-  "system_fixture_installation_record": "system-fixture-installation.json"
+  "limitations": "Missing-file behavior, system selection and CSV-over-system priority confirmed on NES hardware. User/global priority, Reset cancellation and global following, invalid-file fallback, OSD layout/input regression and final SD cleanup/integrity remain pending. Other systems/volumes/I/O failures are host-tested only.",
+  "system_fixture_installation_record": "system-fixture-installation.json",
+  "test_instruction_field_order": [
+    "SAVE status",
+    "INITIAL",
+    "CRT ENABLE",
+    "H BLUR",
+    "SCANLINE",
+    "STORE",
+    "APPLY",
+    "ROM ID",
+    "SAVE action",
+    "RESET TO RECOMMENDED",
+    "DEFAULTS",
+    "POS"
+  ]
 }
