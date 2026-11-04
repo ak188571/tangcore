@@ -85,3 +85,9 @@ A正常後にmicroSDをPCへ戻して再退避し、未使用の3pathへ試験re
 2026年11月4日、利用者が残り2項目を「1-2正常」と回答した。Dr. Marioのblur/scanlineをSTRONGへ変更し、OSD2を閉じて開き直しても値が保持され、ROM ID 7623dffd、INITIAL CSV、STORE MISSING、FRAME ACKが正常だった。OSD1の一覧へ戻り同ゲームを起動し直すと、ON/WEAK/STANDARDのCSV値へ戻ることも確認した。これで保存データがない場合の試験Aは依頼項目をすべて完了した。
 
 次は試験B用の3recordをPCからmicroSDへ追加する。直前に全fileを再退避・照合し、既存recordは上書きしない。Dr. Marioの新しい世代のON/STRONG/WEAK復元とPac-Manの破損record拒否は実機未確認。firmware再書込みは不要。第5d全体は未完了で、完了tagはまだ作らない。
+
+## 試験B用recordの追加
+
+2026-11-04T10:44:25.176429+09:00、前回と同じ物理identityのF:TANGCONSOLEへ試験用3recordを新規追加した。直前にSD全59fileを新しい退避先へコピーしてSHA照合し、試験A前と全fileが同一であることを確認した。既存crt directoryがないことを確認し、既存fileは上書きしていない。追加後は計62fileを列挙・SHA照合し、元の59fileが同一であることを確認した。firmwareとflashにはアクセスしていない。
+
+Dr. Marioのaはgeneration1・全OFF、bはgeneration2・ON/STRONG/WEAK。Pac-Manのaは32byte全0の破損record。確認済みの試験recordとSHAはverification/crt-stage5d-restore/phase-b-fixture-installation.jsonに記録した。通常起動後の保存値復元・破損時の復帰は実機報告待ちであり、まだ第5dを完了としない。試験後のSD不変照合と3recordの保全・取外しも未実施。
