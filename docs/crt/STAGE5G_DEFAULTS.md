@@ -79,3 +79,9 @@ defaults fileがない場合の既存動作とReset記録保持を実機確認�
 利用者はsystem試験ファイル追加後の3項目を「1-3正常」と回答した。日本語NES一覧と順序、両ゲームの起動・映像・音声・操作は正常だった。Dr. MarioはCSVのON/WEAK/STANDARD・INITIAL CSVを保持し、Pac-ManはNES用defaultsのON/STANDARD/WEAK・INITIAL SYSTEMとなった。両方のSTORE RESET・SAVE SAVED・DEFAULTS OK・FRAME ACKとROM IDを確認した。これにより、system defaultsの適用とCSV優先を実機確認した。
 
 利用者の指定により、以後の確認手順で画面項目を列挙する際はOSDの上からの表示順に揃える。現在の順序は、見出し、SAVE状態、INITIAL、CRT ENABLE、H BLUR、SCANLINE、STORE、APPLY、ROM ID、SAVE操作行、RESET TO RECOMMENDED、DEFAULTS、POSである。OSD自体の項目順は変更しない。次は手動保存値の優先、ResetのX/Y取消し、および追加行を含む表示・入力を確認する。
+
+## USER優先・Reset取消し・OSDの実機結果
+
+利用者は続く4項目を「1-4正常」と回答した。Pac-ManでON/STRONG/STANDARDを手動SAVEし、OSDが開いたままSAVEDとなり、一覧からの起動し直し後もINITIAL USER・STORE USER・保存値・FRAME ACKを確認した。Resetのpreviewはsystem推奨ON/STANDARD/WEAKとなり、保存せずXまたはYで閉じると手動保存値へ戻った。これにより、USERのsystem defaultsへの優先とResetの両終了buttonによる取消しを実機確認した。
+
+追加DEFAULTS行を含む5位置で文字欠けがないこと、OSD1との排他と中央表示、ゲームへの入力遮断、全button解放待ちも正常だった。保存記録の世代・CRCと他ファイルの不変は次のPC照合で確認する。global継承や不正defaultsの試験はまだ完了していない。
