@@ -67,3 +67,9 @@ firmware 227792bytes、SHA256 27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060
 2026年11月4日、利用者が初回3項目を「1-3正常」と回答した。日本語NES一覧と順序、Dr. Mario/Pac-Manの起動・映像・音声・操作、CRT DEFAULTS - STAGE5GとDEFAULTS MISSING、Dr. MarioのROM ID 7623dffd・CSV ON/WEAK/STANDARD、Pac-ManのROM ID ebbb19bf・builtin全OFF、両方のSTORE RESET・SAVE SAVED・FRAME ACKを確認した。OSD1からの一覧復帰も正常だった。
 
 defaults fileがない場合の既存動作とReset記録保持を実機確認した段階であり、system/global defaults自体の実機合格とはしない。次はSDを新たに退避し、system.tsv fixtureをcrt/defaults.tsvへ新規追加して、CSV優先とsystem適用を確認する。追加firmware書込みは不要。
+
+## system defaults試験ファイルの追加
+
+初回起動の正常報告後、同じTANGCONSOLE microSDの63ファイルを新たに退避し、導入前と全内容・全属性が一致することを照合した。4個の保存記録のCRC・ROM識別情報・世代・kind・値も確認した。既存defaults.tsvがないことを確認し、試験用system.tsvをcrt/defaults.tsvへ新規作成した。追加後は64ファイルを照合し、元の63ファイル、CSV、保存記録、属性は不変だった。firmwareの追加書込みは行っていない。
+
+試験値はglobal 1:1:3、NES 1:2:1であり、画質推奨を確定したものではない。Dr. MarioのCSV ON/WEAK/STANDARD優先と、Pac-ManのSYSTEM ON/STANDARD/WEAK適用は、これから実機確認する。両ゲームは既存Reset記録のままとする。試験完了後、この新規試験ファイルだけを保全して取り外す。PC照合の根拠はverification/crt-stage5g-defaults/system-fixture-installation.jsonに記録した。

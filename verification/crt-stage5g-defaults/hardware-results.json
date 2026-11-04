@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "initial_boot_without_defaults_passed_system_fixture_pending",
+  "hardware_test_status": "system_fixture_installed_hardware_trial_pending",
   "firmware_commit": "8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381",
   "firmware_sha256": "27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f",
   "reports": [
@@ -27,5 +27,6 @@
     "final_missing_defaults_boot_recommendations_restored": null,
     "final_sd_record_crc_and_baseline_integrity": null
   },
-  "limitations": "Initial missing-file behavior only confirmed on hardware. System/global selection, priorities, Reset, invalid-file atomic fallback and final SD cleanup/integrity remain pending; all-system/other-volume/I/O error cases currently host-tested only."
+  "limitations": "Initial missing-file behavior only confirmed on hardware. System/global selection, priorities, Reset, invalid-file atomic fallback and final SD cleanup/integrity remain pending; all-system/other-volume/I/O error cases currently host-tested only.",
+  "system_fixture_installation_record": "system-fixture-installation.json"
 }
