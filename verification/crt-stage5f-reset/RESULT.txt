@@ -1,7 +1,7 @@
-Stage5f Reset to Recommended: 10 host scripts and firmware build PASS; hardware PENDING.
-Firmware e82e5ea61d318b9511bf5ed76e2e8cc790458cdf, 226528 bytes, SHA 44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b.
-Reset only previews launch recommendation; SAVE writes kind1/value0 tombstone in inactive generation. X/Y cancels both values and Reset intent.
-Same numeric values still require removing an override. Repeated confirmed Reset SAVE is skipped. Manual adjustment after Reset saves kind0.
-Existing read/CRC/key/schema/generation/retry logic retained; tests include all write/verify faults for tombstones, uncertain reset retry, CSV change following and real X/Y discard.
-No defaults reader, JTAG/FPGA/core loader/input-loop changes. Save resource guard remains NES-only.
-Writer own frame224bytes, excludes nested reader/FatFs/driver stack. Initial host assertion incorrectly expected USER instead of RECOVERED for torn inactive slot; expectation corrected, final 10 tests passed.
+Stage5f Reset to Recommended: implementation, 10 host scripts, firmware build, deployment/full-flash readback, all requested hardware checks and final SD audit PASS.
+FWe82e5ea61d318b9511bf5ed76e2e8cc790458cdf SHA44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b.
+Local validation tag: crt-stage5f-hw-20261104.
+Reset previews launch recommendation; explicit SAVE writes kind1/value0 tombstone; X/Y cancels unsaved values and Reset intent. Equal-value Reset and manual adjustment back to kind0 verified.
+Changed CSV recommendation followed without touching tombstone, original CSV restored. Read-only Reset FAILED/stay-open/retry/cancel and original attribute recovery/save recovery verified.
+Final SD63 freshly backed up; Dr.Mario b generation8 and Pac-Man a generation3 kind1/value0. Recovery SAVE increments once; two unchanged SAVEs add none. Other slots/original59/CSV/all attributes unchanged.
+Records retained. No new FPGA build. Other fault classes host-only. Defaults excluded; overall stage5 incomplete.

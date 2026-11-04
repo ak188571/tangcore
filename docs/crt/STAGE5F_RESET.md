@@ -125,3 +125,15 @@ Xで閉じると値と映像が旧user値へ戻り、再表示でSAVED・FRAME A
 一覧からの再launchおよび通常電源再投入後も、ON/WEAK/STANDARD・INITIAL CSV・STORE RESET・SAVED・FRAME ACKを復元した。Pac-Manは全OFF・INITIAL DEFAULT・STORE RESET・SAVED・FRAME ACKを維持し、両ゲームの映像・音声・操作も正常だった。
 
 これで依頼した画面・操作の実機確認は全項目正常。残りはSD全体の新たな退避とPC最終照合で、Dr. Marioの新しいtombstoneがgeneration8で同値SAVEによる追加世代がないこと、record CRC/key/size/kind/value、元CSV・全属性・無関係file不変を確認する。第5f完了tagはまだ作らない。
+
+## 第5f段階の完了
+
+2026-11-04T16:53:10.446695+09:00、同じ物理identityのSD全63fileを新たに退避・SHA照合した。Dr. Marioのaはgeneration7/kind0/value15、最新bはgeneration8/kind1/value0。Pac-Manの最新aはgeneration3/kind1/value0、bはgeneration2/kind0/value0だった。全recordのmagic/schema/system/ROM key/size/kind/reserved/value/CRCを確認した。
+
+属性復帰後の変更はDr. Marioのbだけで、回復Reset SAVE1回でgeneration7から8へ進み、同値SAVE2回では余分な世代が増えていなかった。直前の有効slotとPac-Man recordは同一。元の59file・CSV（SHA e930b82e2fab555d20935b4150675abd20d13f3552037ded1a8188151b747d1e）・全元属性も同一だった。Windows system folderは従来どおり対象外であり、全sector一致を主張しない。final-sd-verification.jsonに記録した。
+
+実装・関連10試験・firmware build・導入/全flash照合・依頼した実機試験・tombstoneのPC照合・CSV変更追従と元CSV復帰・手動user再保存・read-only保存失敗と原属性復帰・Reset保存回復・最終SD照合まで完了した。local tag crt-stage5f-hw-20261104を実機確認済み基準として保持する。基板はFWe82e5ea、NES c8df819a。SDの4recordを維持し、Dr. MarioはCSV推奨ON/WEAK/STANDARDへ、Pac-Manはbuiltin全OFFへ従うResetモードで終了した。保存recordの手動編集や削除、firmware再書込みは行っていない。
+
+正式操作はResetでpreview、明示SAVEで推奨値へ従う意図を確定、X/Yで未保存の値と意図を取り消す。旧user値と数値が同じ場合もkind1へ変わり、Reset後の手動調整はkind0へ戻る。本文前半の確認待ちは経過で、本節とhardware-results.jsonが最終状態である。
+
+実機確認範囲は現在のConsole138K/NESと記録済み2本のROM。保存失敗の実機確認はread-onlyによる拒否・再試行・X/Y取消し・属性復帰後の回復で、sync/close/途中書込み・世代競合などはPC試験のみ。system/global defaultsは未実装で第5段階全体は未完了。初版第5段階の起動停止原因も特定済みとはしない。

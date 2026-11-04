@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "all_requested_interactive_reset_checks_passed_final_sd_verification_pending",
+  "hardware_test_status": "all_requested_stage5f_hardware_checks_passed_current_console138k_nes_setup",
   "firmware_commit": "e82e5ea61d318b9511bf5ed76e2e8cc790458cdf",
   "firmware_sha256": "44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b",
   "reports": [
@@ -53,12 +53,14 @@
     "reset_save_failure_retry_and_x_y_cancel": true,
     "test_attributes_and_csv_restored": true,
     "save_recovery_after_attributes_restored": true,
-    "final_sd_records_and_unrelated_files_verified": null
+    "final_sd_records_and_unrelated_files_verified": true
   },
-  "limitations": "All requested interactive Reset checks passed, including CSV following, manual override, denied-write failure/cancel and recovery. Final fresh SD audit of generation8 tombstone/no extra same-value SAVE generations, original CSV/all attributes and unrelated contents remains pending. Defaults excluded; non-read-only fault classes host-only.",
+  "limitations": "Verified on current Console138K/NES and two recorded ROMs. Reset previews/cancellation, CSV/builtin following, changed-CSV following, manual override, read-only denied-write failure/retry/cancellation/recovery and final tombstone/CRC/generation audit passed. Other I/O fault classes and conflict/unknown-schema cases are host-tested only. No raw-sector or other-core ownership claim. System/global defaults remain outside this stage; initial monolithic stage5 boot-failure root cause remains undetermined.",
   "pc_record_audit": "record-inspection.json",
   "csv_trial_record": "csv-trial-installation.json",
   "manual_override_pc_record": "post-csv-trial-verification.json",
   "read_only_test_record": "read-only-protection.json",
-  "post_failure_sd_record": "post-failure-sd-verification.json"
+  "post_failure_sd_record": "post-failure-sd-verification.json",
+  "validation_tag": "crt-stage5f-hw-20261104",
+  "final_sd_record": "final-sd-verification.json"
 }
