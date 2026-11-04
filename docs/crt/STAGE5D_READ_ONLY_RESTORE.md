@@ -67,3 +67,9 @@ A正常後にmicroSDをPCへ戻して再退避し、未使用の3pathへ試験re
 - 5位置・入力遮断・解放待ち・OSD1排他を確認する。終了後にSD全byteが試験record追加時と一致することを確認する。PC上で試験recordを退避して元のSDへ戻す。tombstone、I/O失敗などの実機試験は別途区別し、PC成功から推定しない。
 
 実機合格tagは依頼した試験の報告後に作る。現時点で実機は未確認。
+
+## 試験A用firmwareの実機反映
+
+2026-11-04T10:30:10.486556+09:00、既知Console138Kへfirmwareだけを反映した。基板SHA、新FW全byte、4MiB全flash読戻しと更新範囲外を照合した。SD全59filesを新たに退避し、CSV/ROM/NES/monitor/font/既存logを含む全fileが同一と確認した。保存recordはまだ追加していない。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定を元のbyteへ復帰した。
+
+復旧用は直前の実機合格第5c全読戻しをコピーしたもので、新たな書込み前flash読取りを行ったとはしない。導入照合はverification/crt-stage5d-restore/deployment.json。通常起動・日本語一覧・2本の起動とCSV/defaultへの復帰・STORE MISSING・FRAME ACKは利用者の実機確認待ちである。試験Bと第5d完了tagは未着手。

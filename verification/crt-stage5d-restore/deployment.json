@@ -1,0 +1,45 @@
+{
+  "completed_at": "2026-11-04T10:30:10.486556+09:00",
+  "board": "Console138K",
+  "source_commits": {
+    ".": "904a23b19f456e6b81b90bf0785c828780930e03",
+    "firmware-bl616": "42359d6976edf98089bdbc91ac8725fce2fd0bef",
+    "nestang": "c8df819ae6b96f1bc645b2d03b9e7714d8a9117e"
+  },
+  "firmware": {
+    "file": "firmware/tangcore_bl616.bin",
+    "bytes": 224576,
+    "sha256": "9609a2dabb64f1e5c1fff3caf3622680b5c73487c0867eed8ffd4e13b69996e7"
+  },
+  "nes": {
+    "file": "cores/console138k/nestang.bin",
+    "bytes": 4640660,
+    "sha256": "745ad31b4d1707f6b9ddf5a6d9e9c4964b41a2ab59ce6b0018f38545fdb5b1ec"
+  },
+  "rollback_origin": "verified_full_flash_readback_of_user_tested_stage5c",
+  "rollback_full_flash_sha256": "67ee2698f09976b823a20c8dec788cce4de3981099df5f18e595787c1acb0d37",
+  "firmware_written": true,
+  "full_flash_readback_verified": true,
+  "boot_area_unchanged": true,
+  "from_0x80000_unchanged": true,
+  "nes_core_written": false,
+  "nes_reused_verified": true,
+  "titles_test_fixture_written": false,
+  "titles_test_fixture_verified": true,
+  "sd_files_unchanged": 59,
+  "sdk_defaults_restored": true,
+  "hardware_test_status": "awaiting user",
+  "readback_connection": {
+    "initial_mode0_failed": true,
+    "read_only_retry_mode2_succeeded": true,
+    "reprogrammed_after_verified_write": false,
+    "failed_logs": [
+      "post-stage5d-restore-5aad18ab.log"
+    ],
+    "successful_logs": [
+      "post-stage5d-restore-c5cc13c8.log"
+    ]
+  },
+  "installed_full_flash_sha256": "0141ebd86b50f7444447c0d12c8fd5134351857191ad8a824f0cc47aa8ea5688",
+  "hardware_test_phase": "A: no settings records; firmware-only update"
+}
