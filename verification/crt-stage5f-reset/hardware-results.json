@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "changed_csv_following_and_manual_override_passed_csv_restore_and_reset_failure_tests_pending",
+  "hardware_test_status": "manual_record_verified_original_csv_restored_reset_save_failure_trial_ready",
   "firmware_commit": "e82e5ea61d318b9511bf5ed76e2e8cc790458cdf",
   "firmware_sha256": "44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b",
   "reports": [
@@ -45,7 +45,9 @@
     "save_recovery_after_attributes_restored": null,
     "final_sd_records_and_unrelated_files_verified": null
   },
-  "limitations": "Changed CSV following and manual override after Reset are hardware-confirmed. Temporary CSV1:2:3 still installed. Fresh manual-override record audit, original CSV restoration, read-only Reset failure/recovery, original attributes and final SD integrity checks remain pending. Defaults excluded.",
+  "limitations": "Manual override generation7/kind0/value15 and unrelated contents verified; original CSV restored byte-for-byte. Only Dr.Mario a/b read-only test attributes active. Reset denied-write failure, attribute restoration/recovery and final SD integrity remain pending. Defaults excluded.",
   "pc_record_audit": "record-inspection.json",
-  "csv_trial_record": "csv-trial-installation.json"
+  "csv_trial_record": "csv-trial-installation.json",
+  "manual_override_pc_record": "post-csv-trial-verification.json",
+  "read_only_test_record": "read-only-protection.json"
 }

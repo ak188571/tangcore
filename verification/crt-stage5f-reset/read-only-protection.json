@@ -1,0 +1,24 @@
+{
+  "completed_at": "2026-11-04T16:26:08.746140+09:00",
+  "protected_files": [
+    {
+      "file": "crt/01-7623dffd-0000000000010010.a",
+      "original_attributes": 32,
+      "test_attributes": 33,
+      "sha256": "9a68a8b60053bda563ba5d35f9fd41421d6c558df16c42b4d642635da9f9cd78"
+    },
+    {
+      "file": "crt/01-7623dffd-0000000000010010.b",
+      "original_attributes": 32,
+      "test_attributes": 33,
+      "sha256": "ec6d777064ea677f0c49d7e0c101b103226d163e8ec58431ba5759cc2db00b41"
+    }
+  ],
+  "original_csv_restored": true,
+  "original_csv_sha256": "e930b82e2fab555d20935b4150675abd20d13f3552037ded1a8188151b747d1e",
+  "all_63_file_contents_unchanged_since_csv_restore": true,
+  "all_other_file_attributes_unchanged": true,
+  "firmware_reprogrammed": false,
+  "attribute_restoration_pending": true,
+  "reset_save_failure_hardware_status": "pending"
+}

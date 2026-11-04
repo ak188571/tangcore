@@ -91,3 +91,13 @@ POS5位置でSAVE/RESET TO RECOMMENDED/POSを含め文字欠けなし、OSD2中�
 その後Resetを押さず手動でON/STRONG/WEAKへ変更して1回SAVEし、OSDを開いたままSAVEDとなった。一覧から再launchすると、手動値ON/STRONG/WEAK・INITIAL USER・STORE USER・SAVED・FRAME ACKへ復元し、CSVよりuser保存値を優先することを確認した。Pac-Manは全OFF・INITIAL DEFAULT・STORE RESET・SAVED・FRAME ACKを維持し、映像・音声・操作も正常だった。
 
 これにより、Reset確定は推奨数値を固定する処理ではなくCSVへ従うモードを保存すること、Reset後の手動SAVEはuser overrideへ戻ることを実機確認した。現在のSDには試験用CSV1:2:3が残っている。次に全SDを新たに退避・record照合し、必ず元CSV1:1:2へ戻してからReset保存失敗試験を準備する。元CSV復帰・属性試験・回復・最終照合は未実施。
+
+## 手動user再保存のPC照合・元CSV復帰・失敗試験準備
+
+2026-11-04T16:25:19.474567+09:00、CSV追従試験後のSD全63fileを別の退避先へコピー・SHA照合した。Dr. Marioのaだけがgeneration7/kind0/value15（ON/STRONG/WEAK）へ変わり、b generation6/kind1/value0は維持されていた。Pac-Manのa generation3/kind1/value0とb generation2/kind0/value0、試験CSVと他file、全元属性は同一。手動調整後のSAVEがResetではなく通常user保存となることを実byteでも確認した。
+
+2026-11-04T16:25:38.290620+09:00、保全済み元CSVへbyte単位で復帰し、SHA e930b82e2fab555d20935b4150675abd20d13f3552037ded1a8188151b747d1eと照合した。Dr. Mario推奨値は元の1:1:2（ON/WEAK/STANDARD）へ戻った。保存recordと他fileの内容・全属性は同一だった。
+
+2026-11-04T16:26:08.746140+09:00、Dr. Mario a/bの2fileだけへ一時的なread-only属性を追加し、CSV復帰後の全63file内容と他fileの属性が同一と確認した。現在の基準user値ON/STRONG/WEAKを保護した状態である。firmware書込みは行っていない。post-csv-trial-verification.jsonとread-only-protection.jsonに記録した。
+
+次はReset previewで元CSV ON/WEAK/STANDARDへ移り、SAVE FAILED/stay-open/retry、X/Yでuser値とuser意図へ戻せることを実機確認する。試験後はSDを新たに退避・照合し、属性を必ず元へ戻して保存回復を確認する。これらの失敗・属性復帰・回復はまだ未確認。
