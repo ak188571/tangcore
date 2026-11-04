@@ -121,3 +121,15 @@ Pac-ManではON/WEAK/STANDARDをSAVEして再launchで復元し、続いて明�
 一覧からの再launchと通常電源再投入後もON/STRONG/WEAK・USER/SAVED/FRAME ACKを復元した。Pac-Manの明示全OFF保存は保たれ、両ゲームの映像・音声・操作も正常だった。これで属性復帰後の保存回復を含む、依頼した画面・操作の実機確認はすべて正常である。
 
 最後にSDをPCへ戻して新たに全fileを退避し、Dr. Marioの新しいrecordがgeneration5であること、同値SAVE2回で余分な世代が増えていないこと、recordのCRC/key/size/valueと無関係file不変を照合する。このPC確認はまだ行っておらず、第5e完了tagもまだ作らない。
+
+## 第5e段階の完了
+
+2026-11-04T12:45:29.311090+09:00、同じ物理identityのmicroSD全63fileを新たに退避・SHA照合した。Dr. Marioのaはgeneration5・ON/STRONG/WEAK（value15）、bはgeneration4・ON/WEAK/STANDARD（value19）。Pac-Manのaはgeneration1・ON/STANDARD/WEAK（value13）、bはgeneration2・全OFF（value0）だった。全recordのCRC/magic/schema/system/kind/reserved/ROM key/size/valueを確認した。
+
+回復試験前と比べた変更はDr. Marioのaだけで、直前の有効bとPac-Manの2recordは同一。制御した変更SAVE1回でgeneration4から5へ進み、その後の同値SAVE2回では世代が増えなかった。元59fileの内容と全fileの元属性も同一だった。Windows system folderは従来どおり対象外であり、全sectorの一致を主張しない。記録はfinal-sd-verification.json。
+
+実装・関連10試験・firmware build・導入/全flash照合・依頼した実機試験・保存recordのPC照合・read-only試験と属性復帰・保存回復・最終SD照合まで完了した。local tag crt-stage5e-hw-20261104を確認済み基準とする。現在の基板はFW0051516、NES c8df819a。実SAVEで作成した4recordをSDに残し、Dr. MarioはON/STRONG/WEAK、Pac-Manは全OFFを保持する。firmwareの再書込みや保存内容の編集・削除は行っていない。
+
+正式な操作はSAVEで保存して開いたまま、X/Yで未保存previewを最後の保存成功値または起動基準へ戻して終了。旧save-on-close案は未導入の履歴である。本文前半の確認待ちや差異確認は各時点の経過であり、本節とhardware-results.jsonが最終状態である。
+
+実機確認範囲は現在のConsole138K/NESと記録済み2本のROM。保存失敗の実機確認はread-onlyによる拒否・再試行・破棄・属性復帰後の回復で、sync/close/途中書込み・世代競合などはPC試験のみ。Reset UI・tombstone作成・system/global defaultsは追加しておらず、第5段階全体は未完了。初版第5段階の起動停止原因も特定済みとはしない。

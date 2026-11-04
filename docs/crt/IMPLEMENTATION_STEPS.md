@@ -9,7 +9,7 @@
 | 3 | OSD2の最小構成 | OSD1との排他、項目操作、入力遮断、解放待ち | 完了。既存の1〜3の統合commitとOSD表示維持の修正で確認済み |
 | 4a | 水平ぼかし | OSD2から実映像を調整でき、OFF時は基準映像と一致する。画面端の処理も正しい | 実装・自動試験・build・導入と依頼した全実機試験が完了。local tagはcrt-stage4a-hw-20261103。STAGE4A.mdとverification/crt-stage4a/を参照 |
 | 4b | 走査線 | OSD2から実映像を調整でき、OFF時と水平ぼかし併用時も正しい | 修正版の実装・自動試験・build・導入と依頼した全実機再試験が完了。WAITING修正、元224行の明暗配分、表示端・入力・ゲーム切替も確認済み。local tagはcrt-stage4b-hw-20261103。STAGE4B.mdとverification/crt-stage4b-fix/を参照 |
-| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 全体は未完了。5a CSV読込み、5b 起動時推奨値、5c ROM ID、5d 読取り専用の保存値復元まで実機確認済み。最新基準はcrt-stage5d-hw-20261104。保存・Reset UI・defaultsは今後の対象。各STAGE5A〜5D文書とverificationを参照 |
+| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 全体は未完了。5a CSV読込み、5b 起動時推奨値、5c ROM ID、5d 読取り復元、5e 明示SAVE/X/Y破棄まで実機確認済み。最新基準はcrt-stage5e-hw-20261104。Reset UI・tombstone作成・defaultsは今後の別段階。各STAGE5A〜5E文書とverificationを参照 |
 
 ## 完了済みの履歴
 
@@ -50,4 +50,4 @@ submoduleを変更した場合は、対象submoduleで先にcommitし、親repos
 
 ## 第5e段階
 
-第5d確認済み版を基にゲーム別SAVEのみを追加。利用者の指定によりCLOSEをSAVEへ変更し、SAVEで開いたまま保存、X/Yで未保存previewをRAMと実映像から破棄して終了する。関連10試験とbuildが成功、実機は未確認。Reset UI・tombstone作成・defaultsは別段階。STAGE5E_SAVE.mdとverification/crt-stage5e-saveを参照。
+第5d確認済み版を基にゲーム別SAVEのみを追加。利用者の指定によりCLOSEをSAVEへ変更し、SAVEで開いたまま保存、X/Yで未保存previewをRAMと実映像から破棄して終了する。関連10試験・build・全flash照合・依頼実機試験・read-only失敗/属性復帰/保存回復・SD最終照合まで完了。同値SAVEで世代が増えないことも実byteで確認。local tagはcrt-stage5e-hw-20261104。Reset UI・tombstone作成・defaultsは別段階。STAGE5E_SAVE.mdとverification/crt-stage5e-saveを参照。

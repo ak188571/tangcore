@@ -28,7 +28,7 @@
   "titles_test_fixture_verified": true,
   "sd_files_unchanged": 59,
   "sdk_defaults_restored": true,
-  "hardware_test_status": "awaiting user",
+  "hardware_test_status": "all_requested_stage5e_hardware_checks_passed_current_console138k_nes_setup",
   "readback_connection": {
     "initial_mode0_failed": true,
     "read_only_retry_mode2_succeeded": true,
@@ -41,5 +41,7 @@
     ]
   },
   "installed_full_flash_sha256": "1ed4a775020432ec1d7133101abb795b768bdf636f78b3261433a06bce259ccf",
-  "hardware_test_phase": "Initial boot before testing explicit SAVE or X/Y discard"
+  "hardware_test_phase": "Initial boot before testing explicit SAVE or X/Y discard",
+  "hardware_test_record": "hardware-results.json",
+  "validation_tag": "crt-stage5e-hw-20261104"
 }

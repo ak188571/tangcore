@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "all_requested_interactive_hardware_checks_passed_final_sd_generation_verification_pending",
+  "hardware_test_status": "all_requested_stage5e_hardware_checks_passed_current_console138k_nes_setup",
   "firmware_commit": "0051516f442552b68677adec064a8a0c62daea61",
   "firmware_sha256": "e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da63a41ebdc3aa6e223",
   "reports": [
@@ -53,11 +53,13 @@
     "unrelated_sd_files_unchanged": true,
     "hardware_save_failure_stays_open_retry_and_discard": true,
     "read_only_test_attributes_restored_and_save_recovers": true,
-    "unchanged_save_does_not_advance_generation_on_pc": null,
+    "unchanged_save_does_not_advance_generation_on_pc": true,
     "read_only_test_attributes_restored": true
   },
-  "limitations": "All requested interactive hardware checks passed, including denied-write failure and save recovery. Final fresh SD backup, expected generation5/no extra generation after two unchanged SAVE presses, record CRC/value/key and unrelated-file integrity verification remain pending. Reset/defaults excluded; sync/close/torn-write failures are host-tested only.",
+  "limitations": "Verified on current Console138K/NES with the two recorded ROMs. Hardware failure coverage is read-only denied writes, retry/discard and recovery; sync/close/torn writes, unknown schema and generation conflicts are host-tested only. No raw-sector comparison or other-core storage ownership claim. Reset UI, tombstone creation and defaults remain outside this stage. Earlier initial stage5 boot failure root cause is undetermined.",
   "pc_record_audit": "record-inspection.json",
   "read_only_test_record": "read-only-protection.json",
-  "post_failure_sd_record": "post-failure-sd-verification.json"
+  "post_failure_sd_record": "post-failure-sd-verification.json",
+  "validation_tag": "crt-stage5e-hw-20261104",
+  "final_sd_record": "final-sd-verification.json"
 }
