@@ -109,3 +109,11 @@ POS5位置でSAVE/RESET TO RECOMMENDED/POSを含め文字欠けなし、OSD2中�
 Xで閉じると値と映像が旧user値へ戻り、再表示でSAVED・FRAME ACKを確認した。同じReset/SAVE失敗後にYでも取消しでき、一覧からの再launchでも旧user値とINITIAL USER・STORE USER・SAVED・FRAME ACK、映像・音声・操作が正常だった。Resetの意図も未確定のまま破棄されることを確認した。
 
 失敗の実機確認範囲はread-onlyによる書込み拒否であり、sync/close失敗や途中電源断を実機試験したことにはしない。次はSD全63fileを新たに退避・照合し、Dr. Marioの2fileを元属性へ戻す。その後ResetのSAVEが回復して成功することを確認する。属性復帰・回復・最終SD照合はまだ未実施。
+
+## Reset失敗試験後のSD照合と属性復帰
+
+2026-11-04T16:42:04.385560+09:00、同じ物理identityのmicroSD全63fileを新たに退避・SHA照合した。全file内容はReset保存失敗試験前と同一で、user recordとtombstoneの両世代は保護されていた。全fileの属性も準備した試験状態と一致した。
+
+2026-11-04T16:42:37.392897+09:00、Dr. Marioのa/bだけを記録済み元属性へ戻し、全fileの内容と全元属性が同一であることを確認した。CSVも元のSHA e930b82e2fab555d20935b4150675abd20d13f3552037ded1a8188151b747d1eと一致。firmware書込みや保存record内容の編集は行っていない。post-failure-sd-verification.jsonに記録した。
+
+残りは属性復帰後のReset SAVE成功と再launch/通常電源再投入後の推奨値モード復元、および最終SD照合である。回復試験はDr. MarioのReset確定SAVE1回と、その後の同値SAVE2回に操作を限定し、新しいkind1世代が1つだけ増えることをPCでも確認する予定。

@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-11-04T16:42:04.385560+09:00",
+  "verified_total_files": 63,
+  "all_file_contents_unchanged_after_failed_saves": true,
+  "both_protected_records_unchanged": true,
+  "post_test_attributes_match_prepared_state": true,
+  "fresh_post_failure_backup_verified": true,
+  "attribute_restoration_pending": false,
+  "restored_at": "2026-11-04T16:42:37.392897+09:00",
+  "original_csv_restored_and_verified": true,
+  "original_csv_sha256": "e930b82e2fab555d20935b4150675abd20d13f3552037ded1a8188151b747d1e",
+  "all_file_attributes_restored_to_original": true,
+  "only_dr_mario_two_records_attributes_changed": true,
+  "all_63_file_contents_still_unchanged": true,
+  "firmware_reprogrammed": false,
+  "hardware_successful_reset_save_after_restoration": "pending"
+}

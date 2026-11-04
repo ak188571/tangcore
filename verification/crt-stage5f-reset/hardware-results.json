@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "reset_save_failure_hardware_passed_post_failure_sd_check_and_attribute_recovery_pending",
+  "hardware_test_status": "post_failure_sd_unchanged_csv_and_attributes_restored_reset_save_recovery_pending",
   "firmware_commit": "e82e5ea61d318b9511bf5ed76e2e8cc790458cdf",
   "firmware_sha256": "44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b",
   "reports": [
@@ -46,13 +46,14 @@
     "changed_csv_followed_after_reset": true,
     "manual_adjustment_after_reset_saves_user_override": true,
     "reset_save_failure_retry_and_x_y_cancel": true,
-    "test_attributes_and_csv_restored": null,
+    "test_attributes_and_csv_restored": true,
     "save_recovery_after_attributes_restored": null,
     "final_sd_records_and_unrelated_files_verified": null
   },
-  "limitations": "Read-only Reset denied-write/stay-open/retry/X/Y cancellation is hardware-confirmed. Original CSV restored, but two test read-only attributes remain active. Post-failure SD integrity, original attribute restoration, successful Reset SAVE recovery and final audit remain pending. Other write fault classes are host-tested; defaults excluded.",
+  "limitations": "All63 contents unchanged after denied Reset writes; fresh backup verified and original CSV/all attributes restored. Successful Reset SAVE recovery/relaunch/power-cycle and final SD integrity remain pending. Defaults excluded; non-read-only fault classes host-only.",
   "pc_record_audit": "record-inspection.json",
   "csv_trial_record": "csv-trial-installation.json",
   "manual_override_pc_record": "post-csv-trial-verification.json",
-  "read_only_test_record": "read-only-protection.json"
+  "read_only_test_record": "read-only-protection.json",
+  "post_failure_sd_record": "post-failure-sd-verification.json"
 }
