@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "sd_record_integrity_valid_saved_values_differ_clarification_pending",
+  "hardware_test_status": "normal_save_and_pc_integrity_passed_read_only_failure_test_ready",
   "firmware_commit": "0051516f442552b68677adec064a8a0c62daea61",
   "firmware_sha256": "e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da63a41ebdc3aa6e223",
   "reports": [
@@ -18,6 +18,11 @@
       "user_report": "1-4正常",
       "phase": "Power cycle, repeated SAVE, second game and explicit OFF, OSD regression",
       "scope": "Normal power cycle restores Dr.Mario STRONG/STRONG; Dr.Mario STANDARD/WEAK SAVE and unchanged repeat SAVE/relaunch normal; Pac-Man WEAK/STANDARD then explicit all-OFF SAVE/relaunch USER normal without changing Dr.Mario; five positions, exclusion/centering, input block/release normal"
+    },
+    {
+      "user_report": "PCで読んだ値になるよう追加・変更して保存した",
+      "phase": "Clarification of extra SAVE operations",
+      "scope": "Observed Dr.Mario latest generation4 ON/WEAK/STANDARD and Pac-Man historical settings reflect additional user saves; previous sequence mismatch is explained without modifying stored bytes"
     }
   ],
   "checks": {
@@ -34,11 +39,13 @@
     "normal_power_cycle_restores_saved_value": true,
     "multiple_generations_and_explicit_off_save": true,
     "osd_positions_input_release_and_exclusion": true,
-    "pc_record_crc_key_size_generation_values_verified": null,
+    "pc_record_crc_key_size_generation_values_verified": true,
     "unrelated_sd_files_unchanged": true,
     "hardware_save_failure_stays_open_retry_and_discard": null,
-    "read_only_test_attributes_restored_and_save_recovers": null
+    "read_only_test_attributes_restored_and_save_recovers": null,
+    "unchanged_save_does_not_advance_generation_on_pc": null
   },
-  "limitations": "Original 59 files and all four record CRCs/keys/sizes are verified. Actual Dr.Mario latest generation4 ON/WEAK/STANDARD differs from requested ON/STANDARD/WEAK; Pac-Man previous value also differs. Additional operations versus an issue are not yet determined. No read-only attributes applied. Save-failure/recovery tests pending; Reset/defaults excluded.",
-  "pc_record_audit": "record-audit-pending-clarification.json"
+  "limitations": "Current actual records confirmed by user as extra SAVE operations. Dr.Mario baseline is ON/WEAK/STANDARD generation4; Pac-Man OFF generation2. Read-only save-failure/retry/discard and attribute restoration/recovery remain pending. Controlled same-value no-generation-advance proof also pending. Reset/defaults excluded.",
+  "pc_record_audit": "record-inspection.json",
+  "read_only_test_record": "read-only-protection.json"
 }

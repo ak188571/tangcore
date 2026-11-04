@@ -89,3 +89,11 @@ Pac-ManではON/WEAK/STANDARDをSAVEして再launchで復元し、続いて明�
 ただし操作手順から予想した世代・値と一致しなかった。Dr. Marioのaはgeneration3・ON/STRONG/STRONG、bはgeneration4・ON/WEAK/STANDARDだった。Pac-Manのaはgeneration1・ON/STANDARD/WEAK、bはgeneration2・全OFFだった。最新のDr. Mario値は依頼したON/STANDARD/WEAKと異なる。追加操作の結果か、表示・保存の不一致かはまだ判定しない。同値SAVEによる世代増加がないことも、この実機記録からは確認済みとしない。
 
 退避後に保存内容を編集・修復したり、read-only属性を設定したりしていない。利用者へ最後の保存値と追加操作の有無を確認中。記録はverification/crt-stage5e-save/record-audit-pending-clarification.json。これまでの「正常」は利用者の各報告を記録したものであり、このPC実byteの差異を解消済みとするものではない。
+
+## 追加操作の確認とread-only試験準備
+
+利用者が「PCで読んだ値になるよう追加・変更して保存した」と回答した。前節の手順上の予想値との差異は追加SAVEの結果として確認できた。保存内容を編集・修復せず、そのまま試験基準にする。Dr. Marioの最新値はgeneration4・ON/WEAK/STANDARD、Pac-Manの最新値はgeneration2・全OFF。4recordのCRC/key/size/schema/kind/reserved、世代と値、元59file不変をPCで確認した。追加SAVEがあるため、このsnapshotだけで同値SAVEの世代抑止を証明済みとはしない。
+
+2026-11-04T12:09:28.525863+09:00、退避と全file再照合後、Dr. Marioのa/bの2fileだけを一時的にread-only属性へ変更した。元の全file属性をprivate sessionへ記録し、全63fileの内容および他fileの属性は同一と確認した。firmware・CSV・ROM・Pac-Man recordは変更していない。記録はrecord-inspection.jsonとread-only-protection.json。前節の確認待ちはこの回答で解消した経過として残す。
+
+次は通常起動し、Dr. Marioの基準ON/WEAK/STANDARDから異なる値をSAVEしてFAILEDとなりOSDが消えないこと、再SAVEでもFAILED、X/Yで基準値へ戻せることを確認する。その後SDをPCへ戻して全fileを新たに退避・照合し、元の属性へ戻す。失敗試験・属性復帰・保存回復はまだ確認待ち。
