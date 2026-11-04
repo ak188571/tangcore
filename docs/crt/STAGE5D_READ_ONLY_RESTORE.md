@@ -91,3 +91,9 @@ A正常後にmicroSDをPCへ戻して再退避し、未使用の3pathへ試験re
 2026-11-04T10:44:25.176429+09:00、前回と同じ物理identityのF:TANGCONSOLEへ試験用3recordを新規追加した。直前にSD全59fileを新しい退避先へコピーしてSHA照合し、試験A前と全fileが同一であることを確認した。既存crt directoryがないことを確認し、既存fileは上書きしていない。追加後は計62fileを列挙・SHA照合し、元の59fileが同一であることを確認した。firmwareとflashにはアクセスしていない。
 
 Dr. Marioのaはgeneration1・全OFF、bはgeneration2・ON/STRONG/WEAK。Pac-Manのaは32byte全0の破損record。確認済みの試験recordとSHAはverification/crt-stage5d-restore/phase-b-fixture-installation.jsonに記録した。通常起動後の保存値復元・破損時の復帰は実機報告待ちであり、まだ第5dを完了としない。試験後のSD不変照合と3recordの保全・取外しも未実施。
+
+## 試験B：保存値復元と破損record拒否の実機結果
+
+2026年11月4日、利用者が試験Bの初回3項目を「1-3正常」と回答した。日本語NES一覧と順序、Dr. Mario/Pac-Manの起動・映像・音声・操作は正常。Dr. Marioでは新しいgeneration2のON/STRONG/WEAKがCSVより優先され、ROM ID 7623dffd、INITIAL USER、STORE USER、FRAME ACKを確認した。Pac-Manでは32byte全0の破損recordを拒否し、ROM ID ebbb19bf、全OFF、INITIAL DEFAULT、STORE BAD SAVE、FRAME ACKとなった。OSD1の一覧への復帰と別ゲーム起動も正常だった。
+
+OSDで調整後の開き直し・ゲーム起動し直し・通常の電源再投入、OSD操作の回帰確認は残りの実機項目とする。試験後の全62file不変照合と試験recordの保全・取外しは未実施。第5d全体の完了tagはまだ作らない。
