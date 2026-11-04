@@ -79,3 +79,9 @@ A正常後にmicroSDをPCへ戻して再退避し、未使用の3pathへ試験re
 2026年11月4日、利用者が「1-3正常」と回答した。日本語NES一覧と順序、Dr. Mario/Pac-Manの起動・映像・音声・操作、STAGE5D表示、ROM ID 7623dffd/ebbb19bf、Dr. MarioのCSV ON/WEAK/STANDARD、Pac-ManのDEFAULT全OFF、両方のSTORE MISSINGとFRAME ACKを確認した。OSD1による一覧への復帰と別ゲーム起動も正常だった。結果はverification/crt-stage5d-restore/hardware-results.json。
 
 試験Aの残りは、調整した値がOSD開き直しで保たれることと、ゲームを起動し直すとCSV値へ戻ること。追加書込みは不要。試験B用recordはまだ追加しておらず、保存値の実機復元を確認済みとはしない。第5d完了tagはまだ作らない。
+
+## 試験Aの依頼項目完了
+
+2026年11月4日、利用者が残り2項目を「1-2正常」と回答した。Dr. Marioのblur/scanlineをSTRONGへ変更し、OSD2を閉じて開き直しても値が保持され、ROM ID 7623dffd、INITIAL CSV、STORE MISSING、FRAME ACKが正常だった。OSD1の一覧へ戻り同ゲームを起動し直すと、ON/WEAK/STANDARDのCSV値へ戻ることも確認した。これで保存データがない場合の試験Aは依頼項目をすべて完了した。
+
+次は試験B用の3recordをPCからmicroSDへ追加する。直前に全fileを再退避・照合し、既存recordは上書きしない。Dr. Marioの新しい世代のON/STRONG/WEAK復元とPac-Manの破損record拒否は実機未確認。firmware再書込みは不要。第5d全体は未完了で、完了tagはまだ作らない。

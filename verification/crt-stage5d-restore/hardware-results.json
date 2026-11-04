@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "phase_a_startup_and_missing_fallback_passed_reopen_relaunch_pending",
+  "hardware_test_status": "all_requested_phase_a_hardware_checks_passed_phase_b_pending",
   "firmware_commit": "42359d6976edf98089bdbc91ac8725fce2fd0bef",
   "firmware_sha256": "9609a2dabb64f1e5c1fff3caf3622680b5c73487c0867eed8ffd4e13b69996e7",
   "reports": [
@@ -8,6 +8,11 @@
       "user_report": "1-3正常",
       "phase": "A: no settings records",
       "scope": "Japanese NES list/order, Dr.Mario and Pac-Man startup/video/audio/controls, stage5d and ROM IDs, CSV/default settings, STORE MISSING and FRAME ACK"
+    },
+    {
+      "user_report": "1-2正常",
+      "phase": "A: no settings records",
+      "scope": "Dr.Mario adjusted STRONG/STRONG retained across OSD close/reopen, relaunch restores CSV ON/WEAK/STANDARD; ROM ID/INITIAL CSV/STORE MISSING/FRAME ACK normal"
     }
   ],
   "checks": {
@@ -20,8 +25,8 @@
     "pac_man_video_audio_controls": true,
     "pac_man_crc_ebbb19bf": true,
     "pac_man_all_off_default_store_missing_frame_ack": true,
-    "phase_a_same_game_adjusted_values_retained_on_reopen": null,
-    "phase_a_relaunch_restores_csv": null,
+    "phase_a_same_game_adjusted_values_retained_on_reopen": true,
+    "phase_a_relaunch_restores_csv": true,
     "phase_b_newest_saved_override_restored": null,
     "phase_b_corrupt_record_fallback": null,
     "phase_b_reopen_relaunch_and_power_cycle": null,
@@ -29,5 +34,5 @@
     "phase_b_sd_unchanged_after_test": null,
     "phase_b_test_records_removed_after_preservation": null
   },
-  "limitations": "Phase A reopen/relaunch and all phase B hardware checks remain pending. No firmware save, Reset UI, defaults file, or hardware tombstone/I/O-failure test is claimed."
+  "limitations": "Phase B hardware restoration, corrupt-record fallback, reopen/relaunch/power cycle, OSD regression and post-test SD integrity/restoration remain pending. No firmware save, Reset UI, defaults file, or hardware tombstone/I/O-failure test is claimed."
 }
