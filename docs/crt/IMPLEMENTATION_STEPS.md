@@ -47,3 +47,7 @@ submoduleを変更した場合は、対象submoduleで先にcommitし、親repos
 ## 第5d段階
 
 実機合格第5cを基準に、保存recordの読取りと起動時復元のみを追加。関連9試験・firmware build・導入/全flash照合・依頼した試験A/B・試験後のSD不変照合と復帰まで完了。保存recordなしのCSV/default復帰、新しいuser値復元、破損拒否、開き直し/再起動、OSD操作を確認。local tagはcrt-stage5d-hw-20261104。SDへの保存、Reset UI、system/global defaultsは未実装。STAGE5D_READ_ONLY_RESTORE.mdとverification/crt-stage5d-restore/を参照。第5段階全体は未完了。
+
+## 第5e段階
+
+第5d確認済み版を基にゲーム別SAVEのみを追加。利用者の指定によりCLOSEをSAVEへ変更し、SAVEで開いたまま保存、X/Yで未保存previewをRAMと実映像から破棄して終了する。関連10試験とbuildが成功、実機は未確認。Reset UI・tombstone作成・defaultsは別段階。STAGE5E_SAVE.mdとverification/crt-stage5e-saveを参照。

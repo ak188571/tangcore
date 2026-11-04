@@ -1,0 +1,6 @@
+Folder tests passed: actual FatFs/CSV adapters, translated folders, nested Back/restore, held buttons, empty/error pages, ROM request, depth/path bounds
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.854s
+
+OK

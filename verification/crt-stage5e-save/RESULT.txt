@@ -1,0 +1,6 @@
+Stage5e explicit per-game SAVE: 10 host scripts and firmware build PASS; hardware PENDING.
+Firmware 0051516f442552b68677adec064a8a0c62daea61, 226192 bytes, SHA e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da63a41ebdc3aa6e223.
+SAVE stays open and writes an explicit override. X/Y never writes and discards the live preview back to the last successful SAVE or launch baseline.
+Inactive slot write -> sync -> close -> exact readback; retry re-reads both generations. I/O/unknown schema/conflict blocks overwrite.
+Reset UI, tombstone creation and defaults are excluded. JTAG/FPGA/core loaders unchanged. Save callback currently limited to NES resource ownership.
+Save writer frame208bytes excluding nested reader/FatFs/driver stack. Original save-on-close proposal was superseded before deployment.
