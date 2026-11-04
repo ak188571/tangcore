@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "reset_basics_power_cycle_and_osd_passed_pc_tombstone_and_csv_following_pending",
+  "hardware_test_status": "reset_pc_tombstones_verified_csv_following_fixture_installed_awaiting_hardware",
   "firmware_commit": "e82e5ea61d318b9511bf5ed76e2e8cc790458cdf",
   "firmware_sha256": "44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b",
   "reports": [
@@ -31,8 +31,8 @@
     "pac_man_equal_numeric_off_reset_is_dirty_and_relaunch_follows_builtin": true,
     "normal_power_cycle_restores_recommended_mode": true,
     "osd_five_positions_exclusion_input_block_and_release": true,
-    "pc_tombstone_crc_key_size_kind_zero_value_and_generation": null,
-    "confirmed_reset_repeated_save_does_not_advance_generation": null,
+    "pc_tombstone_crc_key_size_kind_zero_value_and_generation": true,
+    "confirmed_reset_repeated_save_does_not_advance_generation": true,
     "changed_csv_followed_after_reset": null,
     "manual_adjustment_after_reset_saves_user_override": null,
     "reset_save_failure_retry_and_x_y_cancel": null,
@@ -40,5 +40,7 @@
     "save_recovery_after_attributes_restored": null,
     "final_sd_records_and_unrelated_files_verified": null
   },
-  "limitations": "PC tombstone/CRC/generation verification, future CSV following, manual override after Reset, read-only Reset failure/recovery and final CSV/attribute restoration remain pending. Defaults excluded."
+  "limitations": "Tombstone CRC/key/size/kind1/value0/generations and no extra generation after cancelled previews/unchanged SAVE verified on PC. Temporary CSV recommendation1:2:3 installed; actual following/manual user override/failure/recovery and restoring original CSV/attributes/final integrity remain pending. Defaults excluded.",
+  "pc_record_audit": "record-inspection.json",
+  "csv_trial_record": "csv-trial-installation.json"
 }

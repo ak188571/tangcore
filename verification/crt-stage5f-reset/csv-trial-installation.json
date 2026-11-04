@@ -1,0 +1,13 @@
+{
+  "completed_at": "2026-11-04T16:16:20.422697+09:00",
+  "changed_file": "nes/titles.csv",
+  "original_sha256": "e930b82e2fab555d20935b4150675abd20d13f3552037ded1a8188151b747d1e",
+  "trial_sha256": "42280dba3b237a7f297bee108afa8a7a792d01de3120bea01c4af1559249c260",
+  "original_recommendation": "1:1:2",
+  "trial_recommendation": "1:2:3",
+  "display_names_order_and_other_rows_preserved": true,
+  "all_other_62_files_and_attributes_unchanged": true,
+  "tombstone_records_unchanged": true,
+  "firmware_reprogrammed": false,
+  "original_csv_restoration_pending": true
+}

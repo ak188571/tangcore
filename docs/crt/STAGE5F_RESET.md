@@ -75,3 +75,11 @@ ResetをSAVEで確定してもOSDは開いたままSAVEDとなり、同値SAVE2�
 POS5位置でSAVE/RESET TO RECOMMENDED/POSを含め文字欠けなし、OSD2中のSELECT＋右によるOSD1重なりや設定変更なし、ゲームへの入力流出なし、X/Y保持中の入力遮断と全解放後の復帰、OSD1中央表示も確認した。
 
 次はSD全体をPCへ新たに退避し、両ゲームの最新recordがkind1/value0であること、CRC/key/size/generationと同値SAVEの世代抑止、他file不変を照合する。その後Dr. MarioのCSV推奨値だけを一時的にON/STANDARD/STRONGへ変更し、tombstoneが新しい推奨値へ追従する試験を行う。表示名・順序を維持し、試験後は元のCSVへ必ず戻す。現時点でこのPC照合とCSV追従試験は未実施である。
+
+## tombstoneのPC照合とCSV追従試験の準備
+
+2026-11-04T16:16:00.301699+09:00、同じ物理identityのSD全63fileを新たに退避・SHA照合した。Dr. Marioはa generation5/kind0/value15を保持し、新しいbがgeneration6/kind1/value0。Pac-Manはb generation2/kind0/value0を保持し、新しいaがgeneration3/kind1/value0だった。全4recordのCRC/magic/schema/system/key/size/kind/reserved/valueを確認した。Reset previewの取消しと確定後の同値SAVE2回では余分な世代が増えていなかった。元59file、古い有効slot、元属性は同一。record-inspection.jsonに記録した。
+
+2026-11-04T16:16:20.422697+09:00、退避済みtitles.csvのDr. Mario crt_v1だけを1:1:2から1:2:3（ON/STANDARD/STRONG）へ変更した。表示名・順序・他row・改行を維持し、他62fileの内容と全属性は同一、tombstoneも同一と照合した。firmware書込みは行っていない。csv-trial-installation.jsonとcsv-followingの元/試験CSVに再現情報を残した。試験後は元のCSVへ戻す。
+
+次はReset/SAVEなしに新しいCSV推奨値へ追従することを実機確認し、その後手動調整をON/STRONG/WEAKへSAVEして新CSVよりuser値を優先することを確認する。このCSV追従とuser再保存、元CSV復帰はまだ未実施。
