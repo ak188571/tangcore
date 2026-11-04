@@ -115,3 +115,11 @@ microSDの64ファイルを新たに退避した。変更はPac-Manの保存slot
 利用者は続く4項目を「1-4正常」と回答した。Dr. MarioでON/STRONG/WEAKを手動SAVEし、OSDが開いたままSAVEDとなり、一覧からの起動し直し後もSAVE SAVED・INITIAL USER・保存値・STORE USER・FRAME ACK・正しいROM ID・DEFAULTS BAD FILEを確認した。Reset previewはCSVのON/WEAK/STANDARDを参照し、X/Yのどちらで取り消してもUSER保存値へ戻った。改めてResetをSAVEすると、起動し直し後にCSV・STORE RESET・SAVEDと推奨値へ戻った。
 
 Pac-Manで同じResetを選び直しても、既に保存済みのResetと値が同一なのでSAVED・INITIAL DEFAULT・全OFF・STORE RESET・FRAME ACK・正しいROM ID・DEFAULTS BAD FILEのままだった。この操作ではSAVEを依頼していない。両ゲームの映像・音声・操作も正常だった。予定した機能試験は合格したが、保存記録の最終世代・CRCと他ファイル・全属性のPC照合、試験用defaultsの取り外し、その後の通常起動が残っているため、第5g完了とはしない。
+
+## 最終SD照合と試験defaultsの取り外し
+
+microSD全64ファイルを新たに退避し、直前の不正defaults導入時からの変更がDr. Marioの保存slot a/bだけであることを確認した。slot aは第9世代・USER値15、slot bは第10世代・Reset値0だった。Pac-Manはslot aが第5世代・Reset値0、slot bが第4世代・USER値23のままで、4個すべてのCRC・ROM識別情報・世代・kind・値は正常だった。Dr. Marioの2回のSAVEで2世代だけ進み、Reset取消しやPac-Manの同じReset previewでは保存されていなかった。
+
+他の62ファイルと全属性は不変で、導入前の元59ファイル・CSVも全内容が一致した。不正試験defaultsもfirmwareによって変更されていなかった。物理カード識別情報・正確な対象path・SHA・退避内容を再確認し、今回新規追加したcrt/defaults.tsvだけを非再帰で取り外した。削除後は63ファイルを照合し、元59ファイル・CSV・全属性と最新Reset記録を維持している。crtディレクトリと4個の保存ファイルは残した。
+
+根拠はfinal-sd-audit.jsonおよびtest-defaults-removal.jsonに記録した。firmwareの追加書込みは行っていない。最後に、試験前と同じdefaults未設定状態でDr. MarioがCSVのON/WEAK/STANDARD、Pac-Manがbuiltin全OFFとなり、両方DEFAULTS MISSING・STORE RESET・SAVE SAVED・FRAME ACKで通常起動することを実機確認する。この起動確認までは第5g完了としない。
