@@ -81,3 +81,11 @@ firmwareは226192bytes、SHA256 e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da6
 Pac-ManではON/WEAK/STANDARDをSAVEして再launchで復元し、続いて明示的に3項目全OFFをSAVE・再launchして、全OFF・INITIAL USER・STORE USER・SAVE SAVED・FRAME ACKを確認した。Dr. MarioのON/STANDARD/WEAKは別ゲームの保存で変わらなかった。POS5位置で文字欠けなし、OSD1との排他・中央表示、入力遮断とX/Y保持・全button解放後の復帰も正常だった。
 
 現在の最終保存値はDr. Mario ON/STANDARD/WEAK、Pac-Man全OFF。recordの世代数や同値SAVEでの書込み抑止はPCで実byteを照合するまで確認済みとしない。残りはSD全fileの新たな退避、recordのCRC/key/size/generation/value照合と無関係file不変確認、およびread-only属性による保存失敗・再試行・X/Y破棄と属性復帰後の保存回復である。
+
+## 保存recordのPC照合：値の確認待ち
+
+2026年11月4日、同じ物理identityのmicroSD全63fileを新しい退避先へコピー・SHA照合した。元の59fileはすべて導入前と同一で、追加は2本のROMのa/bの計4recordのみだった。全recordはsize32、magic/schema/system/kind/reserved、ROM CRC/size、record CRCが正常だった。
+
+ただし操作手順から予想した世代・値と一致しなかった。Dr. Marioのaはgeneration3・ON/STRONG/STRONG、bはgeneration4・ON/WEAK/STANDARDだった。Pac-Manのaはgeneration1・ON/STANDARD/WEAK、bはgeneration2・全OFFだった。最新のDr. Mario値は依頼したON/STANDARD/WEAKと異なる。追加操作の結果か、表示・保存の不一致かはまだ判定しない。同値SAVEによる世代増加がないことも、この実機記録からは確認済みとしない。
+
+退避後に保存内容を編集・修復したり、read-only属性を設定したりしていない。利用者へ最後の保存値と追加操作の有無を確認中。記録はverification/crt-stage5e-save/record-audit-pending-clarification.json。これまでの「正常」は利用者の各報告を記録したものであり、このPC実byteの差異を解消済みとするものではない。

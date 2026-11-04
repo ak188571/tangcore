@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "normal_save_restore_discard_and_osd_hardware_checks_passed_pc_and_failure_tests_pending",
+  "hardware_test_status": "sd_record_integrity_valid_saved_values_differ_clarification_pending",
   "firmware_commit": "0051516f442552b68677adec064a8a0c62daea61",
   "firmware_sha256": "e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da63a41ebdc3aa6e223",
   "reports": [
@@ -35,9 +35,10 @@
     "multiple_generations_and_explicit_off_save": true,
     "osd_positions_input_release_and_exclusion": true,
     "pc_record_crc_key_size_generation_values_verified": null,
-    "unrelated_sd_files_unchanged": null,
+    "unrelated_sd_files_unchanged": true,
     "hardware_save_failure_stays_open_retry_and_discard": null,
     "read_only_test_attributes_restored_and_save_recovers": null
   },
-  "limitations": "Generation/CRC/key/size/value bytes and unchanged unrelated SD files still require PC inspection. Read-only-record save-failure, retry/discard, attribute restoration and successful-save recovery hardware tests remain pending. Reset UI, tombstone creation and defaults are outside this stage."
+  "limitations": "Original 59 files and all four record CRCs/keys/sizes are verified. Actual Dr.Mario latest generation4 ON/WEAK/STANDARD differs from requested ON/STANDARD/WEAK; Pac-Man previous value also differs. Additional operations versus an issue are not yet determined. No read-only attributes applied. Save-failure/recovery tests pending; Reset/defaults excluded.",
+  "pc_record_audit": "record-audit-pending-clarification.json"
 }
