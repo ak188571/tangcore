@@ -28,7 +28,7 @@
   "titles_test_fixture_verified": true,
   "sd_files_unchanged": 63,
   "sdk_defaults_restored": true,
-  "hardware_test_status": "awaiting user",
+  "hardware_test_status": "all_requested_stage5g_hardware_checks_passed_current_console138k_nes_setup",
   "readback_connection": {
     "initial_mode0_failed": true,
     "read_only_retry_mode2_succeeded": true,
@@ -43,5 +43,7 @@
   "installed_full_flash_sha256": "54a2cdfc28757d6b87b2fad4932065780be38101e7b233e674520b5167818412",
   "existing_save_records_unchanged": true,
   "defaults_file_added": false,
-  "hardware_test_phase": "Initial boot with missing optional defaults; old Reset records preserved"
+  "hardware_test_phase": "Initial boot with missing optional defaults; old Reset records preserved",
+  "hardware_test_record": "hardware-results.json",
+  "validation_tag": "crt-stage5g-hw-20261104"
 }

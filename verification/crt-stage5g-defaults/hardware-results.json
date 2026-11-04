@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "final_sd_audit_and_test_defaults_removal_passed_final_boot_pending",
+  "hardware_test_status": "all_requested_stage5g_hardware_checks_passed_current_console138k_nes_setup",
   "firmware_commit": "8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381",
   "firmware_sha256": "27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f",
   "reports": [
@@ -33,6 +33,11 @@
       "user_report": "1-4正常",
       "phase": "User save and Reset under invalid defaults",
       "scope": "Dr.Mario manually saved ON/STRONG/WEAK once; SAVE stayed open and SAVED, then relaunch restored USER/USER, values, expected ROM ID, DEFAULTS BAD FILE and FRAME ACK. Reset preview used CSV ON/WEAK/STANDARD; both X/Y discarded it and restored saved user values. Reset then SAVE once and relaunch restored CSV/RESET/SAVED and recommended values with BAD FILE/FRAME ACK. Pac-Man repeated Reset retained SAVED/DEFAULT/all OFF/RESET/expected ROM ID/BAD FILE/FRAME ACK with no SAVE, as the same Reset mode was already persisted. Both games video/audio/controls normal. Record generations and unrelated-file integrity await final PC audit."
+    },
+    {
+      "user_report": "1-3正常",
+      "phase": "Final boot after test defaults removal",
+      "scope": "Japanese NES list/order and both games launch/video/audio/controls normal. Dr.Mario restored SAVED/CSV/ON/WEAK/STANDARD/RESET/FRAME ACK/ROM ID 7623dffd/DEFAULTS MISSING. Pac-Man restored SAVED/DEFAULT/OFF/OFF/OFF/RESET/FRAME ACK/ROM ID ebbb19bf/DEFAULTS MISSING. No value change, Reset or SAVE requested."
     }
   ],
   "checks": {
@@ -49,7 +54,7 @@
     "osd_positions_exclusion_input_and_release": true,
     "defaults_read_only_and_unrelated_file_integrity": true,
     "test_defaults_removed_original_csv_attributes_restored": true,
-    "final_missing_defaults_boot_recommendations_restored": null,
+    "final_missing_defaults_boot_recommendations_restored": true,
     "final_sd_record_crc_and_baseline_integrity": true,
     "saved_user_overrides_system_defaults": true,
     "system_trial_defaults_read_only_and_other_files_unchanged": true,
@@ -61,7 +66,7 @@
     "bad_defaults_reset_x_y_cancel_user": true,
     "repeated_builtin_reset_preview_remains_saved": true
   },
-  "limitations": "Planned NES hardware functional trials and all SD audits/cleanup passed. Test defaults file removed; latest Reset records preserved. Final normal boot and original CSV/builtin recommendations with DEFAULTS MISSING remain pending. Other systems/volumes/I/O failures are host-tested only.",
+  "limitations": "Verified on current Console138K/NES and two recorded ROMs. Eleven host scripts and firmware build passed. System/global/blank inheritance, CSV/user priorities, Reset preview/SAVE/X/Y cancellation, OSD layout/input, whole-file rejection and CSV/user/builtin fallback, staged SD audits and test-file cleanup plus final normal boot passed. Other cores and USB-volume hardware behavior and storage I/O fault classes are not newly hardware-validated. Stage5e/5f contain prior denied-write/recovery tests. No raw-sector identity claim; initial monolithic stage5 boot-failure root cause remains undetermined.",
   "system_fixture_installation_record": "system-fixture-installation.json",
   "test_instruction_field_order": [
     "SAVE status",
@@ -82,5 +87,8 @@
   "global_trial_sd_audit_record": "global-trial-sd-audit.json",
   "invalid_fixture_installation_record": "invalid-fixture-installation.json",
   "final_sd_audit_record": "final-sd-audit.json",
-  "test_defaults_removal_record": "test-defaults-removal.json"
+  "test_defaults_removal_record": "test-defaults-removal.json",
+  "completed_at": "2026-11-04T20:30:27.753881+09:00",
+  "validation_tag": "crt-stage5g-hw-20261104",
+  "stage5_nes_validation_tag": "crt-stage5-nes-hw-20261104"
 }

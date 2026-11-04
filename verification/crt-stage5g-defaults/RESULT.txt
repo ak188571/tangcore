@@ -1,6 +1,10 @@
-Stage5g system/global defaults: 11 host scripts and firmware build PASS; hardware PENDING.
+Stage5g system/global defaults COMPLETE for current Console138K/NES setup and two recorded ROMs.
+11 host scripts and firmware build PASS; source/artifact hashes rechecked unchanged at completion.
 Firmware 8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381, 227792 bytes, SHA 27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f.
-Priority USER > selected CSV > SYSTEM > GLOBAL > builtin OFF. Reset uses resolved launch recommendation; tombstone and explicit SAVE/X/Y discard unchanged.
-Read-only same-volume /crt/defaults.tsv after ROM ID/store read and before unchanged ROM loader. Existing aligned noncacheable fcore/fbuf reused; no extra FIL/text heap allocation.
-Atomic bounded TSV (4096 bytes), BOM/CRLF, all keys, blanks, explicit OFF, unknown/duplicate/invalid rejection, exact size/open/read/close failures and source priority tested.
-Parser own stack240bytes, reader48bytes excluding nested calls. No FPGA/JTAG/coreloader/writer/restore/input-loop changes.
+Local validation tag crt-stage5g-hw-20261104; five-stage NES milestone crt-stage5-nes-hw-20261104.
+USER > CSV > SYSTEM > GLOBAL > builtin OFF; blank NES inherits global; Reset follows launch recommendation.
+Hardware: system/global/CSV/user priorities, Reset SAVE/relaunch/power-cycle, X/Y cancellation, five OSD positions/input, atomic invalid-file rejection and fallback PASS.
+Final SD64 backup verified; Dr.Mario a9 USER15/b10 Reset0, Pac-Man a5 Reset0/b4 USER23, all CRC/key/generations valid.
+Only newly added test defaults.tsv removed; final63 files, original59/CSV/all attributes and latest Reset records preserved.
+Final user report 1-3 normal: both games boot/video/audio/controls and original recommendations restored with DEFAULTS MISSING.
+Full-flash deployment readback verified; no new FPGA build. Other cores/USB-volume/I/O failures host-only; no raw-sector identity claim.

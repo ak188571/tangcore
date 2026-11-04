@@ -1,5 +1,7 @@
 # 第5g段階：system/global defaults
 
+第5gは現在のConsole138K/NES・記録済み2本のROMで実装・PC試験・実機試験・SD復帰まで完了。local tagは`crt-stage5g-hw-20261104`。最新の結果は末尾の完了節とhardware-results.jsonを参照する。前半の未確認・次の作業は当時の経過を含む。
+
 ## 基準と範囲
 
 実機確認済み第5f（crt-stage5f-hw-20261104、親672a61d、FWe82e5ea）からdefaults読込みだけを追加する。基準branch tangcore-integratedの履歴を維持し、親crt-osd2-stage1、FW crt-stage5g-defaults-20261104で作業する。FW commit 8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381。JTAG、FPGA、ROM loader、保存writerとrecord reader、日本語メニュー・titles.csv順序、OSD1・入力遮断/解放待ちは変更しない。
@@ -123,3 +125,13 @@ microSD全64ファイルを新たに退避し、直前の不正defaults導入時
 他の62ファイルと全属性は不変で、導入前の元59ファイル・CSVも全内容が一致した。不正試験defaultsもfirmwareによって変更されていなかった。物理カード識別情報・正確な対象path・SHA・退避内容を再確認し、今回新規追加したcrt/defaults.tsvだけを非再帰で取り外した。削除後は63ファイルを照合し、元59ファイル・CSV・全属性と最新Reset記録を維持している。crtディレクトリと4個の保存ファイルは残した。
 
 根拠はfinal-sd-audit.jsonおよびtest-defaults-removal.jsonに記録した。firmwareの追加書込みは行っていない。最後に、試験前と同じdefaults未設定状態でDr. MarioがCSVのON/WEAK/STANDARD、Pac-Manがbuiltin全OFFとなり、両方DEFAULTS MISSING・STORE RESET・SAVE SAVED・FRAME ACKで通常起動することを実機確認する。この起動確認までは第5g完了としない。
+
+## 第5g段階の完了
+
+最終起動確認への利用者回答は「1-3正常」だった。日本語NES一覧とtitles.csv順序、Dr. MarioとPac-Manの起動・映像・音声・操作は正常だった。OSDの表示順で、Dr. MarioはSAVE SAVED・INITIAL CSV・ON/WEAK/STANDARD・STORE RESET・FRAME ACK・ROM ID 7623dffd・DEFAULTS MISSING、Pac-ManはSAVE SAVED・INITIAL DEFAULT・全OFF・STORE RESET・FRAME ACK・ROM ID ebbb19bf・DEFAULTS MISSINGへ戻った。追加の値変更・Reset・SAVEは依頼していない。
+
+関連11試験・firmware build・導入と全flash照合、system/globalの選択と空欄継承、USER/CSV優先、Reset previewとSAVE後の再起動・電源再投入、X/Y取消し、5位置の文字とOSD排他・入力遮断・解放待ち、不正な非選択system行による全file拒否と上位値維持、段階ごとのSD照合、試験defaults撤去、撤去後の通常起動を完了した。実機確認済みlocal tagはcrt-stage5g-hw-20261104。firmwareは8faebde、NES imageは既存c8df819aを維持する。
+
+SDの最終状態は63ファイルで、元59ファイル・CSV・全原属性は不変。4個の保存recordを保持し、Dr. Marioの最新は第10世代kind1/value0で元CSV推奨値へ、Pac-Manは第5世代kind1/value0でbuiltin全OFFへ従う。試験用defaults.tsvは新たな全SD退避で保全して取り外した。system/global値やCSV推奨値は試験用の値であり、画質の公式推奨を確定したものではない。
+
+作業表の第1〜第5段階は現在のConsole138K/NESの実装・試験範囲で完了し、crt-stage5-nes-hw-20261104にも同じ基準を残す。他core、USB volume、全controller/sourceの実機互換性まで完了したとはしない。storageのI/O失敗などはPC試験の範囲で、保存拒否・回復の実機結果は既存第5e/5f記録を参照する。初版の一括第5段階で発生した起動停止の原因は特定済みとはしない。GitHubへのpushは行っていない。

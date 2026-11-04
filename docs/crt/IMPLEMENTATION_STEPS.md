@@ -9,7 +9,7 @@
 | 3 | OSD2の最小構成 | OSD1との排他、項目操作、入力遮断、解放待ち | 完了。既存の1〜3の統合commitとOSD表示維持の修正で確認済み |
 | 4a | 水平ぼかし | OSD2から実映像を調整でき、OFF時は基準映像と一致する。画面端の処理も正しい | 実装・自動試験・build・導入と依頼した全実機試験が完了。local tagはcrt-stage4a-hw-20261103。STAGE4A.mdとverification/crt-stage4a/を参照 |
 | 4b | 走査線 | OSD2から実映像を調整でき、OFF時と水平ぼかし併用時も正しい | 修正版の実装・自動試験・build・導入と依頼した全実機再試験が完了。WAITING修正、元224行の明暗配分、表示端・入力・ゲーム切替も確認済み。local tagはcrt-stage4b-hw-20261103。STAGE4B.mdとverification/crt-stage4b-fix/を参照 |
-| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 全体は未完了。5a CSV読込み、5b 起動時推奨値、5c ROM ID、5d 読取り復元、5e 明示SAVE/X/Y破棄、5f Reset preview/tombstone確定まで実機確認済み。最新基準はcrt-stage5f-hw-20261104。system/global defaultsは今後の別段階。各STAGE5A〜5F文書とverificationを参照 |
+| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 現在のConsole138K/NESの範囲で完了。5a〜5gの実装・PC試験・実機試験・最終SD復帰を確認。最新基準はcrt-stage5g-hw-20261104、5段階の区切りはcrt-stage5-nes-hw-20261104。他core等の実機展開は別。各STAGE5A〜5G文書とverificationを参照 |
 
 ## 完了済みの履歴
 
@@ -58,4 +58,8 @@ submoduleを変更した場合は、対象submoduleで先にcommitし、親repos
 
 ## 第5g段階
 
-第5f確認済み版を基に同volumeのsystem/global defaults読取りを追加。USER＞CSV＞SYSTEM＞GLOBAL＞builtin全OFF、Resetも起動時推奨snapshotを使う。関連11試験とbuild成功、実機未確認。STAGE5G_DEFAULTS.mdとverification/crt-stage5g-defaultsを参照。第5段階全体の完了判定は実機とSD復帰確認後に行う。
+第5f確認済み版を基に同volumeのsystem/global defaults読取りを追加。USER＞CSV＞SYSTEM＞GLOBAL＞builtin全OFF、Resetも起動時推奨snapshotを使う。関連11試験・build・全flash照合・system/global/空欄継承・CSV/USER優先・Reset/OSD・不正file拒否・全SD照合・試験defaults撤去と元状態での通常起動まで完了。local tagはcrt-stage5g-hw-20261104。STAGE5G_DEFAULTS.mdとverification/crt-stage5g-defaultsを参照。
+
+## 第1〜第5段階の現在の完了範囲
+
+現在のConsole138K/NESの構成で、依頼された5段階の実装と試験を完了した。local tag crt-stage5-nes-hw-20261104を区切りとする。詳細な実機範囲は各段階の記録に従い、他core・USB volume・全controller/sourceの互換性試験まで完了したとはしない。上の第5a〜第5f節の「全体未完了」「defaults別段階」はその時点の履歴で、現在の状態は冒頭の表と本節による。新しい機能へは自動で着手しない。

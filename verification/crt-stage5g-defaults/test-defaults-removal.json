@@ -15,5 +15,7 @@
   "pac_man_generation": 5,
   "record_crc_key_generation_verified": true,
   "firmware_reprogrammed": false,
-  "final_normal_boot_pending": true
+  "final_normal_boot_pending": false,
+  "final_normal_boot_user_report": "1-3正常",
+  "final_hardware_record": "hardware-results.json"
 }
