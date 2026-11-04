@@ -1,0 +1,53 @@
+{
+  "completed_at": "2026-11-04T19:19:19.256263+09:00",
+  "verified_total_files": 64,
+  "changed_files": [
+    "crt/01-ebbb19bf-0000000000006010.a"
+  ],
+  "records": [
+    {
+      "file": "crt/01-7623dffd-0000000000010010.a",
+      "bytes": 32,
+      "sha256": "9a68a8b60053bda563ba5d35f9fd41421d6c558df16c42b4d642635da9f9cd78",
+      "generation": 7,
+      "kind": 0,
+      "value": 15,
+      "record_crc32": "03dfb057"
+    },
+    {
+      "file": "crt/01-7623dffd-0000000000010010.b",
+      "bytes": 32,
+      "sha256": "9c788cd649ce5ec1715c22fc803b0f88b6c577379b175911695b314b8d34176e",
+      "generation": 8,
+      "kind": 1,
+      "value": 0,
+      "record_crc32": "95b4d66d"
+    },
+    {
+      "file": "crt/01-ebbb19bf-0000000000006010.a",
+      "bytes": 32,
+      "sha256": "63adc56deab21eefbd8302b5c9daec4317b93e6d942fab470d5ca183490150cf",
+      "generation": 5,
+      "kind": 1,
+      "value": 0,
+      "record_crc32": "25e6a6c6"
+    },
+    {
+      "file": "crt/01-ebbb19bf-0000000000006010.b",
+      "bytes": 32,
+      "sha256": "e44346fdad8a75305c418528e4f94f3b4f7b7f0e711fbc48449d457a2efba276",
+      "generation": 4,
+      "kind": 0,
+      "value": 23,
+      "record_crc32": "fc0c9d51"
+    }
+  ],
+  "pac_man_latest_generation": 5,
+  "pac_man_latest_kind": 1,
+  "pac_man_latest_value": 0,
+  "four_record_crc_key_generation_verified": true,
+  "other_63_files_and_all_attributes_unchanged": true,
+  "defaults_file_unchanged_by_firmware": true,
+  "original_csv_unchanged": true,
+  "one_reset_save_advanced_one_generation": true
+}

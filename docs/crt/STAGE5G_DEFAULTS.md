@@ -97,3 +97,9 @@ microSDの64ファイルを新たに退避した。変更はPac-Manの保存slot
 利用者はglobal試験の4項目を「1-4正常」と回答した。Pac-Manは変更したdefaultsよりUSER保存値ON/STRONG/STANDARDを優先した。Reset previewでは空のNES欄からglobal値ON/WEAK/STRONGを継承し、SAVEを1回行うとOSDが開いたままSAVEDとなった。一覧からの起動し直しと通常の電源再投入後も、SAVE SAVED・INITIAL GLOBAL・ON/WEAK/STRONG・STORE RESET・FRAME ACK・ROM ID ebbb19bf・DEFAULTS OKを確認した。
 
 Dr. MarioはSAVE SAVED・INITIAL CSV・ON/WEAK/STANDARD・STORE RESET・FRAME ACK・ROM ID 7623dffd・DEFAULTS OKを保持した。日本語一覧と順序、両ゲームの映像・音声・操作も正常だった。global継承と優先順位、Reset保存後の追従は実機確認済みとする。新しい保存記録の世代・CRCと他ファイルの不変は、次のPC照合で確認する。不正defaultsファイルと最終復帰の試験は未完了である。
+
+## global試験後のPC照合と不正defaults試験の準備
+
+microSDの64ファイルを新たに退避した。変更はPac-Manの保存slot aだけで、第5世代・Reset記録・値0、CRCとROM識別情報は正常だった。slot bは第4世代のUSER値23、Dr. Marioの両slotは第7/8世代のままで、4個とも検証に合格した。他の63ファイル・全属性・CSV・global試験ファイルは不変であり、1回のReset SAVEが1世代だけ進めたことをPC側でも確認した。
+
+退避と元のSHAの一致を確認し、今回追加したcrt/defaults.tsvだけをinvalid.tsvへ切り替えた。有効なglobal 1:1:3・NES 1:2:1に加え、今回選択しないSNES行へ不正値1:4:0を入れている。全64ファイルを照合し、他の63ファイル・全属性・CSV・保存記録は不変だった。firmwareの追加書込みは行っていない。次はファイル全体の拒否、Dr. MarioのCSV維持とPac-Manのbuiltin OFFへの復帰を実機確認する。BAD FILEはこの試験で期待する表示であり、不正ファイルを正式設定として残さない。

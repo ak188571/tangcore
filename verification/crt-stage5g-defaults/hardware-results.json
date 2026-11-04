@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "global_inheritance_user_priority_reset_power_cycle_passed_invalid_fixture_sd_pending",
+  "hardware_test_status": "global_sd_audit_passed_invalid_fixture_installed_hardware_pending",
   "firmware_commit": "8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381",
   "firmware_sha256": "27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f",
   "reports": [
@@ -44,9 +44,11 @@
     "saved_user_overrides_system_defaults": true,
     "system_trial_defaults_read_only_and_other_files_unchanged": true,
     "system_trial_saved_record_crc_generation_and_cancel_no_write": true,
-    "game_csv_overrides_global_defaults": true
+    "game_csv_overrides_global_defaults": true,
+    "global_trial_defaults_read_only_and_other_files_unchanged": true,
+    "global_trial_reset_record_crc_and_generation": true
   },
-  "limitations": "NES missing-file behavior, system/global selection, CSV and user priorities, Reset cancellation, saved global following across relaunch/power cycle, and OSD layout/input confirmed on hardware. Global-trial SD audit, invalid-file fallback and final SD cleanup/integrity remain pending. Other systems/volumes/I/O failures are host-tested only.",
+  "limitations": "NES system/global behavior, priorities, Reset and OSD checks passed; PC audits confirmed the system/global trial records and unchanged defaults/other files. Invalid-file hardware fallback and final cleanup/integrity remain pending. Other systems/volumes/I/O failures are host-tested only.",
   "system_fixture_installation_record": "system-fixture-installation.json",
   "test_instruction_field_order": [
     "SAVE status",
@@ -63,5 +65,7 @@
     "POS"
   ],
   "system_trial_sd_audit_record": "system-trial-sd-audit.json",
-  "global_fixture_installation_record": "global-fixture-installation.json"
+  "global_fixture_installation_record": "global-fixture-installation.json",
+  "global_trial_sd_audit_record": "global-trial-sd-audit.json",
+  "invalid_fixture_installation_record": "invalid-fixture-installation.json"
 }
