@@ -1,0 +1,6 @@
+Stage5g system/global defaults: 11 host scripts and firmware build PASS; hardware PENDING.
+Firmware 8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381, 227792 bytes, SHA 27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f.
+Priority USER > selected CSV > SYSTEM > GLOBAL > builtin OFF. Reset uses resolved launch recommendation; tombstone and explicit SAVE/X/Y discard unchanged.
+Read-only same-volume /crt/defaults.tsv after ROM ID/store read and before unchanged ROM loader. Existing aligned noncacheable fcore/fbuf reused; no extra FIL/text heap allocation.
+Atomic bounded TSV (4096 bytes), BOM/CRLF, all keys, blanks, explicit OFF, unknown/duplicate/invalid rejection, exact size/open/read/close failures and source priority tested.
+Parser own stack240bytes, reader48bytes excluding nested calls. No FPGA/JTAG/coreloader/writer/restore/input-loop changes.
