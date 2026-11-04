@@ -59,3 +59,11 @@ firmwareは226528bytes、SHA256 44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962
 2026年11月4日、利用者が初回3項目を「1-3正常」と回答した。日本語NES一覧と順序、Dr. Mario/Pac-Manの起動・映像・音声・操作、CRT RESET - STAGE5FとRESET TO RECOMMENDED行、Dr. MarioのROM ID 7623dffd・既存user ON/STRONG/WEAK、Pac-ManのROM ID ebbb19bf・既存user全OFF、両方のINITIAL USER・STORE USER・SAVE SAVED・FRAME ACKを確認した。X/Y終了とOSD1からの一覧復帰も正常。
 
 初回はReset/SAVE/値変更を依頼していないため、Reset機能の実機合格には読み替えない。続けて現在の版でpreviewのX/Y取消し、明示SAVEによるReset確定と再launchでのCSV/builtin追従を確認する。追加firmware書込みは不要。
+
+## Resetのプレビュー・取消し・確定と再launchの実機結果
+
+2026年11月4日、利用者が次の3項目を「1-3正常」と回答した。Dr. MarioでResetを選ぶとCSV ON/WEAK/STANDARD・UNSAVED・FRAME ACKをプレビューし、SAVEせずXまたはYで閉じると元のuser ON/STRONG/WEAK・SAVEDへ戻った。
+
+ResetをSAVEで確定してもOSDは開いたままSAVEDとなり、同値SAVE2回も画面上は正常だった。再launchでON/WEAK/STANDARD・INITIAL CSV・STORE RESET・SAVED・FRAME ACKを確認した。Pac-Manは数値が元の全OFFと同じでもResetでUNSAVEDになり、SAVE後の再launchで全OFF・INITIAL DEFAULT・STORE RESET・SAVED・FRAME ACKとなった。
+
+これでResetの取消しと、数値が同じ場合も推奨値へ従う意図を確定する動作を実機確認した。保存recordのkind・CRC・世代や同値SAVEで世代が増えないことは、PCで実byteを照合するまで未確認。次は追加のReset/SAVEなしで、通常電源再投入後の両ゲームの推奨値モード保持と、1行増えたOSDの5位置・入力回帰を確認する。
