@@ -65,3 +65,11 @@ firmwareは226192bytes、SHA256 e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da6
 2026年11月4日、利用者が初回3項目を「1-3正常」と回答した。日本語NES一覧と順序、Dr. Mario/Pac-Manの起動・映像・音声・操作、STAGE5EとSAVE行、Dr. MarioのROM ID 7623dffd・CSV ON/WEAK/STANDARD、Pac-ManのROM ID ebbb19bf・DEFAULT全OFF、両方のSAVE RECOMMENDED・STORE MISSING・FRAME ACKが正常だった。X/Yで閉じてOSD1から一覧へ戻る経路も確認した。
 
 今回は値変更やSAVEを依頼していないため、保存および未保存previewの破棄を確認済みとはしない。続いて現在の版で、保存前のX破棄、明示SAVEのstay-openとSAVED表示、保存後の追加調整をYで破棄、再launch時復元と別ゲームへの分離を確認する。追加firmware書込みは不要。
+
+## 明示SAVEとX/Y破棄・再launchの実機結果
+
+2026年11月4日、利用者が次の3項目を「1-3正常」と回答した。Dr. MarioでSAVEせずXで閉じるとpreviewがCSV ON/WEAK/STANDARDへ戻り、再表示でSAVE RECOMMENDED・FRAME ACKとなった。ON/STRONG/STRONGをSAVEするとOSD2を開いたままSAVE SAVED・FRAME ACKになり、その後の調整をSAVEせずYで閉じると、映像と表示値が保存成功値ON/STRONG/STRONGへ戻った。
+
+一覧からDr. Marioを起動し直すと保存値が復元され、INITIAL USER・STORE USER・SAVE SAVED・FRAME ACKを確認した。別のPac-Manは全OFF・INITIAL DEFAULT・STORE MISSING・SAVE RECOMMENDED・FRAME ACKのままで、ゲーム間の分離も正常だった。
+
+電源再投入後の復元、複数回のSAVEと明示全OFF、OSD操作の回帰、保存recordと他SDファイルのPC照合、保存失敗と属性復帰の実機試験は未完了。現在のSDには実機SAVEで作られたDr. Marioのrecordがあるが、世代・CRCの実byte照合はまだ行っていない。
