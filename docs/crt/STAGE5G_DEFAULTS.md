@@ -85,3 +85,9 @@ defaults fileがない場合の既存動作とReset記録保持を実機確認�
 利用者は続く4項目を「1-4正常」と回答した。Pac-ManでON/STRONG/STANDARDを手動SAVEし、OSDが開いたままSAVEDとなり、一覧からの起動し直し後もINITIAL USER・STORE USER・保存値・FRAME ACKを確認した。Resetのpreviewはsystem推奨ON/STANDARD/WEAKとなり、保存せずXまたはYで閉じると手動保存値へ戻った。これにより、USERのsystem defaultsへの優先とResetの両終了buttonによる取消しを実機確認した。
 
 追加DEFAULTS行を含む5位置で文字欠けがないこと、OSD1との排他と中央表示、ゲームへの入力遮断、全button解放待ちも正常だった。保存記録の世代・CRCと他ファイルの不変は次のPC照合で確認する。global継承や不正defaultsの試験はまだ完了していない。
+
+## system試験後のPC照合とglobal継承試験の準備
+
+microSDの64ファイルを新たに退避した。変更はPac-Manの保存slot bだけで、第4世代・USER・ON/STRONG/STANDARD、ROM識別情報とCRCが正常だった。他の63ファイルと全属性は不変で、defaults.tsvもfirmwareによって変更されていなかった。1回のSAVEによる1世代の更新と、ResetをX/Yで取り消した際に保存が行われないことをPC側でも確認した。
+
+退避したsystem試験ファイルのSHAを確認し、今回追加したcrt/defaults.tsvだけをglobal.tsvへ切り替えた。global値は1:1:3、NES欄は空である。差替え後も全64ファイルを照合し、他の63ファイル・保存値・CSV・全属性は不変だった。firmwareの追加書込みは行っていない。次はUSER優先の継続、Reset previewのglobal継承、SAVE後の再起動・電源再投入での追従、CSV優先の継続を実機確認する。globalの実機合格はまだ記録しない。

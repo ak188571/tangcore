@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-11-04T18:12:29.777392+09:00",
+  "verified_total_files": 64,
+  "changed_file": "crt/defaults.tsv",
+  "prior_fixture_sha256": "92240093c382a79b788acc587cbdf1421efd7f0e61c5cfc0697568c87f5efba9",
+  "fixture_sha256": "2579eebd03fed8059be51cac80f8c7bb77d0faaa916f22d1d2585bb1de453441",
+  "fixture_bytes": 27,
+  "global_recommendation": "1:1:3",
+  "nes_inherits_global": true,
+  "other_63_files_and_all_attributes_unchanged": true,
+  "saved_user_values_and_original_csv_unchanged": true,
+  "prior_fixture_backed_up": true,
+  "firmware_reprogrammed": false,
+  "hardware_global_trial_pending": true,
+  "test_fixture_removal_pending": true
+}

@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "system_user_priority_reset_cancel_osd_passed_global_fixture_sd_pending",
+  "hardware_test_status": "system_sd_audit_passed_global_fixture_installed_hardware_pending",
   "firmware_commit": "8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381",
   "firmware_sha256": "27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f",
   "reports": [
@@ -36,7 +36,9 @@
     "test_defaults_removed_original_csv_attributes_restored": null,
     "final_missing_defaults_boot_recommendations_restored": null,
     "final_sd_record_crc_and_baseline_integrity": null,
-    "saved_user_overrides_system_defaults": true
+    "saved_user_overrides_system_defaults": true,
+    "system_trial_defaults_read_only_and_other_files_unchanged": true,
+    "system_trial_saved_record_crc_generation_and_cancel_no_write": true
   },
   "limitations": "NES missing-file behavior, system selection, CSV and user-over-system priority, Reset X/Y cancellation and OSD layout/input confirmed on hardware. Global priority/following, invalid-file fallback and SD record/file integrity/cleanup remain pending. Other systems/volumes/I/O failures are host-tested only.",
   "system_fixture_installation_record": "system-fixture-installation.json",
@@ -53,5 +55,7 @@
     "RESET TO RECOMMENDED",
     "DEFAULTS",
     "POS"
-  ]
+  ],
+  "system_trial_sd_audit_record": "system-trial-sd-audit.json",
+  "global_fixture_installation_record": "global-fixture-installation.json"
 }
