@@ -67,3 +67,11 @@ firmwareは226528bytes、SHA256 44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962
 ResetをSAVEで確定してもOSDは開いたままSAVEDとなり、同値SAVE2回も画面上は正常だった。再launchでON/WEAK/STANDARD・INITIAL CSV・STORE RESET・SAVED・FRAME ACKを確認した。Pac-Manは数値が元の全OFFと同じでもResetでUNSAVEDになり、SAVE後の再launchで全OFF・INITIAL DEFAULT・STORE RESET・SAVED・FRAME ACKとなった。
 
 これでResetの取消しと、数値が同じ場合も推奨値へ従う意図を確定する動作を実機確認した。保存recordのkind・CRC・世代や同値SAVEで世代が増えないことは、PCで実byteを照合するまで未確認。次は追加のReset/SAVEなしで、通常電源再投入後の両ゲームの推奨値モード保持と、1行増えたOSDの5位置・入力回帰を確認する。
+
+## Reset確定後の電源再投入とOSDの実機結果
+
+2026年11月4日、利用者が追加2項目を「1-2正常」と回答した。通常電源再投入後も、Dr. MarioはCSV ON/WEAK/STANDARD・INITIAL CSV、Pac-Manはbuiltin全OFF・INITIAL DEFAULTとなり、両方のSTORE RESET・SAVE SAVED・FRAME ACK、映像・音声・操作が正常だった。
+
+POS5位置でSAVE/RESET TO RECOMMENDED/POSを含め文字欠けなし、OSD2中のSELECT＋右によるOSD1重なりや設定変更なし、ゲームへの入力流出なし、X/Y保持中の入力遮断と全解放後の復帰、OSD1中央表示も確認した。
+
+次はSD全体をPCへ新たに退避し、両ゲームの最新recordがkind1/value0であること、CRC/key/size/generationと同値SAVEの世代抑止、他file不変を照合する。その後Dr. MarioのCSV推奨値だけを一時的にON/STANDARD/STRONGへ変更し、tombstoneが新しい推奨値へ追従する試験を行う。表示名・順序を維持し、試験後は元のCSVへ必ず戻す。現時点でこのPC照合とCSV追従試験は未実施である。
