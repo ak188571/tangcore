@@ -1,0 +1,34 @@
+{
+  "date_jst": "2026-11-04",
+  "hardware_test_status": "initial_startup_and_old_user_overrides_passed_reset_trials_pending",
+  "firmware_commit": "e82e5ea61d318b9511bf5ed76e2e8cc790458cdf",
+  "firmware_sha256": "44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b",
+  "reports": [
+    {
+      "user_report": "1-3正常",
+      "phase": "Initial boot without Reset/SAVE/edits",
+      "scope": "Japanese NES list/order; two games launch/video/audio/controls; STAGE5F and Reset row; Dr.Mario old USER ON/STRONG/WEAK and Pac-Man old USER OFF; ROM IDs, SAVED and FRAME ACK; X/Y and OSD1 return normal"
+    }
+  ],
+  "checks": {
+    "initial_japanese_list_order_and_two_game_launch_video_audio_controls": true,
+    "stage5f_and_reset_row": true,
+    "initial_dr_mario_user_strong_weak_and_id": true,
+    "initial_pac_man_user_off_and_id": true,
+    "initial_saved_frame_ack_and_osd1_return": true,
+    "reset_preview_uses_launch_csv_and_x_y_cancel_values_and_intent": null,
+    "dr_mario_reset_save_stays_open_and_relaunch_follows_csv": null,
+    "pac_man_equal_numeric_off_reset_is_dirty_and_relaunch_follows_builtin": null,
+    "normal_power_cycle_restores_recommended_mode": null,
+    "osd_five_positions_exclusion_input_block_and_release": null,
+    "pc_tombstone_crc_key_size_kind_zero_value_and_generation": null,
+    "confirmed_reset_repeated_save_does_not_advance_generation": null,
+    "changed_csv_followed_after_reset": null,
+    "manual_adjustment_after_reset_saves_user_override": null,
+    "reset_save_failure_retry_and_x_y_cancel": null,
+    "test_attributes_and_csv_restored": null,
+    "save_recovery_after_attributes_restored": null,
+    "final_sd_records_and_unrelated_files_verified": null
+  },
+  "limitations": "Reset preview/cancel/save/tombstone/CSV-following/manual override/failure and recovery trials remain pending. Defaults excluded. Existing ordinary user values are confirmed preserved by initial boot only."
+}

@@ -53,3 +53,9 @@ firmwareは226528bytes、SHA256 44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962
 2026-11-04T13:19:56.058197+09:00、既知Console138KへFWe82e5eaのみを反映した。基板SHA、新FW全byte、4MiB全flash読戻しと更新範囲外を照合した。SD全63fileは新たな退避時および第5e最終退避と同一で、既存4record/CSV/ROM/font/logを維持した。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定を元のbyteへ戻した。
 
 復旧用は直前の実機合格第5eの検証済み全読戻しをコピーしたもので、新たな書込み前flash読取りを行ったとはしない。verification/crt-stage5f-reset/deployment.jsonに記録。まずReset/SAVEを行わず通常起動と旧user値保持を確認する。Reset機能の実機試験は未確認。
+
+## 初回起動と既存user保存値保持の実機結果
+
+2026年11月4日、利用者が初回3項目を「1-3正常」と回答した。日本語NES一覧と順序、Dr. Mario/Pac-Manの起動・映像・音声・操作、CRT RESET - STAGE5FとRESET TO RECOMMENDED行、Dr. MarioのROM ID 7623dffd・既存user ON/STRONG/WEAK、Pac-ManのROM ID ebbb19bf・既存user全OFF、両方のINITIAL USER・STORE USER・SAVE SAVED・FRAME ACKを確認した。X/Y終了とOSD1からの一覧復帰も正常。
+
+初回はReset/SAVE/値変更を依頼していないため、Reset機能の実機合格には読み替えない。続けて現在の版でpreviewのX/Y取消し、明示SAVEによるReset確定と再launchでのCSV/builtin追従を確認する。追加firmware書込みは不要。
