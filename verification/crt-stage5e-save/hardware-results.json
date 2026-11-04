@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "startup_explicit_save_discard_and_relaunch_passed_remaining_checks_pending",
+  "hardware_test_status": "normal_save_restore_discard_and_osd_hardware_checks_passed_pc_and_failure_tests_pending",
   "firmware_commit": "0051516f442552b68677adec064a8a0c62daea61",
   "firmware_sha256": "e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da63a41ebdc3aa6e223",
   "reports": [
@@ -13,6 +13,11 @@
       "user_report": "1-3正常",
       "phase": "Preview discard, explicit SAVE and relaunch",
       "scope": "X discards unsaved live preview to CSV baseline; SAVE of ON/STRONG/STRONG stays open with SAVED/FRAME ACK; Y discards later edits back to saved value; relaunch restores USER/SAVED/STORE USER; Pac-Man remains DEFAULT/OFF/MISSING/RECOMMENDED"
+    },
+    {
+      "user_report": "1-4正常",
+      "phase": "Power cycle, repeated SAVE, second game and explicit OFF, OSD regression",
+      "scope": "Normal power cycle restores Dr.Mario STRONG/STRONG; Dr.Mario STANDARD/WEAK SAVE and unchanged repeat SAVE/relaunch normal; Pac-Man WEAK/STANDARD then explicit all-OFF SAVE/relaunch USER normal without changing Dr.Mario; five positions, exclusion/centering, input block/release normal"
     }
   ],
   "checks": {
@@ -26,13 +31,13 @@
     "x_y_discard_unsaved_preview_to_launch_or_saved_baseline": true,
     "explicit_save_stays_open_and_reports_saved": true,
     "relaunch_restores_saved_value_and_games_are_separate": true,
-    "normal_power_cycle_restores_saved_value": null,
-    "multiple_generations_and_explicit_off_save": null,
-    "osd_positions_input_release_and_exclusion": null,
+    "normal_power_cycle_restores_saved_value": true,
+    "multiple_generations_and_explicit_off_save": true,
+    "osd_positions_input_release_and_exclusion": true,
     "pc_record_crc_key_size_generation_values_verified": null,
     "unrelated_sd_files_unchanged": null,
     "hardware_save_failure_stays_open_retry_and_discard": null,
     "read_only_test_attributes_restored_and_save_recovers": null
   },
-  "limitations": "Power-cycle, multiple saves/explicit OFF, OSD regression, PC record integrity/unrelated-file verification and save-failure hardware tests remain pending. Reset UI, tombstone creation and defaults are outside this stage."
+  "limitations": "Generation/CRC/key/size/value bytes and unchanged unrelated SD files still require PC inspection. Read-only-record save-failure, retry/discard, attribute restoration and successful-save recovery hardware tests remain pending. Reset UI, tombstone creation and defaults are outside this stage."
 }

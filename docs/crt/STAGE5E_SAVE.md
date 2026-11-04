@@ -73,3 +73,11 @@ firmwareは226192bytes、SHA256 e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da6
 一覧からDr. Marioを起動し直すと保存値が復元され、INITIAL USER・STORE USER・SAVE SAVED・FRAME ACKを確認した。別のPac-Manは全OFF・INITIAL DEFAULT・STORE MISSING・SAVE RECOMMENDED・FRAME ACKのままで、ゲーム間の分離も正常だった。
 
 電源再投入後の復元、複数回のSAVEと明示全OFF、OSD操作の回帰、保存recordと他SDファイルのPC照合、保存失敗と属性復帰の実機試験は未完了。現在のSDには実機SAVEで作られたDr. Marioのrecordがあるが、世代・CRCの実byte照合はまだ行っていない。
+
+## 電源再投入・複数SAVE・全OFF保存とOSDの実機結果
+
+2026年11月4日、利用者が次の4項目を「1-4正常」と回答した。通常電源再投入後にDr. MarioのON/STRONG/STRONG・USER/SAVED/FRAME ACKが復元され、映像・音声・操作も正常だった。その後ON/STANDARD/WEAKをSAVEし、同値での再SAVEと一覧からの再launchも正常だった。
+
+Pac-ManではON/WEAK/STANDARDをSAVEして再launchで復元し、続いて明示的に3項目全OFFをSAVE・再launchして、全OFF・INITIAL USER・STORE USER・SAVE SAVED・FRAME ACKを確認した。Dr. MarioのON/STANDARD/WEAKは別ゲームの保存で変わらなかった。POS5位置で文字欠けなし、OSD1との排他・中央表示、入力遮断とX/Y保持・全button解放後の復帰も正常だった。
+
+現在の最終保存値はDr. Mario ON/STANDARD/WEAK、Pac-Man全OFF。recordの世代数や同値SAVEでの書込み抑止はPCで実byteを照合するまで確認済みとしない。残りはSD全fileの新たな退避、recordのCRC/key/size/generation/value照合と無関係file不変確認、およびread-only属性による保存失敗・再試行・X/Y破棄と属性復帰後の保存回復である。
