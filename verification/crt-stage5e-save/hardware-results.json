@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "post_failure_sd_unchanged_attributes_restored_recovery_save_pending",
+  "hardware_test_status": "all_requested_interactive_hardware_checks_passed_final_sd_generation_verification_pending",
   "firmware_commit": "0051516f442552b68677adec064a8a0c62daea61",
   "firmware_sha256": "e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da63a41ebdc3aa6e223",
   "reports": [
@@ -28,6 +28,11 @@
       "user_report": "1-3正常",
       "phase": "Read-only SAVE failure, retry and X/Y discard",
       "scope": "Dr.Mario baseline USER ON/WEAK/STANDARD loads normally; changed SAVE remains open with FAILED, retry remains FAILED; X and Y each restore baseline video/values; relaunch preserves baseline with USER/SAVED/FRAME ACK and normal video/audio/controls"
+    },
+    {
+      "user_report": "1-2正常",
+      "phase": "SAVE recovery after restoring attributes and controlled same-value SAVE",
+      "scope": "Dr.Mario changed once to ON/STRONG/WEAK, explicit SAVE succeeded/stayed open; two unchanged SAVE presses and X/reopen preserved SAVED; relaunch and normal power cycle restored new value; Pac-Man explicit OFF unchanged; both games video/audio/controls normal"
     }
   ],
   "checks": {
@@ -47,11 +52,11 @@
     "pc_record_crc_key_size_generation_values_verified": true,
     "unrelated_sd_files_unchanged": true,
     "hardware_save_failure_stays_open_retry_and_discard": true,
-    "read_only_test_attributes_restored_and_save_recovers": null,
+    "read_only_test_attributes_restored_and_save_recovers": true,
     "unchanged_save_does_not_advance_generation_on_pc": null,
     "read_only_test_attributes_restored": true
   },
-  "limitations": "All 63 contents unchanged after denied writes; fresh backup and all original attributes restored. Successful SAVE/relaunch/power-cycle after attribute recovery and controlled same-value generation proof remain pending. Reset/defaults excluded.",
+  "limitations": "All requested interactive hardware checks passed, including denied-write failure and save recovery. Final fresh SD backup, expected generation5/no extra generation after two unchanged SAVE presses, record CRC/value/key and unrelated-file integrity verification remain pending. Reset/defaults excluded; sync/close/torn-write failures are host-tested only.",
   "pc_record_audit": "record-inspection.json",
   "read_only_test_record": "read-only-protection.json",
   "post_failure_sd_record": "post-failure-sd-verification.json"

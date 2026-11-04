@@ -113,3 +113,11 @@ Pac-ManではON/WEAK/STANDARDをSAVEして再launchで復元し、続いて明�
 2026-11-04T12:33:48.423107+09:00、Dr. Marioのa/bだけを記録済みの元属性へ戻し、全63fileの内容と全fileの元属性が一致することを確認した。firmware、ROM、CSV、Pac-Man recordに変更はない。post-failure-sd-verification.jsonに記録。現在の保存値はDr. Mario ON/WEAK/STANDARD（generation4）、Pac-Man全OFF（generation2）のまま。
 
 残りは属性復帰後のSAVE成功・再launch/電源再投入での復元、および同値SAVEで世代が進まないことのPC照合。制御した1回の変更SAVE（ON/STRONG/WEAK）と同値SAVEのみを行い、その後最新generation5であることを確認する予定で、まだ実施済みではない。
+
+## 属性復帰後の保存回復と制御した同値SAVEの実機結果
+
+2026年11月4日、利用者が回復試験の2項目を「1-2正常」と回答した。Dr. MarioをON/STRONG/WEAKへ変更して1回SAVEすると、OSD2が開いたままSAVE SAVED・FRAME ACKとなった。そのまま値を変えずにSAVEをさらに2回押し、Xで閉じて開き直しても新しい保存値とSAVEDが維持された。
+
+一覧からの再launchと通常電源再投入後もON/STRONG/WEAK・USER/SAVED/FRAME ACKを復元した。Pac-Manの明示全OFF保存は保たれ、両ゲームの映像・音声・操作も正常だった。これで属性復帰後の保存回復を含む、依頼した画面・操作の実機確認はすべて正常である。
+
+最後にSDをPCへ戻して新たに全fileを退避し、Dr. Marioの新しいrecordがgeneration5であること、同値SAVE2回で余分な世代が増えていないこと、recordのCRC/key/size/valueと無関係file不変を照合する。このPC確認はまだ行っておらず、第5e完了tagもまだ作らない。
