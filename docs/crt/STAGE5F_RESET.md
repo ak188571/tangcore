@@ -117,3 +117,11 @@ Xで閉じると値と映像が旧user値へ戻り、再表示でSAVED・FRAME A
 2026-11-04T16:42:37.392897+09:00、Dr. Marioのa/bだけを記録済み元属性へ戻し、全fileの内容と全元属性が同一であることを確認した。CSVも元のSHA e930b82e2fab555d20935b4150675abd20d13f3552037ded1a8188151b747d1eと一致。firmware書込みや保存record内容の編集は行っていない。post-failure-sd-verification.jsonに記録した。
 
 残りは属性復帰後のReset SAVE成功と再launch/通常電源再投入後の推奨値モード復元、および最終SD照合である。回復試験はDr. MarioのReset確定SAVE1回と、その後の同値SAVE2回に操作を限定し、新しいkind1世代が1つだけ増えることをPCでも確認する予定。
+
+## 属性復帰後のReset保存回復の実機結果
+
+2026年11月4日、利用者が回復試験2項目を「1-2正常」と回答した。Dr. MarioでResetを選んでSAVEを1回押すと、OSDを開いたままSAVE SAVED・FRAME ACKとなった。そのまま同値SAVEを2回行い、Xで閉じて開き直してもCSV ON/WEAK/STANDARDとSAVEDが保たれた。
+
+一覧からの再launchおよび通常電源再投入後も、ON/WEAK/STANDARD・INITIAL CSV・STORE RESET・SAVED・FRAME ACKを復元した。Pac-Manは全OFF・INITIAL DEFAULT・STORE RESET・SAVED・FRAME ACKを維持し、両ゲームの映像・音声・操作も正常だった。
+
+これで依頼した画面・操作の実機確認は全項目正常。残りはSD全体の新たな退避とPC最終照合で、Dr. Marioの新しいtombstoneがgeneration8で同値SAVEによる追加世代がないこと、record CRC/key/size/kind/value、元CSV・全属性・無関係file不変を確認する。第5f完了tagはまだ作らない。

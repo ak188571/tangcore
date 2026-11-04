@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "post_failure_sd_unchanged_csv_and_attributes_restored_reset_save_recovery_pending",
+  "hardware_test_status": "all_requested_interactive_reset_checks_passed_final_sd_verification_pending",
   "firmware_commit": "e82e5ea61d318b9511bf5ed76e2e8cc790458cdf",
   "firmware_sha256": "44f6322c9dafb91ff8c2d622f459da85638b6ed2a438a962ac2b83b7f8aa0f3b",
   "reports": [
@@ -28,6 +28,11 @@
       "user_report": "1-3正常",
       "phase": "Read-only Reset SAVE failure and cancellation",
       "scope": "Dr.Mario old USER ON/STRONG/WEAK loads; Reset previews original CSV ON/WEAK/STANDARD; SAVE FAILED stays open and retry FAILED; X and Y each cancel values and Reset intent to USER baseline; relaunch retains USER/SAVED/FRAME ACK with normal video/audio/controls"
+    },
+    {
+      "user_report": "1-2正常",
+      "phase": "Reset SAVE recovery after original attributes restored",
+      "scope": "Reset SAVE once succeeds/stays open/SAVED/FRAME ACK; two unchanged SAVE presses and X/reopen retain recommendation; relaunch and normal power cycle restore Dr.Mario CSV ON/WEAK/STANDARD STORE RESET; Pac-Man builtin OFF/STORE RESET unchanged; both games video/audio/controls normal"
     }
   ],
   "checks": {
@@ -47,10 +52,10 @@
     "manual_adjustment_after_reset_saves_user_override": true,
     "reset_save_failure_retry_and_x_y_cancel": true,
     "test_attributes_and_csv_restored": true,
-    "save_recovery_after_attributes_restored": null,
+    "save_recovery_after_attributes_restored": true,
     "final_sd_records_and_unrelated_files_verified": null
   },
-  "limitations": "All63 contents unchanged after denied Reset writes; fresh backup verified and original CSV/all attributes restored. Successful Reset SAVE recovery/relaunch/power-cycle and final SD integrity remain pending. Defaults excluded; non-read-only fault classes host-only.",
+  "limitations": "All requested interactive Reset checks passed, including CSV following, manual override, denied-write failure/cancel and recovery. Final fresh SD audit of generation8 tombstone/no extra same-value SAVE generations, original CSV/all attributes and unrelated contents remains pending. Defaults excluded; non-read-only fault classes host-only.",
   "pc_record_audit": "record-inspection.json",
   "csv_trial_record": "csv-trial-installation.json",
   "manual_override_pc_record": "post-csv-trial-verification.json",
