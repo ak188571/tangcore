@@ -105,3 +105,11 @@ Pac-ManではON/WEAK/STANDARDをSAVEして再launchで復元し、続いて明�
 同じ変更・失敗後にYでも基準へ戻せ、一覧からの再launchでも保存値ON/WEAK/STANDARDとUSER/SAVED/FRAME ACK、映像・音声・操作が正常だった。これによりread-onlyによる書込み拒否時のstay-open、再試行、X/Y破棄を実機で確認した。sync/close失敗や書込み中の電源断を実機試験したことにはしない。
 
 残りは試験後SD全63fileの新たな退避・不変照合、元属性への復帰とその後の保存成功/復元確認、制御した同値SAVEで世代が進まないことのPC確認。Dr. Marioの2fileはまだread-onlyのままであり、保存回復を確認済みとはしない。
+
+## 保存失敗試験後のSD照合と属性復帰
+
+2026-11-04T12:33:14.724067+09:00、同じ物理identityのF:から全63fileを新たに退避・SHA照合した。全file内容は保存失敗試験前と同一で、2世代のrecordは破壊されていなかった。全fileの属性も試験準備時と一致していた。
+
+2026-11-04T12:33:48.423107+09:00、Dr. Marioのa/bだけを記録済みの元属性へ戻し、全63fileの内容と全fileの元属性が一致することを確認した。firmware、ROM、CSV、Pac-Man recordに変更はない。post-failure-sd-verification.jsonに記録。現在の保存値はDr. Mario ON/WEAK/STANDARD（generation4）、Pac-Man全OFF（generation2）のまま。
+
+残りは属性復帰後のSAVE成功・再launch/電源再投入での復元、および同値SAVEで世代が進まないことのPC照合。制御した1回の変更SAVE（ON/STRONG/WEAK）と同値SAVEのみを行い、その後最新generation5であることを確認する予定で、まだ実施済みではない。
