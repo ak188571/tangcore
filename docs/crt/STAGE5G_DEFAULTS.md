@@ -91,3 +91,9 @@ defaults fileがない場合の既存動作とReset記録保持を実機確認�
 microSDの64ファイルを新たに退避した。変更はPac-Manの保存slot bだけで、第4世代・USER・ON/STRONG/STANDARD、ROM識別情報とCRCが正常だった。他の63ファイルと全属性は不変で、defaults.tsvもfirmwareによって変更されていなかった。1回のSAVEによる1世代の更新と、ResetをX/Yで取り消した際に保存が行われないことをPC側でも確認した。
 
 退避したsystem試験ファイルのSHAを確認し、今回追加したcrt/defaults.tsvだけをglobal.tsvへ切り替えた。global値は1:1:3、NES欄は空である。差替え後も全64ファイルを照合し、他の63ファイル・保存値・CSV・全属性は不変だった。firmwareの追加書込みは行っていない。次はUSER優先の継続、Reset previewのglobal継承、SAVE後の再起動・電源再投入での追従、CSV優先の継続を実機確認する。globalの実機合格はまだ記録しない。
+
+## global継承・USER優先・Reset保存後の実機結果
+
+利用者はglobal試験の4項目を「1-4正常」と回答した。Pac-Manは変更したdefaultsよりUSER保存値ON/STRONG/STANDARDを優先した。Reset previewでは空のNES欄からglobal値ON/WEAK/STRONGを継承し、SAVEを1回行うとOSDが開いたままSAVEDとなった。一覧からの起動し直しと通常の電源再投入後も、SAVE SAVED・INITIAL GLOBAL・ON/WEAK/STRONG・STORE RESET・FRAME ACK・ROM ID ebbb19bf・DEFAULTS OKを確認した。
+
+Dr. MarioはSAVE SAVED・INITIAL CSV・ON/WEAK/STANDARD・STORE RESET・FRAME ACK・ROM ID 7623dffd・DEFAULTS OKを保持した。日本語一覧と順序、両ゲームの映像・音声・操作も正常だった。global継承と優先順位、Reset保存後の追従は実機確認済みとする。新しい保存記録の世代・CRCと他ファイルの不変は、次のPC照合で確認する。不正defaultsファイルと最終復帰の試験は未完了である。

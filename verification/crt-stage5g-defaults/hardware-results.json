@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "system_sd_audit_passed_global_fixture_installed_hardware_pending",
+  "hardware_test_status": "global_inheritance_user_priority_reset_power_cycle_passed_invalid_fixture_sd_pending",
   "firmware_commit": "8faebdeca1a24a1e14c9c8100e2b1c0e3e56f381",
   "firmware_sha256": "27c8107c0dca076d3dfce8f2f2fea7008137cc9c6771387060ee4dd7c4286b5f",
   "reports": [
@@ -18,16 +18,21 @@
       "user_report": "1-4正常",
       "phase": "User override, system Reset preview cancellation and OSD regression",
       "scope": "Pac-Man manually saved ON/STRONG/STANDARD once; SAVE stayed open and SAVED; relaunch restored USER/USER and values with FRAME ACK. Reset preview selected ON/STANDARD/WEAK; both X and Y discarded it and restored saved user values. Five OSD positions including new DEFAULTS row, OSD1 exclusion/centering, input blocking and all-button release wait passed. No extra SAVE requested; PC verification of generation and file integrity remains pending."
+    },
+    {
+      "user_report": "1-4正常",
+      "phase": "Global inheritance, user priority, Reset SAVE and power cycle",
+      "scope": "Japanese list/order and both games video/audio/controls normal. Pac-Man initially retained USER ON/STRONG/STANDARD above global defaults. Reset preview inherited global ON/WEAK/STRONG from blank NES row; one SAVE stayed open and SAVED. Relaunch and power cycle restored GLOBAL/RESET/SAVED with ON/WEAK/STRONG, expected ROM ID, DEFAULTS OK and FRAME ACK. Dr.Mario retained CSV ON/WEAK/STANDARD, RESET/SAVED, expected ROM ID, DEFAULTS OK and FRAME ACK. PC verification of the new Reset generation and unchanged files remains pending."
     }
   ],
   "checks": {
     "initial_missing_defaults_boot_csv_builtin_and_existing_reset_records": true,
     "system_defaults_applied_without_game_csv": true,
     "game_csv_overrides_system_defaults": true,
-    "saved_user_overrides_system_and_global_defaults": null,
+    "saved_user_overrides_system_and_global_defaults": true,
     "reset_preview_system_and_x_y_cancel_user": true,
-    "blank_system_inherits_global": null,
-    "reset_save_power_cycle_follows_global": null,
+    "blank_system_inherits_global": true,
+    "reset_save_power_cycle_follows_global": true,
     "invalid_nonselected_row_rejects_entire_defaults_file": null,
     "bad_defaults_preserve_game_csv_and_user_values": null,
     "reset_under_bad_defaults_uses_csv_or_builtin": null,
@@ -38,9 +43,10 @@
     "final_sd_record_crc_and_baseline_integrity": null,
     "saved_user_overrides_system_defaults": true,
     "system_trial_defaults_read_only_and_other_files_unchanged": true,
-    "system_trial_saved_record_crc_generation_and_cancel_no_write": true
+    "system_trial_saved_record_crc_generation_and_cancel_no_write": true,
+    "game_csv_overrides_global_defaults": true
   },
-  "limitations": "NES missing-file behavior, system selection, CSV and user-over-system priority, Reset X/Y cancellation and OSD layout/input confirmed on hardware. Global priority/following, invalid-file fallback and SD record/file integrity/cleanup remain pending. Other systems/volumes/I/O failures are host-tested only.",
+  "limitations": "NES missing-file behavior, system/global selection, CSV and user priorities, Reset cancellation, saved global following across relaunch/power cycle, and OSD layout/input confirmed on hardware. Global-trial SD audit, invalid-file fallback and final SD cleanup/integrity remain pending. Other systems/volumes/I/O failures are host-tested only.",
   "system_fixture_installation_record": "system-fixture-installation.json",
   "test_instruction_field_order": [
     "SAVE status",
