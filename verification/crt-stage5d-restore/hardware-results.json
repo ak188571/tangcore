@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "phase_a_passed_phase_b_restore_and_corrupt_fallback_passed_remaining_checks_pending",
+  "hardware_test_status": "all_requested_interactive_hardware_checks_passed_post_test_sd_verification_and_cleanup_pending",
   "firmware_commit": "42359d6976edf98089bdbc91ac8725fce2fd0bef",
   "firmware_sha256": "9609a2dabb64f1e5c1fff3caf3622680b5c73487c0867eed8ffd4e13b69996e7",
   "reports": [
@@ -18,6 +18,11 @@
       "user_report": "1-3正常",
       "phase": "B: synthetic records",
       "scope": "Japanese list/order and Dr.Mario/Pac-Man launch/video/audio/controls; newest generation2 override ON/STRONG/WEAK INITIAL USER STORE USER; corrupt record rejected with DEFAULT all OFF STORE BAD SAVE; correct ROM IDs and FRAME ACK"
+    },
+    {
+      "user_report": "1-3正常",
+      "phase": "B: reopen/relaunch, OSD regression and normal power cycle",
+      "scope": "Adjusted WEAK/STRONG retained on OSD reopen; relaunch restores saved ON/STRONG/WEAK; all five positions, input blocking/release wait, OSD1 exclusion/centering normal; after normal power cycle Dr.Mario USER and Pac-Man BAD SAVE fallback, FRAME ACK, video/audio/controls normal"
     }
   ],
   "checks": {
@@ -34,10 +39,10 @@
     "phase_a_relaunch_restores_csv": true,
     "phase_b_newest_saved_override_restored": true,
     "phase_b_corrupt_record_fallback": true,
-    "phase_b_reopen_relaunch_and_power_cycle": null,
-    "phase_b_osd_positions_input_and_mutual_exclusion": null,
+    "phase_b_reopen_relaunch_and_power_cycle": true,
+    "phase_b_osd_positions_input_and_mutual_exclusion": true,
     "phase_b_sd_unchanged_after_test": null,
     "phase_b_test_records_removed_after_preservation": null
   },
-  "limitations": "Phase B reopen/relaunch/power-cycle, OSD regression and post-test SD integrity/restoration remain pending. No firmware save, Reset UI, defaults file, or hardware tombstone/I/O-failure test is claimed."
+  "limitations": "Post-test SD integrity verification and preservation/removal of the three synthetic records remain pending. No firmware save, Reset UI, defaults file, or hardware tombstone/I/O-failure test is claimed."
 }

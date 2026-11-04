@@ -97,3 +97,11 @@ Dr. Marioのaはgeneration1・全OFF、bはgeneration2・ON/STRONG/WEAK。Pac-Ma
 2026年11月4日、利用者が試験Bの初回3項目を「1-3正常」と回答した。日本語NES一覧と順序、Dr. Mario/Pac-Manの起動・映像・音声・操作は正常。Dr. Marioでは新しいgeneration2のON/STRONG/WEAKがCSVより優先され、ROM ID 7623dffd、INITIAL USER、STORE USER、FRAME ACKを確認した。Pac-Manでは32byte全0の破損recordを拒否し、ROM ID ebbb19bf、全OFF、INITIAL DEFAULT、STORE BAD SAVE、FRAME ACKとなった。OSD1の一覧への復帰と別ゲーム起動も正常だった。
 
 OSDで調整後の開き直し・ゲーム起動し直し・通常の電源再投入、OSD操作の回帰確認は残りの実機項目とする。試験後の全62file不変照合と試験recordの保全・取外しは未実施。第5d全体の完了tagはまだ作らない。
+
+## 試験B：開き直し・起動し直し・通常電源再投入とOSDの結果
+
+2026年11月4日、利用者が残り3項目を「1-3正常」と回答した。Dr. Marioの調整値WEAK/STRONGはOSD2を閉じて開き直しても保持され、一覧からの再起動では保存recordのON/STRONG/WEAK・INITIAL USER・STORE USER・FRAME ACKへ戻った。
+
+POSの5位置で文字欠けなし、OSD2中のSELECT＋右によるOSD1の重なりや設定変更なし、OSD操作のゲームへの流出なし、終了button保持中の入力遮断と全解放後の復帰、OSD1の中央表示を確認した。通常の電源再投入後もDr. MarioのUSER値復元とPac-Manの破損record拒否・DEFAULT全OFF、両方のFRAME ACKと映像・音声・操作が正常だった。
+
+これで利用者に依頼した試験A/Bの画面・操作確認はすべて正常。残る作業はmicroSDの全62fileが追加直後と同一であることのPC照合、試験後の再退避、試験record3個の保全・取外しと元59fileへの復帰である。この最終処理が終わるまで第5d完了tagは作らない。
