@@ -1,0 +1,24 @@
+[
+  {
+    "file": "crt/01-7623dffd-0000000000010010.a",
+    "bytes": 32,
+    "sha256": "8afd6c0cb6230eccd59a7127e546d7085a846e10397d98f567207eb48d4106d0",
+    "generation": 1,
+    "value": 0,
+    "expected": "newest b: ON/STRONG/WEAK, INITIAL USER, STORE USER"
+  },
+  {
+    "file": "crt/01-7623dffd-0000000000010010.b",
+    "bytes": 32,
+    "sha256": "540c617e75390d863f7f1dea1ab8f403f1ae96ce39ff5f155b35a6f3df9b15a0",
+    "generation": 2,
+    "value": 15,
+    "expected": "newest b: ON/STRONG/WEAK, INITIAL USER, STORE USER"
+  },
+  {
+    "file": "crt/01-ebbb19bf-0000000000006010.a",
+    "bytes": 32,
+    "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "expected": "corrupt: OFF/OFF/OFF, INITIAL DEFAULT, STORE BAD SAVE"
+  }
+]

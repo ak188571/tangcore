@@ -43,3 +43,7 @@ submoduleを変更した場合は、対象submoduleで先にcommitし、親repos
 ## 第5c段階
 
 実機合格第5bを基準に、ROM内容のCRC32/size/system/volumeによるID取得だけを追加。関連8試験・firmware build・導入照合と依頼した実機試験がすべて正常。2本のCRCがPC値と一致し、OSD開き直しでの保持と起動し直した際の再取得も確認。local tagはcrt-stage5c-hw-20261103。読取り専用で、保存/Reset/defaultsは未実装のまま。STAGE5C_ROM_ID.mdとverification/crt-stage5c-romid/を参照。
+
+## 第5d段階
+
+実機合格第5cを基準に、保存recordの読取りと起動時復元のみを追加。関連9試験とfirmware buildは成功、実機は未確認。SDへの保存、Reset UI、system/global defaultsは未実装。最初はfirmwareのみ、その後PC作成recordで実機確認する。STAGE5D_READ_ONLY_RESTORE.mdとverification/crt-stage5d-restore/を参照。第5段階全体は未完了。

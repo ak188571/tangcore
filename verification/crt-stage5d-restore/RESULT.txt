@@ -1,0 +1,6 @@
+Stage5d read-only per-game restoration: 9 scripts and firmware build PASS; hardware PENDING.
+Firmware 42359d6976edf98089bdbc91ac8725fce2fd0bef, 224576 bytes, SHA 9609a2dabb64f1e5c1fff3caf3622680b5c73487c0867eed8ffd4e13b69996e7.
+No JTAG/FPGA/core-loader/input changes; existing aligned noncacheable loader file/buffer reused sequentially after ROM identity, before normal loader.
+No firmware storage writes, directory creation, defaults reading or Reset UI. Stored tombstones are decoded read-only.
+Two-phase hardware plan: A firmware only, no settings records, check missing fallback; B PC-created 3 synthetic records after full SD backup, check newest USER and corrupt BAD SAVE fallback, reopen and reboot, verify all SD bytes unchanged.
+Reader own stack frame240 bytes plus number helper32, not whole FatFs/driver call depth.

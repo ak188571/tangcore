@@ -1,0 +1,51 @@
+[10:16:50.751] - firmware post process : V1.2.7
+[10:16:50.751] - Chipname: bl616
+[10:16:50.752] - Board config dir: D:/Users/foobaris/AppData/Local/Temp/TC-SDK~1/bsp/board/bl616dk/config
+[10:16:50.752] - Create partition using partition_cfg_4M.toml
+[10:16:50.759] - Create dts for D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-console138k-crt-stage1\build_out\tangcore_bl616.bin
+[10:16:50.759] - Create dts using bl_factory_params_IoTKitA_auto.dts
+[10:16:50.770] - 4K header found,append dts file
+[10:16:50.770] - Copy boot2_bl616_isp_release_v8.1.2.bin
+[10:16:50.775] - Copy mfg_bl616_gu_34c572ca0_v2.49.bin
+[10:16:50.781] - Create dts for D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-console138k-crt-stage1\build_out\mfg_bl616_gu_34c572ca0_v2.49.bin
+[10:16:50.781] - Create dts using bl_factory_params_IoTKitA_auto.dts
+[10:16:50.785] - 4K header found,append dts file
+[10:16:50.785] - 
+Process D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-console138k-crt-stage1\build_out\tangcore_bl616.bin
+[10:16:50.798] - ========= sp image create =========
+[10:16:50.798] - Flash config crc: b'b5fec518'
+[10:16:50.798] - Clock config crc: b'4a05f490'
+[10:16:50.798] - Flash  Image
+[10:16:50.798] - Image Offset:0x1000
+[10:16:50.799] - Image hash is b'6ec3ac40c4d44bb9b96b6f161eeacfc15a9e85808c1a96f47dfe7af3b3badd38'
+[10:16:50.799] - Encrypt efuse data
+[10:16:50.802] - Image Offset:0x1000
+[10:16:50.802] - Image hash ignore,not calculate
+[10:16:50.802] - Bootheader config crc: b'3a5f19c4'
+[10:16:50.802] - 
+Process D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-console138k-crt-stage1\build_out\boot2_bl616_isp_release_v8.1.2.bin
+[10:16:50.802] - ========= sp image create =========
+[10:16:50.802] - Flash config crc: b'b5fec518'
+[10:16:50.802] - Clock config crc: b'4a05f490'
+[10:16:50.802] - Flash  Image
+[10:16:50.802] - Image Offset:0x2000
+[10:16:50.803] - Image hash is b'c912f0da62f395d9770048e53509e1ba37a89f9beb9c9dfa0ed06725821c4813'
+[10:16:50.803] - Encrypt efuse data
+[10:16:50.806] - Image Offset:0x2000
+[10:16:50.806] - Image hash ignore,not calculate
+[10:16:50.806] - Bootheader config crc: b'ca465ad7'
+[10:16:50.807] - 
+Process D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-console138k-crt-stage1\build_out\mfg_bl616_gu_34c572ca0_v2.49.bin
+[10:16:50.807] - ========= sp image create =========
+[10:16:50.807] - Flash config crc: b'f8de2a48'
+[10:16:50.807] - Clock config crc: b'0b34ef89'
+[10:16:50.807] - Flash  Image
+[10:16:50.807] - Image Offset:0x1000
+[10:16:50.809] - Image hash is b'70be2df9853611524252fcd0984e4a1d4ddef5366a1e5bacaddefc02ea5268f1'
+[10:16:50.809] - Encrypt efuse data
+[10:16:50.810] - Image Offset:0x1000
+[10:16:50.810] - Bootheader config crc: b'0ab20124'
+[10:16:50.811] - create OTA file:D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-console138k-crt-stage1\build_out\tangcore_bl616.bin.ota
+[10:16:50.826] - create XZ file:D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-console138k-crt-stage1\build_out\tangcore_bl616.xz
+[10:16:50.894] - create XZ OTA file:D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-console138k-crt-stage1\build_out\tangcore_bl616.xz.ota
+Built target combine
