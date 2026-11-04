@@ -1,6 +1,7 @@
-Stage5d read-only per-game restoration: 9 scripts and firmware build PASS; hardware PENDING.
-Firmware 42359d6976edf98089bdbc91ac8725fce2fd0bef, 224576 bytes, SHA 9609a2dabb64f1e5c1fff3caf3622680b5c73487c0867eed8ffd4e13b69996e7.
-No JTAG/FPGA/core-loader/input changes; existing aligned noncacheable loader file/buffer reused sequentially after ROM identity, before normal loader.
-No firmware storage writes, directory creation, defaults reading or Reset UI. Stored tombstones are decoded read-only.
-Two-phase hardware plan: A firmware only, no settings records, check missing fallback; B PC-created 3 synthetic records after full SD backup, check newest USER and corrupt BAD SAVE fallback, reopen and reboot, verify all SD bytes unchanged.
-Reader own stack frame240 bytes plus number helper32, not whole FatFs/driver call depth.
+Stage5d read-only game override restoration: implementation, 9 scripts, firmware build, deployment/readback, all requested interactive hardware checks and post-test SD integrity/cleanup PASS.
+FW42359d6976edf98089bdbc91ac8725fce2fd0bef SHA9609a2dabb64f1e5c1fff3caf3622680b5c73487c0867eed8ffd4e13b69996e7.
+Local validation tag: crt-stage5d-hw-20261104.
+Phase A: no records, CSV/default fallback and session/relaunch behavior confirmed.
+Phase B: newest override beats CSV, corrupt record falls back, reopen/relaunch/power cycle, OSD positions/input/release/exclusion confirmed.
+All 62 user files unchanged after tests; fresh verified backup preserved; only three synthetic records and empty test directory removed; original 59 files restored unchanged.
+No raw-sector comparison, firmware-save/Reset/defaults or hardware tombstone/I/O/schema-conflict/other-volume claim. No new FPGA build. Overall stage5 incomplete.

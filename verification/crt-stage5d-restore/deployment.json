@@ -28,7 +28,7 @@
   "titles_test_fixture_verified": true,
   "sd_files_unchanged": 59,
   "sdk_defaults_restored": true,
-  "hardware_test_status": "awaiting user",
+  "hardware_test_status": "all_requested_stage5d_hardware_checks_passed_current_console138k_nes_setup",
   "readback_connection": {
     "initial_mode0_failed": true,
     "read_only_retry_mode2_succeeded": true,
@@ -41,5 +41,7 @@
     ]
   },
   "installed_full_flash_sha256": "0141ebd86b50f7444447c0d12c8fd5134351857191ad8a824f0cc47aa8ea5688",
-  "hardware_test_phase": "A: no settings records; firmware-only update"
+  "hardware_test_phase": "A: no settings records; firmware-only update",
+  "hardware_test_record": "hardware-results.json",
+  "validation_tag": "crt-stage5d-hw-20261104"
 }

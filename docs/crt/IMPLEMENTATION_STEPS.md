@@ -9,7 +9,7 @@
 | 3 | OSD2の最小構成 | OSD1との排他、項目操作、入力遮断、解放待ち | 完了。既存の1〜3の統合commitとOSD表示維持の修正で確認済み |
 | 4a | 水平ぼかし | OSD2から実映像を調整でき、OFF時は基準映像と一致する。画面端の処理も正しい | 実装・自動試験・build・導入と依頼した全実機試験が完了。local tagはcrt-stage4a-hw-20261103。STAGE4A.mdとverification/crt-stage4a/を参照 |
 | 4b | 走査線 | OSD2から実映像を調整でき、OFF時と水平ぼかし併用時も正しい | 修正版の実装・自動試験・build・導入と依頼した全実機再試験が完了。WAITING修正、元224行の明暗配分、表示端・入力・ゲーム切替も確認済み。local tagはcrt-stage4b-hw-20261103。STAGE4B.mdとverification/crt-stage4b-fix/を参照 |
-| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 全体は未完了。初版等の起動不合格から復旧し、5a CSV読込み、5b 起動時推奨値適用、5c 読取り専用ROM IDは各段階の依頼実機試験まで完了。最新の実機確認基準はcrt-stage5c-hw-20261103。保存・Reset・defaultsは今後の対象。各STAGE5A〜5C文書とverificationを参照 |
+| 5 | 推奨値、ゲーム別保存、Reset to Recommended | 再起動時の復元、推奨値への復帰、保存失敗時の処理が正しい | 全体は未完了。5a CSV読込み、5b 起動時推奨値、5c ROM ID、5d 読取り専用の保存値復元まで実機確認済み。最新基準はcrt-stage5d-hw-20261104。保存・Reset UI・defaultsは今後の対象。各STAGE5A〜5D文書とverificationを参照 |
 
 ## 完了済みの履歴
 
@@ -46,4 +46,4 @@ submoduleを変更した場合は、対象submoduleで先にcommitし、親repos
 
 ## 第5d段階
 
-実機合格第5cを基準に、保存recordの読取りと起動時復元のみを追加。関連9試験とfirmware buildは成功、実機は未確認。SDへの保存、Reset UI、system/global defaultsは未実装。最初はfirmwareのみ、その後PC作成recordで実機確認する。STAGE5D_READ_ONLY_RESTORE.mdとverification/crt-stage5d-restore/を参照。第5段階全体は未完了。
+実機合格第5cを基準に、保存recordの読取りと起動時復元のみを追加。関連9試験・firmware build・導入/全flash照合・依頼した試験A/B・試験後のSD不変照合と復帰まで完了。保存recordなしのCSV/default復帰、新しいuser値復元、破損拒否、開き直し/再起動、OSD操作を確認。local tagはcrt-stage5d-hw-20261104。SDへの保存、Reset UI、system/global defaultsは未実装。STAGE5D_READ_ONLY_RESTORE.mdとverification/crt-stage5d-restore/を参照。第5段階全体は未完了。

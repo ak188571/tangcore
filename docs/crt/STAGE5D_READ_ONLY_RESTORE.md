@@ -105,3 +105,13 @@ OSDで調整後の開き直し・ゲーム起動し直し・通常の電源再�
 POSの5位置で文字欠けなし、OSD2中のSELECT＋右によるOSD1の重なりや設定変更なし、OSD操作のゲームへの流出なし、終了button保持中の入力遮断と全解放後の復帰、OSD1の中央表示を確認した。通常の電源再投入後もDr. MarioのUSER値復元とPac-Manの破損record拒否・DEFAULT全OFF、両方のFRAME ACKと映像・音声・操作が正常だった。
 
 これで利用者に依頼した試験A/Bの画面・操作確認はすべて正常。残る作業はmicroSDの全62fileが追加直後と同一であることのPC照合、試験後の再退避、試験record3個の保全・取外しと元59fileへの復帰である。この最終処理が終わるまで第5d完了tagは作らない。
+
+## 第5d段階の完了と試験データの取外し
+
+2026-11-04T11:01:03.672894+09:00、同じ物理identityのmicroSD全62fileを新たな退避先へコピー・SHA照合し、試験用record追加直後とfile名・size・内容がすべて同一であることを確認した。Windowsのsystem folderは従来どおり対象外であり、filesystem全sectorの一致を主張するものではない。
+
+2026-11-04T11:01:35.000622+09:00、退避済みの試験record3個だけを固定path・SHAで再確認して取外し、空の試験用crt directoryを取り除いた。元の59fileはすべて試験前と同一だった。試験recordは実機試験後の退避先とrepository内のfixtureに保全している。firmwareの再書込みは行っていない。現在の基板は第5d FW42359d6、SDは試験recordなしの状態である。Dr. Marioは次回起動時にCSV ON/WEAK/STANDARD・STORE MISSING、Pac-ManはDEFAULT全OFF・STORE MISSINGとなる。
+
+実装、関連9試験、firmware build、導入・全flash照合、依頼した試験A/B、試験後のSD不変照合と復帰を完了した。local tag crt-stage5d-hw-20261104を確認済み基準として保持する。記録はhardware-results.jsonとpost-test-sd-verification.json。本文前半の確認待ちは各時点の経過であり、本節が最新状態である。
+
+実機で確認した範囲は現在のConsole138K/NESと2本の記録済みROM。tombstone、I/O失敗、未知schema、世代競合、他volumeの分離はPC試験であり、実機で確認済みとはしない。firmwareからの保存、Reset UI、system/global defaultsは未実装。第5段階全体は未完了で、初版第5段階の起動停止原因も特定済みとはしない。

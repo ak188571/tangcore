@@ -1,0 +1,19 @@
+{
+  "completed_at": "2026-11-04T11:01:03.672894+09:00",
+  "all_62_files_unchanged": true,
+  "file_count": 62,
+  "card_identity_verified": true,
+  "cleanup_pending": false,
+  "cleanup_completed_at": "2026-11-04T11:01:35.000622+09:00",
+  "original_59_files_restored_and_unchanged": true,
+  "restored_file_count": 59,
+  "removed_test_files": [
+    "crt/01-7623dffd-0000000000010010.a",
+    "crt/01-7623dffd-0000000000010010.b",
+    "crt/01-ebbb19bf-0000000000006010.a"
+  ],
+  "removed_files_preserved_in_post_test_backup": true,
+  "only_empty_test_directory_removed": true,
+  "firmware_reprogrammed": false,
+  "verification_scope": "All 62 user-file names, lengths and SHA256 values; Windows system folders excluded; no raw-sector comparison."
+}

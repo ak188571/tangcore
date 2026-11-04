@@ -1,6 +1,6 @@
 {
   "date_jst": "2026-11-04",
-  "hardware_test_status": "all_requested_interactive_hardware_checks_passed_post_test_sd_verification_and_cleanup_pending",
+  "hardware_test_status": "all_requested_stage5d_hardware_checks_passed_current_console138k_nes_setup",
   "firmware_commit": "42359d6976edf98089bdbc91ac8725fce2fd0bef",
   "firmware_sha256": "9609a2dabb64f1e5c1fff3caf3622680b5c73487c0867eed8ffd4e13b69996e7",
   "reports": [
@@ -41,8 +41,10 @@
     "phase_b_corrupt_record_fallback": true,
     "phase_b_reopen_relaunch_and_power_cycle": true,
     "phase_b_osd_positions_input_and_mutual_exclusion": true,
-    "phase_b_sd_unchanged_after_test": null,
-    "phase_b_test_records_removed_after_preservation": null
+    "phase_b_sd_unchanged_after_test": true,
+    "phase_b_test_records_removed_after_preservation": true
   },
-  "limitations": "Post-test SD integrity verification and preservation/removal of the three synthetic records remain pending. No firmware save, Reset UI, defaults file, or hardware tombstone/I/O-failure test is claimed."
+  "limitations": "Confirmed on current Console138K/NES with the two recorded ROMs. Firmware writes, Reset UI and defaults files remain unimplemented. Tombstones, I/O errors, schema/generation conflicts and other-volume separation are host-tested, not hardware-tested. Earlier initial stage5 boot-failure root cause remains undetermined.",
+  "validation_tag": "crt-stage5d-hw-20261104",
+  "post_test_sd_record": "post-test-sd-verification.json"
 }
