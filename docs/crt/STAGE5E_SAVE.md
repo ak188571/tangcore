@@ -53,3 +53,9 @@ firmwareは226192bytes、SHA256 e7534a59b1cb5837eddf3f8ff34893e560c9a267ae841da6
 7. POS5位置・OSD1排他・入力遮断・全button解放待ちも確認する。保存fileを残すか試験用として退避するかは実機結果を整理して記録する。
 
 現時点で実機は未確認。実機合格tagは依頼した試験の完了後に作る。Reset UI/defaultsと第5段階全体は未完了。
+
+## 第5e版の実機反映
+
+2026-11-04T11:40:59.086709+09:00、既知Console138KへFW0051516のみを反映した。基板SHA、新FW全byte、4MiB全flash読戻しと更新範囲外を照合した。SD全59fileは退避時と同一で、保存recordの追加はまだない。初回mode0 READの接続確立に失敗し、再programせずmode2 READで成功した。SDK設定を元のbyteへ戻した。
+
+復旧用は直前の実機合格第5dの検証済み全読戻しをコピーしたもので、新たな書込み前flash読取りを行ったとはしない。verification/crt-stage5e-save/deployment.jsonに記録。通常起動、明示SAVE、X/Y破棄、再起動時復元、保存失敗は利用者の実機確認待ち。
