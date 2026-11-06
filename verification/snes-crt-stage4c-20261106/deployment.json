@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "stage": "S4c",
-  "status": "installed_readback_verified_runtime_pending",
+  "status": "installed_and_qualified_for_reported_scope",
   "source_commits": {
     "firmware-bl616": "8f05446158d005eae095839aa2f494021adb700d",
     "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
@@ -39,8 +39,10 @@
   "actual_USER_records_untouched": true,
   "FPGA_image_recopy": false,
   "flash_utility_original_files_restored": true,
-  "temporary_metadata_cleanup": "pending after Reset trial and fresh capture",
-  "hardware_status": "pending",
+  "temporary_metadata_cleanup": "completed_original_titles_restored_temporary_defaults_removed",
+  "hardware_status": "reported_SNESTang_scope_and_exact_SD_record_checks_passed",
   "planned_snes_launches": 2,
-  "first_SNES_trial_report": "user_reported_normal_OSD2_1_to_13_Reset_1_to_3"
+  "first_SNES_trial_report": "user_reported_normal_OSD2_1_to_13_Reset_1_to_3",
+  "final_SD_files": 65,
+  "post_cold_boot_SD_invariance": "passed"
 }

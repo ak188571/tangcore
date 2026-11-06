@@ -12,5 +12,6 @@
   "USER_a3_and_Reset_b4_retained": true,
   "records_written_by_PC": false,
   "flash_operations": 0,
-  "second_boot_recommendation_tracking": "pending"
+  "second_boot_recommendation_tracking": "user_reported_pass_all_OFF_INITIAL_DEFAULT_STORE_RESET",
+  "post_cold_boot_SD_invariance": "passed_all_65_file_contents_and_attributes"
 }

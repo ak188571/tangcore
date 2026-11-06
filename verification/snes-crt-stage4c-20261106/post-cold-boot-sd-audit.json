@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-07",
+  "stage": "S4c post-cold-boot SD invariance",
+  "fresh_snapshot": "snes-crt-stage4c-hardware-20261106/post-cold-boot-01",
+  "files_checked": 65,
+  "all_contents_and_attributes_unchanged_since_metadata_restoration": true,
+  "USER_generation3_and_Reset_generation4_unchanged": true,
+  "original_65_file_set_restored": true,
+  "other_original_64_files_and_attributes_unchanged": true,
+  "original_titles_byte_exact": true,
+  "temporary_defaults_absent": true,
+  "read_only_card_access": true,
+  "card_write_operations": 0,
+  "flash_operations": 0,
+  "entries_sha256": "35d372630c772fb6073744ec338c5e363a5726fac434c4ecb8a609eb3446a572"
+}

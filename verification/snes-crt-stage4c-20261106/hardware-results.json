@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "stage": "S4c",
-  "status": "first_trial_NES_OSD2_and_Reset_record_verified_second_boot_pending",
+  "status": "user_confirmed_for_reported_scope_records_cold_boot_and_SD_invariance",
   "device_programmed": true,
   "sd_written": true,
   "source_commits": {
@@ -24,11 +24,13 @@
     "b": "Reset generation4 value0"
   },
   "metadata_cleanup": "Restore original titles bytes and remove only exact temporary defaults after fresh SD capture and record audit; actual USER/Reset records remain",
-  "hardware_scope": "First SNES trial, actual Reset record/generation and reported NES OSD2 passed. Original metadata restored. Second-boot builtin fallback and final no-SAVE SD invariance pending. SYSTEM/GLOBAL physical adoption is not included.",
+  "hardware_scope": "Qualified for reported Super Mario Collection/USB P1 scope: initial USER precedence, CSV Reset preview/cancel/explicit SAVE, exact a3 USER/b4 Reset record audit, duplicate Reset SAVE generation unchanged, next-boot builtin fallback after metadata cleanup and final SD invariance. NES OSD2 1-13 reported normal separately.",
   "limitations": [
-    "No inference from NES or host results",
-    "No physical SD fault injection",
-    "USB save and other controller ports unvalidated"
+    "Requested game/USB P1 scope; not all games or controller ports",
+    "Latest NES report explicitly covers OSD2 items 1-13; other requested checks not individually reported",
+    "SYSTEM/GLOBAL actual adoption and malformed defaults rejection tested on host, not claimed as SNES hardware passes",
+    "No physical SD fault injection; USB-storage CRT persistence not enabled",
+    "S3b actual Console path displays 256x224; full 239-line/high-resolution/interlace/PAL modes not qualified"
   ],
   "readback_verified": true,
   "flash_program_operations": 1,
@@ -60,10 +62,16 @@
     {
       "section": "NES_OSD2_items_1_to_13",
       "answer": "1-13正常"
+    },
+    {
+      "section": "second_SNES_boot_OSD2_items_1_to_13",
+      "answer": "1-13正常"
     }
   ],
   "NES_regression": "user_reported_OSD2_items_1_to_13_pass_other_requested_checks_not_individually_reported",
   "post_Reset_SD_audit": "passed_USER_a3_and_Reset_b4_duplicate_SAVE_no_generation_increase",
-  "metadata_cleanup_status": "verified_original_titles_and_absent_temporary_defaults",
-  "second_boot_recommendation_tracking": "pending"
+  "metadata_cleanup_status": "complete_original_titles_byte_exact_temporary_defaults_absent",
+  "second_boot_recommendation_tracking": "user_reported_pass_OSD2_1_to_13_INITIAL_DEFAULT_all_OFF_STORE_RESET_DEFAULTS_MISSING",
+  "final_date": "2026-11-07",
+  "final_post_cold_boot_SD_invariance": "passed_all_65_file_contents_and_attributes_read_only"
 }

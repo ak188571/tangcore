@@ -1,0 +1,12 @@
+{
+  "odt": "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\outputs\\snes-crt-result-20261107\\SNES_CRT_OSD2_RESULT_20261107.odt",
+  "bytes": 41585831,
+  "sha256": "a2c84b5d1fd036a6a5b8cbae8e60a260e30fa63169f27d14e736895734c063ea",
+  "language": "ja-JP",
+  "embedded_fonts": 3,
+  "pdf_fonts": "/BAAAAA+NotoSansCJKjp-Bold\n/CAAAAA+NotoSansCJKjp-Regular\n/DAAAAA+NotoSansMonoCJKjp-Regular\n/EAAAAA+NotoSansCJKjp-Regular",
+  "rendered_pages": 3,
+  "visual_inspection": "passed_all_3_final_pages",
+  "no_Chinese_font_substitution": true,
+  "source_markdown_sha256": "7a9217652a8321335c2d199930888d085ea705721019ae7ff0eeae30b9212584"
+}

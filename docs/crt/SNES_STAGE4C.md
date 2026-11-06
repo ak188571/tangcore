@@ -55,3 +55,11 @@ firmware照合後、一時的にSNESのtitles.csvへcrt_v1列を追加する。n
 全条件の合格後、元のSNES titles.csvを全byte復元し、今回導入したdefaultsと全byte一致する一時fileだけを除去した。SDは元と同じ65fileとなり、変更は実SAVEによる.bのReset recordだけで、他の元64file・属性は一致した。USER/Reset両recordは保持し、firmware/FPGAは再書込みしていない。詳細は`post-reset-sd-audit.json`と`metadata-restoration.json`。
 
 残る2回目のSNES起動では、古いCSV数値を固定せず、復旧後のbuilt-in全OFFを採用することを確認する。確認後の最終SD不変照合は読取りのみで行い、追加のSNES起動は依頼しない。
+
+## 2回目の報告と最終SD照合
+
+2026年11月7日、同じS4c firmwareで2回目のSNES起動を依頼し、OSD2項目1〜13を「1-13正常」と報告された。SAVED、INITIAL DEFAULT、全OFF、STORE RESET、FRAME ACK、同じROM ID、DEFAULTS MISSINGへの追従を合格とする。その他の通常動作はこの返答では個別に述べられていないため、1回目の「正常」報告と区別する。
+
+続いて全65fileを新しく読取り退避し、metadata復旧直後との全内容・属性の完全一致を確認した。USER generation 3とReset generation 4は不変で、一時defaultsは存在せず、元のtitles.csv全byteも維持されていた。この最終照合によるSD/flash書込みは0回。詳細は`post-cold-boot-sd-audit.json`。
+
+1回目のUSER優先・CSV Reset preview・取消し・明示SAVE、実recordのkind/CRC/世代と同mode再SAVE省略、metadata復旧後の2回目の追従と最終SD不変を合わせ、依頼したスーパーマリオコレクション・USB P1の範囲でS4cを合格とする。NESは別途報告されたOSD2項目1〜13の範囲で合格とし、SNES合格をNESから推定していない。追加の実機起動・書込みは依頼しない。
