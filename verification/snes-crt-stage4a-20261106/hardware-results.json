@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "stage": "S4a",
-  "status": "snes_functional_pass_nes_and_sd_audit_pending",
+  "status": "functional_reports_received_sd_audit_pending",
   "device_programmed": true,
   "sd_written": true,
   "source_commits": {
@@ -21,9 +21,11 @@
   "raw_rom_id_matches_PC": "232bb5b8",
   "restored_PC_fixture": "USER ON/STANDARD/WEAK",
   "cancel_hold_release_and_reopen_initial": "user_reported_pass",
-  "nes_regression": "pending",
+  "nes_game": "ドクターマリオ (requested setup; no alternative reported)",
+  "nes_osd2_display_order_items_1_to_13": "user_reported_pass",
+  "nes_other_requested_checks": "not_separately_reported_in_this_response",
   "post_trial_sd_invariance": "pending",
-  "raw_user_reports": ["正常", "1-13正常", "1-2正常"],
+  "raw_user_reports": ["正常", "1-13正常", "1-2正常", "1-13正常"],
   "limitations": [
     "Only the requested SNES game and USB P1 setup are covered; controller identity was not re-read.",
     "USER fixture restoration was tested on hardware; CSV/defaults fallback and damaged records were tested on PC, not claimed as SNES hardware pass.",
