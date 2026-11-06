@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "stage": "S4a",
-  "status": "deployed_hardware_trial_pending",
+  "status": "snes_functional_pass_nes_and_sd_audit_pending",
   "device_programmed": true,
   "sd_written": true,
   "source_commits": {
@@ -13,5 +13,20 @@
   "save_reset_available": false,
   "readback_verified": true,
   "flash_program_operations": 1,
-  "snes_fpga_image_written": false
+  "snes_fpga_image_written": false,
+  "snes_game": "スーパーマリオコレクション (requested setup; no alternative reported)",
+  "controller_connection": "USB P1 (requested setup; no alternative reported)",
+  "snes_normal_boot_japanese_list_csv_order_video_audio_controls": "user_reported_pass",
+  "snes_osd2_display_order_items_1_to_13": "user_reported_pass",
+  "raw_rom_id_matches_PC": "232bb5b8",
+  "restored_PC_fixture": "USER ON/STANDARD/WEAK",
+  "cancel_hold_release_and_reopen_initial": "user_reported_pass",
+  "nes_regression": "pending",
+  "post_trial_sd_invariance": "pending",
+  "raw_user_reports": ["正常", "1-13正常", "1-2正常"],
+  "limitations": [
+    "Only the requested SNES game and USB P1 setup are covered; controller identity was not re-read.",
+    "USER fixture restoration was tested on hardware; CSV/defaults fallback and damaged records were tested on PC, not claimed as SNES hardware pass.",
+    "No physical SD/DMA fault injection or USB-storage validation."
+  ]
 }

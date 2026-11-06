@@ -49,3 +49,7 @@ firmwareは230,560byte、SHA256 `330730232ac021b8176e3a08fcd00f135919caea775ae4b
 全flashの独立した読取り2回は一致し、以前の確認済みfirmwareの全4MiBとも一致した。書込み直前の読取りでも新しい退避と一致した。同じ基板をBOOT付きで再接続した後、firmwareを0x40000へ1回だけ書き込み、resident modeの全flash読戻しでfirmware全byteの一致、0x40000未満・0x80000以降の不変を確認した。
 
 SDは一時USER recordの32byteを追加した64fileになった。既存63fileの内容と属性は不変で、SNES FPGA image・CSV・defaults・NES recordへの書込みは行っていない。fixtureのschema/key/CRCとutility設定・生成fileの復元も照合した。詳細は`deployment.json`。S4aの実機動作と試験後のSD不変は確認待ち。
+
+## SNESの実機報告
+
+通常動作を「正常」、OSD2項目1〜13を「1-13正常」、X/Y保持・解放待ちと起動時値への取消しを「1-2正常」と利用者から報告された。依頼したスーパーマリオコレクション・USB P1の範囲で、raw ID `232bb5b8`、USERのON/STANDARD/WEAK復元、読取り専用表示、preview/ACK、取消しを合格とする。CSV/defaults fallback・破損record・他の映像mode/接続先へ合格を拡張しない。NES回帰と試験後のSD不変は別途確認待ち。
