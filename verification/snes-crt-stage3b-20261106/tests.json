@@ -1,0 +1,48 @@
+[
+  {
+    "name": "host-crt",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_crt.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 2.5
+  },
+  {
+    "name": "snes-scan-rtl",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tests/crt/test_stage3b.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 34.3
+  },
+  {
+    "name": "snes-s3a-compatibility",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tests/crt/test_stage3a.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 19.84
+  },
+  {
+    "name": "snes-s1-compatibility",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tests/crt/test_stage1.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 43.55
+  },
+  {
+    "name": "snes-restart",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/test_osd1_restart.sh",
+      "snes"
+    ],
+    "exit_code": 0,
+    "seconds": 10.09
+  }
+]

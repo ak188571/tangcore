@@ -1,0 +1,36 @@
+{
+  "source_commits": {
+    "firmware-bl616": "3560c1b429a36fc35a02c840f8dcfeb7f8b4f7e5",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936",
+    "nestang": "ec33410f2e6078fa20378df3cdae20f84aaf03e9",
+    "monitor": "e12b253838b45407dc4de99848218e24112b787c"
+  },
+  "build_inputs_unchanged_after_commit": true,
+  "committed_inputs_equal_after_eol_normalization": 180,
+  "changed_snes_paths": [
+    "src/iosys/iosys_bl616.v",
+    "src/snes2hdmi.v",
+    "src/snestang_console138k_usb_top.v",
+    "tests/crt/tb_snes_crt_scan_video.sv",
+    "tests/crt/tb_snes_crt_uart.sv",
+    "tests/crt/test_stage3b.sh"
+  ],
+  "top_only_enables_scan_parameter": true,
+  "source_sampling_audio_and_scaler_counter_blocks_unchanged": true,
+  "filter_byte_identical_to_NES": true,
+  "root_hex_after_build_sha256": {
+    "dsp11b23410_d.hex": "98bf377faf2e7e8e63cb806f3b2515ff51e6607d08d95eaebb57a86faec1bc97",
+    "dsp11b23410_p.hex": "c18a658a515b047656c2404a0edd34d4017bbf85738730f9042108ae68a618a5"
+  },
+  "root_hex_equal_to_S3a": true,
+  "resource_delta_from_S3a": {
+    "T_Register": 6,
+    "T_Alu": 2,
+    "T_Lut": 96,
+    "T_MULTALU27X18": 0,
+    "T_MULT12X12": 3,
+    "T_MULT27X36": 0,
+    "T_Bsram": 0
+  },
+  "shared_firmware_source_unchanged": true
+}

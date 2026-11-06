@@ -1,0 +1,10 @@
+CRT UART PASS: real serial packets, frame-applied readback, packet length guard, capability, immediate chord blocking, P1 ownership
+- tests/crt\tb_snes_crt_uart.sv:117: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 8ms; walltime 0.625 s; speed 12.500 ms/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 6 MB
+SNES scan video PASS: 47000000 pixels, 16 blur/scan combinations, 720 geometric row phases and integrated darkness, edges/position/live OFF, five OSD windows, source sampling/audio/frame sync unchanged
+- tests/crt\tb_snes_crt_scan_video.sv:138: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 658ms; walltime 32.770 s; speed 20.079 ms/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 6 MB

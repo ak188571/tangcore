@@ -17,6 +17,9 @@ module tb_restart;
 `ifdef HAS_SNES_BLUR
         ,.SUPPORT_BLUR(1)
 `endif
+`ifdef HAS_SNES_SCAN
+        ,.SUPPORT_SCAN(1)
+`endif
     ) dut(
         .clk(clk),.hclk(hclk),.resetn(resetn),.uart_rx(uart_rx),.uart_tx(uart_tx),
         .game_reset(game_reset),.overlay_x(8'b0),.overlay_y(8'b0),

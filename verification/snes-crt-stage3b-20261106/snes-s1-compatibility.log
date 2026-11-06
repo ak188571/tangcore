@@ -1,0 +1,25 @@
+CRT UART PASS: real serial packets, frame-applied readback, packet length guard, capability, immediate chord blocking, P1 ownership
+- tests/crt\tb_snes_crt_uart.sv:117: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 2ms; walltime 0.199 s; speed 9.764 ms/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 6 MB
+CRT UART PASS: real serial packets, frame-applied readback, packet length guard, capability, immediate chord blocking, P1 ownership
+- tests/crt\tb_snes_crt_uart.sv:117: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 8ms; walltime 0.620 s; speed 12.614 ms/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 6 MB
+SNES bypass PASS: 44000000 pixels, all 32 configurations, five windows, continuous live writes, source Y field/239 rows, RGB/phase/margins/OSD/audio/frame-sync unchanged
+- tests/crt\tb_snes_crt_video.sv:64: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 616ms; walltime 25.776 s; speed 23.898 ms/s
+- Verilator: cpu 25.594 s on 1 threads; allocated 6 MB
+CRT mailbox PASS: frame atomicity, coalescing, reset, bypass RGB samples=65536
+- tests/crt\tb_snes_crt_config.sv:55: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 395us; walltime 0.034 s; speed 11.603 ms/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 6 MB
+SNES serial input PASS: all 12 stale held bits flushed during OSD, neutral partial-read exit and normal next latch
+- tests/crt\tb_snes_input_release.sv:37: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 5us; walltime 0.000 s; speed 0.000 s/s
+- Verilator: cpu 0.000 s on 1 threads; allocated 6 MB

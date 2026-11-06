@@ -1,0 +1,10 @@
+{
+  "bytes": 41584330,
+  "sha256": "75d43ef7710f4e9616c64effc75084f69ae6572da7f6fe3ec24a9da80f883f78",
+  "language": "ja-JP",
+  "embedded_fonts": 3,
+  "pdf_fonts": "/BAAAAA+NotoSansCJKjp-Bold\n/CAAAAA+NotoSansCJKjp-Regular\n/DAAAAA+NotoSansMonoCJKjp-Regular",
+  "rendered_pages": 2,
+  "visual_check_all_pages": true,
+  "chinese_font_substitution_detected": false
+}

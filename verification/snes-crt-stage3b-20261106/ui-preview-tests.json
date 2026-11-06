@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "command": [
+    "C:/msys64/usr/bin/bash.exe",
+    "D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-ui16-host/test_crt_snes_s3b.sh"
+  ],
+  "seconds": 2.36,
+  "firmware_source_modified": false,
+  "settings_checked": 32
+}

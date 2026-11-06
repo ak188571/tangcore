@@ -1,0 +1,16 @@
+{
+  "tests_passed": 12,
+  "exit_code": 0,
+  "sd_only": true,
+  "serial_or_flash_operations": 0,
+  "helpers": {
+    "deploy.py": "0ec5205c7c4f6bb984a14e04063d83ec6ad19d932e90391469ff6b9245e03def",
+    "test_deploy.py": "cff41d6e53046bd0a5340769aa51ed5f9e8c8c4415446350271bc40ca6c035fc",
+    "lib/console138k.py": "62ddb5445bfbbd662c1ffa4421e35ee6c63b2eaf6e5298083b4af82389001a2f"
+  },
+  "guide": {
+    "file": "TEST_GUIDE_20261106.odt",
+    "sha256": "75d43ef7710f4e9616c64effc75084f69ae6572da7f6fe3ec24a9da80f883f78",
+    "language": "ja-JP"
+  }
+}

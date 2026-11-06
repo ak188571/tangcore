@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-06",
+  "stage": "S3b",
+  "status": "pending",
+  "device_programmed": false,
+  "sd_written": false,
+  "firmware_retained_from_S3a": true,
+  "source_commits": {
+    "firmware-bl616": "3560c1b429a36fc35a02c840f8dcfeb7f8b4f7e5",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
+  },
+  "planned_snes_launches": 1
+}

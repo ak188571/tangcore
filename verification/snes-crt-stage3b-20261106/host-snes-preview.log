@@ -1,0 +1,2 @@
+SNES S3b unchanged UI PASS: 32 settings, both advertised effects, scan selectable, SAVE/RESET unavailable, frame ACK and cancel to OFF
+CRT host PASS: hotkeys, preserved config, frame ACK/retry, stale ACK rejection, CSV/default/explicit OFF seeds, invalid seed fallback, explicit SAVE/stay-open/retry and X/Y discard of live preview
