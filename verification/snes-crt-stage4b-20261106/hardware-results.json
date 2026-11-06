@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "stage": "S4b",
-  "status": "deployed_first_trial_pending",
+  "status": "first_SNESTrial_reported_pass_NES_SD_and_cold_boot_pending",
   "device_programmed": true,
   "sd_written": false,
   "source_commits": {
@@ -14,7 +14,15 @@
   "readback_verified": true,
   "flash_program_operations": 1,
   "S4a_SD_audit_passed": true,
-  "first_save_trial": "pending",
+  "first_save_trial": "user_reported_pass",
   "post_save_record_audit": "pending",
-  "cold_boot_restoration": "pending"
+  "cold_boot_restoration": "pending",
+  "snes_game": "スーパーマリオコレクション (requested setup; no alternative reported)",
+  "controller_connection": "USB P1 (requested setup; no alternative reported)",
+  "normal_boot_japanese_list_csv_order_video_audio_controls": "user_reported_pass",
+  "OSD2_display_order_items_1_to_13": "user_reported_pass",
+  "SAVE_stays_open_and_reports_SAVED": "user_reported_pass; physical slots pending audit",
+  "cancel_hold_release_reopen_last_saved_ON_WEAK_STRONG": "user_reported_pass",
+  "nes_regression": "pending",
+  "raw_user_reports": ["正常", "1-13正常", "1-2正常"]
 }

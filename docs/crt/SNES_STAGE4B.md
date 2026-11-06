@@ -33,3 +33,7 @@ S4aでPCが作った一時recordは、SD不変の証拠を採取するまで保�
 同じ基板をBOOT付きで再接続した後、S4b firmwareを0x40000へ1回だけ書き込んだ。resident modeの全4MiB読戻しでfirmware全byteの一致、0x40000未満・0x80000以降の不変を確認した。SDは全64fileの内容・属性が不変で、SNES imageも再copyしていない。PC作成のsystem2 USER recordはgeneration 1、値13のまま。utility設定・生成fileの復元も照合した。詳細は`deployment.json`。
 
 S4bの実機保存・保存後のSD照合・電源再投入後の復元は未確認。まず1回目のSNES起動で実SAVEを行い、SD照合を経て2回目の起動へ進む。
+
+## 1回目のSNES報告
+
+通常動作を「正常」、OSD2項目1〜13を「1-13正常」、保存後のX/Y保持・解放待ちと最後の保存値への取消しを「1-2正常」と利用者から報告された。依頼したスーパーマリオコレクション・USB P1の範囲で、UIのSAVE表示・stay-open・取消しを合格とする。SAVE実体のCRC/世代、同値SAVEの世代不増加、他file不変、電源再投入後の復元は次のSD照合と2回目の起動で別途確認する。
