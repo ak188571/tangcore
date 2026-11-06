@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "stage": "S4b",
-  "status": "first_trial_and_SD_records_verified_cold_boot_pending",
+  "status": "user_confirmed_for_reported_scope_records_and_cold_boot",
   "device_programmed": true,
   "sd_written": false,
   "source_commits": {
@@ -16,7 +16,7 @@
   "S4a_SD_audit_passed": true,
   "first_save_trial": "user_reported_pass",
   "post_save_record_audit": "passed",
-  "cold_boot_restoration": "pending",
+  "cold_boot_restoration": "user_reported_pass_ON_WEAK_STRONG_USER_OSD2_items_1_to_13",
   "snes_game": "スーパーマリオコレクション (requested setup; no alternative reported)",
   "controller_connection": "USB P1 (requested setup; no alternative reported)",
   "normal_boot_japanese_list_csv_order_video_audio_controls": "user_reported_pass",
@@ -31,6 +31,13 @@
     "1-13正常",
     "1-2正常",
     "1-13正常",
-    "接続済み"
+    "接続済み",
+    "1-13正常"
+  ],
+  "limitations": [
+    "Hardware scope is the requested SNES game and USB P1; controller identity was not re-read.",
+    "NES report explicitly covered OSD2 items 1-13; other requested checks were not individually reported.",
+    "No all-games, other input ports, physical SD fault injection or USB-storage SAVE claim.",
+    "Post-cold-boot SD invariance is to be checked at the next fresh backup."
   ]
 }

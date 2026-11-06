@@ -45,3 +45,7 @@ S4bの実機保存・保存後のSD照合・電源再投入後の復元は未確
 同日、microSDを改めて識別し、全65fileを新しくPCへ退避した。system2・CRC `232bb5b8`・size 2,097,152の両recordは、.aがUSER generation 3、値27（ON/WEAK/STRONG）、.bがUSER generation 2、値23（ON/STRONG/STANDARD）だった。schema/reserved/key/record CRCを検証し、同値SAVEによる世代増加がないことを確認した。
 
 PC fixtureだった.aは実firmwareのUSER recordへ上書きされていた。他の既存63fileの内容・属性と、既存slotの属性は不変だった。両slotは実SAVEのUSERデータなので、fixture除去として削除しない。読取り退避のみで、SD/flashへの書込みは0回。詳細は`post-save-sd-audit.json`。残る電源再投入後の復元は、同じS4b firmwareと照合済みSDで確認する。
+
+## 電源再投入後の報告
+
+同じS4b firmware・照合済みSDで2回目のSNES起動を依頼し、OSD2項目1〜13を「1-13正常」と報告された。SAVED/INITIAL USER、ON/WEAK/STRONG、STORE USER、FRAME ACK、ROM IDの復元を合格とする。1回目の保存・取消し、SD上の実recordと同値SAVEの世代不増加、2回目の復元を合わせ、依頼したゲーム・USB P1の範囲でS4bを合格とする。他ゲーム・他接続先・物理faultを含むとはしない。2回目後のSD不変は次の新しい退避で照合する。
