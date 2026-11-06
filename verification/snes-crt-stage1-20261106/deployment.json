@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-06",
+  "stage": "SNES S1+S2",
+  "source_commits": {
+    "firmware-bl616": "70d39d8097281ffb661feb3eafd44d79015b9f43",
+    "snestang": "a142a290bbea9952e7bfea563d773e2b663665cb"
+  },
+  "artifacts": {
+    "firmware": {
+      "file": "firmware/tangcore_bl616.bin",
+      "bytes": 229088,
+      "sha256": "16efcc8d0b110e075e74f7b11bde29fa42d8a93d5d91476f773505e594c4586d"
+    },
+    "snes": {
+      "file": "cores/console138k/snestang.bin",
+      "bytes": 5050570,
+      "sha256": "37139d5afa3724a7677aca586e7b78d24cc9a5200a918ce1281fdc5a60a77f75"
+    }
+  },
+  "fresh_sd_backup_files": 63,
+  "independent_full_flash_reads_match": true,
+  "firmware_full_byte_readback_matches": true,
+  "flash_before_0x40000_unchanged": true,
+  "flash_from_0x80000_unchanged": true,
+  "flash_program_operations": 1,
+  "sd_updated": [
+    "cores/console138k/snestang.bin"
+  ],
+  "other_sd_files_unchanged_at_install": 62,
+  "all_sd_file_attributes_preserved_at_install": true,
+  "sdk_utility_configuration_restored": true,
+  "hardware_gameplay_status": "pending"
+}
