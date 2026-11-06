@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-06",
+  "stage": "S4b post-SAVE SD audit",
+  "files_checked": 65,
+  "records": [
+    {
+      "file": "crt/02-232bb5b8-0000000000200000.a",
+      "bytes": 32,
+      "sha256": "db251ecb687bf57c79ee6c71d46a408a4fd7d23f4a034bf2db1eed4f5feb4f21",
+      "system": 2,
+      "kind": 0,
+      "generation": 3,
+      "enabled": true,
+      "blur": 1,
+      "scanline": 3,
+      "record_crc32": "15e6c994",
+      "attributes": 32
+    },
+    {
+      "file": "crt/02-232bb5b8-0000000000200000.b",
+      "bytes": 32,
+      "sha256": "54b6ee8707ec173a832f64c0d0567ad1d5f2b6a00f04223bc29fe9a2a9d62626",
+      "system": 2,
+      "kind": 0,
+      "generation": 2,
+      "enabled": true,
+      "blur": 3,
+      "scanline": 2,
+      "record_crc32": "faf5bbbe",
+      "attributes": 32
+    }
+  ],
+  "same_value_SAVE_did_not_increment_generation": true,
+  "latest_USER_setting": "ON/WEAK/STRONG",
+  "original_63_other_file_contents_and_attributes_unchanged": true,
+  "existing_slot_attributes_preserved": true,
+  "PC_fixture_replaced_by_firmware_USER_record": true,
+  "firmware_records_must_not_be_deleted_as_fixture": true,
+  "sd_card_written_by_auditor": false,
+  "flash_operations": 0,
+  "cold_boot_restoration": "pending",
+  "auditor_sha256": "da92c4b14c35d897ca6e6098dca92c98164eb44863f6a00487f607b49b1e8051"
+}

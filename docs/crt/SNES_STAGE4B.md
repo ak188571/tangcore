@@ -37,3 +37,11 @@ S4bの実機保存・保存後のSD照合・電源再投入後の復元は未確
 ## 1回目のSNES報告
 
 通常動作を「正常」、OSD2項目1〜13を「1-13正常」、保存後のX/Y保持・解放待ちと最後の保存値への取消しを「1-2正常」と利用者から報告された。依頼したスーパーマリオコレクション・USB P1の範囲で、UIのSAVE表示・stay-open・取消しを合格とする。SAVE実体のCRC/世代、同値SAVEの世代不増加、他file不変、電源再投入後の復元は次のSD照合と2回目の起動で別途確認する。
+
+続くNES回帰もOSD2項目1〜13を「1-13正常」と報告された。依頼したドクターマリオのOSD2項目を合格とし、その他の操作はこの返答では個別に述べられていないため追加しない。
+
+## 保存後のSD読取り
+
+同日、microSDを改めて識別し、全65fileを新しくPCへ退避した。system2・CRC `232bb5b8`・size 2,097,152の両recordは、.aがUSER generation 3、値27（ON/WEAK/STRONG）、.bがUSER generation 2、値23（ON/STRONG/STANDARD）だった。schema/reserved/key/record CRCを検証し、同値SAVEによる世代増加がないことを確認した。
+
+PC fixtureだった.aは実firmwareのUSER recordへ上書きされていた。他の既存63fileの内容・属性と、既存slotの属性は不変だった。両slotは実SAVEのUSERデータなので、fixture除去として削除しない。読取り退避のみで、SD/flashへの書込みは0回。詳細は`post-save-sd-audit.json`。残る電源再投入後の復元は、同じS4b firmwareと照合済みSDで確認する。

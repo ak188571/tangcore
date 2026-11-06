@@ -35,7 +35,7 @@
     "value": 13
   },
   "sdk_utility_configuration_and_generated_files_restored": true,
-  "hardware_gameplay_status": "first_trial_pending",
-  "post_save_record_audit": "pending",
+  "hardware_gameplay_status": "first_trial_reported_pass_NES_OSD2_1_to_13_reported_pass",
+  "post_save_record_audit": "passed_generations_3_and_2_other_63_files_unchanged",
   "cold_boot_restoration": "pending"
 }
