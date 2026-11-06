@@ -4,7 +4,7 @@ cd "$(dirname "$0")/.."
 core="${1:-}"
 case "$core" in
   nes) repo=nestang; extra=(-DHAS_CRT) ;;
-  snes) repo=snestang; extra=(-DHAS_CRT -DHAS_SNES_CRT) ;;
+  snes) repo=snestang; extra=(-DHAS_CRT -DHAS_SNES_CRT -DHAS_SNES_BLUR) ;;
   *) echo 'Usage: tools/test_osd1_restart.sh nes|snes' >&2; exit 2 ;;
 esac
 flags=(-CFLAGS '-std=c++17')

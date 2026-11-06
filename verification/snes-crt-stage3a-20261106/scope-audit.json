@@ -1,0 +1,36 @@
+{
+  "baseline_snes": "a142a290bbea9952e7bfea563d773e2b663665cb",
+  "baseline_firmware": "70d39d8",
+  "protected_snes_unchanged": [
+    "src/controller_adapter.sv",
+    "src/usb",
+    "src/pll",
+    "src/iosys/tc_crt_config.sv",
+    "src/iosys/tc_osd_layer.sv",
+    "console138k_combined.sdc"
+  ],
+  "protected_firmware_unchanged": [
+    "main.cpp",
+    "core",
+    "fpga",
+    "ui/ui16_titles.cpp",
+    "ui/ui16_font_cache.cpp",
+    "ui/ui16_sd_font.cpp",
+    "ui/ui16_rom_id.cpp",
+    "ui/ui16_crt_save.cpp",
+    "ui/ui16_crt_restore.cpp",
+    "ui/ui16_crt_defaults.cpp",
+    "CMakeLists.txt"
+  ],
+  "original_scaler_counter_block_unchanged": true,
+  "filter_byte_equal_to_nes": true,
+  "filter_sha256": "2b12115a87fbf4fed0942ddf13332c735fdd91d8c4a4f3ffaeec73ef7c6769fc",
+  "source_pixels_per_output": {
+    "numerator": 256,
+    "denominator": 960
+  },
+  "blur_prefetch_output_pixels": 3,
+  "source_column_carry_threshold": 192,
+  "scanline_pixel_input_mask": "0x00180000",
+  "hardware_status": "not yet tested"
+}

@@ -38,3 +38,9 @@ build中に設計fileが変わらなかったことをSHA256で確認した後�
 実機確認の列挙順は見出し、SAVE状態、INITIAL、CRT REQUEST、H BLUR REQ、SCANLINE REQ、STORE、APPLY、ROM ID、SAVE操作行、RESET操作行、DEFAULTS、POSとする。詳細は同directoryの`SNES_STAGE1_TEST_GUIDE.md`。ODT版はlocal導入用directoryにある。
 
 再現commandは共有firmwareの`tools/ui16/test_*.sh`、SNESの`tests/crt/test_stage1.sh`、親の`tools/test_osd1_restart.sh nes|snes`。親の`tools/test_snes_crt_stage1.py`は関連試験を一括実行してlogを保存する。buildscriptは`tools/build_snes_crt_stage1.py`と`tools/build_snes_crt_firmware.py firmware`。FPGA試験は公開基準SHAを使い、未公開の旧NES SHAへ依存しない。
+
+## 実機確認完了
+
+2026年11月6日、SNES「スーパーマリオコレクション」で通常起動・日本語一覧/CSV順序・映像音声操作、OSD2の表示順1〜13、X/Y取消し/解放待ち、排他/左右同時予約、OSD1再起動/一覧復帰の正常報告を受けた。接続先はUSB P1。続くNES「ドクターマリオ」の既存設定/CRT preview/X/Y取消し/再起動/一覧復帰、およびSNESへ戻った際の全OFF/DEFAULT/UNAVAILABLE復帰も正常との報告を受けた。新しいSAVE/Reset操作は依頼していない。
+
+local tagは`snes-crt-stage1-hw-20261106`。USB P2・DS2・BL616側USB、全ゲーム/映像mode、長時間試験の結果へ広げない。SD内容/属性の一致は導入時に測定したもので、ゲーム試験後に媒体を再読取りしたとの記録にはしない。詳細は`hardware-results.json`。

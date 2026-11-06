@@ -1,0 +1,69 @@
+{
+  "steps": [
+    {
+      "name": "firmware-configure",
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "-S",
+        "D:/Users/foobaris/CODEX~1/CHATGP~1/G-P-6A~1/CRT-OS~1/FIRMWA~1",
+        "-B",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-osd2-20261101\\firmware-bl616\\build-snes-crt-stage3a",
+        "-G",
+        "MSYS Makefiles",
+        "-DCMAKE_MAKE_PROGRAM=C:/msys64/usr/bin/make.exe",
+        "-DCROSS_COMPILE=D:/Users/foobaris/Documents/Gowin/tangcore/xuantie-gcc-riscv-v2.6.1-windows-x86_64/bin/riscv64-unknown-elf-",
+        "-DTANG_BOARD=console138k",
+        "-DCHIP=bl616",
+        "-DBOARD=bl616dk",
+        "-DUI16_SYSTEM_MENU=ON",
+        "-DUI16_SD_FONT=ON",
+        "-DUI16_UART_SELFTEST=OFF",
+        "-DCONFIG_DEBUG=y",
+        "-DCONFIG_ROMAPI=y",
+        "-DCONFIG_USB_HS=y",
+        "-DCONFIG_TLSF=y",
+        "-DCONFIG_COREDUMP=y",
+        "-DCONFIG_GCC_OPTIMISE_LEVEL=-Os"
+      ],
+      "exit_code": 0,
+      "seconds": 6.09
+    },
+    {
+      "name": "firmware-compile",
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "--build",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-osd2-20261101\\firmware-bl616\\build-snes-crt-stage3a",
+        "--parallel",
+        "8"
+      ],
+      "exit_code": 0,
+      "seconds": 16.19
+    },
+    {
+      "name": "firmware-combine",
+      "command": [
+        "D:\\Users\\foobaris\\AppData\\Local\\Temp\\TC-SDK~1\\tools\\cmake\\bin\\cmake.exe",
+        "--build",
+        "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-osd2-20261101\\firmware-bl616\\build-snes-crt-stage3a",
+        "--target",
+        "combine"
+      ],
+      "exit_code": 0,
+      "seconds": 2.38
+    }
+  ],
+  "device_programming": false,
+  "artifact": "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\crt-osd2-20261101\\firmware-bl616\\build-snes-crt-stage3a\\build_out\\tangcore_bl616.bin",
+  "bytes": 229168,
+  "sha256": "c19bffa18855ffd38ea56ce5bc0f452463551bf6239bf05a5a0cdfcae3d42e5c",
+  "source_commit": "3560c1b429a36fc35a02c840f8dcfeb7f8b4f7e5",
+  "source_hashes_recorded_after_build": {
+    "main.cpp": "6023c809dc4190fae8600bec1f2e7cd77c15743ffebeb0b6e5991ef6cbdd4026",
+    "ui/ui16_crt.cpp": "ef12cf289a832cfc520bdbe2493aa9a2e08ef511009dd7566339eee8a47cc4f6",
+    "ui/ui16_crt.h": "3b55f46067e0fc4ac2279b19f752481cda52bb4ba881c4fd23dd9cdb173c782b",
+    "CMakeLists.txt": "136d8523715b81fa4099a91381d5fb784165860ff7b4338511dee984243b6c85",
+    "fatfs_conf_user.h": "571502c394f96981fff5c49b36cf2b4abc7e43865b346c17cd30eab44a319c3b"
+  },
+  "hardware_test_status": "pending"
+}

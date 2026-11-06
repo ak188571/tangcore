@@ -1,0 +1,1 @@
+CRT defaults PASS: atomic bounded TSV, BOM/CRLF, all system keys/global/blank/explicit OFF, duplicate/unknown/invalid rejection, volume separation, read-only aligned resources, exact length and open/read/close failure fallback

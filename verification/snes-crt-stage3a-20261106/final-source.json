@@ -1,0 +1,22 @@
+{
+  "source_commits": {
+    "firmware-bl616": "3560c1b429a36fc35a02c840f8dcfeb7f8b4f7e5",
+    "snestang": "ac7fe8f48ff1cf38af735198ae824bf0654f5ab5"
+  },
+  "build_inputs_unchanged_after_commit": true,
+  "committed_inputs_equal_after_eol_normalization": 180,
+  "root_hex_after_build_sha256": {
+    "dsp11b23410_d.hex": "98bf377faf2e7e8e63cb806f3b2515ff51e6607d08d95eaebb57a86faec1bc97",
+    "dsp11b23410_p.hex": "c18a658a515b047656c2404a0edd34d4017bbf85738730f9042108ae68a618a5"
+  },
+  "root_hex_equal_to_S1_baseline": true,
+  "resource_delta_from_S1": {
+    "T_Register": 82,
+    "T_Alu": 110,
+    "T_Lut": 229,
+    "T_MULTALU27X18": 0,
+    "T_MULT12X12": 0,
+    "T_MULT27X36": 0,
+    "T_Bsram": 0
+  }
+}

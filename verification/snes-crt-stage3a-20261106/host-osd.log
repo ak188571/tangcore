@@ -1,0 +1,2 @@
+OSD host tests passed: OSD1 actions, fixed center, old-image guard, chord suffix/held-confirm safety; five OSD2 positions and in-place rendering
+Actual OSD driver passed: window/key packets, neutral-before-open/close, task-owned capture, marker parser, old-core rejection, bounded capability wait

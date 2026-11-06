@@ -1,0 +1,149 @@
+[
+  {
+    "name": "host-osd",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_osd.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 4.33
+  },
+  {
+    "name": "host-crt",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_crt.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 2.52
+  },
+  {
+    "name": "host-launch",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_launch.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 5.58
+  },
+  {
+    "name": "host-crt_restore",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_crt_restore.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 1.14
+  },
+  {
+    "name": "host-crt_save",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_crt_save.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 1.34
+  },
+  {
+    "name": "host-crt_defaults",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_crt_defaults.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 0.8
+  },
+  {
+    "name": "host-rom_id",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_rom_id.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 0.74
+  },
+  {
+    "name": "host-titles",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_titles.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 3.47
+  },
+  {
+    "name": "host-folders",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_folders.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 4.39
+  },
+  {
+    "name": "host-scroll",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_scroll.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 3.44
+  },
+  {
+    "name": "host-wrap",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_wrap.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 7.25
+  },
+  {
+    "name": "host-dispatch",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "-c",
+      "python tools/ui16/test_osd1_dispatch.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.42
+  },
+  {
+    "name": "snes-blur-rtl",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tests/crt/test_stage3a.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 12.06
+  },
+  {
+    "name": "snes-rtl",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tests/crt/test_stage1.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 50.41
+  },
+  {
+    "name": "snes-restart",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/test_osd1_restart.sh",
+      "snes"
+    ],
+    "exit_code": 0,
+    "seconds": 10.88
+  },
+  {
+    "name": "nes-restart",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/test_osd1_restart.sh",
+      "nes"
+    ],
+    "exit_code": 0,
+    "seconds": 10.16
+  }
+]
