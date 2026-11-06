@@ -1,0 +1,38 @@
+
+D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-snes-crt-stage4b\build_out\tangcore_bl616.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .init:
+
+Disassembly of section .text:
+
+a0013392 <MMC_disk_write>:
+a0013392:	7179                	addi	sp,sp,-48
+a0013394:	d422                	sw	s0,40(sp)
+a0013396:	62fcd437          	lui	s0,0x62fcd
+a001339a:	d226                	sw	s1,36(sp)
+a001339c:	d04a                	sw	s2,32(sp)
+a001339e:	ce4e                	sw	s3,28(sp)
+a00133a0:	d606                	sw	ra,44(sp)
+a00133a2:	892a                	mv	s2,a0
+a00133a4:	89b2                	mv	s3,a2
+a00133a6:	b5840413          	addi	s0,s0,-1192 # 62fccb58 <gSDCardInfo>
+a00133aa:	4491                	li	s1,4
+a00133ac:	0cc45603          	lhu	a2,204(s0)
+a00133b0:	86ce                	mv	a3,s3
+a00133b2:	854a                	mv	a0,s2
+a00133b4:	c62e                	sw	a1,12(sp)
+a00133b6:	21b170ef          	jal	ra,a002add0 <__wrap_SDH_WriteMultiBlocks>
+a00133ba:	c509                	beqz	a0,a00133c4 <MMC_disk_write+0x32>
+a00133bc:	45b2                	lw	a1,12(sp)
+a00133be:	fe9507e3          	beq	a0,s1,a00133ac <MMC_disk_write+0x1a>
+a00133c2:	557d                	li	a0,-1
+a00133c4:	50b2                	lw	ra,44(sp)
+a00133c6:	5422                	lw	s0,40(sp)
+a00133c8:	5492                	lw	s1,36(sp)
+a00133ca:	5902                	lw	s2,32(sp)
+a00133cc:	49f2                	lw	s3,28(sp)
+a00133ce:	6145                	addi	sp,sp,48
+a00133d0:	8082                	ret
+
+Disassembly of section .itcm_region:

@@ -1,0 +1,27 @@
+# SNES S4b：SD上の明示USER SAVE
+
+2026年11月6日。SNESのS4a機能報告とNESのOSD2報告を受け、SD上の明示SAVEを準備した。S4a試験後のSD不変は次の新しい退避時に照合し、合格前のS4b導入をscriptで拒否する。作業branchは`tangcore-integrated`。共有firmware `5dc512bfd351059b38e0bff6fdf86a31783fa08d`、FPGAは実機確認済みS3bを維持する。
+
+## 変更内容と制約
+
+SNESでSAVEを許可する条件は、core_running、CRT能力、active_core=2、成功したSDのSNES session、system=2、volume=SD、要求identityと実際にロードしたidentityの一致。CRC/sizeが違う別ROMやUSB volume、失敗した起動の古いkeyを拒否する。SNESのReset要求はまだ拒否する。NESの従来guardとSAVE/Reset方針は維持する。
+
+保存中はS4aのstorage leaseを取得し、fcoreと64byte整列noncacheable fbufを逐次使う。SNESのSD scopeを明示してread/writeに同じfault処理を適用し、fault中・faultが発生した操作を保存成功にしない。物理SD timeout後は電源再投入までI/Oを拒否する方針を維持し、即座の再SAVEで回復したと誤表示しない。物理故障の注入は今回の実機確認には含めない。
+
+record本体の保存engineは既存コードをそのまま使う。両slotを毎回読み、現在の最新有効slotを残して反対slotへgeneration+1を書き、32byte全量write・sync・close・再open・全byte照合が通った場合だけ成功する。不正schema、競合、I/Oエラー等の拒否、未確定の前回書込みの保護、世代wrapはsystem=1/2でhost試験する。
+
+OSD見出しはSNES CRT SAVE - S4B。SAVEは選択でき、保存後もOSDを開いたままSAVEDになる。同じUSER値の再SAVEは書き込まず世代を増やさない。X/Yは最後の保存成功値へ戻る。失敗時はFAILEDのまま開き、X/YはRAMと映像を最後の確認済み値へ戻す。失敗操作がSDへ残したbyteをX/Yで巻き戻すとはしない。RESET行はNOT AVAILABLEで選択不能。INITIAL/STOREは起動時のsnapshotを保つ。
+
+## PCでの確認
+
+関連host試験15組が合格した。SAVE backendはsystem=1/2それぞれで交互slot、全write/検証失敗、再試行、世代wrap、破損/競合/未知schemaの拒否を確認した。UIはSAVE後のstay-open、同値SAVE省略、失敗からの取消し/再試行、Reset無効、不正identity/USBの読取り専用fallbackを確認した。実main.cppのguard、leaseとSD scope、fault前後の失敗、NESの既存操作、UART/loader/日本語一覧/CSV順序も回帰した。
+
+firmwareは231,056byte、SHA256 `1c867ea95a317f220cbdf3bdd591ec380499f9959f568af58f6f6c65882f88c1`。99のproduction fileがcommit/build入力と一致し、実ELFのFatFs→SDH wrapperも照合した。SNES FPGA imageは`bcc879e4f6da1194b8fa43edb487f71ac13c8b6037086558a42b6fa80b0dc429`のままで、新しいFPGA build/timingとは扱わない。導入保護試験30件が合格した。
+
+## 実機試験を最小回数へまとめる
+
+S4aの全64file・属性を新しいSD退避と照合し、同じSD移動でS4bを導入する。全flashは新しく2回読み、確認済みS4aの全flashと比較する。S4b導入時にSDの内容は変えず、firmwareだけを書く。CSV/defaults/NES設定は変更しない。
+
+S4bは保存前後と電源再投入後の復元を確認するため、SNES起動は最小2回とする。1回目に同じゲームで2種類の値を明示SAVEし、続く同値SAVEが世代を増やさないこと、未保存変更を取り消せることを確認する。その後SDをPCへ戻して両slotのkey/CRC/世代と他file不変を検証する。2回目の起動では最終保存値のUSER復元だけを確認し、効果の全強度やrestart/list試験は反復しない。共有firmwareのNES回帰は1回行い、その後のSNESは保存復元用の2回目だけにする。
+
+S4aでPCが作った一時recordは、SD不変の証拠を採取するまで保持する。S4bの2回の実SAVEで両slotを更新し、PC recordは上書きされる予定。firmwareが更新したrecordは新しいUSERデータとして扱い、古いfixtureの除去処理で削除しない。実機成功や全ゲーム間の独立保存、物理fault回復をPC結果から推定しない。

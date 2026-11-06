@@ -1,0 +1,1 @@
+SNES loader PASS: Lo/Hi/ExHi, raw/copier512, exact transfer, open/seek/read/short/oversize/close failure, malformed size/header, no false running state

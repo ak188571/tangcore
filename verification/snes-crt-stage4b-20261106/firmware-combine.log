@@ -1,0 +1,51 @@
+[22:26:01.464] - firmware post process : V1.2.7
+[22:26:01.464] - Chipname: bl616
+[22:26:01.465] - Board config dir: D:/Users/foobaris/AppData/Local/Temp/TC-SDK~1/bsp/board/bl616dk/config
+[22:26:01.465] - Create partition using partition_cfg_4M.toml
+[22:26:01.467] - Create dts for D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-snes-crt-stage4b\build_out\tangcore_bl616.bin
+[22:26:01.467] - Create dts using bl_factory_params_IoTKitA_auto.dts
+[22:26:01.470] - 4K header found,append dts file
+[22:26:01.471] - Copy boot2_bl616_isp_release_v8.1.2.bin
+[22:26:01.472] - Copy mfg_bl616_gu_34c572ca0_v2.49.bin
+[22:26:01.473] - Create dts for D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-snes-crt-stage4b\build_out\mfg_bl616_gu_34c572ca0_v2.49.bin
+[22:26:01.473] - Create dts using bl_factory_params_IoTKitA_auto.dts
+[22:26:01.478] - 4K header found,append dts file
+[22:26:01.478] - 
+Process D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-snes-crt-stage4b\build_out\tangcore_bl616.bin
+[22:26:01.524] - ========= sp image create =========
+[22:26:01.524] - Flash config crc: b'b5fec518'
+[22:26:01.525] - Clock config crc: b'4a05f490'
+[22:26:01.525] - Flash  Image
+[22:26:01.525] - Image Offset:0x1000
+[22:26:01.526] - Image hash is b'c745e3780d9fb33839fd92760a4b6011fe1ce688214359e3580ad2f8ecb4b134'
+[22:26:01.526] - Encrypt efuse data
+[22:26:01.528] - Image Offset:0x1000
+[22:26:01.528] - Image hash ignore,not calculate
+[22:26:01.528] - Bootheader config crc: b'd816b4c0'
+[22:26:01.529] - 
+Process D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-snes-crt-stage4b\build_out\boot2_bl616_isp_release_v8.1.2.bin
+[22:26:01.529] - ========= sp image create =========
+[22:26:01.529] - Flash config crc: b'b5fec518'
+[22:26:01.529] - Clock config crc: b'4a05f490'
+[22:26:01.529] - Flash  Image
+[22:26:01.529] - Image Offset:0x2000
+[22:26:01.529] - Image hash is b'c912f0da62f395d9770048e53509e1ba37a89f9beb9c9dfa0ed06725821c4813'
+[22:26:01.530] - Encrypt efuse data
+[22:26:01.530] - Image Offset:0x2000
+[22:26:01.530] - Image hash ignore,not calculate
+[22:26:01.530] - Bootheader config crc: b'ca465ad7'
+[22:26:01.531] - 
+Process D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-snes-crt-stage4b\build_out\mfg_bl616_gu_34c572ca0_v2.49.bin
+[22:26:01.531] - ========= sp image create =========
+[22:26:01.531] - Flash config crc: b'f8de2a48'
+[22:26:01.531] - Clock config crc: b'0b34ef89'
+[22:26:01.531] - Flash  Image
+[22:26:01.531] - Image Offset:0x1000
+[22:26:01.532] - Image hash is b'70be2df9853611524252fcd0984e4a1d4ddef5366a1e5bacaddefc02ea5268f1'
+[22:26:01.534] - Encrypt efuse data
+[22:26:01.534] - Image Offset:0x1000
+[22:26:01.534] - Bootheader config crc: b'0ab20124'
+[22:26:01.535] - create OTA file:D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-snes-crt-stage4b\build_out\tangcore_bl616.bin.ota
+[22:26:01.552] - create XZ file:D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-snes-crt-stage4b\build_out\tangcore_bl616.xz
+[22:26:01.627] - create XZ OTA file:D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-snes-crt-stage4b\build_out\tangcore_bl616.xz.ota
+Built target combine
