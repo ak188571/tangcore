@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "stage": "S3b",
-  "status": "sd_installed_hardware_trial_pending",
+  "status": "user_confirmed_for_reported_game_scope",
   "device_programmed": false,
   "sd_written": true,
   "firmware_retained_from_S3a": true,
@@ -12,5 +12,18 @@
   "planned_snes_launches": 1,
   "fpga_sd_image_updated": true,
   "sd_readback_verified": true,
-  "flash_program_operations": 0
+  "flash_program_operations": 0,
+  "snes_game": "スーパーマリオコレクション (requested setup; no alternative reported)",
+  "controller_connection": "USB P1 (requested setup; no alternative reported)",
+  "snes_normal_boot_japanese_list_csv_order_video_audio_controls": "user_reported_pass",
+  "snes_osd2_display_order_items_1_to_13": "user_reported_pass",
+  "snes_scan_three_strengths_blur_combination_position_bypass_osd_sharpness_ack": "user_reported_pass",
+  "cancel_after_item_13": "not_separately_reported_in_this_response",
+  "raw_user_reports": ["正常", "1-13正常"],
+  "limitations": [
+    "Results cover the requested game and USB P1 setup; controller identity was not re-read.",
+    "No all-games/all-video-modes/other-input-ports/long-duration claim.",
+    "No extra SNES launch or NES regression was requested: firmware stayed unchanged.",
+    "Post-S3b-gameplay SD contents have not been re-read."
+  ]
 }
