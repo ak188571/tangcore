@@ -39,3 +39,9 @@ S3a比でregister +6、LUT +96、ALU +2、MULT12X12 +3。BSRAM 84、MULTALU27X18
 関連6commandが合格した。新しい統合試験は4,700万画素で16組合せと720行の幾何学的な位相参照を確認し、S3aの1,450万画素・S1の4,400万画素の互換試験も通った。UARTは実clock相当・2 Mbaudで能力通知、全32設定、frame適用を確認した。未変更のfirmwareに両能力を通知したpreviewも全32設定で試験し、SCANLINE選択、保存/Reset無効、FRAME ACK、取消しを確認した。SDのみを更新する導入手順は、代替媒体による保護・復旧試験12件に合格した。
 
 共有firmwareは229,168byte、SHA256 `c19bffa18855ffd38ea56ce5bc0f452463551bf6239bf05a5a0cdfcae3d42e5c`のS3a binaryを維持する。新しいflash読取り・書込みは行わない。SD移動後に現在の全file・属性を改めて退避し、SNES imageだけを更新する。S3bの実機確認は未実施。
+
+## SDへの導入
+
+同日、利用者のmicroSD接続報告後にvolume・物理disk情報と旧imageを照合し、全63fileを新しいsessionへ退避した。現在のSNES imageは確認済みS3aと一致し、S3a導入後の全63fileの内容・属性にも変更はなかった。
+
+SNES imageだけを1回更新し、別commandで全fileを再読取りした。新imageのSHA256一致、他62fileの内容不変、SNESを含む全file属性の維持、退避の完全性を確認した。flash読取り・書込みはともに0回。直前のS3aへ戻すSNES imageと手順を保持している。S3bの実機画質は確認待ちで、1回のSNES起動中に必要な比較をまとめる。

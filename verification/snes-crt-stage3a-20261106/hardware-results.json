@@ -21,7 +21,7 @@
     "Results apply to the requested SNES game and USB P1 setup; user did not specify an alternative.",
     "Controller identity was not re-read. P2/DS2/BL616 USB not independently tested.",
     "No all-games/all-video-modes/long-duration claim.",
-    "S3a post-gameplay SD content and attributes have not been re-read."
+    "At S3b preparation, a fresh read of all 63 SD files matched the S3a post-install content and attributes; see S3b deployment.json."
   ],
   "source_commits": {
     "firmware-bl616": "3560c1b429a36fc35a02c840f8dcfeb7f8b4f7e5",

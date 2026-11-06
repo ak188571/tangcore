@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-06",
+  "stage": "SNES S3b sampled-row scanline",
+  "source_commits": {
+    "firmware-bl616": "3560c1b429a36fc35a02c840f8dcfeb7f8b4f7e5",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
+  },
+  "snes_artifact": {
+    "file": "cores/console138k/snestang.bin",
+    "bytes": 5066442,
+    "sha256": "bcc879e4f6da1194b8fa43edb487f71ac13c8b6037086558a42b6fa80b0dc429"
+  },
+  "firmware_policy": "Retain S3a firmware; no flash read or program operation for this stage",
+  "retained_firmware_artifact": {
+    "file": "firmware/tangcore_bl616.bin",
+    "bytes": 229168,
+    "sha256": "c19bffa18855ffd38ea56ce5bc0f452463551bf6239bf05a5a0cdfcae3d42e5c"
+  },
+  "fresh_sd_backup_files": 63,
+  "rollback_image_matches_verified_S3a": true,
+  "sd_updated": [
+    "cores/console138k/snestang.bin"
+  ],
+  "sd_install_operations": 1,
+  "other_sd_files_unchanged_at_install": 62,
+  "all_sd_file_attributes_preserved_at_install": true,
+  "sd_post_install_readback_verified": true,
+  "flash_read_operations": 0,
+  "flash_program_operations": 0,
+  "post_S3a_trial_sd_content_attribute_changes": 0,
+  "hardware_gameplay_status": "pending"
+}
