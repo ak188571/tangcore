@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-06",
+  "stage": "S4a post-runtime SD audit",
+  "files_checked": 64,
+  "all_content_and_file_attributes_match_install": true,
+  "PC_fixture_unchanged": true,
+  "titles_csv_defaults_and_NES_records_unchanged": true,
+  "snes_FPGA_image_unchanged": true,
+  "obtained_before_S4b_programming": true,
+  "extra_SNES_launches_for_audit": 0
+}

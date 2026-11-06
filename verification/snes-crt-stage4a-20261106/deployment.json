@@ -34,6 +34,6 @@
   "titles_csv_defaults_and_nes_records_written": false,
   "sdk_utility_configuration_and_generated_files_restored": true,
   "post_S3b_trial_sd_content_attribute_changes": 0,
-  "hardware_gameplay_status": "pending",
-  "post_trial_sd_invariance": "pending"
+  "hardware_gameplay_status": "SNES_functional_scope_and_NES_OSD2_items_1_to_13_reported_pass",
+  "post_trial_sd_invariance": "verified_64_files_and_attributes_unchanged"
 }

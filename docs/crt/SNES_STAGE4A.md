@@ -55,3 +55,5 @@ SDは一時USER recordの32byteを追加した64fileになった。既存63file�
 通常動作を「正常」、OSD2項目1〜13を「1-13正常」、X/Y保持・解放待ちと起動時値への取消しを「1-2正常」と利用者から報告された。依頼したスーパーマリオコレクション・USB P1の範囲で、raw ID `232bb5b8`、USERのON/STANDARD/WEAK復元、読取り専用表示、preview/ACK、取消しを合格とする。CSV/defaults fallback・破損record・他の映像mode/接続先へ合格を拡張しない。NES回帰と試験後のSD不変は別途確認待ち。
 
 続くNES回帰もOSD2項目1〜13を「1-13正常」と報告された。依頼したドクターマリオのOSD2項目を合格とし、同じ依頼に含めたその他の操作は個別に述べられていないため合格へ追加しない。残る試験後のSD不変は、次のS4b用の新しい退避時に照合し、追加のSNES起動を避ける。
+
+S4b準備時の新しい退避で、S4a導入後の全64fileの内容・属性が一致した。PC fixture、既存CSV/defaults/NES record、SNES FPGA imageにも変更はなかった。追加のSNES起動をせず、S4bの書込み前に読取り専用のSD不変を確認した。詳細は`post-runtime-sd-audit.json`。S4aは上記の実機報告範囲とSD不変を合格とする。
