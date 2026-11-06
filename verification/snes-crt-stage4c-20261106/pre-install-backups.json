@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-06",
+  "stage": "S4c",
+  "status": "fresh_backups_verified_no_device_write",
+  "fresh_SD_files": 65,
+  "S4b_post_cold_boot_contents_and_attributes_unchanged": true,
+  "independent_full_flash_reads_match": true,
+  "full_flash_matches_verified_S4b": true,
+  "whole_flash_sha256": "b15d03d87f2207af6288b7c117e23e68221a66c39674933edfb738fb28b2e1de",
+  "firmware_program_operations": 0,
+  "SD_write_operations": 0,
+  "SNES_image_retained_without_copy": true,
+  "metadata_installed": false,
+  "read_only_connection_failure": {
+    "mode": "resident",
+    "log": "before-b4f180d4.log",
+    "error": "EFLSH loader handshake failed",
+    "retry_mode": "bootrom",
+    "retry": "passed_independent_second_read"
+  },
+  "recovery": "Full SD and whole flash snapshots plus custom-region rollback image retained in session-01"
+}

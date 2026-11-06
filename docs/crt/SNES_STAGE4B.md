@@ -49,3 +49,5 @@ PC fixtureだった.aは実firmwareのUSER recordへ上書きされていた。�
 ## 電源再投入後の報告
 
 同じS4b firmware・照合済みSDで2回目のSNES起動を依頼し、OSD2項目1〜13を「1-13正常」と報告された。SAVED/INITIAL USER、ON/WEAK/STRONG、STORE USER、FRAME ACK、ROM IDの復元を合格とする。1回目の保存・取消し、SD上の実recordと同値SAVEの世代不増加、2回目の復元を合わせ、依頼したゲーム・USB P1の範囲でS4bを合格とする。他ゲーム・他接続先・物理faultを含むとはしない。2回目後のSD不変は次の新しい退避で照合する。
+
+S4c導入前に全65fileを新しく読取り退避し、S4b保存後snapshotとの内容・属性の完全一致を確認した。両USER recordも不変であり、2回目の起動後のSD不変を合格とした。この照合によるSD書込みは行っていない。詳細は`post-cold-boot-sd-audit.json`。

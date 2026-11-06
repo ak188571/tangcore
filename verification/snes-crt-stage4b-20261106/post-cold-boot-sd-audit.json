@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-06",
+  "stage": "S4b post-cold-boot SD invariance",
+  "fresh_snapshot": "snes-crt-stage4c-hardware-20261106/session-01/sd",
+  "baseline_snapshot": "snes-crt-stage4b-hardware-20261106/post-save-01",
+  "files_checked": 65,
+  "all_file_contents_and_attributes_unchanged": true,
+  "both_actual_USER_slots_unchanged": true,
+  "sd_written": false,
+  "scope": "Fresh read after reported S4b second cold boot; no extra game launch requested"
+}

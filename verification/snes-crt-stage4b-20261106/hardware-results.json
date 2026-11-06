@@ -17,27 +17,28 @@
   "first_save_trial": "user_reported_pass",
   "post_save_record_audit": "passed",
   "cold_boot_restoration": "user_reported_pass_ON_WEAK_STRONG_USER_OSD2_items_1_to_13",
-  "snes_game": "繧ｹ繝ｼ繝代�ｼ繝槭Μ繧ｪ繧ｳ繝ｬ繧ｯ繧ｷ繝ｧ繝ｳ (requested setup; no alternative reported)",
+  "snes_game": "スーパーマリオコレクション (requested setup; no alternative reported)",
   "controller_connection": "USB P1 (requested setup; no alternative reported)",
   "normal_boot_japanese_list_csv_order_video_audio_controls": "user_reported_pass",
   "OSD2_display_order_items_1_to_13": "user_reported_pass",
   "SAVE_stays_open_and_reports_SAVED": "user_reported_pass; physical slots generations 3 and 2 verified",
   "cancel_hold_release_reopen_last_saved_ON_WEAK_STRONG": "user_reported_pass",
-  "nes_game": "繝峨け繧ｿ繝ｼ繝槭Μ繧ｪ (requested setup; no alternative reported)",
+  "nes_game": "ドクターマリオ (requested setup; no alternative reported)",
   "nes_OSD2_display_order_items_1_to_13": "user_reported_pass",
   "nes_other_requested_checks": "not_separately_reported_in_this_response",
   "raw_user_reports": [
-    "豁｣蟶ｸ",
-    "1-13豁｣蟶ｸ",
-    "1-2豁｣蟶ｸ",
-    "1-13豁｣蟶ｸ",
-    "謗･邯壽ｸ医∩",
-    "1-13豁｣蟶ｸ"
+    "正常",
+    "1-13正常",
+    "1-2正常",
+    "1-13正常",
+    "接続済み",
+    "1-13正常"
   ],
   "limitations": [
     "Hardware scope is the requested SNES game and USB P1; controller identity was not re-read.",
     "NES report explicitly covered OSD2 items 1-13; other requested checks were not individually reported.",
     "No all-games, other input ports, physical SD fault injection or USB-storage SAVE claim.",
     "Post-cold-boot SD invariance is to be checked at the next fresh backup."
-  ]
+  ],
+  "post_cold_boot_sd_invariance": "passed_all_65_files_and_attributes"
 }
