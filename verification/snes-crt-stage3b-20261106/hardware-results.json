@@ -24,6 +24,6 @@
     "Results cover the requested game and USB P1 setup; controller identity was not re-read.",
     "No all-games/all-video-modes/other-input-ports/long-duration claim.",
     "No extra SNES launch or NES regression was requested: firmware stayed unchanged.",
-    "Post-S3b-gameplay SD contents have not been re-read."
+    "At S4a preparation, a fresh read of all 63 SD files matched the S3b post-install content and attributes; see S4a deployment.json."
   ]
 }

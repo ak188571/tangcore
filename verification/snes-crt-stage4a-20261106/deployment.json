@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-06",
+  "stage": "SNES S4a SD read-only restore",
+  "source_commits": {
+    "firmware-bl616": "cffb1fa34995e9e511e77e432ff979bfa6b43c6d",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
+  },
+  "firmware": {
+    "file": "firmware/tangcore_bl616.bin",
+    "bytes": 230560,
+    "sha256": "330730232ac021b8176e3a08fcd00f135919caea775ae4b1960d2129a537115b"
+  },
+  "retained_snes_image": {
+    "file": "cores/console138k/snestang.bin",
+    "bytes": 5066442,
+    "sha256": "bcc879e4f6da1194b8fa43edb487f71ac13c8b6037086558a42b6fa80b0dc429"
+  },
+  "fresh_sd_backup_files": 63,
+  "sd_trial_files": 64,
+  "independent_full_flash_reads_match": true,
+  "prewrite_full_flash_matches_fresh_backup": true,
+  "rollback_flash_matches_previously_verified_firmware": true,
+  "firmware_full_byte_readback_matches": true,
+  "flash_before_0x40000_unchanged": true,
+  "flash_from_0x80000_unchanged": true,
+  "flash_program_operations": 1,
+  "readback_mode": "resident",
+  "sd_added": [
+    "crt/02-232bb5b8-0000000000200000.a"
+  ],
+  "fixture_origin": "PC-created 32-byte system2 USER fixture, not firmware SAVE",
+  "original_63_sd_file_contents_and_attributes_unchanged": true,
+  "snes_fpga_image_written": false,
+  "titles_csv_defaults_and_nes_records_written": false,
+  "sdk_utility_configuration_and_generated_files_restored": true,
+  "post_S3b_trial_sd_content_attribute_changes": 0,
+  "hardware_gameplay_status": "pending",
+  "post_trial_sd_invariance": "pending"
+}

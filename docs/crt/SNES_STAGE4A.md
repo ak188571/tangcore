@@ -41,3 +41,11 @@ firmwareは230,560byte、SHA256 `330730232ac021b8176e3a08fcd00f135919caea775ae4b
 実機はSNESを1回だけ起動し、PCで用意する一時的な32byteのUSER recordを読む。対象はスーパーマリオコレクション、ROM ID `232bb5b8`、size 2,097,152、値ON/STANDARD/WEAK、generation 1。これはfirmwareのSAVEで作ったrecordではない。既存titles.csv、defaults、NES recordは変更しない。CSV/defaults fallbackや破損拒否の組合せは今回PCで検証し、実機合格範囲へ広げない。
 
 導入時は媒体・現在のS3b image・確認済みS3a firmwareの全flashを新しく照合し、全SD/flashを退避する。firmwareだけを更新し、一時recordを追加する。実機後のSD読取りでは、導入直後と全file/属性を比較してfirmwareが書かなかったことを確認する。その後、一時recordの内容が一致した場合にだけ除去できるようにする。S4aの実機は未確認。
+
+## 実機への導入記録
+
+同日、媒体情報とS3b imageを識別してSD63fileを新しく退避した。S3bの実機試験後も全fileの内容・属性は導入直後と一致し、defaults fileと対象のSNES recordは未存在だった。退避したraw ROMのCRC32 `232bb5b8`、size 2,097,152もfixtureと一致した。
+
+全flashの独立した読取り2回は一致し、以前の確認済みfirmwareの全4MiBとも一致した。書込み直前の読取りでも新しい退避と一致した。同じ基板をBOOT付きで再接続した後、firmwareを0x40000へ1回だけ書き込み、resident modeの全flash読戻しでfirmware全byteの一致、0x40000未満・0x80000以降の不変を確認した。
+
+SDは一時USER recordの32byteを追加した64fileになった。既存63fileの内容と属性は不変で、SNES FPGA image・CSV・defaults・NES recordへの書込みは行っていない。fixtureのschema/key/CRCとutility設定・生成fileの復元も照合した。詳細は`deployment.json`。S4aの実機動作と試験後のSD不変は確認待ち。
