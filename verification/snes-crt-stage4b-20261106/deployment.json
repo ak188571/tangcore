@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-06",
+  "stage": "SNES S4b explicit USER SAVE",
+  "source_commits": {
+    "firmware-bl616": "5dc512bfd351059b38e0bff6fdf86a31783fa08d",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
+  },
+  "firmware": {
+    "file": "firmware/tangcore_bl616.bin",
+    "bytes": 231056,
+    "sha256": "1c867ea95a317f220cbdf3bdd591ec380499f9959f568af58f6f6c65882f88c1"
+  },
+  "retained_snes_image": {
+    "file": "cores/console138k/snestang.bin",
+    "bytes": 5066442,
+    "sha256": "bcc879e4f6da1194b8fa43edb487f71ac13c8b6037086558a42b6fa80b0dc429"
+  },
+  "fresh_sd_backup_files": 64,
+  "S4a_post_runtime_SD_invariance_verified_before_install": true,
+  "independent_full_flash_reads_match": true,
+  "rollback_flash_matches_verified_S4a": true,
+  "prewrite_full_flash_matches_fresh_backup": true,
+  "firmware_full_byte_readback_matches": true,
+  "flash_before_0x40000_unchanged": true,
+  "flash_from_0x80000_unchanged": true,
+  "flash_program_operations": 1,
+  "readback_mode": "resident",
+  "sd_changed_at_install": [],
+  "all_64_SD_contents_and_file_attributes_unchanged_at_install": true,
+  "snes_FPGA_image_written": false,
+  "PC_fixture_retained_at_install": {
+    "file": "crt/02-232bb5b8-0000000000200000.a",
+    "generation": 1,
+    "kind": 0,
+    "value": 13
+  },
+  "sdk_utility_configuration_and_generated_files_restored": true,
+  "hardware_gameplay_status": "first_trial_pending",
+  "post_save_record_audit": "pending",
+  "cold_boot_restoration": "pending"
+}

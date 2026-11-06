@@ -1,8 +1,8 @@
 {
   "date": "2026-11-06",
   "stage": "S4b",
-  "status": "pending",
-  "device_programmed": false,
+  "status": "deployed_first_trial_pending",
+  "device_programmed": true,
   "sd_written": false,
   "source_commits": {
     "firmware-bl616": "5dc512bfd351059b38e0bff6fdf86a31783fa08d",
@@ -10,5 +10,11 @@
   },
   "planned_snes_launches": 2,
   "s4a_sd_audit_required_before_install": true,
-  "reset_available": false
+  "reset_available": false,
+  "readback_verified": true,
+  "flash_program_operations": 1,
+  "S4a_SD_audit_passed": true,
+  "first_save_trial": "pending",
+  "post_save_record_audit": "pending",
+  "cold_boot_restoration": "pending"
 }

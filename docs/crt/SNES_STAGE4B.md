@@ -25,3 +25,11 @@ S4aの全64file・属性を新しいSD退避と照合し、同じSD移動でS4b�
 S4bは保存前後と電源再投入後の復元を確認するため、SNES起動は最小2回とする。1回目に同じゲームで2種類の値を明示SAVEし、続く同値SAVEが世代を増やさないこと、未保存変更を取り消せることを確認する。その後SDをPCへ戻して両slotのkey/CRC/世代と他file不変を検証する。2回目の起動では最終保存値のUSER復元だけを確認し、効果の全強度やrestart/list試験は反復しない。共有firmwareのNES回帰は1回行い、その後のSNESは保存復元用の2回目だけにする。
 
 S4aでPCが作った一時recordは、SD不変の証拠を採取するまで保持する。S4bの2回の実SAVEで両slotを更新し、PC recordは上書きされる予定。firmwareが更新したrecordは新しいUSERデータとして扱い、古いfixtureの除去処理で削除しない。実機成功や全ゲーム間の独立保存、物理fault回復をPC結果から推定しない。
+
+## 実機導入記録
+
+同日、今回の媒体を識別して全64fileを新しく退避し、S4a導入直後の内容・属性との完全一致を確認した。S4aのSD不変を合格として記録してから、全flashを独立して2回読み、確認済みS4aの全flashとも一致させた。書込み直前の読取りでも新しい退避と一致した。
+
+同じ基板をBOOT付きで再接続した後、S4b firmwareを0x40000へ1回だけ書き込んだ。resident modeの全4MiB読戻しでfirmware全byteの一致、0x40000未満・0x80000以降の不変を確認した。SDは全64fileの内容・属性が不変で、SNES imageも再copyしていない。PC作成のsystem2 USER recordはgeneration 1、値13のまま。utility設定・生成fileの復元も照合した。詳細は`deployment.json`。
+
+S4bの実機保存・保存後のSD照合・電源再投入後の復元は未確認。まず1回目のSNES起動で実SAVEを行い、SD照合を経て2回目の起動へ進む。
