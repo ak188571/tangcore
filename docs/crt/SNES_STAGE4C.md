@@ -39,3 +39,9 @@ firmware照合後、一時的にSNESのtitles.csvへcrt_v1列を追加する。n
 新しいBOOT接続でS4c firmwareを0x40000へ1回だけ書き、全4MiBを読戻した。firmware全byteとcustom領域外の不変を照合した。SNES imageはS3bと一致していたため再copyしなかった。
 
 その後、一時SNES推奨値を導入した。SDは66fileとなり、変更はSNES titles.csvのcrt_v1列と新規defaults.tsvだけ。name/title/行順、元のtitles属性、その他の既存64fileの内容・属性は不変で、実USER record両slotも変更していない。flash utilityの原file復元も照合した。実機での起動・Reset・保存・追従は未確認。詳細は`deployment.json`。
+
+## 1回目のSNES報告
+
+通常起動・日本語一覧・titles.csv順序・映像・音声・操作の依頼に「正常」、OSD2項目1〜13に「1-13正常」、Reset previewの取消し・明示Reset SAVEと同mode再SAVE・保存後の未保存変更取消しに「1-3正常」と利用者から報告された。依頼したスーパーマリオコレクション・USB P1の範囲で、USERがCSV/defaultsより優先されること、ResetでCSVのON/STANDARD/WEAKをpreviewすること、保存前は元のUSERへ、保存後は最後の保存値へX/Yで戻ること、SAVE後もOSDが開いていることを合格として記録する。
+
+同値Reset SAVEの世代不増加は表示だけで確定せず、実recordのkind/key/CRC/世代と他file・属性の不変を次のSD読取りで照合する。NES回帰、一時metadataの復旧、その後の2回目起動による現在の推奨値への追従は未確認であり、S4c全体の実機合格とはまだ扱わない。

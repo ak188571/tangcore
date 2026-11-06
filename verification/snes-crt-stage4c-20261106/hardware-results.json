@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "stage": "S4c",
-  "status": "installed_runtime_pending",
+  "status": "first_SNES_trial_user_reported_pass_SD_and_followup_pending",
   "device_programmed": true,
   "sd_written": true,
   "source_commits": {
@@ -14,7 +14,7 @@
   "deployment_guard_tests": 30,
   "metadata_guard_tests": 15,
   "exact_metadata_production_parser_test": "passed",
-  "s4b_post_cold_boot_sd_audit": "required_at_next_fresh_backup",
+  "s4b_post_cold_boot_sd_audit": "passed_all_65_contents_and_attributes",
   "temporary_metadata_changes": [
     "snes/titles.csv:crt_v1 column only",
     "crt/defaults.tsv:SNES only"
@@ -24,7 +24,7 @@
     "b": "Reset generation4 value0"
   },
   "metadata_cleanup": "Restore original titles bytes and remove only exact temporary defaults after fresh SD capture and record audit; actual USER/Reset records remain",
-  "hardware_scope": "Pending: SNES USER precedence, CSV Reset preview/cancel/SAVE, duplicate Reset SAVE, SD record audit and next-boot builtin fallback after cleanup. SYSTEM/GLOBAL physical adoption is not included.",
+  "hardware_scope": "First SNES launch confirmed by user for requested game/USB P1. Actual Reset record/generation, NES regression, temporary metadata cleanup and next-boot builtin fallback pending. SYSTEM/GLOBAL physical adoption is not included.",
   "limitations": [
     "No inference from NES or host results",
     "No physical SD fault injection",
@@ -32,5 +32,34 @@
   ],
   "readback_verified": true,
   "flash_program_operations": 1,
-  "temporary_metadata_installed": true
+  "temporary_metadata_installed": true,
+  "first_SNES_trial": {
+    "requested_game": "Super Mario Collection (Japan)",
+    "connection": "USB P1",
+    "normal_boot_Japanese_list_CSV_order_video_audio_controls": "user_reported_normal",
+    "OSD2_items_1_to_13": "user_reported_pass",
+    "USER_precedence_over_CSV_and_defaults": "user_reported_pass",
+    "Reset_preview_CSV_ON_STANDARD_WEAK_cancel_to_initial_USER": "user_reported_pass",
+    "explicit_Reset_SAVE_stays_open_and_same_mode_SAVE_UI": "user_reported_pass",
+    "unsaved_edit_cancel_to_last_saved_ON_STANDARD_WEAK": "user_reported_pass",
+    "actual_Reset_record_and_duplicate_SAVE_generation": "pending_SD_audit"
+  },
+  "raw_user_reports": [
+    {
+      "section": "normal_boot",
+      "answer": "正常"
+    },
+    {
+      "section": "OSD2_items_1_to_13",
+      "answer": "1-13正常"
+    },
+    {
+      "section": "Reset_trial_steps_1_to_3",
+      "answer": "1-3正常"
+    }
+  ],
+  "NES_regression": "pending",
+  "post_Reset_SD_audit": "pending",
+  "metadata_cleanup_status": "pending",
+  "second_boot_recommendation_tracking": "pending"
 }
