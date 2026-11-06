@@ -1,0 +1,33 @@
+# SNES S4c：Resetと現在の推奨値への追従
+
+2026年11月6日。S4bは実SAVE、SD上のgeneration、同値SAVE省略、取消し、電源再投入後のUSER復元を、スーパーマリオコレクション・USB P1の報告範囲で合格とした。S4cではResetを有効にする。S4c実機結果は未確認であり、NESやPC試験から合格を推定しない。
+
+## 実装
+
+共有firmwareは`tangcore-integrated`の`8f05446158d005eae095839aa2f494021adb700d`。成功したSD SNES session・実ロード済みsystem2/volume/CRC/sizeとの一致・core_running・CRT能力・storage lease・SD fault guardを満たす場合だけ、USER SAVEに加えてResetの保存を認める。別ROM、USB、失敗した起動の古いidentityの拒否は維持する。NESのguardは変更しない。
+
+SNES用sessionの見出しはSNES CRT SETTINGS。Reset to Recommendedは現在のCSV→system defaults→global defaults→built-in OFFをpreviewする。明示SAVEまではSDへ書かず、X/Yは最後の保存成功値とUSER/Resetのmodeを戻す。USERと推奨値が数値で等しくても、Resetへ切り替えるには明示保存が必要。保存済みResetの再SAVEは世代を増やさず、Reset後に手動で設定を変えてSAVEするとUSER設定になる。
+
+recordのengine、schema、二重slot、世代比較、書込み後の再読取り検証は変更しない。Resetはkind=1・value=0として保存し、次の起動ではその時点の推奨値を解決する。古い推奨数値をrecordへ固定しない。INITIAL/STOREは起動時のsnapshotで、SAVE直後に別のsourceへ表示し直す仕様ではない。
+
+SNES FPGAはS3bの`8cf63536f4c355b1abe2fc05854584cb41f57936`、image SHA256 `bcc879e4f6da1194b8fa43edb487f71ac13c8b6037086558a42b6fa80b0dc429`を維持する。映像経路・controller・UART・monitor・NES RTLは変更せず、新しいFPGA buildやtiming結果として扱わない。
+
+## PCでの確認
+
+関連host試験15組が合格した。SNES sessionのReset preview/取消し/明示保存、同数値USERからResetへの変更、同Reset省略、Reset後の手動USER保存、失敗時の実X/Y入力、次回のCSV/SYSTEM/GLOBAL/built-in追従を確認した。実main.cppのUSER/Reset双方に同じloaded-key guardがかかること、lease/SD scope/faultの拒否も確認した。system1/2の保存engine、ROM loader、UART、一覧・日本語・CSV順序の既存試験も通った。
+
+firmwareは230,960byte、SHA256 `cc7a60c5b51c5a7e031e02c6fb3299e30b6ecff512a7e840ed1f6b1f99002b44`。production 99fileがcommit/build入力と一致し、実ELFのFatFsからSDH wrapperへの呼出しを確認した。導入保護30件、一時metadataの導入・復旧保護15件が合格した。導入予定の実metadataはproduction C++ parserにも通し、全name/title/行順の一致と対象SNESだけの推奨値、NESへの推奨値非追加を確認した。
+
+## 実機導入と最小2回のSNES起動
+
+導入前にSD全65fileを新しく退避し、S4bの保存後snapshotと全内容・属性を照合する。これでS4bの2回目起動後の不変を確認する。全flashは新しく2回読み、確認済みS4b全flashと比較し、書込み直前にも再読取りする。新しいBOOT接続でfirmwareを1回だけ書き、全flashを読戻してcustom範囲外の不変を確認する。SNES imageは一致していれば再copyしない。
+
+firmware照合後、一時的にSNESのtitles.csvへcrt_v1列を追加する。name/titleの各byteと行順は保ち、対象ROMだけをON/STANDARD/WEAKにする。新規のcrt/defaults.tsvはSNES行だけON/STRONG/STANDARDとする。NESのCSV・保存recordは変更しない。元のtitles.csvの全byteを退避し、既存defaultsが見つかった場合や予期しない変更があれば導入を拒否する。
+
+1回目は既存USERのON/WEAK/STRONGがCSV/defaultsより優先されること、Reset previewでCSVのON/STANDARD/WEAKとなること、X/Y取消しで既存USERへ戻ることを確認する。再びResetし、明示SAVEと同値SAVEを行う。NES回帰は同じfirmwareで1回行い、SNESへ起動し直さない。
+
+その後SD全体を新しく退避し、.aのUSER generation 3・値27が不変、.bがReset generation 4・値0、CRC/key/reservedと他file・属性が正常であることを検証する。予期しない変更があれば復旧書込みの前に停止し、観測snapshotを残す。合格後だけtitles.csvを元の全byteへ戻し、今回のdefaultsと全byte一致する一時fileを除去する。実USER/Reset recordは削除しない。
+
+2回目は同じfirmwareで通常起動し、Reset recordにより、その時点の推奨値であるbuilt-in全OFFが選ばれることを確認する。INITIAL DEFAULT、STORE RESET、DEFAULTS MISSINGを確認し、SAVEは実行しない。これによりCSVの古い数値を固定せず、metadata復旧後の推奨値へ追従する範囲を確認する。SYSTEM/GLOBALの実採用、不正defaults全体拒否、全ゲーム/全接続先、物理SD故障、USB保存を実機合格とする試験ではない。
+
+新しい実機結果は後続の記録へ追記する。手順はSNES_STAGE4C_TEST_GUIDE.mdとkitの日本語ODTに示す。

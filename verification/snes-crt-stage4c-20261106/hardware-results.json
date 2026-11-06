@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-06",
+  "stage": "S4c",
+  "status": "PC_validated_hardware_pending",
+  "device_programmed": false,
+  "sd_written": false,
+  "source_commits": {
+    "firmware-bl616": "8f05446158d005eae095839aa2f494021adb700d",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
+  },
+  "planned_snes_launches": 2,
+  "retained_S3b_FPGA": true,
+  "host_test_groups": 15,
+  "deployment_guard_tests": 30,
+  "metadata_guard_tests": 15,
+  "exact_metadata_production_parser_test": "passed",
+  "s4b_post_cold_boot_sd_audit": "required_at_next_fresh_backup",
+  "temporary_metadata_changes": [
+    "snes/titles.csv:crt_v1 column only",
+    "crt/defaults.tsv:SNES only"
+  ],
+  "expected_post_RESET_records": {
+    "a": "USER generation3 value27 unchanged",
+    "b": "Reset generation4 value0"
+  },
+  "metadata_cleanup": "Restore original titles bytes and remove only exact temporary defaults after fresh SD capture and record audit; actual USER/Reset records remain",
+  "hardware_scope": "Pending: SNES USER precedence, CSV Reset preview/cancel/SAVE, duplicate Reset SAVE, SD record audit and next-boot builtin fallback after cleanup. SYSTEM/GLOBAL physical adoption is not included.",
+  "limitations": [
+    "No inference from NES or host results",
+    "No physical SD fault injection",
+    "USB save and other controller ports unvalidated"
+  ]
+}

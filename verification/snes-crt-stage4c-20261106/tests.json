@@ -1,0 +1,137 @@
+[
+  {
+    "name": "host-osd",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_osd.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 3.23
+  },
+  {
+    "name": "host-crt",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_crt.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 2.3
+  },
+  {
+    "name": "host-launch",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_launch.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 5.31
+  },
+  {
+    "name": "host-crt_restore",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_crt_restore.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 2.17
+  },
+  {
+    "name": "host-crt_save",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_crt_save.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 2.5
+  },
+  {
+    "name": "host-crt_defaults",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_crt_defaults.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 0.77
+  },
+  {
+    "name": "host-rom_id",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_rom_id.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 0.75
+  },
+  {
+    "name": "host-titles",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_titles.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 2.47
+  },
+  {
+    "name": "host-folders",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_folders.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 3.92
+  },
+  {
+    "name": "host-scroll",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_scroll.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 3.09
+  },
+  {
+    "name": "host-wrap",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_wrap.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 6.64
+  },
+  {
+    "name": "host-dispatch",
+    "command": [
+      "D:\\Users\\foobaris\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "tools/ui16/test_osd1_dispatch.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.3
+  },
+  {
+    "name": "host-snes-loader",
+    "command": [
+      "D:\\Users\\foobaris\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "tools/ui16/test_snes_loader.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.69
+  },
+  {
+    "name": "host-snes-sd-guard",
+    "command": [
+      "C:/msys64/usr/bin/bash.exe",
+      "tools/ui16/test_snes_sd_guard.sh"
+    ],
+    "exit_code": 0,
+    "seconds": 0.67
+  },
+  {
+    "name": "host-storage-uart",
+    "command": [
+      "D:\\Users\\foobaris\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "tools/ui16/test_storage_uart.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.58
+  }
+]

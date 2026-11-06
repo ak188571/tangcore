@@ -1,0 +1,12 @@
+{
+  "odt": "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\snes-crt-stage4c-hardware-20261106\\TEST_GUIDE_20261106.odt",
+  "bytes": 41584773,
+  "sha256": "57c22d31df0a1f554eb1d4ba62b85b692b4990c348cfa6e8e17d32504172f3e7",
+  "language": "ja-JP",
+  "embedded_fonts": 3,
+  "pdf_fonts": "/BAAAAA+NotoSansCJKjp-Bold\n/CAAAAA+NotoSansCJKjp-Regular\n/DAAAAA+NotoSansMonoCJKjp-Regular",
+  "rendered_pages": 2,
+  "visual_inspection": "passed_all_2_final_pages",
+  "no_Chinese_font_substitution": true,
+  "source_markdown_sha256": "e57c39283d60d8031c3d619841fa01eccee32eb1214c628a1090d59a2e592cf9"
+}

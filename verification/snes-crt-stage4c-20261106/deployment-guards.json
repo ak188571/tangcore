@@ -1,0 +1,23 @@
+{
+  "tests_run": 30,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "device_access": false,
+  "storage_media_written": false,
+  "metadata_tests": {
+    "tests_run": 15,
+    "failures": 0,
+    "errors": 0,
+    "passed": true,
+    "device_access": false,
+    "storage_media_written": false
+  },
+  "helper_sha256": {
+    "deploy.py": "e27c6163314bee63f70d662858cb32542493575be14b0d319ec9083c3f600e65",
+    "test_deploy.py": "5773e9581a7cd036a93307ffd00e7a8272ac04abc58027849446de716ffeea85",
+    "lib/console138k.py": "62ddb5445bfbbd662c1ffa4421e35ee6c63b2eaf6e5298083b4af82389001a2f",
+    "metadata.py": "3660303e02af8382591016490cd7992af582929ad96d3ef85db9617567f4f550",
+    "test_metadata.py": "ad0041b3675a97daee7b84e4dc9ef3242fe690c5c304c566eaa545e12a8b3b47"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "production_parsers": true,
+  "all_names_Japanese_titles_and_order_preserved": true,
+  "only_target_has_CSV_recommendation": true,
+  "SNES_only_defaults_preserves_NES_recommendation": true,
+  "input_sha256": {
+    "titles.csv": "93ba1d34467f560e433204598cc853b4546e6bb837b7665a65f5833b5686d3c9",
+    "snes-titles-s4c.csv": "e51ef44e157a940c435b4b6a422983109e06a583a66ca604c185f1ede59c90b4",
+    "defaults-s4c.tsv": "c9e89243b2c154bfb79f915bded6b7ee32c9448c9a67c3f9732a6503a452ac82"
+  },
+  "device_access": false
+}
