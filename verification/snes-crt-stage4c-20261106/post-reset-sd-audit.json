@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-06T23:55:56.180355+09:00",
+  "files_checked": 66,
+  "records": [
+    {
+      "file": "crt/02-232bb5b8-0000000000200000.a",
+      "system": 2,
+      "kind": 0,
+      "generation": 3,
+      "packed_value": 27,
+      "record_crc32": "15e6c994",
+      "sha256": "db251ecb687bf57c79ee6c71d46a408a4fd7d23f4a034bf2db1eed4f5feb4f21",
+      "attributes": 32
+    },
+    {
+      "file": "crt/02-232bb5b8-0000000000200000.b",
+      "system": 2,
+      "kind": 1,
+      "generation": 4,
+      "packed_value": 0,
+      "record_crc32": "bec8b890",
+      "sha256": "3e5946a9e0a8288c0d8d8912d676646c0583054f3694dbc04b75267852bb78df",
+      "attributes": 32
+    }
+  ],
+  "same_Reset_SAVE_generation_unchanged": true,
+  "previous_USER_a3_preserved": true,
+  "all_other_file_contents_and_attributes_unchanged": true,
+  "actual_records_must_not_be_deleted": true,
+  "auditor_sha256": "3660303e02af8382591016490cd7992af582929ad96d3ef85db9617567f4f550",
+  "stage": "S4c post-Reset SD audit",
+  "fresh_snapshot": "snes-crt-stage4c-hardware-20261106/post-reset-01",
+  "card_files_before_cleanup": 66,
+  "flash_operations": 0
+}

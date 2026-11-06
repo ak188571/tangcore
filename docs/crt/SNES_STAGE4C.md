@@ -45,3 +45,13 @@ firmware照合後、一時的にSNESのtitles.csvへcrt_v1列を追加する。n
 通常起動・日本語一覧・titles.csv順序・映像・音声・操作の依頼に「正常」、OSD2項目1〜13に「1-13正常」、Reset previewの取消し・明示Reset SAVEと同mode再SAVE・保存後の未保存変更取消しに「1-3正常」と利用者から報告された。依頼したスーパーマリオコレクション・USB P1の範囲で、USERがCSV/defaultsより優先されること、ResetでCSVのON/STANDARD/WEAKをpreviewすること、保存前は元のUSERへ、保存後は最後の保存値へX/Yで戻ること、SAVE後もOSDが開いていることを合格として記録する。
 
 同値Reset SAVEの世代不増加は表示だけで確定せず、実recordのkind/key/CRC/世代と他file・属性の不変を次のSD読取りで照合する。NES回帰、一時metadataの復旧、その後の2回目起動による現在の推奨値への追従は未確認であり、S4c全体の実機合格とはまだ扱わない。
+
+## NES報告・Reset record照合・metadata復旧
+
+続くNES回帰はOSD2項目1〜13を「1-13正常」と報告された。依頼したドクターマリオのOSD2表示範囲を合格として記録し、その他の依頼項目はこの返答で個別に述べられていないため追加しない。
+
+その後、microSDを再識別し、全66fileを新しくPCへ退避した。system2・CRC `232bb5b8`・size 2,097,152の.aはUSER generation 3・値27で不変、.bはReset generation 4・値0だった。schema/kind/key/reserved/record CRCを検証し、同mode再SAVEが世代を増やしていないことを確認した。.aと他fileの内容・属性、.bの属性も不変だった。観測snapshotは復旧前の全fileを保持する。
+
+全条件の合格後、元のSNES titles.csvを全byte復元し、今回導入したdefaultsと全byte一致する一時fileだけを除去した。SDは元と同じ65fileとなり、変更は実SAVEによる.bのReset recordだけで、他の元64file・属性は一致した。USER/Reset両recordは保持し、firmware/FPGAは再書込みしていない。詳細は`post-reset-sd-audit.json`と`metadata-restoration.json`。
+
+残る2回目のSNES起動では、古いCSV数値を固定せず、復旧後のbuilt-in全OFFを採用することを確認する。確認後の最終SD不変照合は読取りのみで行い、追加のSNES起動は依頼しない。

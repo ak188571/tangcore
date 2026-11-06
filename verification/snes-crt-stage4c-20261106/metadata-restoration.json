@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-06",
+  "stage": "S4c temporary metadata restoration",
+  "status": "verified",
+  "SD_files": 65,
+  "original_titles_byte_exact": true,
+  "original_titles_sha256": "93ba1d34467f560e433204598cc853b4546e6bb837b7665a65f5833b5686d3c9",
+  "original_titles_attributes_preserved": true,
+  "only_exact_temporary_defaults_removed": true,
+  "other_original_64_files_contents_and_attributes_unchanged": true,
+  "only_original_file_change": "Actual firmware Reset record .b generation4 kind1 value0",
+  "USER_a3_and_Reset_b4_retained": true,
+  "records_written_by_PC": false,
+  "flash_operations": 0,
+  "second_boot_recommendation_tracking": "pending"
+}

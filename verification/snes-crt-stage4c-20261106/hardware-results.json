@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "stage": "S4c",
-  "status": "first_SNES_trial_user_reported_pass_SD_and_followup_pending",
+  "status": "first_trial_NES_OSD2_and_Reset_record_verified_second_boot_pending",
   "device_programmed": true,
   "sd_written": true,
   "source_commits": {
@@ -24,7 +24,7 @@
     "b": "Reset generation4 value0"
   },
   "metadata_cleanup": "Restore original titles bytes and remove only exact temporary defaults after fresh SD capture and record audit; actual USER/Reset records remain",
-  "hardware_scope": "First SNES launch confirmed by user for requested game/USB P1. Actual Reset record/generation, NES regression, temporary metadata cleanup and next-boot builtin fallback pending. SYSTEM/GLOBAL physical adoption is not included.",
+  "hardware_scope": "First SNES trial, actual Reset record/generation and reported NES OSD2 passed. Original metadata restored. Second-boot builtin fallback and final no-SAVE SD invariance pending. SYSTEM/GLOBAL physical adoption is not included.",
   "limitations": [
     "No inference from NES or host results",
     "No physical SD fault injection",
@@ -42,7 +42,7 @@
     "Reset_preview_CSV_ON_STANDARD_WEAK_cancel_to_initial_USER": "user_reported_pass",
     "explicit_Reset_SAVE_stays_open_and_same_mode_SAVE_UI": "user_reported_pass",
     "unsaved_edit_cancel_to_last_saved_ON_STANDARD_WEAK": "user_reported_pass",
-    "actual_Reset_record_and_duplicate_SAVE_generation": "pending_SD_audit"
+    "actual_Reset_record_and_duplicate_SAVE_generation": "passed_SD_audit"
   },
   "raw_user_reports": [
     {
@@ -56,10 +56,14 @@
     {
       "section": "Reset_trial_steps_1_to_3",
       "answer": "1-3正常"
+    },
+    {
+      "section": "NES_OSD2_items_1_to_13",
+      "answer": "1-13正常"
     }
   ],
-  "NES_regression": "pending",
-  "post_Reset_SD_audit": "pending",
-  "metadata_cleanup_status": "pending",
+  "NES_regression": "user_reported_OSD2_items_1_to_13_pass_other_requested_checks_not_individually_reported",
+  "post_Reset_SD_audit": "passed_USER_a3_and_Reset_b4_duplicate_SAVE_no_generation_increase",
+  "metadata_cleanup_status": "verified_original_titles_and_absent_temporary_defaults",
   "second_boot_recommendation_tracking": "pending"
 }
