@@ -1,9 +1,25 @@
 {
   "date": "2026-11-06",
   "stage": "S3a",
-  "status": "deployed_hardware_trial_pending",
+  "status": "snes_user_confirmed_nes_regression_pending",
   "device_programmed": true,
   "sd_written": true,
+  "readback_verified": true,
+  "snes_game": "スーパーマリオコレクション",
+  "controller_connection": "USB P1 (requested setup; user reported normal without correction)",
+  "snes_normal_boot_japanese_list_csv_order_video_audio_controls": "user_reported_pass",
+  "snes_osd2_display_order_items_1_to_13": "user_reported_pass",
+  "snes_blur_three_strengths_edges_position_bypass_osd_sharpness": "user_reported_pass",
+  "snes_cancel_hold_full_release_reopen_off": "user_reported_pass",
+  "snes_osd1_restart_blur_ack_and_return_list": "user_reported_pass",
+  "nes_regression": "pending",
+  "raw_user_reports": ["正常", "1-13正常", "1-3正常"],
+  "limitations": [
+    "Results apply to the requested SNES game and USB P1 setup; user did not specify an alternative.",
+    "Controller identity was not re-read. P2/DS2/BL616 USB not independently tested.",
+    "No all-games/all-video-modes/long-duration claim.",
+    "S3a post-gameplay SD content and attributes have not been re-read."
+  ],
   "source_commits": {
     "firmware-bl616": "3560c1b429a36fc35a02c840f8dcfeb7f8b4f7e5",
     "snestang": "ac7fe8f48ff1cf38af735198ae824bf0654f5ab5"

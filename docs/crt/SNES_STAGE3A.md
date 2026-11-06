@@ -42,4 +42,4 @@ SNES `ac7fe8f`、共有firmware `3560c1b`をcommitした。FPGAの合成・配�
 
 SDはSNES imageだけを更新し、他62fileと全file属性を維持した。firmwareは0x40000から1回だけ書き込み、全4MiBの読戻しでfirmware全byteの一致、0x40000未満および0x80000以降の不変を確認した。最初の読戻しはbootrom接続のhandshakeで失敗したため、再書込みせずresident modeの読取りで検証を完了した。utility設定と生成fileの復元も検証済み。詳細は`deployment.json`に記録した。
 
-S3aのSNES実機画質確認と共有firmwareのNES回帰は未確認。S1の合格をS3aへ引き継がず、実機報告を待つ。
+S3aのSNES実機確認では、通常起動を「正常」、OSD2表示順1〜13を「1-13正常」、取消し・再起動・一覧復帰を「1-3正常」と利用者から報告された。依頼したスーパーマリオコレクション・USB P1の範囲で水平ぼかし3強度、端処理、位置不変、OSD鮮明性、FRAME ACKを合格とする。他の接続先・映像modeへ拡張しない。共有firmwareのNES回帰は別途確認待ち。
