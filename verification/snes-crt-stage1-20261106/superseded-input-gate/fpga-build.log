@@ -1,0 +1,888 @@
+*** GOWIN Tcl Command Line Console  *** 
+current device: GW5AST-138B  GW5AST-LV138PG484AC1/I0
+add new file: "src/boards/console138k.v"
+add new file: "src/boards/console.cst"
+add new file: "src/snes2hdmi.v"
+add new file: "src/pll/gowin_pll_27.v"
+add new file: "src/pll/gowin_pll_hdmi.v"
+add new file: "src/pll/gowin_pll_snes.v"
+add new file: "src/sdram_cl2_2ch.v"
+add new file: "src/vram.v"
+add new file: "src/vram_spb.v"
+add new file: "src/usb/usb_game_port.sv"
+add new file: "src/usb/usb_frame_scheduler.sv"
+add new file: "src/usb/usb_interrupt_poll.sv"
+add new file: "src/usb/usb_control_transfer.sv"
+add new file: "src/usb/usb_enumeration.sv"
+add new file: "src/usb/usb_ls_packet.sv"
+add new file: "src/usb/usb_rx_guard.sv"
+add new file: "src/usb/usb_game_cdc.sv"
+add new file: "src/usb/usb_hid_host_integrated.sv"
+add new file: "src/pll/pll_usb.v"
+add new file: "src/iosys/iosys_bl616.v"
+add new file: "src/iosys/uart_fractional.v"
+add new file: "src/iosys/textdisp.v"
+add new file: "src/iosys/uart_fixed.v"
+add new file: "src/iosys/crc16.v"
+add new file: "src/65C816/ALU.v"
+add new file: "src/65C816/AddSubBCD.v"
+add new file: "src/65C816/AddrGen.v"
+add new file: "src/65C816/BCDAdder.v"
+add new file: "src/65C816/P65C816.v"
+add new file: "src/65C816/adder4.v"
+add new file: "src/65C816/bit_adder.v"
+add new file: "src/65C816/common.sv"
+add new file: "src/65C816/mcode.sv"
+add new file: "src/CEGen.v"
+add new file: "src/chip/DSP/DSP_LHRomMap.v"
+add new file: "src/chip/DSP/DSPn.v"
+add new file: "src/chip/DSP/OBC1.v"
+add new file: "src/chip/DSP/SRTC.v"
+add new file: "src/chip/dsp/dsp_data_ram.v"
+add new file: "src/cpu.v"
+add new file: "src/dsp.v"
+add new file: "src/dual_clk_fifo.v"
+add new file: "src/dualshock_controller.v"
+add new file: "src/gowin_dpb_cgram.v"
+add new file: "src/gowin_dpb_hoam.v"
+add new file: "src/gowin_dpb_oam.v"
+add new file: "src/hdmi2/audio_clock_regeneration_packet.sv"
+add new file: "src/hdmi2/audio_info_frame.sv"
+add new file: "src/hdmi2/audio_sample_packet.sv"
+add new file: "src/hdmi2/auxiliary_video_information_info_frame.sv"
+add new file: "src/hdmi2/hdmi.sv"
+add new file: "src/hdmi2/packet_assembler.sv"
+add new file: "src/hdmi2/packet_picker.sv"
+add new file: "src/hdmi2/serializer.sv"
+add new file: "src/hdmi2/source_product_description_info_frame.sv"
+add new file: "src/hdmi2/tmds_channel.sv"
+add new file: "src/iosys/gowin_dpb_menu.v"
+add new file: "src/main.v"
+add new file: "src/ppu.v"
+add new file: "src/ppucgram.v"
+add new file: "src/ppuhoam.v"
+add new file: "src/ppuoam.v"
+add new file: "src/smc_parser.v"
+add new file: "src/smp.v"
+add new file: "src/snes.v"
+add new file: "src/controller_adapter.sv"
+add new file: "src/controller_ds2.sv"
+add new file: "src/controller_snes.v"
+add new file: "src/snestang_console138k_usb_top.v"
+add new file: "src/spc700/_spc700_package.v"
+add new file: "src/spc700/addrgen.v"
+add new file: "src/spc700/addsub.v"
+add new file: "src/spc700/alu.v"
+add new file: "src/spc700/bcdadj.v"
+add new file: "src/spc700/mcode.v"
+add new file: "src/spc700/muldiv.v"
+add new file: "src/spc700/spc700.v"
+add new file: "src/swram.v"
+add new file: "src/uart_tx_V2.v"
+add new file: "src/snestang.sdc"
+add new file: "src/mega138k/snestang.gao"
+add new file: "src/usb/usb_fs_packet.sv"
+add new file: "src/usb/usb_fs_rx_guard.sv"
+add new file: "src/usb/usb_fs_frame_scheduler.sv"
+add new file: "src/usb/usb_xusb_poll.sv"
+add new file: "src/usb/usb_xusb_input.sv"
+add new file: "src/usb/usb_fs_control_transfer.sv"
+add new file: "src/usb/usb_xusb_enumeration.sv"
+add new file: "src/usb/usb_xusb_port.sv"
+add new file: "src/usb/usb_dual_speed_host.sv"
+add new file: "src/iosys/tc_osd_layer.sv"
+add new file: "src/iosys/tc_crt_config.sv"
+add new file: "src/iosys/tc_crt_bypass.sv"
+add new file: "console138k_combined.sdc"
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\boards\console138k.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v'
+Undeclared symbol 'tmdsClk', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":325)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\pll\gowin_pll_27.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\pll\gowin_pll_hdmi.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\pll\gowin_pll_snes.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\sdram_cl2_2ch.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\vram.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\vram_spb.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_port.sv'
+WARN  (EX2478) : Non-net output port 'ukprdy' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_port.sv":13)
+WARN  (EX2478) : Non-net output port 'ukpstb' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_port.sv":13)
+WARN  (EX2478) : Non-net output port 'ukpdat' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_port.sv":13)
+WARN  (EX2478) : Non-net output port 'save' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_port.sv":14)
+WARN  (EX2478) : Non-net output port 'save_r' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_port.sv":14)
+WARN  (EX2478) : Non-net output port 'save_b' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_port.sv":14)
+WARN  (EX2478) : Non-net output port 'payload_valid' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_port.sv":16)
+WARN  (EX2478) : Non-net output port 'payload_length' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_port.sv":16)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_frame_scheduler.sv'
+WARN  (EX2478) : Non-net output port 'keepalive_start' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_frame_scheduler.sv":8)
+WARN  (EX2478) : Non-net output port 'frame_tick' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_frame_scheduler.sv":8)
+WARN  (EX2478) : Non-net output port 'fault' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_frame_scheduler.sv":8)
+WARN  (EX2478) : Non-net output port 'keepalive_active' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_frame_scheduler.sv":9)
+WARN  (EX2478) : Non-net output port 'frame_phase' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_frame_scheduler.sv":10)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv'
+WARN  (EX2478) : Non-net output port 'busy' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":9)
+WARN  (EX2478) : Non-net output port 'done' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":9)
+WARN  (EX2478) : Non-net output port 'fault' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":9)
+WARN  (EX2478) : Non-net output port 'error' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":10)
+WARN  (EX2478) : Non-net output port 'report' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":11)
+WARN  (EX2478) : Non-net output port 'report_data' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":11)
+WARN  (EX2478) : Non-net output port 'tx_start' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":12)
+WARN  (EX2478) : Non-net output port 'tx_bytes' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":12)
+WARN  (EX2478) : Non-net output port 'tx_count' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":12)
+WARN  (EX2478) : Non-net output port 'rx_arm' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":13)
+WARN  (EX2478) : Non-net output port 'expected_toggle' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":16)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv'
+WARN  (EX2478) : Non-net output port 'transaction_active' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":9)
+WARN  (EX2478) : Non-net output port 'busy' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":12)
+WARN  (EX2478) : Non-net output port 'done' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":12)
+WARN  (EX2478) : Non-net output port 'ok' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":12)
+WARN  (EX2478) : Non-net output port 'cancel_link' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":12)
+WARN  (EX2478) : Non-net output port 'error' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":13)
+WARN  (EX2478) : Non-net output port 'actual_length' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":14)
+WARN  (EX2478) : Non-net output port 'tx_start' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":16)
+WARN  (EX2478) : Non-net output port 'tx_bytes' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":16)
+WARN  (EX2478) : Non-net output port 'tx_count' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":16)
+WARN  (EX2478) : Non-net output port 'rx_arm' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":17)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_enumeration.sv'
+WARN  (EX2478) : Non-net output port 'busy' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_enumeration.sv":5)
+WARN  (EX2478) : Non-net output port 'ready' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_enumeration.sv":5)
+WARN  (EX2478) : Non-net output port 'fault' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_enumeration.sv":5)
+WARN  (EX2478) : Non-net output port 'error' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_enumeration.sv":6)
+WARN  (EX2478) : Non-net output port 'device_address' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_enumeration.sv":7)
+WARN  (EX2478) : Non-net output port 'control_start' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_enumeration.sv":12)
+WARN  (EX2478) : Non-net output port 'control_request' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_enumeration.sv":12)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_ls_packet.sv'
+WARN  (EX2478) : Non-net output port 'tx_busy' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_ls_packet.sv":10)
+WARN  (EX2478) : Non-net output port 'tx_done' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_ls_packet.sv":10)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv'
+WARN  (EX2478) : Non-net output port 'done' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv":5)
+WARN  (EX2478) : Non-net output port 'ok' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv":5)
+WARN  (EX2478) : Non-net output port 'accepted' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv":5)
+WARN  (EX2478) : Non-net output port 'timed_out' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv":5)
+WARN  (EX2478) : Non-net output port 'ready' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv":8)
+WARN  (EX2478) : Non-net output port 'strobe' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv":8)
+WARN  (EX2478) : Non-net output port 'value' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv":9)
+WARN  (EX2478) : Non-net output port 'length' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv":10)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_cdc.sv'
+WARN  (EX2478) : Non-net output port 'dst_data' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_cdc.sv":12)
+WARN  (EX2478) : Non-net output port 'dst_valid' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_cdc.sv":13)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_hid_host_integrated.sv'
+WARN  (EX2478) : Non-net output port 'dbg_auto_start_seen' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_hid_host_integrated.sv":45)
+WARN  (EX2478) : Non-net output port 'dbg_auto_wdt_seen' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_hid_host_integrated.sv":46)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\pll\pll_usb.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v'
+Undeclared symbol 'tx_busy', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":138)
+WARN  (EX2478) : Non-net output port 'osd_window' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":26)
+WARN  (EX2478) : Non-net output port 'osd_window_toggle' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":27)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\uart_fractional.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\uart_fixed.v'
+WARN  (EX2478) : Non-net output port 'RxD_data_ready' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\uart_fixed.v":77)
+WARN  (EX2478) : Non-net output port 'RxD_data' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\uart_fixed.v":78)
+WARN  (EX2478) : Non-net output port 'RxD_endofpacket' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\uart_fixed.v":84)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\crc16.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\common.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\ALU.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\AddSubBCD.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\AddrGen.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\BCDAdder.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\P65C816.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\bit_adder.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\mcode.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\CEGen.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSP_LHRomMap.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v'
+WARN  (EX3555) : Event expressions must result in a singular type("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":132)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\OBC1.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\dsp\dsp_data_ram.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v'
+Analyzing included file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.vh'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":39)
+Back to file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":39)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dual_clk_fifo.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dualshock_controller.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\gowin_dpb_cgram.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\gowin_dpb_hoam.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\gowin_dpb_oam.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\audio_clock_regeneration_packet.sv'
+WARN  (EX2478) : Non-net output port 'clk_audio_counter_wrap' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\audio_clock_regeneration_packet.sv":13)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\audio_info_frame.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\audio_sample_packet.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\auxiliary_video_information_info_frame.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\hdmi.sv'
+WARN  (EX2478) : Non-net output port 'cx' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\hdmi.sv":81)
+WARN  (EX2478) : Non-net output port 'cy' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\hdmi.sv":82)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_assembler.sv'
+WARN  (EX2478) : Non-net output port 'counter' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_assembler.sv":11)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_picker.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\serializer.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\source_product_description_info_frame.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\tmds_channel.sv'
+WARN  (EX2478) : Non-net output port 'tmds' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\tmds_channel.sv":16)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\gowin_dpb_menu.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v'
+Undeclared symbol 'MSU_ENABLE', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":224)
+Undeclared symbol 'MSU_DATA_ADDR', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":235)
+Undeclared symbol 'MSU_DATA', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":236)
+Undeclared symbol 'MSU_DATA_ACK', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":237)
+Undeclared symbol 'MSU_DATA_SEEK', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":238)
+Undeclared symbol 'MSU_DATA_REQ', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":239)
+Undeclared symbol 'MSU_TRACK_NUM', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":241)
+Undeclared symbol 'MSU_TRACK_REQUEST', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":242)
+Undeclared symbol 'MSU_TRACK_MOUNTING', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":243)
+Undeclared symbol 'MSU_TRACK_MISSING', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":245)
+Undeclared symbol 'MSU_AUDIO_REPEAT', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":246)
+Undeclared symbol 'MSU_AUDIO_PLAYING', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":247)
+Undeclared symbol 'MSU_AUDIO_STOP', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":248)
+Undeclared symbol 'MSU_VOLUME', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":250)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v'
+Analyzing included file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu_defines.vh'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":58)
+Back to file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":58)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppucgram.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppuhoam.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppuoam.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smc_parser.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\controller_adapter.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\controller_ds2.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\controller_snes.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v'
+Undeclared symbol 'DOT_CLK_CE', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":336)
+WARN  (EX3638) : 'DOT_CLK_CE' is already implicitly declared on line 336("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":375)
+Undeclared symbol 'loading_r', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":520)
+WARN  (EX3638) : 'loading_r' is already implicitly declared on line 520("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":528)
+Undeclared symbol 'pll_lock_12', assumed default net type 'wire'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":582)
+WARN  (EX3638) : 'pll_lock_12' is already implicitly declared on line 582("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":583)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\_spc700_package.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\addrgen.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\addsub.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\alu.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\bcdadj.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\mcode.v'
+Analyzing included file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\mcode.vh'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\mcode.v":19)
+Back to file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\mcode.v'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\mcode.v":19)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\muldiv.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\spc700.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\swram.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\uart_tx_V2.v'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_fs_packet.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_fs_rx_guard.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_fs_frame_scheduler.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_poll.sv'
+WARN  (EX2478) : Non-net output port 'debug_first_unexpected' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_poll.sv":18)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_input.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_fs_control_transfer.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_enumeration.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_port.sv'
+WARN  (EX2478) : Non-net output port 'debug_context' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_port.sv":12)
+WARN  (EX2478) : Non-net output port 'debug_first_unexpected' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_port.sv":13)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_dual_speed_host.sv'
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_osd_layer.sv'
+WARN  (EX2478) : Non-net output port 'x' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_osd_layer.sv":10)
+WARN  (EX2478) : Non-net output port 'y' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_osd_layer.sv":10)
+WARN  (EX2478) : Non-net output port 'visible' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_osd_layer.sv":12)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_crt_config.sv'
+WARN  (EX2478) : Non-net output port 'active_config' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_crt_config.sv":7)
+WARN  (EX2478) : Non-net output port 'applied_config' cannot be initialized at declaration in SystemVerilog mode("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_crt_config.sv":8)
+Analyzing Verilog file 'D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_crt_bypass.sv'
+WARN  (EX3073) : Port 'total_refresh' remains unconnected for this instance("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX3073) : Port 'dbg_fs_owner' remains unconnected for this instance("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":601)
+WARN  (EX3073) : Port 'dbg_auto_start_seen' remains unconnected for this instance("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":616)
+WARN  (EX3073) : Port 'mgmt_address' remains unconnected for this instance("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":699)
+Compiling module 'snestang_top'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":14)
+WARN  (EX3780) : Using initial value of 'dbg_reg_wr' since it is never assigned("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":255)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":108)
+Compiling module 'gowin_pll_snes'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\pll\gowin_pll_snes.v":10)
+Compiling module 'gowin_pll_27'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\pll\gowin_pll_27.v":10)
+Compiling module 'gowin_pll_hdmi'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\pll\gowin_pll_hdmi.v":10)
+Compiling module 'main(USE_GSU=0,USE_DSPn=1)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":3)
+Compiling module 'SNES'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes.v":5)
+Compiling module 'SCPU'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":1)
+Extracting RAM for identifier 'DMAP'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":133)
+Extracting RAM for identifier 'BBAD'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":134)
+Extracting RAM for identifier 'A1T'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":137)
+Extracting RAM for identifier 'A1B'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":138)
+Extracting RAM for identifier 'DAS'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":141)
+Extracting RAM for identifier 'DASB'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":142)
+Extracting RAM for identifier 'A2A'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":145)
+Extracting RAM for identifier 'NTLR'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":148)
+Extracting RAM for identifier 'UNUSED'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":149)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":262)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":266)
+Compiling module 'P65C816'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\P65C816.v":8)
+Compiling module 'mcode'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\mcode.sv":8)
+Extracting RAM for identifier 'M_TAB'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\mcode.sv":17)
+Compiling module 'AddrGen'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\AddrGen.v":2)
+Compiling module 'ALU'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\ALU.v":3)
+Compiling module 'AddSubBCD'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\AddSubBCD.v":2)
+Compiling module 'BCDAdder'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\BCDAdder.v":2)
+Compiling module 'adder4'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":2)
+Compiling module 'bit_adder'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\bit_adder.v":2)
+WARN  (EX2420) : Latch inferred for net 'P4.i[2]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":747)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":783)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":1228)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":1253)
+Compiling module 'SWRAM'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\swram.v":2)
+Compiling module 'SPPU'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":5)
+Extracting RAM for identifier 'HOAM'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1346)
+Extracting RAM for identifier 'spr_buf'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1593)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":268)
+Compiling module 'ppucgram'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppucgram.v":4)
+Compiling module 'gowin_dpb_cgram'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\gowin_dpb_cgram.v":10)
+WARN  (EX2565) : Input 'ocea' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppucgram.v":20)
+WARN  (EX2565) : Input 'oceb' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppucgram.v":20)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":290)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":395)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":408)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":436)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 9("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":570)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 9("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":817)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 9("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":820)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1012)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1159)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1204)
+Compiling module 'ppuoam'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppuoam.v":4)
+Compiling module 'Gowin_DPB_OAM'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\gowin_dpb_oam.v":9)
+WARN  (EX2565) : Input 'ocea' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppuoam.v":20)
+WARN  (EX2565) : Input 'oceb' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppuoam.v":20)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1444)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 6("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1472)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1504)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1505)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 6("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1507)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1577)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1634)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1709)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":1714)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\ppu.v":2309)
+Compiling module 'SMP'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v":3)
+WARN  (EX3858) : System task 'fdisplay' is ignored for synthesis("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v":87)
+Compiling module 'SPC700'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\spc700.v":4)
+Compiling module 'SPC700_MCode'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\mcode.v":5)
+WARN  (EX3780) : Using initial value of 'MCODE0' since it is never assigned("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\mcode.vh":2308)
+Compiling module 'SPC700_AddrGen'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\addrgen.v":3)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\addrgen.v":49)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\addrgen.v":118)
+Compiling module 'SPC700_ALU'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\alu.v":4)
+Compiling module 'SPC700_AddSub'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\addsub.v":3)
+Compiling module 'SPC700_BCDAdj'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\bcdadj.v":3)
+Compiling module 'MulDiv'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\muldiv.v":4)
+WARN  (EX3858) : System task 'fdisplay' is ignored for synthesis("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\spc700.v":288)
+WARN  (EX3858) : System task 'fdisplay' is ignored for synthesis("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\spc700.v":292)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\spc700.v":301)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\spc700.v":302)
+WARN  (EX3858) : System task 'fdisplay' is ignored for synthesis("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v":207)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v":237)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v":240)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v":244)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v":247)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v":257)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v":260)
+WARN  (EX1998) : Net 'TEST[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smp.v":45)
+Compiling module 'DSP'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":6)
+WARN  (EX3780) : Using initial value of 'DBG_VMUTE' since it is never assigned("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":182)
+Extracting RAM for identifier 'REGRAM'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":225)
+Extracting RAM for identifier 'BRR_BUF'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":470)
+Compiling module 'CEGen'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\CEGen.v":25)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":202)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":204)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":535)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":573)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":589)
+WARN  (EX3858) : System task 'fdisplay' is ignored for synthesis("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":671)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":687)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 5("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":733)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":779)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":785)
+WARN  (EX3791) : Expression size 16 truncated to fit in target size 15("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":881)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":915)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 13("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":964)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 13("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":973)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 13("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":995)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":1050)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":1055)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":1057)
+WARN  (EX1998) : Net 'DBG_WRAM_DAT[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes.v":147)
+WARN  (EX1998) : Net 'DBG_PPU_DAT[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes.v":147)
+WARN  (EX1998) : Net 'PPU_DBG_BRK' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes.v":148)
+WARN  (EX2565) : Input 'TURBO' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes.v":169)
+Compiling module 'DSP_LHRomMap'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSP_LHRomMap.v":1)
+Compiling module 'DSPn'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":1)
+Extracting RAM for identifier 'PROG_ROM'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":383)
+Extracting RAM for identifier 'DATA_ROM'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":400)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":257)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":258)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 11("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":265)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":315)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":317)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":357)
+Compiling module 'dsp_data_ram'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\dsp\dsp_data_ram.v":10)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'cea'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":414)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'ceb'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":414)
+WARN  (EX2565) : Input 'ocea' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":419)
+WARN  (EX2565) : Input 'oceb' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\DSPn.v":419)
+Compiling module 'OBC1'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\OBC1.v":1)
+Compiling module 'SRTC'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":2)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":42)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":46)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":50)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":54)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":58)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":62)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":67)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":71)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":77)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":81)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":85)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":89)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":98)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\chip\DSP\SRTC.v":122)
+WARN  (EX1998) : Net 'CX4_DO[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":341)
+WARN  (EX1998) : Net 'CX4_IRQ_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":342)
+WARN  (EX1998) : Net 'CX4_ROM_ADDR[22]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":343)
+WARN  (EX1998) : Net 'CX4_ROM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":344)
+WARN  (EX1998) : Net 'CX4_ROM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":345)
+WARN  (EX1998) : Net 'CX4_ROM_WORD' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":346)
+WARN  (EX1998) : Net 'CX4_BSRAM_ADDR[19]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":347)
+WARN  (EX1998) : Net 'CX4_BSRAM_D[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":348)
+WARN  (EX1998) : Net 'CX4_BSRAM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":349)
+WARN  (EX1998) : Net 'CX4_BSRAM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":350)
+WARN  (EX1998) : Net 'CX4_BSRAM_WE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":351)
+WARN  (EX1998) : Net 'SDD_DO[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":402)
+WARN  (EX1998) : Net 'SDD_IRQ_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":403)
+WARN  (EX1998) : Net 'SDD_ROM_ADDR[22]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":404)
+WARN  (EX1998) : Net 'SDD_ROM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":405)
+WARN  (EX1998) : Net 'SDD_ROM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":406)
+WARN  (EX1998) : Net 'SDD_ROM_WORD' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":407)
+WARN  (EX1998) : Net 'SDD_BSRAM_ADDR[19]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":408)
+WARN  (EX1998) : Net 'SDD_BSRAM_D[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":409)
+WARN  (EX1998) : Net 'SDD_BSRAM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":410)
+WARN  (EX1998) : Net 'SDD_BSRAM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":411)
+WARN  (EX1998) : Net 'SDD_BSRAM_WE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":412)
+WARN  (EX1998) : Net 'GSU_DO[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":463)
+WARN  (EX1998) : Net 'GSU_IRQ_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":464)
+WARN  (EX1998) : Net 'GSU_ROM_ADDR[22]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":465)
+WARN  (EX1998) : Net 'GSU_ROM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":466)
+WARN  (EX1998) : Net 'GSU_ROM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":467)
+WARN  (EX1998) : Net 'GSU_ROM_WORD' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":468)
+WARN  (EX1998) : Net 'GSU_BSRAM_ADDR[19]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":469)
+WARN  (EX1998) : Net 'GSU_BSRAM_D[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":470)
+WARN  (EX1998) : Net 'GSU_BSRAM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":471)
+WARN  (EX1998) : Net 'GSU_BSRAM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":472)
+WARN  (EX1998) : Net 'GSU_BSRAM_WE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":473)
+WARN  (EX1998) : Net 'SA1_DO[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":530)
+WARN  (EX1998) : Net 'SA1_IRQ_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":531)
+WARN  (EX1998) : Net 'SA1_ROM_ADDR[22]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":532)
+WARN  (EX1998) : Net 'SA1_ROM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":533)
+WARN  (EX1998) : Net 'SA1_ROM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":534)
+WARN  (EX1998) : Net 'SA1_ROM_WORD' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":535)
+WARN  (EX1998) : Net 'SA1_BSRAM_ADDR[19]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":536)
+WARN  (EX1998) : Net 'SA1_BSRAM_D[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":537)
+WARN  (EX1998) : Net 'SA1_BSRAM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":538)
+WARN  (EX1998) : Net 'SA1_BSRAM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":539)
+WARN  (EX1998) : Net 'SA1_BSRAM_WE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":540)
+WARN  (EX1998) : Net 'SPC7110_DO[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":593)
+WARN  (EX1998) : Net 'SPC7110_IRQ_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":594)
+WARN  (EX1998) : Net 'SPC7110_ROM_ADDR[22]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":595)
+WARN  (EX1998) : Net 'SPC7110_ROM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":596)
+WARN  (EX1998) : Net 'SPC7110_ROM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":597)
+WARN  (EX1998) : Net 'SPC7110_ROM_WORD' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":598)
+WARN  (EX1998) : Net 'SPC7110_BSRAM_ADDR[19]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":599)
+WARN  (EX1998) : Net 'SPC7110_BSRAM_D[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":600)
+WARN  (EX1998) : Net 'SPC7110_BSRAM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":601)
+WARN  (EX1998) : Net 'SPC7110_BSRAM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":602)
+WARN  (EX1998) : Net 'SPC7110_BSRAM_WE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":603)
+WARN  (EX1998) : Net 'BSX_DO[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":655)
+WARN  (EX1998) : Net 'BSX_IRQ_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":656)
+WARN  (EX1998) : Net 'BSX_ROM_ADDR[22]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":657)
+WARN  (EX1998) : Net 'BSX_ROM_D[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":658)
+WARN  (EX1998) : Net 'BSX_ROM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":659)
+WARN  (EX1998) : Net 'BSX_ROM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":660)
+WARN  (EX1998) : Net 'BSX_ROM_WE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":661)
+WARN  (EX1998) : Net 'BSX_ROM_WORD' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":662)
+WARN  (EX1998) : Net 'BSX_BSRAM_ADDR[19]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":663)
+WARN  (EX1998) : Net 'BSX_BSRAM_D[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":664)
+WARN  (EX1998) : Net 'BSX_BSRAM_CE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":665)
+WARN  (EX1998) : Net 'BSX_BSRAM_OE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":666)
+WARN  (EX1998) : Net 'BSX_BSRAM_WE_N' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":667)
+Compiling module 'sdram_snes'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\sdram_cl2_2ch.v":45)
+WARN  (EX3791) : Expression size 25 truncated to fit in target size 24("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\sdram_cl2_2ch.v":331)
+Compiling module 'vram'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\vram.v":4)
+Compiling module 'vram_spb'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\vram_spb.v":10)
+WARN  (EX2565) : Input 'oce' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\vram.v":30)
+WARN  (EX2565) : Input 'oce' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\vram.v":35)
+Compiling module 'smc_parser'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smc_parser.v":1)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\smc_parser.v":36)
+Compiling module 'controller_ds2'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\controller_ds2.sv":3)
+Compiling module 'dualshock_controller(FREQ=21600000)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dualshock_controller.v":46)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dualshock_controller.v":74)
+Compiling module 'ps_pls_gan'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dualshock_controller.v":144)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dualshock_controller.v":171)
+Compiling module 'ps_txd'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dualshock_controller.v":262)
+Compiling module 'ps_rxd'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dualshock_controller.v":237)
+Compiling module 'usb_reset_sync'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_cdc.sv":56)
+Compiling module 'pll_usb'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\pll\pll_usb.v":10)
+WARN  (EX3073) : Port 'key_modifiers' remains unconnected for this instance("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_dual_speed_host.sv":57)
+Compiling module 'usb_dual_speed_host'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_dual_speed_host.sv":3)
+Compiling module 'usb_xusb_port(EXTERNAL_IO=1)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_port.sv":2)
+Compiling module 'usb_fs_frame_scheduler'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_fs_frame_scheduler.sv":3)
+Compiling module 'usb_xusb_enumeration'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_enumeration.sv":3)
+Compiling module 'usb_fs_control_transfer'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_fs_control_transfer.sv":4)
+Extracting RAM for identifier 'memory'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_fs_control_transfer.sv":31)
+Compiling module 'usb_xusb_poll'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_poll.sv":8)
+Compiling module 'usb_fs_packet(EXTERNAL_IO=1)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_fs_packet.sv":4)
+Compiling module 'usb_fs_rx_guard'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_fs_rx_guard.sv":4)
+Compiling module 'usb_xusb_input'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_xusb_input.sv":4)
+Compiling module 'usb_game_cdc(WIDTH=14,REFRESH_CLOCKS=96000)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_cdc.sv":5)
+Compiling module 'usb_hid_host(EXTERNAL_IO=1)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_hid_host_integrated.sv":14)
+Compiling module 'usb_game_port(EXTERNAL_IO=1)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_port.sv":3)
+Compiling module 'usb_frame_scheduler'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_frame_scheduler.sv":3)
+Compiling module 'usb_enumeration'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_enumeration.sv":3)
+Compiling module 'usb_control_transfer'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":4)
+Extracting RAM for identifier 'memory'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_control_transfer.sv":30)
+Compiling module 'usb_interrupt_poll'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_interrupt_poll.sv":5)
+Compiling module 'usb_ls_packet(EXTERNAL_IO=1)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_ls_packet.sv":3)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_ls_packet.sv":50)
+Compiling module 'usb_rx_guard'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv":3)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_rx_guard.sv":102)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_hid_host_integrated.sv":321)
+Compiling module 'controller_adapter'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\controller_adapter.sv":3)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 16 for port 'snes_buttons'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":657)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 16 for port 'snes_buttons'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":661)
+WARN  (EX3073) : Port 'screen_width' remains unconnected for this instance("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":329)
+Compiling module 'snes2hdmi(CRT_STAGE1=1)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":6)
+Extracting RAM for identifier 'mem'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":84)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 5("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":143)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 5("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":144)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 5("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":145)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":190)
+Compiling module 'dual_clk_fifo(DATESIZE=32)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dual_clk_fifo.v":3)
+Extracting RAM for identifier 'mem'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dual_clk_fifo.v":27)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 5("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dual_clk_fifo.v":145)
+Compiling module 'tc_osd_layer'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_osd_layer.sv":3)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":237)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":238)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 11("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":252)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":253)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 11("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":261)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":262)
+Compiling module 'tc_crt_config'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_crt_config.sv":3)
+Compiling module 'tc_crt_bypass'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\tc_crt_bypass.sv":3)
+Compiling module 'hdmi(VIDEO_ID_CODE=4,VIDEO_REFRESH_RATE=60.0,AUDIO_RATE=32000)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\hdmi.sv":4)
+Compiling module 'packet_picker(VIDEO_RATE=74250000.0,IT_CONTENT=1'b1,AUDIO_BIT_WIDTH=16,AUDIO_RATE=32000,VENDOR_NAME=64'b0101010101101110011010110110111001101111011101110110111000000000,PRODUCT_DESCRIPTION=128'b01000110010100000100011101000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,SOURCE_DEVICE_INFORMATION=8'b00000000)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_picker.sv":4)
+Extracting RAM for identifier 'audio_sample_word_buffer'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_picker.sv":84)
+Compiling module 'audio_clock_regeneration_packet(VIDEO_RATE=74250000.0,AUDIO_RATE=32000)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\audio_clock_regeneration_packet.sv":5)
+Compiling module 'audio_sample_packet(SAMPLING_FREQUENCY=4'b0011,WORD_LENGTH=4'b0010)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\audio_sample_packet.sv":8)
+WARN  (EX3780) : Using initial value of 'CHANNEL_LEFT' since it is never assigned("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\audio_sample_packet.sv":63)
+WARN  (EX3780) : Using initial value of 'CHANNEL_RIGHT' since it is never assigned("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\audio_sample_packet.sv":64)
+Compiling module 'auxiliary_video_information_info_frame(IT_CONTENT=1'b1)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\auxiliary_video_information_info_frame.sv":5)
+Compiling module 'source_product_description_info_frame(VENDOR_NAME=64'b0101010101101110011010110110111001101111011101110110111000000000,PRODUCT_DESCRIPTION=128'b01000110010100000100011101000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,SOURCE_DEVICE_INFORMATION=8'b00000000)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\source_product_description_info_frame.sv":5)
+Compiling module 'audio_info_frame'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\audio_info_frame.sv":5)
+WARN  (EX1998) : Net 'headers[255][23]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_picker.sv":29)
+WARN  (EX1998) : Net 'subs[255][3][55]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_picker.sv":30)
+Compiling module 'packet_assembler'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_assembler.sv":4)
+Compiling module 'tmds_channel'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\tmds_channel.sv":4)
+Compiling module 'tmds_channel(CN=1)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\tmds_channel.sv":4)
+Compiling module 'tmds_channel(CN=2)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\tmds_channel.sv":4)
+Compiling module 'serializer(VIDEO_RATE=74250000.0)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\serializer.sv":3)
+WARN  (EX3073) : Port 'RxD_idle' remains unconnected for this instance("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":128)
+Compiling module 'iosys_bl616(FREQ=21484000,CORE_ID=2,SUPPORT_RESTART=1,SUPPORT_CRT=1)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":10)
+Compiling module 'async_receiver(ClkFrequency=21484000,Baud=2000000)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\uart_fixed.v":74)
+Compiling module 'BaudTickGen(ClkFrequency=21484000,Baud=2000000,Oversampling=8)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\uart_fixed.v":184)
+Compiling module 'async_transmitter(ClkFrequency=21484000,Baud=2000000)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\uart_fixed.v":13)
+Compiling module 'BaudTickGen(ClkFrequency=21484000,Baud=2000000)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\uart_fixed.v":184)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":291)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":313)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 20("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":430)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":472)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":500)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":511)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":526)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":548)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":566)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\iosys_bl616.v":601)
+Compiling module 'textdisp(SHOW_LOGO=0,COLOR_LOGO=15'b000001010100000)'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":4)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 2("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":44)
+Compiling module 'gowin_dpb_menu'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\gowin_dpb_menu.v":10)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":112)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 8("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":113)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 7("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":114)
+WARN  (EX2565) : Input 'ocea' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":62)
+WARN  (EX2565) : Input 'oceb' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":62)
+WARN  (EX2565) : Input 'dinb[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":62)
+WARN  (EX2565) : Input 'dinb[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":62)
+WARN  (EX2565) : Input 'dinb[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":62)
+WARN  (EX2565) : Input 'dinb[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":62)
+WARN  (EX2565) : Input 'dinb[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":62)
+WARN  (EX2565) : Input 'dinb[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":62)
+WARN  (EX2565) : Input 'dinb[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":62)
+WARN  (EX2565) : Input 'dinb[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\iosys\textdisp.v":62)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 16 for port 'hid1'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":694)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 16 for port 'hid2'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":694)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 8 for port 'rom_loading'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":698)
+Compiling module 'usb_game_cdc'("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\usb\usb_game_cdc.sv":5)
+WARN  (EX1998) : Net 'PAL' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":220)
+WARN  (EX1998) : Net 'dbg_reg[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":253)
+WARN  (EX1998) : Net 'dbg_sel[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":253)
+WARN  (EX1998) : Net 'dbg_dat_in[7]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":254)
+WARN  (EX1998) : Net 'rv_dout0[15]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":436)
+WARN  (EX1998) : Net 'rv_dout[15]' does not have a driver("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":442)
+WARN  (EX2565) : Input 'DIS_SHORTLINE' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'JOY2_P6_in' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[64]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[63]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[62]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[61]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[60]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[59]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[58]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[57]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[56]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[55]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[54]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[53]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[52]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[51]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[50]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[49]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[48]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[47]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[46]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[45]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[44]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[43]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[42]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[41]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[40]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[39]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[38]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[37]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[36]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[35]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[34]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[33]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[32]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[31]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[30]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[29]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[28]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[27]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[26]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[25]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[24]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[23]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[22]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[21]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[20]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[19]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[18]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[17]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[16]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[15]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[14]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[13]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[12]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[11]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[10]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[9]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[8]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'EXT_RTC[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'SPC_MODE' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[16]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[15]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[14]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[13]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[12]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[11]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[10]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[9]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[8]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_ADDR[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[15]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[14]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[13]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[12]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[11]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[10]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[9]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[8]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_DAT[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'IO_WR' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":341)
+WARN  (EX2565) : Input 'rv_addr[22]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[21]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[20]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[19]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[18]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[17]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[16]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[15]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[14]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[13]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[12]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[11]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[10]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[9]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[8]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_addr[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[15]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[14]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[13]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[12]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[11]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[10]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[9]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[8]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[7]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[6]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[5]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[4]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[3]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[2]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_din[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_ds[1]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_ds[0]' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_req' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+WARN  (EX2565) : Input 'rv_we' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snestang_console138k_usb_top.v":505)
+NOTE  (EX0101) : Current top module is "snestang_top"
+WARN  (EX0211) : The output port "JOY1_P6" of module "main(USE_GSU=0,USE_DSPn=1)" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":80)
+WARN  (EX0211) : The output port "JOY2_P6" of module "main(USE_GSU=0,USE_DSPn=1)" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\main.v":81)
+WARN  (EX0211) : The output port "HIGH_RES" of module "SNES" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes.v":66)
+WARN  (EX0211) : The output port "DBG_CPU_BRK" of module "SCPU" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":47)
+WARN  (EX0211) : The output port "DBG_DAT[7]" of module "SCPU" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":49)
+WARN  (EX0211) : The output port "DBG_DAT[6]" of module "SCPU" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":49)
+WARN  (EX0211) : The output port "DBG_DAT[5]" of module "SCPU" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":49)
+WARN  (EX0211) : The output port "DBG_DAT[4]" of module "SCPU" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":49)
+WARN  (EX0211) : The output port "DBG_DAT[3]" of module "SCPU" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":49)
+WARN  (EX0211) : The output port "DBG_DAT[2]" of module "SCPU" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":49)
+WARN  (EX0211) : The output port "DBG_DAT[1]" of module "SCPU" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":49)
+WARN  (EX0211) : The output port "DBG_DAT[0]" of module "SCPU" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\cpu.v":49)
+WARN  (EX0211) : The output port "BRK_OUT" of module "P65C816" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\P65C816.v":27)
+WARN  (EX0211) : The output port "BRK_OUT" of module "SPC700" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\spc700\spc700.v":17)
+WARN  (EX0211) : The output port "DBG_DAT_OUT[7]" of module "DSP" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":35)
+WARN  (EX0211) : The output port "DBG_DAT_OUT[6]" of module "DSP" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":35)
+WARN  (EX0211) : The output port "DBG_DAT_OUT[5]" of module "DSP" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":35)
+WARN  (EX0211) : The output port "DBG_DAT_OUT[4]" of module "DSP" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":35)
+WARN  (EX0211) : The output port "DBG_DAT_OUT[3]" of module "DSP" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":35)
+WARN  (EX0211) : The output port "DBG_DAT_OUT[2]" of module "DSP" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":35)
+WARN  (EX0211) : The output port "DBG_DAT_OUT[1]" of module "DSP" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":35)
+WARN  (EX0211) : The output port "DBG_DAT_OUT[0]" of module "DSP" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\dsp.v":35)
+WARN  (EX0211) : The output port "audio_en" of module "snes2hdmi(CRT_STAGE1=1)" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":33)
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+WARN  (IF0005) : Not support distributed RAM in current device, please change ramstyle property setting
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "AddSubBCD" instantiated to "AddSub" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\ALU.v":103)
+WARN  (NL0002) : The module "BCDAdder" instantiated to "add0" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\AddSubBCD.v":20)
+WARN  (NL0002) : The module "adder4" instantiated to "bcd_corr_adder" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\BCDAdder.v":29)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add0" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":15)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add1" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":17)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add2" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":19)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add3" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":21)
+WARN  (NL0002) : The module "adder4" instantiated to "bin_adder" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\BCDAdder.v":24)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add0" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":15)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add1" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":17)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add2" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":19)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add3" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":21)
+WARN  (NL0002) : The module "BCDAdder" instantiated to "add1" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\AddSubBCD.v":21)
+WARN  (NL0002) : The module "adder4" instantiated to "bcd_corr_adder" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\BCDAdder.v":29)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add0" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":15)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add1" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":17)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add2" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":19)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add3" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":21)
+WARN  (NL0002) : The module "adder4" instantiated to "bin_adder" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\BCDAdder.v":24)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add0" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":15)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add1" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":17)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add2" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":19)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add3" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":21)
+WARN  (NL0002) : The module "BCDAdder" instantiated to "add2" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\AddSubBCD.v":22)
+WARN  (NL0002) : The module "adder4" instantiated to "bcd_corr_adder" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\BCDAdder.v":29)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add0" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":15)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add1" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":17)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add2" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":19)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add3" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":21)
+WARN  (NL0002) : The module "adder4" instantiated to "bin_adder" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\BCDAdder.v":24)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add0" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":15)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add1" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":17)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add2" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":19)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add3" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":21)
+WARN  (NL0002) : The module "BCDAdder" instantiated to "add3" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\AddSubBCD.v":23)
+WARN  (NL0002) : The module "adder4" instantiated to "bcd_corr_adder" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\BCDAdder.v":29)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add0" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":15)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add1" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":17)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add2" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":19)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add3" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":21)
+WARN  (NL0002) : The module "adder4" instantiated to "bin_adder" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\BCDAdder.v":24)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add0" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":15)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add1" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":17)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add2" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":19)
+WARN  (NL0002) : The module "bit_adder" instantiated to "b_add3" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\65C816\adder4.v":21)
+WARN  (NL0002) : The module "tc_crt_bypass" instantiated to "crt_stage1.crt" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\snes2hdmi.v":288)
+WARN  (NL0002) : The module "audio_info_frame" instantiated to "audio_info_frame" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_picker.sv":147)
+WARN  (NL0002) : The module "audio_sample_packet" instantiated to "audio_sample_packet" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_picker.sv":135)
+WARN  (NL0002) : The module "auxiliary_video_information_info_frame" instantiated to "auxiliary_video_information_info_frame" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_picker.sv":141)
+WARN  (NL0002) : The module "source_product_description_info_frame" instantiated to "source_product_description_info_frame" is swept in optimizing("D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\hdmi2\packet_picker.sv":144)
+[95%] Generate netlist file "D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\impl\gwsynthesis\snestang_console138k_ds2.vg" completed
+WARN  (CK3000) : Can't calculate clocks' relationship between: "pll_snes/PLL_inst/CLKOUT0.default_gen_clk" and "pll_hdmi/PLL_inst/CLKOUT0.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "pll_snes/PLL_inst/CLKOUT0.default_gen_clk" and "pll_hdmi/PLL_inst/CLKOUT1.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "pll_hdmi/PLL_inst/CLKOUT1.default_gen_clk" and "pll_snes/PLL_inst/CLKOUT0.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "pll_snes/PLL_inst/CLKOUT0.default_gen_clk" and "pll12/PLL_inst/CLKOUT1.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "pll12/PLL_inst/CLKOUT1.default_gen_clk" and "pll_snes/PLL_inst/CLKOUT0.default_gen_clk"
+[100%] Generate report file "D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\impl\gwsynthesis\snestang_console138k_ds2_syn.rpt.html" completed
+GowinSynthesis finish
+Reading netlist file: "D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\impl\gwsynthesis\snestang_console138k_ds2.vg"
+Parsing netlist file "D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\impl\gwsynthesis\snestang_console138k_ds2.vg" completed
+WARN  (PA1019) : Invalid VCO frequency 'FCLKIN*FBDIV_SEL*(MDIV_SEL+MDIV_FRAC_SEL/8)/IDIV_SEL' to 'PLL_inst'(PLL) set by 'gowin_pll_snes' of module, suitable range is from 650MHz to 1300MHz.
+WARN  (PA1019) : Invalid VCO frequency 'FCLKIN*FBDIV_SEL*(MDIV_SEL+MDIV_FRAC_SEL/8)/IDIV_SEL' to 'PLL_inst'(PLL) set by 'gowin_pll_27' of module, suitable range is from 650MHz to 1300MHz.
+WARN  (PA1019) : Invalid VCO frequency 'FCLKIN*FBDIV_SEL*(MDIV_SEL+MDIV_FRAC_SEL/8)/IDIV_SEL' to 'PLL_inst'(PLL) set by 'gowin_pll_hdmi' of module, suitable range is from 650MHz to 1300MHz.
+Processing netlist completed
+Reading constraint file: "D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\snestang\src\boards\console.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed

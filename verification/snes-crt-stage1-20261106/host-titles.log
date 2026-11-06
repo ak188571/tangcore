@@ -1,0 +1,6 @@
+Stage 4 C++ tests passed: streaming TSV, BOM/CRLF/UTF-8, blank fallback, duplicate/error atomicity, original names, >255 glyphs, wire bytes, replacement glyph
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.548s
+
+OK

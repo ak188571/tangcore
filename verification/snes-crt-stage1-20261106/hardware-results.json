@@ -1,0 +1,9 @@
+{
+  "stage": "S1+S2",
+  "date": "2026-11-06",
+  "status": "pending",
+  "device_programmed": false,
+  "sd_written": false,
+  "user_current_device_status": "Normal boot available; microSD can be moved to PC",
+  "controller_connection": null
+}

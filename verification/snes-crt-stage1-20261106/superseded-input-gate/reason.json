@@ -1,0 +1,5 @@
+{
+  "status": "superseded build interrupted",
+  "reason": "Serial adapter stale held-input suffix reproduced before hardware deployment; add neutral flushing while OSD input is blocked.",
+  "device_written": false
+}

@@ -1,0 +1,42 @@
+{
+  "formatting_adjustments": [
+    {
+      "path": "console138k_combined.sdc",
+      "build_sha256": "3e7a8796cd4b5e27bc1f0b0a3cecb9b8078322acfd6f9ebe2daece466735c87d",
+      "final_sha256": "90a38d7ce0a73239f3b3a970de78061bb331733e8b0ee6600a38c7178c6c9c18",
+      "line_whitespace_only": true
+    },
+    {
+      "path": "src/snestang_console138k_usb_top.v",
+      "build_sha256": "d625a20639ae6253f3fdbf297f2e4b770c3e9360a163a826c17781426bd7f00a",
+      "final_sha256": "56ae2eace08d4ae07db717cc981e9c76790dc52a1b9fd2c021bf436b40cacd1c",
+      "line_whitespace_only": true
+    },
+    {
+      "path": "src/snes2hdmi.v",
+      "build_sha256": "79e2d32835c0d5d365d640a42b9de72f1b0ec29111d5fa06edc55b6a594e7cec",
+      "final_sha256": "b42762a55c4a4417bca1542964a472ec7bda20353925ec0bcdd3443997121157",
+      "line_whitespace_only": true
+    },
+    {
+      "path": "src/controller_adapter.sv",
+      "build_sha256": "26c73ed773428813a64a1b0d6e6c2f7e012fa4c4f67806b7c22f706b1a9972fa",
+      "final_sha256": "68b6eb3f7ef2ba7ce73aeedf5efa99ef393bcfab898958e7b4a94e4274ae6ebc",
+      "line_whitespace_only": true
+    }
+  ],
+  "build_vs_final_line_content_equal": true,
+  "resource_delta_from_snes_osd1_baseline": {
+    "T_Register": 212,
+    "T_Alu": 34,
+    "T_Lut": 138,
+    "T_MULTALU27X18": 0,
+    "T_MULT12X12": 0,
+    "T_MULT27X36": 0,
+    "T_Bsram": 0
+  },
+  "source_commits": {
+    "firmware-bl616": "70d39d8097281ffb661feb3eafd44d79015b9f43",
+    "snestang": "a142a290bbea9952e7bfea563d773e2b663665cb"
+  }
+}

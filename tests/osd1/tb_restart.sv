@@ -10,7 +10,11 @@ module tb_restart;
     wire [31:0] core_config,osd_window;
     wire osd_input_block;
     reg [11:0] joy1=0,joy2=0;
-    iosys_bl616 #(.FREQ(FREQ),.SUPPORT_RESTART(1)) dut(
+    iosys_bl616 #(.FREQ(FREQ),.SUPPORT_RESTART(1)
+`ifdef HAS_SNES_CRT
+        ,.SUPPORT_CRT(1)
+`endif
+    ) dut(
         .clk(clk),.hclk(hclk),.resetn(resetn),.uart_rx(uart_rx),.uart_tx(uart_tx),
         .game_reset(game_reset),.overlay_x(8'b0),.overlay_y(8'b0),
         .joy1(joy1),.joy2(joy2),.osd_visible(1'b0),.osd_input_block(osd_input_block),
