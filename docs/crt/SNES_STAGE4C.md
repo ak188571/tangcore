@@ -31,3 +31,11 @@ firmware照合後、一時的にSNESのtitles.csvへcrt_v1列を追加する。n
 2回目は同じfirmwareで通常起動し、Reset recordにより、その時点の推奨値であるbuilt-in全OFFが選ばれることを確認する。INITIAL DEFAULT、STORE RESET、DEFAULTS MISSINGを確認し、SAVEは実行しない。これによりCSVの古い数値を固定せず、metadata復旧後の推奨値へ追従する範囲を確認する。SYSTEM/GLOBALの実採用、不正defaults全体拒否、全ゲーム/全接続先、物理SD故障、USB保存を実機合格とする試験ではない。
 
 新しい実機結果は後続の記録へ追記する。手順はSNES_STAGE4C_TEST_GUIDE.mdとkitの日本語ODTに示す。
+
+## 実機導入記録
+
+同日、S4bの2回目起動後のSD全65fileを新しく退避し、保存後snapshotとの内容・属性の一致を確認した。全flashの独立2回の読取りと書込み直前の再読取りも一致し、確認済みS4b全flashと同じだった。途中のresident読取りはhandshakeに失敗したが、失敗logを保持してbootromの読取り再試行で2回目の一致を得た。この失敗によるflash書込みはなかった。
+
+新しいBOOT接続でS4c firmwareを0x40000へ1回だけ書き、全4MiBを読戻した。firmware全byteとcustom領域外の不変を照合した。SNES imageはS3bと一致していたため再copyしなかった。
+
+その後、一時SNES推奨値を導入した。SDは66fileとなり、変更はSNES titles.csvのcrt_v1列と新規defaults.tsvだけ。name/title/行順、元のtitles属性、その他の既存64fileの内容・属性は不変で、実USER record両slotも変更していない。flash utilityの原file復元も照合した。実機での起動・Reset・保存・追従は未確認。詳細は`deployment.json`。

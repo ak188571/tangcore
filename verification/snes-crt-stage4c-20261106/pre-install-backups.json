@@ -14,7 +14,7 @@
   "read_only_connection_failure": {
     "mode": "resident",
     "log": "before-b4f180d4.log",
-    "error": "EFLSH loader handshake failed",
+    "error": "BFLB EFLASH LOADER SHAKEHAND FAIL",
     "retry_mode": "bootrom",
     "retry": "passed_independent_second_read"
   },

@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-06",
+  "stage": "S4c",
+  "status": "installed_readback_verified_runtime_pending",
+  "source_commits": {
+    "firmware-bl616": "8f05446158d005eae095839aa2f494021adb700d",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
+  },
+  "firmware": {
+    "file": "firmware/tangcore_bl616.bin",
+    "bytes": 230960,
+    "sha256": "cc7a60c5b51c5a7e031e02c6fb3299e30b6ecff512a7e840ed1f6b1f99002b44"
+  },
+  "retained_snes_image": {
+    "file": "cores/console138k/snestang.bin",
+    "bytes": 5066442,
+    "sha256": "bcc879e4f6da1194b8fa43edb487f71ac13c8b6037086558a42b6fa80b0dc429"
+  },
+  "fresh_backup_SD_files": 65,
+  "S4b_post_cold_boot_contents_and_attributes_unchanged": true,
+  "independent_full_flash_backups_match": true,
+  "preflight_matches_fresh_backup": true,
+  "firmware_program_operations": 1,
+  "whole_flash_readback_verified": true,
+  "whole_flash_readback_sha256": "6a016e80989803807045a3a54b9eb2c33801dba802fb33f88d0cebc1cb26b6f4",
+  "custom_bounds": [
+    262144,
+    524288
+  ],
+  "boot_area_and_from_0x80000_unchanged": true,
+  "SD_files_after_install": 66,
+  "metadata_modified_files": [
+    "snes/titles.csv",
+    "crt/defaults.tsv"
+  ],
+  "all_other_64_original_contents_and_attributes_unchanged": true,
+  "original_titles_attributes_preserved": true,
+  "Japanese_names_titles_and_row_order_preserved": true,
+  "actual_USER_records_untouched": true,
+  "FPGA_image_recopy": false,
+  "flash_utility_original_files_restored": true,
+  "temporary_metadata_cleanup": "pending after Reset trial and fresh capture",
+  "hardware_status": "pending",
+  "planned_snes_launches": 2
+}

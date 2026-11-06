@@ -1,9 +1,9 @@
 {
   "date": "2026-11-06",
   "stage": "S4c",
-  "status": "PC_validated_hardware_pending",
-  "device_programmed": false,
-  "sd_written": false,
+  "status": "installed_runtime_pending",
+  "device_programmed": true,
+  "sd_written": true,
   "source_commits": {
     "firmware-bl616": "8f05446158d005eae095839aa2f494021adb700d",
     "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
@@ -29,5 +29,8 @@
     "No inference from NES or host results",
     "No physical SD fault injection",
     "USB save and other controller ports unvalidated"
-  ]
+  ],
+  "readback_verified": true,
+  "flash_program_operations": 1,
+  "temporary_metadata_installed": true
 }
