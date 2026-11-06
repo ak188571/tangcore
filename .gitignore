@@ -1,4 +1,7 @@
 bouffalo_sdk
 bouffalo_sdk_harbaum
 
+# Generated OSD1 host/RTL verification output.
+build-osd1-tests/
+
 

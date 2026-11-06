@@ -1,0 +1,464 @@
+{
+  "date": "2026-11-06",
+  "board": "Console138K",
+  "scope": [
+    "NES OSD1",
+    "SNES OSD1",
+    "existing NES OSD2 regression"
+  ],
+  "target_branch": "tangcore-integrated",
+  "integration_baseline": "3aacc1d0402d3457602aebe048fb99fc0937be36",
+  "monitor_gitlink_unchanged": true,
+  "sources": {
+    "firmware": {
+      "repository": "https://github.com/ak188571/firmware-bl616.git",
+      "baseline": "dc5ff3faded02215042ebd4e9cffb7adf480a37d",
+      "commit": "7749b609ef722f1c3a0bee4fbd1bd0c02f1fa038",
+      "matches_deployed_build_source": true,
+      "comparison": "byte equality after CRLF-to-LF normalization only",
+      "eol_normalized_files": [
+        "tests/ui16/osd_test.cpp",
+        "tools/ui16/test_launch_adapters.py",
+        "tools/ui16/test_osd.sh",
+        "tools/ui16/test_osd_driver.py"
+      ],
+      "committed_file_sha256": {
+        "main.cpp": "424cb89996d70608b1d600901709dea3dc0d32a3df89d40412a2ccb878b5e2ee",
+        "tests/ui16/osd_test.cpp": "5c7f213947a5d2d0382258eacce3a35cee5960a87f74fa3ec9d11bfc12631d0c",
+        "tools/ui16/test_launch_adapters.py": "3f1a948d8e48d2cc4c784e01a4402dcc11735d4646161918664c7b8261c83f4f",
+        "tools/ui16/test_osd.sh": "58d2ca76d0d20f5dd8c7de71952f70da5d5e5be501a95028c255dd6d248da606",
+        "tools/ui16/test_osd_driver.py": "70aa75f7505255dbbc6c08c0f8a6bcd8d6ba24821d95487051cc1bfe26d9b9fd",
+        "ui/ui16_osd_menu.cpp": "39b11519eebfa29d60b0b4b115689adb7361af53062953b86f480637d46e1f07",
+        "ui/ui16_system_osd.cpp": "8605ffcf40ead227011e9d1a9c37562a0d168a333bd0534eb797ca6729bb376f",
+        "ui/ui16_system_osd.h": "52d8f9e4b46e47a919fb2e01484c06cba61655ffb20342f56e65c7eacf6181de",
+        "tools/ui16/test_osd1_dispatch.py": "6a8ac6a111dff5fd90d1957308b1d777f60a430659a0c778b7de88f84b56166e"
+      }
+    },
+    "nes": {
+      "repository": "https://github.com/ak188571/nestang.git",
+      "baseline": "84b73f76e8a08bdcff45c208349955271bb2d2a1",
+      "commit": "ec33410f2e6078fa20378df3cdae20f84aaf03e9",
+      "matches_deployed_build_source": true,
+      "comparison": "byte equality after CRLF-to-LF normalization only",
+      "eol_normalized_files": [],
+      "committed_file_sha256": {
+        "src/iosys/iosys_bl616.v": "f6c7e3522d18f49e96d1c05eed2b9d09a0e8e2eae13bec4fe4e77de5c5cd9b65",
+        "src/nestang_console138k_usb_top.sv": "c1fef93e4c1a9d0da4e16976b94a99376fd9ab320733d5e661dd0e0c07565580"
+      }
+    },
+    "snes": {
+      "repository": "https://github.com/ak188571/snestang.git",
+      "baseline": "f6cfb942f473aea27af84fb0e42290eb5c560839",
+      "commit": "32433c52398ab1c65047cabfc77fafb34648ed35",
+      "matches_deployed_build_source": true,
+      "comparison": "byte equality after CRLF-to-LF normalization only",
+      "eol_normalized_files": [],
+      "committed_file_sha256": {
+        "src/iosys/iosys_bl616.v": "46f7cc684cffd9a0eda72b81b8a827ec090930d9de3d648c6e3f24241a53dfcb",
+        "src/snestang_console138k_usb_top.v": "7bcfb5b673d44102c0b878b1d8ba007aa9b721ccc2a132ca5f31331969f6b00b"
+      }
+    }
+  },
+  "builds": {
+    "firmware": {
+      "passed": true,
+      "artifact_bytes": 228768,
+      "artifact_sha256": "a24f7e0bb3360a50edf546ef0e77331ffb9295677b75b21594a8bd4452874fe0",
+      "evidence": "prepublication build used for hardware deployment; not rebuilt for publication"
+    },
+    "nes": {
+      "passed": true,
+      "artifact_bytes": 4675166,
+      "artifact_sha256": "df617dd4435d9345b3c9be2ea80e3b4a7e8a2d5bb9e94dab7cc6bafef1f7c5a4",
+      "evidence": "prepublication build used for hardware deployment; not rebuilt for publication",
+      "tool": "Gowin V1.9.12.03",
+      "timing": {
+        "Numbers of Setup Violated Endpoints": 0,
+        "Numbers of Hold Violated Endpoints": 0
+      },
+      "warnings_by_code": {
+        "EX2478": 74,
+        "EX3638": 9,
+        "EX3680": 1,
+        "EX3628": 1,
+        "EX3069": 1,
+        "EX2830": 2,
+        "EX3671": 2,
+        "EX3073": 7,
+        "EX3791": 39,
+        "EX3670": 63,
+        "EX2882": 1,
+        "EX3780": 33,
+        "EX2565": 216,
+        "EX1998": 12,
+        "EX0211": 1,
+        "CV0016": 2,
+        "NL0002": 24,
+        "CK3000": 5,
+        "PA1019": 3,
+        "PR1014": 1
+      },
+      "pulse_width_report_rows": [
+        [
+          "1",
+          "2.252",
+          "3.152",
+          "0.900",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "2",
+          "2.257",
+          "3.157",
+          "0.900",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "3",
+          "2.342",
+          "3.242",
+          "0.900",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host2/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "4",
+          "2.347",
+          "3.247",
+          "0.900",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host2/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "5",
+          "2.377",
+          "3.277",
+          "0.900",
+          "Low Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "6",
+          "2.382",
+          "3.282",
+          "0.900",
+          "Low Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "7",
+          "2.487",
+          "3.387",
+          "0.900",
+          "Low Pulse Width",
+          "clk96",
+          "usb_hid_host2/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "8",
+          "2.492",
+          "3.392",
+          "0.900",
+          "Low Pulse Width",
+          "clk96",
+          "usb_hid_host2/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "9",
+          "2.919",
+          "3.144",
+          "0.225",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/enumeration/index_6_s0"
+        ],
+        [
+          "10",
+          "2.919",
+          "3.144",
+          "0.225",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/enumeration/memory[98]_5_s0"
+        ]
+      ]
+    },
+    "snes": {
+      "passed": true,
+      "artifact_bytes": 5002954,
+      "artifact_sha256": "92e357a3641322fc6b67e843751b53f74eea27eda0499a9a05574a1b752ef987",
+      "evidence": "prepublication build used for hardware deployment; not rebuilt for publication",
+      "tool": "Gowin V1.9.12.03",
+      "timing": {
+        "Numbers of Setup Violated Endpoints": 0,
+        "Numbers of Hold Violated Endpoints": 0
+      },
+      "warnings_by_code": {
+        "EX2478": 72,
+        "EX3555": 1,
+        "EX3638": 3,
+        "EX3073": 7,
+        "EX3780": 5,
+        "EX3791": 105,
+        "EX2420": 1,
+        "EX2565": 181,
+        "EX3858": 5,
+        "EX1998": 80,
+        "EX3670": 7,
+        "EX0211": 23,
+        "IF0005": 1,
+        "NL0002": 49,
+        "CK3000": 5,
+        "PA1019": 3,
+        "PR1014": 1
+      },
+      "pulse_width_report_rows": [
+        [
+          "1",
+          "2.491",
+          "3.391",
+          "0.900",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "2",
+          "2.496",
+          "3.396",
+          "0.900",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "3",
+          "2.547",
+          "3.447",
+          "0.900",
+          "Low Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "4",
+          "2.552",
+          "3.452",
+          "0.900",
+          "Low Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "5",
+          "2.581",
+          "3.481",
+          "0.900",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host2/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "6",
+          "2.585",
+          "3.485",
+          "0.900",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host2/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "7",
+          "2.657",
+          "3.557",
+          "0.900",
+          "Low Pulse Width",
+          "clk96",
+          "usb_hid_host2/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "8",
+          "2.662",
+          "3.562",
+          "0.900",
+          "Low Pulse Width",
+          "clk96",
+          "usb_hid_host2/fs/control/memory_memory_0_0_s"
+        ],
+        [
+          "9",
+          "3.147",
+          "3.372",
+          "0.225",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/enumeration/header[2]_3_s0"
+        ],
+        [
+          "10",
+          "3.147",
+          "3.372",
+          "0.225",
+          "High Pulse Width",
+          "clk96",
+          "usb_hid_host/fs/enumeration/header[2]_0_s0"
+        ]
+      ]
+    }
+  },
+  "publication_checkout_tests": {
+    "passed": true,
+    "tests": [
+      {
+        "name": "host-osd",
+        "exit_code": 0,
+        "seconds": 5.91
+      },
+      {
+        "name": "host-crt",
+        "exit_code": 0,
+        "seconds": 2.58
+      },
+      {
+        "name": "host-launch",
+        "exit_code": 0,
+        "seconds": 5.59
+      },
+      {
+        "name": "host-crt_defaults",
+        "exit_code": 0,
+        "seconds": 0.77
+      },
+      {
+        "name": "host-crt_restore",
+        "exit_code": 0,
+        "seconds": 1.08
+      },
+      {
+        "name": "host-crt_save",
+        "exit_code": 0,
+        "seconds": 1.25
+      },
+      {
+        "name": "host-rom_id",
+        "exit_code": 0,
+        "seconds": 0.7
+      },
+      {
+        "name": "host-titles",
+        "exit_code": 0,
+        "seconds": 3.41
+      },
+      {
+        "name": "host-folders",
+        "exit_code": 0,
+        "seconds": 3.91
+      },
+      {
+        "name": "host-scroll",
+        "exit_code": 0,
+        "seconds": 3.01
+      },
+      {
+        "name": "host-wrap",
+        "exit_code": 0,
+        "seconds": 6.67
+      },
+      {
+        "name": "host-dispatch",
+        "exit_code": 0,
+        "seconds": 0.33
+      },
+      {
+        "name": "uart-nes",
+        "exit_code": 0,
+        "seconds": 13.47
+      },
+      {
+        "name": "uart-snes",
+        "exit_code": 0,
+        "seconds": 13.5
+      }
+    ]
+  },
+  "rtl_fixture_sha256": "102da0295f888120d76ec8550648e31329f129c25b2b21917a0d01fca3e6a1f0",
+  "hardware": {
+    "board": "Console138K",
+    "evidence_type": "user_report",
+    "raw_reports": [
+      {
+        "text": "1-3正常",
+        "request_scope": "通常起動、日本語一覧/CSV順序、NESの映像/音声/操作、OSD1中央2項目、X/Y復帰、Restart Gameによるタイトル復帰を2回"
+      },
+      {
+        "text": "正常動作を確認。snesはスーパーマリオコレクション、nesはドクターマリオとパックマン",
+        "request_scope": "SNESの映像/音声/操作、OSD1中央表示、取消し復帰、タイトルへの再起動2回、一覧復帰。NES/SNESのゲーム名。"
+      },
+      {
+        "text": "1-3正常。P2を接続して確認",
+        "request_scope": "NESの一覧復帰と別ゲーム起動、OSD2の5位置とOSD1中央固定、排他表示と長押し/部分解放、P2のOSD呼出し抑止と通常ゲーム入力。"
+      }
+    ],
+    "normal_boot_and_japanese_list": "user_reported_pass",
+    "titles_csv_order": "user_reported_pass",
+    "nes": {
+      "game_name": "ドクターマリオ、パックマン",
+      "game_names": [
+        "ドクターマリオ",
+        "パックマン"
+      ],
+      "video_audio_controls": "user_reported_pass",
+      "osd1_center_and_two_items": "user_reported_pass",
+      "cancel_resume": "user_reported_pass",
+      "restart_to_title_twice": "user_reported_pass",
+      "return_to_game_list": "user_reported_pass",
+      "another_game_after_list_return": "user_reported_pass"
+    },
+    "snes": {
+      "game_name": "スーパーマリオコレクション",
+      "video_audio_controls": "user_reported_pass",
+      "osd1_center_and_two_items": "user_reported_pass",
+      "cancel_resume": "user_reported_pass",
+      "restart_to_title_twice": "user_reported_pass",
+      "return_to_game_list": "user_reported_pass"
+    },
+    "osd2_five_positions_and_osd1_fixed_center": "user_reported_pass",
+    "mutual_exclusion_and_held_input": "user_reported_pass",
+    "p2_opening_blocked_and_gameplay": "user_reported_pass",
+    "p2_check_scope": "最後のNES確認でP2も接続して確認したとの報告。SNESのP2は独立した確認結果を記録していない。",
+    "controller_type_and_connection": null,
+    "rom_retransfer_wire_trace": "not_measured",
+    "save_ram_content_retention": "not_tested",
+    "launch_time": "not_measured"
+  },
+  "deployment_checks": {
+    "evidence_type": "local host verification at deployment",
+    "independent_prewrite_full_flash_reads_identical": true,
+    "programmed_firmware_readback_matches": true,
+    "flash_outside_firmware_slot_unchanged": true,
+    "sd_images_updated": [
+      "NES",
+      "SNES"
+    ],
+    "other_sd_files_unchanged": 61,
+    "sd_file_attributes_preserved": true,
+    "existing_crt_records_preserved_at_deployment": true
+  },
+  "limitations": [
+    "SNES CRT/OSD2 is not implemented by this change.",
+    "No-ROM-retransfer is established by source and UART/RTL tests; physical UART trace was not captured.",
+    "Save RAM contents were not compared; power-on-equivalent work RAM clearing is not guaranteed.",
+    "Total game launch time was not measured; Restart Game remains present.",
+    "All games, mappers, expansion chips and long-duration operation were not tested.",
+    "Hardware checks are user reports for the named games; controller identity and an independent SNES P2 result were not recorded.",
+    "Setup/hold endpoints are zero; existing warnings and other timing report categories are not a claim of warning-free timing closure."
+  ]
+}
