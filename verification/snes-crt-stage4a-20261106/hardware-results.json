@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-06",
+  "stage": "S4a",
+  "status": "pending",
+  "device_programmed": false,
+  "sd_written": false,
+  "source_commits": {
+    "firmware-bl616": "cffb1fa34995e9e511e77e432ff979bfa6b43c6d",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
+  },
+  "planned_snes_launches": 1,
+  "temporary_PC_fixture": "crt/02-232bb5b8-0000000000200000.a",
+  "save_reset_available": false
+}

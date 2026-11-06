@@ -1,0 +1,10 @@
+[  2%] Built target mm
+[  8%] Built target utils
+[ 29%] Built target app
+[ 38%] Built target std
+[ 43%] Built target cherryusb
+[ 68%] Built target libc
+[ 73%] Built target freertos
+[ 77%] Built target fatfs
+[ 99%] Built target lhal
+[100%] Built target tangcore_bl616.elf

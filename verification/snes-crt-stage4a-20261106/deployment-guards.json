@@ -1,0 +1,18 @@
+{
+  "tests_run": 33,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "device_access": false,
+  "storage_media_written": false,
+  "helper_sha256": {
+    "deploy.py": "6964ab10af1d088847c6d8a41410a92b095865706e16fcecec333a698e22c8cd",
+    "test_deploy.py": "40dc4a8089ec366d2deaaaa391d129460a5d2fcbfb56c4cf554cb006117ad267",
+    "lib/console138k.py": "62ddb5445bfbbd662c1ffa4421e35ee6c63b2eaf6e5298083b4af82389001a2f"
+  },
+  "guide": {
+    "file": "TEST_GUIDE_20261106.odt",
+    "sha256": "409682cfedb48ce3d3cfe54864771cefba297567c6af1745485509d92d8c3acd",
+    "language": "ja-JP"
+  }
+}

@@ -1,0 +1,22 @@
+
+D:\Users\foobaris\.codex\.chatgpt-projects\g-p-6aae4d27d7508191b5fefb0113656c14\crt-osd2-20261101\firmware-bl616\build-snes-crt-stage4a\build_out\tangcore_bl616.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .init:
+
+Disassembly of section .text:
+
+a00132cc <MMC_disk_read>:
+a00132cc:	62fcd7b7          	lui	a5,0x62fcd
+a00132d0:	86b2                	mv	a3,a2
+a00132d2:	c247d603          	lhu	a2,-988(a5) # 62fccc24 <gSDCardInfo+0xcc>
+a00132d6:	1141                	addi	sp,sp,-16
+a00132d8:	c606                	sw	ra,12(sp)
+a00132da:	109170ef          	jal	ra,a002abe2 <__wrap_SDH_ReadMultiBlocks>
+a00132de:	40b2                	lw	ra,12(sp)
+a00132e0:	00a03533          	snez	a0,a0
+a00132e4:	40a00533          	neg	a0,a0
+a00132e8:	0141                	addi	sp,sp,16
+a00132ea:	8082                	ret
+
+Disassembly of section .itcm_region:

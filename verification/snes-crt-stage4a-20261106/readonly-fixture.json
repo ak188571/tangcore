@@ -1,0 +1,20 @@
+{
+  "target": "crt/02-232bb5b8-0000000000200000.a",
+  "file": "crt/02-232bb5b8-0000000000200000.a",
+  "bytes": 32,
+  "sha256": "8e15c4896c8cd1c915deb0029c3eb2207f367a06e68f4e0bce6808ed95429e3e",
+  "rom_relative": "snes/Super Mario Collection (Japan).sfc",
+  "rom_sha256": "adde6487d77eab714d5eca7d7c49299be64928dd93bb4198baa59a7aa2fd0c92",
+  "rom_size": 2097152,
+  "rom_crc32": "232bb5b8",
+  "system": 2,
+  "generation": 1,
+  "kind": 0,
+  "settings": {
+    "enabled": true,
+    "blur": 2,
+    "scanline": 1
+  },
+  "origin": "PC-created test fixture; not a firmware SAVE",
+  "temporary": true
+}
