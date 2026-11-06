@@ -29,5 +29,5 @@
   "other_sd_files_unchanged_at_install": 62,
   "all_sd_file_attributes_preserved_at_install": true,
   "sdk_utility_configuration_restored": true,
-  "hardware_gameplay_status": "pending"
+  "hardware_gameplay_status": "user_confirmed_for_named_game_scope"
 }

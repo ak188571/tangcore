@@ -1,10 +1,33 @@
 {
   "stage": "S1+S2",
   "date": "2026-11-06",
-  "status": "deployed; awaiting user gameplay checks",
+  "status": "user_confirmed_for_tested_game_scope",
   "device_programmed": true,
   "sd_written": true,
   "user_current_device_status": "Normal boot available; microSD can be moved to PC",
-  "controller_connection": null,
-  "readback_verified": true
+  "controller_connection": "USB P1 (SNES trial)",
+  "readback_verified": true,
+  "snes_game": "スーパーマリオコレクション",
+  "nes_game": "ドクターマリオ",
+  "snes_normal_boot_japanese_list_csv_order_video_audio_controls": "user_reported_pass",
+  "snes_osd2_display_order_items_1_to_13": "user_reported_pass",
+  "snes_cancel_full_release_reopen_off": "user_reported_pass",
+  "snes_osd_mutual_exclusion_and_both_chords": "user_reported_pass",
+  "snes_osd1_restart_and_osd2_reopen": "user_reported_pass",
+  "snes_osd1_return_list": "user_reported_pass",
+  "nes_regression_existing_crt_values_preview_cancel_osd1_list": "user_reported_pass",
+  "return_nes_to_snes_default_unavailable": "user_reported_pass",
+  "new_save_or_reset_operations_requested": false,
+  "raw_user_reports": [
+    "1-4正常動作、USB P1",
+    "1-13正常",
+    "1-4正常動作",
+    "すべて正常。ドクターマリオとスーパーマリオコレクション"
+  ],
+  "limitations": [
+    "SNES trial connection USB P1; P2/DS2/BL616 USB not independently checked.",
+    "Controller identity was not re-read in this trial.",
+    "No all-games/all-video-modes/long-duration claim.",
+    "SD file/attribute equality was measured at installation, not re-read after gameplay."
+  ]
 }
