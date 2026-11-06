@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-06",
+  "stage": "SNES S3a horizontal blur",
+  "source_commits": {
+    "firmware-bl616": "3560c1b429a36fc35a02c840f8dcfeb7f8b4f7e5",
+    "snestang": "ac7fe8f48ff1cf38af735198ae824bf0654f5ab5"
+  },
+  "artifacts": {
+    "firmware": {
+      "file": "firmware/tangcore_bl616.bin",
+      "bytes": 229168,
+      "sha256": "c19bffa18855ffd38ea56ce5bc0f452463551bf6239bf05a5a0cdfcae3d42e5c"
+    },
+    "snes": {
+      "file": "cores/console138k/snestang.bin",
+      "bytes": 5016064,
+      "sha256": "081ed1df198c62ad68fa178e82cc13d774bd3ed7baaebe41d5f1072af2e77357"
+    }
+  },
+  "fresh_sd_backup_files": 63,
+  "independent_full_flash_reads_match": true,
+  "prewrite_full_flash_matches_fresh_backup": true,
+  "firmware_full_byte_readback_matches": true,
+  "flash_before_0x40000_unchanged": true,
+  "flash_from_0x80000_unchanged": true,
+  "flash_program_operations": 1,
+  "readback_connection_recovery": {
+    "initial_bootrom_handshake_failed": true,
+    "resident_read_only_retry_verified": true,
+    "additional_program_operations": 0
+  },
+  "sd_updated": [
+    "cores/console138k/snestang.bin"
+  ],
+  "other_sd_files_unchanged_at_install": 62,
+  "all_sd_file_attributes_preserved_at_install": true,
+  "sdk_utility_configuration_restored": true,
+  "generated_utility_files_restored": true,
+  "fresh_rollback_pair_matches_verified_S1": true,
+  "post_S1_trial_sd_content_attribute_changes": 0,
+  "hardware_gameplay_status": "pending"
+}

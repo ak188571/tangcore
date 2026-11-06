@@ -1,9 +1,9 @@
 {
   "date": "2026-11-06",
   "stage": "S3a",
-  "status": "pending",
-  "device_programmed": false,
-  "sd_written": false,
+  "status": "deployed_hardware_trial_pending",
+  "device_programmed": true,
+  "sd_written": true,
   "source_commits": {
     "firmware-bl616": "3560c1b429a36fc35a02c840f8dcfeb7f8b4f7e5",
     "snestang": "ac7fe8f48ff1cf38af735198ae824bf0654f5ab5"

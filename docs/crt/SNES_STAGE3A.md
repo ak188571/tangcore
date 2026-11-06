@@ -35,3 +35,11 @@ SNES `ac7fe8f`、共有firmware `3560c1b`をcommitした。FPGAの合成・配�
 共有firmwareは229,168byte、SHA256 `c19bffa18855ffd38ea56ce5bc0f452463551bf6239bf05a5a0cdfcae3d42e5c`。関連試験16command、導入scriptの代替媒体/flash試験27件に合格した。build中の設計file不変、commitした入力180fileとの改行正規化後の一致、rootのDSP初期値2fileとS1基準の一致を確認した。
 
 実機確認手順は`SNES_STAGE3A_TEST_GUIDE.md`、ODT版はlocal導入用directoryにある。導入時には現在のS1のSD/flashを新しく退避し、別段階の古い退避を今回の直前状態として扱わない。
+
+## 実機導入記録
+
+同日に導入した。SDの63fileを新しく退避し、独立した全flash読取り2回と書込み直前の読取りの一致を確認した。今回の退避は実機確認済みS1のfirmware/SNES imageと一致し、S1実機試験後のSD内容・属性の変更は0だった。
+
+SDはSNES imageだけを更新し、他62fileと全file属性を維持した。firmwareは0x40000から1回だけ書き込み、全4MiBの読戻しでfirmware全byteの一致、0x40000未満および0x80000以降の不変を確認した。最初の読戻しはbootrom接続のhandshakeで失敗したため、再書込みせずresident modeの読取りで検証を完了した。utility設定と生成fileの復元も検証済み。詳細は`deployment.json`に記録した。
+
+S3aのSNES実機画質確認と共有firmwareのNES回帰は未確認。S1の合格をS3aへ引き継がず、実機報告を待つ。
