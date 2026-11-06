@@ -1,7 +1,7 @@
 {
   "date": "2026-11-06",
   "stage": "S3a",
-  "status": "snes_user_confirmed_nes_regression_pending",
+  "status": "user_confirmed_for_reported_scope",
   "device_programmed": true,
   "sd_written": true,
   "readback_verified": true,
@@ -12,8 +12,11 @@
   "snes_blur_three_strengths_edges_position_bypass_osd_sharpness": "user_reported_pass",
   "snes_cancel_hold_full_release_reopen_off": "user_reported_pass",
   "snes_osd1_restart_blur_ack_and_return_list": "user_reported_pass",
-  "nes_regression": "pending",
-  "raw_user_reports": ["正常", "1-13正常", "1-3正常"],
+  "nes_game": "ドクターマリオ (requested setup; no alternative reported)",
+  "nes_osd2_display_order_items_1_to_13": "user_reported_pass",
+  "nes_other_requested_checks": "not_separately_reported_in_this_response",
+  "user_constraint": "Minimize SNES game launches because loading is slow; combine necessary checks within one launch per stage where possible.",
+  "raw_user_reports": ["正常", "1-13正常", "1-3正常", "1-13正常。snesのゲーム起動は時間がかかるので最小限にしてもらいたい"],
   "limitations": [
     "Results apply to the requested SNES game and USB P1 setup; user did not specify an alternative.",
     "Controller identity was not re-read. P2/DS2/BL616 USB not independently tested.",
