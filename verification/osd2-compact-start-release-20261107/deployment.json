@@ -34,5 +34,6 @@
   "flash_utility_original_files_restored": true,
   "hardware_status": "pending",
   "planned_SNES_launches": 1,
-  "planned_NES_launches": 1
+  "planned_NES_launches": 1,
+  "SNES_trial_report": "user_reported_normal_OSD_1_to_9_START_input_block_direction_release_items_1_to_3_pass"
 }

@@ -37,3 +37,9 @@ SNES imageは現物・新退避・payloadのSHA256が等しく、copy分岐へ�
 同日、新しいBOOT接続で修正版firmwareを0x40000へ1回だけ書き込んだ。全4MiBを読戻し、firmware全byteとcustom領域外の不変を照合した。SD全65file・属性は新しい退避と一致し、Reset .a generation 7・USER .b generation 6も不変だった。metadataやFPGA imageのcopyはなく、SD書込みは0回。flash utilityの原file復元も確認した。
 
 修正版のSTART保持後の追加入力遮断と全解放後の操作は、これから実機で確認する。PC結果から合格を推定しない。詳細は`deployment.json`。
+
+## SNESの修正版報告
+
+通常起動・日本語一覧・titles.csv順序・映像・音声・操作の依頼に「正常」、OSD2の確認に「1-9正常、start押下中は入力が遮断される」、保持中の方向遮断・全解放後の操作・縮小復帰と取消しの項目1〜3に「1-3正常」と利用者から報告された。依頼したスーパーマリオコレクション・USB P1の範囲で、START保持後に追加するA/B・方向の遮断と全解放後の操作を正常として記録する。
+
+NES回帰と、試験後の全65file・属性・現在のReset generation 7/USER generation 6の不変は未確認。追加のSNES起動は依頼せず、NES 1回と最終SD読取り照合へ進む。

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "stage": "compact OSD2 START full-release guard",
-  "status": "installed_runtime_pending",
+  "status": "SNES_user_reported_pass_NES_and_SD_pending",
   "firmware_source": "a1b6755a271e8dfc29f388e85bb3aef772862f18",
   "firmware_sha256": "943f883476aa57d49367c0b19992553c42ee36e68b36938d5f80f626cf1ec622",
   "host_groups_passed": 15,
@@ -15,10 +15,37 @@
   "actual_user_records_preserved": true,
   "device_written": true,
   "SD_written": false,
-  "hardware_tested": false,
+  "hardware_tested": true,
   "planned_SNES_launches": 1,
   "planned_NES_launches": 1,
   "scope": "Block A/B/direction added while START remains held; accept new operations after full release; no changed-value SAVE or metadata update in retest",
   "readback_verified": true,
-  "flash_program_operations": 1
+  "flash_program_operations": 1,
+  "tested_scope": "Reported Super Mario Collection / USB P1 only; NES and final SD audit pending",
+  "SNES_trial": {
+    "requested_game": "Super Mario Collection (Japan)",
+    "connection": "USB P1",
+    "normal_boot_Japanese_list_CSV_order_video_audio_controls": "user_reported_normal",
+    "OSD_information_items_and_START_input_block": "user_reported_1_to_9_normal_and_input_blocked_while_START_pressed",
+    "later_AB_while_START_on_SAVE_row": "user_reported_input_blocked",
+    "later_direction_while_START": "user_reported_pass",
+    "operations_after_all_buttons_up": "user_reported_pass",
+    "shrink_background_video_audio_cancel": "user_reported_pass_in_grouped_items_1_to_3"
+  },
+  "raw_user_reports": [
+    {
+      "section": "SNES_normal_boot",
+      "answer": "正常"
+    },
+    {
+      "section": "SNES_OSD_and_START_guard",
+      "answer": "1-9正常、start押下中は入力が遮断される"
+    },
+    {
+      "section": "SNES_direction_release_and_return_items_1_to_3",
+      "answer": "1-3正常"
+    }
+  ],
+  "NES_regression": "pending",
+  "post_runtime_SD_invariance": "pending"
 }
