@@ -36,5 +36,6 @@
   "flash_utility_original_files_restored": true,
   "hardware_status": "pending",
   "planned_SNES_launches": 1,
-  "planned_NES_launches": 1
+  "planned_NES_launches": 1,
+  "first_SNES_trial_report": "user_reported_normal_compact_1_to_8_information_1_to_9_and_A_to_C"
 }

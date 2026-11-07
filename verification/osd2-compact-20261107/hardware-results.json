@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "stage": "compact OSD2",
-  "status": "installed_runtime_pending",
+  "status": "SNES_user_reported_pass_NES_and_SD_invariance_pending",
   "firmware_source": "8bf3c7037ee5df457919be939de0c0c285ba5d99",
   "firmware_SHA256": "1416dba4ae61e0656d590f46025473301bee8f285f48772cde0988175b141e06",
   "normal_geometry_cells": [
@@ -18,7 +18,7 @@
   "shared_UI_scope": "NES_and_SNES_capable_sessions",
   "host_groups_passed": 15,
   "deployment_guards_passed": 30,
-  "hardware_tested": false,
+  "hardware_tested": true,
   "device_written": true,
   "SD_written": false,
   "planned_SNES_launches": 1,
@@ -26,5 +26,31 @@
   "SD_metadata_or_record_change_planned": false,
   "source_FPGA_NES_SNES_monitor_unchanged": true,
   "readback_verified": true,
-  "flash_program_operations": 1
+  "flash_program_operations": 1,
+  "tested_scope": "Reported Super Mario Collection / USB P1 only; NES and final SD audit pending",
+  "SNES_trial": {
+    "requested_game": "Super Mario Collection (Japan)",
+    "connection": "USB P1",
+    "normal_boot_Japanese_list_CSV_order_video_audio_controls": "user_reported_normal",
+    "compact_items_1_to_8": "user_reported_pass",
+    "information_items_1_to_9_and_steps_A_to_C": "user_reported_pass",
+    "START_hold_toggle_and_shrink_selection_value_position": "user_reported_pass_in_grouped_information_trial",
+    "actual_unchanged_SAVE_record_invariance": "pending_SD_audit"
+  },
+  "raw_user_reports": [
+    {
+      "section": "SNES_normal_boot",
+      "answer": "正常"
+    },
+    {
+      "section": "SNES_compact_items_1_to_8",
+      "answer": "1-8正常"
+    },
+    {
+      "section": "SNES_information_items_1_to_9_and_steps_A_to_C",
+      "answer": "1-9, A-C正常"
+    }
+  ],
+  "NES_regression": "pending",
+  "post_runtime_SD_invariance": "pending"
 }

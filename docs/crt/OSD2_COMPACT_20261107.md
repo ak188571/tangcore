@@ -54,3 +54,9 @@ SNES imageは現物・退避・payloadのSHA256が同じであり、helperのcop
 同日、新しいBOOT接続で小型OSD2 firmwareを0x40000へ1回だけ書き込んだ。全4MiBを読戻し、firmware全byteとcustom領域外の不変を確認した。SDは全65file・属性が新しい退避およびS4cの最終snapshotと一致し、SD書込みは0回。FPGA image、titles.csv、実USER/Reset recordは変更していない。flash utilityの原file復元も照合した。
 
 実機での通常表示・START開閉・縮小復帰・preview・操作は未確認であり、PC結果から合格を推定しない。詳細は`deployment.json`。
+
+## SNESの実機報告
+
+通常起動・日本語一覧・titles.csv順序・映像・音声・操作の依頼に「正常」、小型表示項目1〜8に「1-8正常」、補助表示項目1〜9と取消し・Reset preview・未変更SAVEのA〜Cに「1-9, A-C正常」と利用者から報告された。依頼したスーパーマリオコレクション・USB P1の範囲で、小型表示と略記、5位置、START保持・開閉、収納時の縮小復帰、選択・値・POS維持、preview・取消し・同値SAVEの表示を正常として記録する。
+
+同値SAVEによるrecord不変は表示だけで確定せず、NES回帰後の新しいSD退避で照合する。共有UIのNES実機結果と、試験後の全65file・属性の不変はまだ未確認である。SNESの確認は1回の起動へまとめており、追加のSNES起動は依頼しない。
