@@ -31,3 +31,9 @@ firmwareは230,960byte、SHA256 `943f883476aa57d49367c0b19992553c42ee36e68b36938
 同日、意図した保存更新を含む現在のSD全65fileを新しく退避し、観測済みのReset .a generation 7・USER .b generation 6および他file・全属性との一致を確認した。全flashを独立して2回読み、現行小型版の全flashと一致させた。書込み直前の追加読取りも新しい退避と一致した。
 
 SNES imageは現物・新退避・payloadのSHA256が等しく、copy分岐へ入らず保持した。保存値を以前のgenerationへ戻す処理はなく、SD/firmware書込みはまだ0回。新しいBOOT接続を受けてから修正版firmwareだけを書く。詳細は`pre-install-backups.json`。
+
+## 修正版の実機導入
+
+同日、新しいBOOT接続で修正版firmwareを0x40000へ1回だけ書き込んだ。全4MiBを読戻し、firmware全byteとcustom領域外の不変を照合した。SD全65file・属性は新しい退避と一致し、Reset .a generation 7・USER .b generation 6も不変だった。metadataやFPGA imageのcopyはなく、SD書込みは0回。flash utilityの原file復元も確認した。
+
+修正版のSTART保持後の追加入力遮断と全解放後の操作は、これから実機で確認する。PC結果から合格を推定しない。詳細は`deployment.json`。

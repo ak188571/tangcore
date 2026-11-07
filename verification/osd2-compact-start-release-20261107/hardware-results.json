@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "stage": "compact OSD2 START full-release guard",
-  "status": "PC_validated_runtime_pending",
+  "status": "installed_runtime_pending",
   "firmware_source": "a1b6755a271e8dfc29f388e85bb3aef772862f18",
   "firmware_sha256": "943f883476aa57d49367c0b19992553c42ee36e68b36938d5f80f626cf1ec622",
   "host_groups_passed": 15,
@@ -13,10 +13,12 @@
     "b": "USER generation6 value1"
   },
   "actual_user_records_preserved": true,
-  "device_written": false,
+  "device_written": true,
   "SD_written": false,
   "hardware_tested": false,
   "planned_SNES_launches": 1,
   "planned_NES_launches": 1,
-  "scope": "Block A/B/direction added while START remains held; accept new operations after full release; no changed-value SAVE or metadata update in retest"
+  "scope": "Block A/B/direction added while START remains held; accept new operations after full release; no changed-value SAVE or metadata update in retest",
+  "readback_verified": true,
+  "flash_program_operations": 1
 }
