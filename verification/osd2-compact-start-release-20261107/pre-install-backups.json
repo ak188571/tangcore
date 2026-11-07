@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-07",
+  "stage": "compact OSD2 START full-release guard",
+  "status": "fresh_backups_and_preflight_verified_before_firmware_write",
+  "fresh_SD_files": 65,
+  "current_user_confirmed_records_and_all_attributes_unchanged": true,
+  "baseline_records": {
+    "a": "Reset generation7 value0",
+    "b": "USER generation6 value1"
+  },
+  "independent_full_flash_reads_match": true,
+  "full_flash_matches_verified_current_compact_v1": true,
+  "whole_flash_sha256": "a228e41a807d88e68e6ad95d4edce7a6784e11552645b51931dcf90087f87645",
+  "preflight_matches_fresh_backup": true,
+  "preflight_at": "2026-11-07T14:37:58.897345+09:00",
+  "firmware_program_operations": 0,
+  "SD_write_operations": 0,
+  "SNES_image_retained_without_copy": true,
+  "old_generations_not_restored": true,
+  "recovery": "Fresh SD65/full flash x2/custom region rollback retained in session-01"
+}
