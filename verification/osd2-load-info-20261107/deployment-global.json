@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-07T16:20:56.293985+09:00",
+  "prior_system_runtime_SD_audit": "passed",
+  "fresh_capture": "post-system-01",
+  "captured_files": 66,
+  "system_test_all_66_file_contents_attributes_unchanged": true,
+  "current_fixture_phase": "global",
+  "changed_files_from_system": [
+    "crt/02-232bb5b8-0000000000200000.a",
+    "crt/defaults.tsv"
+  ],
+  "other_64_files_contents_attributes_unchanged": true,
+  "titles_ROMs_FPGA_images_NES_records_unchanged": true,
+  "firmware_written": false,
+  "FPGA_written": false,
+  "actual_a7_Reset_b6_USER_original_backups_retained": true,
+  "hardware_result": "pending_user_GLOBAL_BAD_SAVE_report",
+  "planned_snes_launches_total": 3
+}

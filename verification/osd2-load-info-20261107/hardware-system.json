@@ -21,7 +21,7 @@
   "preview_and_cancel": "passed",
   "load_snapshot_preserved_during_preview": "reported_passed_in_requested_group",
   "normal_boot_list_video_audio_controls": "requested_in_same_question; not individually restated in answer",
-  "runtime_SD_invariance": "pending fresh capture",
+  "runtime_SD_invariance": "passed; fresh post-system-01 capture, all 66 files and attributes unchanged",
   "global_hardware_result": "pending",
   "errors_hardware_result": "pending",
   "NES_regression": "pending",

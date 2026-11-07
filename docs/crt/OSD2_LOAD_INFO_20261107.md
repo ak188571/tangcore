@@ -3,7 +3,8 @@
 2026年11月7日。対象はConsole138K、共有BL616 firmware、SNESTangとNES回帰。
 実機合格済み小型版を基準とし、tangcore-integratedで実施する。
 SYSTEM／RECOVEREDの通常①〜⑧・補助①〜⑨・preview・取消しは実機正常とのユーザー報告を受領した。
-GLOBAL／異常時表示・NES回帰は未確認。SYSTEM試験後のSD不変照合も次の新しい退避で確認する。
+SYSTEM試験後のSD全66file・属性の不変を新しい退避で照合した。GLOBAL試験fileへ切替済み。
+GLOBAL／異常時表示・NES回帰は未確認。
 日本語一覧・映像・音声・通常操作は同じ質問で依頼したが、回答では個別には再記載されていない。
 PC試験の合格を実機合格とは扱わない。
 
