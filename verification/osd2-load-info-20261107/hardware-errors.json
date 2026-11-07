@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-07T16:41:03.200390+09:00",
+  "phase": "errors",
+  "evidence": "user-reported Console138K hardware observation",
+  "firmware_commit": "95c4416187bf19d42793336ba0390b75946d1614",
+  "system": "SNES",
+  "game": "スーパーマリオコレクション",
+  "connection": "USB P1",
+  "requested_snes_launches_this_phase": 1,
+  "requested_snes_launches_total": 3,
+  "normal_game_operation": "user-reported normal in requested group",
+  "normal_OSD_items_1_through_8": "passed",
+  "normal_reply": "通常動作と1-8に問題なし",
+  "info_items_1_through_9": "passed",
+  "info_reply": "1-9, A-Cは想定通りである",
+  "loaded_from": "BUILT-IN",
+  "save_read": "NEW SCHEMA",
+  "defaults": "BAD FILE",
+  "initial_settings": {
+    "crt": false,
+    "blur": "OFF",
+    "scan": "OFF"
+  },
+  "USER_SAVE_request_count_in_instructions": 1,
+  "SAVE_FAILED_and_stays_open": "reported expected in group A",
+  "load_snapshots_unchanged_after_failed_SAVE": "reported expected in group B",
+  "cancel_and_reopen_all_OFF_without_failure_status": "reported expected in group C",
+  "runtime_SD_invariance": "pending fresh capture",
+  "original_records_restoration": "pending fresh capture and exact fixture match",
+  "NES_regression": "pending",
+  "hardware_scope": "Reported SNES BUILT-IN/NEW SCHEMA/BAD FILE, expected SAVE failure and cancel; no physical I/O fault injection"
+}
