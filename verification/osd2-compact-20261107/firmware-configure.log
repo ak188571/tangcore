@@ -1,0 +1,35 @@
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/Users/foobaris/Documents/Gowin/tangcore/xuantie-gcc-riscv-v2.6.1-windows-x86_64/bin/riscv64-unknown-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/Users/foobaris/Documents/Gowin/tangcore/xuantie-gcc-riscv-v2.6.1-windows-x86_64/bin/riscv64-unknown-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/Users/foobaris/Documents/Gowin/tangcore/xuantie-gcc-riscv-v2.6.1-windows-x86_64/bin/riscv64-unknown-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Project SDK Version: 2.0.0
+LINK IN FLASH
+-- [register library : fatfs], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/fs/fatfs
+-- [register library : libc], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/libc
+-- [register library : mm], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/mm
+-- [register library : freertos], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/os/freertos
+-- [register library : cherryusb], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/usb/cherryusb
+-- [register library : utils], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/utils
+-- [register library : lhal], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal
+-- [register extern library : libcsi_xt900p32f_dsp], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal
+-- [register extern library : libpka], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal
+-- [register library : std], path:D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/soc/bl616/std
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CONFIG_USB_HS
+
+
+-- Build files have been written to: D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-snes-crt-stage5-compact

@@ -1,0 +1,30 @@
+{
+  "source_commit": "8bf3c7037ee5df457919be939de0c0c285ba5d99",
+  "branch": "tangcore-integrated",
+  "production_files_checked": 99,
+  "production_inputs_match_commit_and_build": true,
+  "firmware_bytes": 230960,
+  "firmware_sha256": "1416dba4ae61e0656d590f46025473301bee8f285f48772cde0988175b141e06",
+  "retained_snes_commit": "8cf63536f4c355b1abe2fc05854584cb41f57936",
+  "retained_snes_image_sha256": "bcc879e4f6da1194b8fa43edb487f71ac13c8b6037086558a42b6fa80b0dc429",
+  "nes_monitor_and_snes_sources_unchanged": true,
+  "sdk_source_hashes": {
+    "bsp/common/sdcard/sdh_sdcard.c": "92f1f1fc54b33d0dd4fd7e8a55ddd0d90bc4e7418db0f0190e9e352cb62ea1a9",
+    "bsp/common/sdcard/sdh_sdcard.h": "d8817979eed249aa29981275422c20c54166bd701d2a6838d7e4359f247d2334",
+    "drivers/soc/bl616/std/src/bl616_sdh.c": "0561bb51dd52b7e5002e4a8846af189c8b482e41e3ade026b40c31231c6ca898",
+    "components/fs/fatfs/port/fatfs_sdh_sdcard.c": "260f6bb9d6f96a894b8fccca5de7ca81be1e32fe2beafefa3ecbed7be39874fd",
+    "components/fs/fatfs/port/fatfs_usbh.c": "c63d70f3907e14bb686b0e6b8b4e1121cb90d2827ccf953af0e0c7064cc24e3c",
+    "components/fs/fatfs/ffconf.h": "49e8c1cfc7d038ab79f269f14ef313e244d018ffd71d9c2267d871453e9665ec"
+  },
+  "actual_fatfs_calls_wrappers": true,
+  "fatfs_reentrant": false,
+  "fatfs_lock": 0,
+  "sd_fault_policy": "Only a SNES SD scope changes error handling: mask transfer interrupts, wait for controller reset, latch SD I/O off until power cycle. Other scopes retain SDK return values.",
+  "fault_tests": "Host substitutes verify call order; physical SD faults and USB-storage DMA are not claimed as tested.",
+  "system2_raw_copier512_crc_reference": {
+    "plain": "ee1ebc69",
+    "copier512": "8541f1dc",
+    "reference": "Python zlib"
+  },
+  "hardware_status": "pending"
+}

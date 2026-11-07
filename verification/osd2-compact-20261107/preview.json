@@ -1,0 +1,22 @@
+{
+  "baseline_firmware_commit": "8f05446158d005eae095839aa2f494021adb700d",
+  "actual_production_Cpp_frames": true,
+  "existing_FPGA_font_sha256": "979d38893d2bbc8aa148d0f66fd4c5e9112b4732b4ea36efa9904253ad040dd1",
+  "normal_before_cells": [
+    26,
+    17
+  ],
+  "normal_after_cells": [
+    16,
+    10
+  ],
+  "optional_info_cells": [
+    24,
+    17
+  ],
+  "normal_window_area_reduction_percent": 63.8,
+  "background": "Synthetic; not a hardware screenshot or ROM image",
+  "hardware_verified": false,
+  "visual_inspection": "passed_before_compact_and_info_views",
+  "synthetic_background": true
+}

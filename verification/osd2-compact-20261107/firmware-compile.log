@@ -1,0 +1,283 @@
+[  0%] Building C object CMakeFiles/app.dir/D_/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/bsp/sdk_version.c.obj
+[  2%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_common.c.obj
+[  2%] Building C object build_out/components/fs/fatfs/CMakeFiles/fatfs.dir/diskio.c.obj
+[  2%] Building C object build_out/components/libc/CMakeFiles/libc.dir/newlib/port_memory.c.obj
+[  3%] Building C object build_out/components/utils/CMakeFiles/utils.dir/log/log.c.obj
+[  4%] Building C object build_out/components/mm/CMakeFiles/mm.dir/mem.c.obj
+[  4%] Building C object build_out/components/usb/cherryusb/CMakeFiles/cherryusb.dir/core/usbh_core.c.obj
+[  4%] Building C object build_out/components/os/freertos/CMakeFiles/freertos.dir/croutine.c.obj
+[  5%] Building C object CMakeFiles/app.dir/D_/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/bsp/board/bl616dk/board.c.obj
+[  5%] Building C object build_out/components/fs/fatfs/CMakeFiles/fatfs.dir/ff.c.obj
+[  6%] Building C object build_out/components/libc/CMakeFiles/libc.dir/newlib/syscalls_nosys.c.obj
+[  6%] Building C object build_out/components/mm/CMakeFiles/mm.dir/tlsf/tlsf.c.obj
+[  7%] Building C object build_out/components/os/freertos/CMakeFiles/freertos.dir/event_groups.c.obj
+[  7%] Building C object build_out/components/utils/CMakeFiles/utils.dir/ring_buffer/ring_buffer.c.obj
+[  7%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_adc.c.obj
+[  8%] Building C object build_out/components/usb/cherryusb/CMakeFiles/cherryusb.dir/port/ehci/usb_hc_ehci.c.obj
+[  8%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_abs.c.obj
+[  9%] Building C object build_out/components/utils/CMakeFiles/utils.dir/bflb_block_pool/bflb_block_pool.c.obj
+[  9%] Building C object build_out/components/os/freertos/CMakeFiles/freertos.dir/list.c.obj
+[ 10%] Building C object build_out/components/mm/CMakeFiles/mm.dir/tlsf/bflb_tlsf.c.obj
+[ 11%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_acomp.c.obj
+[ 12%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_atof.c.obj
+[ 12%] Building C object CMakeFiles/app.dir/D_/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/bsp/board/bl616dk/fw_header.c.obj
+[ 12%] Building C object build_out/components/utils/CMakeFiles/utils.dir/bflb_timestamp/bflb_timestamp.c.obj
+[ 13%] Building C object build_out/components/os/freertos/CMakeFiles/freertos.dir/queue.c.obj
+[ 13%] Building C object build_out/components/usb/cherryusb/CMakeFiles/cherryusb.dir/osal/usb_osal_freertos.c.obj
+[ 13%] Linking C static library ../../lib/libmm.a
+[ 13%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_atoi.c.obj
+[ 13%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_cks.c.obj
+[ 14%] Building C object CMakeFiles/app.dir/D_/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/bsp/common/sdcard/sdh_sdcard.c.obj
+[ 15%] Building C object build_out/components/utils/CMakeFiles/utils.dir/getopt/utils_getopt.c.obj
+[ 16%] Building C object build_out/components/usb/cherryusb/CMakeFiles/cherryusb.dir/class/cdc/usbh_cdc_acm.c.obj
+[ 16%] Built target mm
+[ 16%] Building CXX object CMakeFiles/app.dir/core/cores.cpp.obj
+[ 17%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_atol.c.obj
+[ 18%] Building C object build_out/components/fs/fatfs/CMakeFiles/fatfs.dir/ffsystem.c.obj
+[ 19%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_ef_ctrl.c.obj
+[ 19%] Building C object build_out/components/os/freertos/CMakeFiles/freertos.dir/tasks.c.obj
+[ 19%] Building C object build_out/components/utils/CMakeFiles/utils.dir/coredump/bflb_coredump.c.obj
+[ 19%] Building C object build_out/components/fs/fatfs/CMakeFiles/fatfs.dir/ffunicode.c.obj
+[ 19%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_atoll.c.obj
+[ 19%] Building C object build_out/components/usb/cherryusb/CMakeFiles/cherryusb.dir/class/msc/usbh_msc.c.obj
+D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/components/os/freertos/tasks.c:4005:7: warning: "INCLUDE_uxTaskGetStackBase" is not defined, evaluates to 0 [-Wundef]
+ 4005 | #if ( INCLUDE_uxTaskGetStackBase == 1 )
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 20%] Building C object build_out/components/os/freertos/CMakeFiles/freertos.dir/timers.c.obj
+[ 20%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_gpio.c.obj
+[ 21%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_bsearch.c.obj
+[ 22%] Building C object build_out/components/fs/fatfs/CMakeFiles/fatfs.dir/port/fatfs_sdh_sdcard.c.obj
+[ 23%] Building C object build_out/components/utils/CMakeFiles/utils.dir/cjson/cJSON.c.obj
+[ 24%] Building C object build_out/components/usb/cherryusb/CMakeFiles/cherryusb.dir/class/hid/usbh_hid.c.obj
+[ 24%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_checkbase.c.obj
+[ 24%] Building C object build_out/components/usb/cherryusb/CMakeFiles/cherryusb.dir/class/hub/usbh_hub.c.obj
+[ 25%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_i2c.c.obj
+[ 25%] Building C object build_out/components/utils/CMakeFiles/utils.dir/math/src/utils_base64.c.obj
+[ 26%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_itoa.c.obj
+[ 26%] Building C object build_out/components/fs/fatfs/CMakeFiles/fatfs.dir/port/fatfs_usbh.c.obj
+[ 26%] Building C object build_out/components/os/freertos/CMakeFiles/freertos.dir/freertos_port.c.obj
+[ 26%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_dma.c.obj
+[ 27%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_llabs.c.obj
+[ 27%] Building C object build_out/components/usb/cherryusb/CMakeFiles/cherryusb.dir/class/video/usbh_video.c.obj
+[ 28%] Building C object build_out/components/os/freertos/CMakeFiles/freertos.dir/portable/MemMang/heap_3.c.obj
+[ 30%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_lldiv.c.obj
+[ 30%] Building C object build_out/components/utils/CMakeFiles/utils.dir/math/src/utils_crc.c.obj
+[ 31%] Linking C static library ../../../lib/libfatfs.a
+[ 31%] Building C object build_out/components/utils/CMakeFiles/utils.dir/math/src/utils_hex.c.obj
+[ 31%] Built target fatfs
+[ 31%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_qsort.c.obj
+[ 31%] Building C object build_out/components/os/freertos/CMakeFiles/freertos.dir/portable/GCC/RISC-V/common/port.c.obj
+[ 32%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_rtc.c.obj
+[ 33%] Building ASM object build_out/components/os/freertos/CMakeFiles/freertos.dir/portable/GCC/RISC-V/common/portASM.S.obj
+[ 34%] Building CXX object CMakeFiles/app.dir/core/gba.cpp.obj
+[ 34%] Building C object build_out/components/usb/cherryusb/CMakeFiles/cherryusb.dir/class/audio/usbh_audio.c.obj
+[ 35%] Linking C static library ../../lib/libutils.a
+[ 35%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_sec_aes.c.obj
+[ 36%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/stdlib/lib_strtod.c.obj
+[ 37%] Building ASM object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/startup/start.S.obj
+[ 37%] Linking C static library ../../../lib/libfreertos.a
+[ 38%] Building C object build_out/components/usb/cherryusb/CMakeFiles/cherryusb.dir/class/vendor/xbox/usbh_xbox.c.obj
+[ 38%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_ffs.c.obj
+[ 38%] Built target utils
+[ 39%] Building ASM object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/startup/vector.S.obj
+[ 39%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_ffsl.c.obj
+[ 40%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_sec_sha.c.obj
+[ 40%] Built target freertos
+[ 40%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_ffsll.c.obj
+[ 40%] Building CXX object CMakeFiles/app.dir/core/md.cpp.obj
+[ 41%] Building CXX object CMakeFiles/app.dir/core/nes.cpp.obj
+[ 42%] Building ASM object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/startup/riscv_fpu.S.obj
+[ 42%] Linking C static library ../../../lib/libcherryusb.a
+[ 42%] Building CXX object CMakeFiles/app.dir/core/pcxt.cpp.obj
+[ 43%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_fls.c.obj
+[ 43%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/startup/start_load.c.obj
+[ 44%] Building CXX object CMakeFiles/app.dir/core/sms.cpp.obj
+[ 44%] Built target cherryusb
+[ 44%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_sec_trng.c.obj
+[ 44%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_flsl.c.obj
+[ 45%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/startup/system_bl616.c.obj
+[ 46%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_spi.c.obj
+[ 47%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_flsll.c.obj
+[ 47%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/startup/interrupt.c.obj
+[ 47%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_timer.c.obj
+[ 48%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/src/bl616_romapi_e907.c.obj
+[ 48%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_index.c.obj
+[ 49%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_uart.c.obj
+[ 49%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/src/bl616_romapi_patch.c.obj
+[ 50%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_memccpy.c.obj
+[ 50%] Building CXX object CMakeFiles/app.dir/core/snes.cpp.obj
+[ 50%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_wdg.c.obj
+[ 51%] Building CXX object CMakeFiles/app.dir/fpga/programmer.cpp.obj
+[ 52%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/src/bl616_clock.c.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:173: warning: "GPIO_DRV_3" redefined
+  173 | #define GPIO_DRV_3       (3<<2)
+      | 
+In file included from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/utils/utils.h:7,
+                 from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:16:
+D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal/include/bflb_gpio.h:189: note: this is the location of the previous definition
+  189 | #define GPIO_DRV_3                           (3 << GPIO_DRV_SHIFT)
+      | 
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:173: warning: "GPIO_DRV_3" redefined
+  173 | #define GPIO_DRV_3       (3<<2)
+      | 
+In file included from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/utils/utils.h:7,
+                 from D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:16:
+D:/Users/foobaris/AppData/Local/Temp/tc-sdk-9vtcw2ax/drivers/lhal/include/bflb_gpio.h:189: note: this is the location of the previous definition
+  189 | #define GPIO_DRV_3                           (3 << GPIO_DRV_SHIFT)
+      | 
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp: In function 'int jtag_writeTDI(const uint8_t*, uint8_t*, int, bool)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:143:25: warning: comparison of integer expressions of different signedness: 'uint32_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+  143 |  for (uint32_t i = 0; i < len; i++) {
+      |                       ~~^~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:144:17: warning: comparison of integer expressions of different signedness: 'uint32_t' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+  144 |   if (end && (i == len - 1)) {
+      |               ~~^~~~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp: In function 'bool fpga_program(const char*)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/fpga/programmer.cpp:1016:66: warning: comparison of integer expressions of different signedness: 'UINT' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+ 1016 |         jtag_writeTDI_msb_first_gpio_out_mode(fbuf, bytes, total >= len);
+      |                                                            ~~~~~~^~~~~~
+[ 52%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_memchr.c.obj
+[ 52%] Building CXX object CMakeFiles/app.dir/ui/console.cpp.obj
+[ 53%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_flash.c.obj
+[ 54%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_memcmp.c.obj
+[ 54%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/flash/bflb_sf_cfg.c.obj
+[ 55%] Building CXX object CMakeFiles/app.dir/ui/file_chooser.cpp.obj
+[ 56%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/flash/bflb_xip_sflash.c.obj
+[ 56%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_memmove.c.obj
+[ 56%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/src/bl616_common.c.obj
+[ 56%] Building CXX object CMakeFiles/app.dir/ui/menu_manager.cpp.obj
+[ 57%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_memrchr.c.obj
+[ 58%] Building CXX object CMakeFiles/app.dir/ui/overlay.cpp.obj
+[ 58%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/flash/bflb_sflash.c.obj
+[ 58%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_memset.c.obj
+[ 59%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_stpcpy.c.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/file_chooser.cpp: In member function 'bool FileChooser::list_files(std::string, std::vector<FileEntry>&, int, int, int*)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/file_chooser.cpp:39:33: warning: comparison of integer expressions of different signedness: 'std::vector<FileEntry>::size_type' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+   39 |         } else if (files.size() < len)
+      |                    ~~~~~~~~~~~~~^~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/file_chooser.cpp:40:53: warning: narrowing conversion of '(int)(((unsigned char)((int)fno.FILINFO::fattrib)) & 16)' from 'int' to 'bool' [-Wnarrowing]
+   40 |             files.push_back({fno.fname, fno.fattrib & AM_DIR});
+      |                                         ~~~~~~~~~~~~^~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/file_chooser.cpp: In member function 'bool FileChooser::choose_file(std::string&)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/file_chooser.cpp:58:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<FileEntry>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   58 |             if (active > files.size()-1)
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/file_chooser.cpp:63:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<FileEntry>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   63 |                 if (i < files.size()) {
+      |                     ~~^~~~~~~~~~~~~~
+[ 59%] Building CXX object CMakeFiles/app.dir/ui/ui16_browser.cpp.obj
+[ 60%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/src/bl616_ef_cfg.c.obj
+[ 61%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/flash/bflb_sf_ctrl.c.obj
+[ 61%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_stpncpy.c.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp: In function 'void menu_input_loop()':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:66:24: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   66 |             if (active < options.size()-1) active++;
+      |                 ~~~~~~~^~~~~~~~~~~~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:69:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   69 |         for (int i = 0; i < options.size(); i++) {
+      |                         ~~^~~~~~~~~~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:90:35: warning: comparison of integer expressions of different signedness: 'std::vector<std::unique_ptr<Menu> >::size_type' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+   90 |             if (menu_stack.size() != depth) {   // menu changed
+      |                 ~~~~~~~~~~~~~~~~~~^~~~~~~~
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/ui/menu_manager.cpp:92:28: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+   92 |                 if (active >= options.size())
+      |                     ~~~~~~~^~~~~~~~~~~~~~~~~
+[ 61%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/src/bl616_sdh.c.obj
+[ 62%] Building CXX object CMakeFiles/app.dir/ui/ui16_crt.cpp.obj
+[ 64%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strcasecmp.c.obj
+[ 64%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/src/bl616_tzc_sec.c.obj
+[ 64%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/flash/bflb_flash_secreg_port.c.obj
+[ 65%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/flash/bflb_flash_secreg.c.obj
+[ 65%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strcasestr.c.obj
+[ 65%] Building CXX object CMakeFiles/app.dir/ui/ui16_crt_defaults.cpp.obj
+[ 65%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_dac.c.obj
+[ 66%] Building CXX object CMakeFiles/app.dir/ui/ui16_crt_restore.cpp.obj
+[ 67%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strcat.c.obj
+[ 67%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/src/bl616_psram.c.obj
+[ 68%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/src/bl616_pm.c.obj
+[ 68%] Building CXX object CMakeFiles/app.dir/ui/ui16_crt_save.cpp.obj
+[ 69%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_emac.c.obj
+[ 69%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/port/bl616_gpio.c.obj
+[ 69%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_ir.c.obj
+[ 69%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strchr.c.obj
+[ 70%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strcmp.c.obj
+[ 71%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_mjpeg.c.obj
+[ 73%] Building CXX object CMakeFiles/app.dir/ui/ui16_font_cache.cpp.obj
+[ 73%] Building C object build_out/drivers/soc/bl616/std/CMakeFiles/std.dir/port/bl616_clock.c.obj
+[ 73%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strcspn.c.obj
+[ 73%] Building CXX object CMakeFiles/app.dir/ui/ui16_font_sender.cpp.obj
+[ 74%] Building CXX object CMakeFiles/app.dir/ui/ui16_game_list.cpp.obj
+[ 74%] Building CXX object CMakeFiles/app.dir/ui/ui16_launch.cpp.obj
+[ 74%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_pwm_v2.c.obj
+[ 75%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strdup.c.obj
+[ 75%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strnlen.c.obj
+[ 76%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_cam.c.obj
+[ 77%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strpbrk.c.obj
+[ 77%] Linking C static library ../../../../lib/libstd.a
+[ 77%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_sdio2.c.obj
+[ 78%] Building CXX object CMakeFiles/app.dir/ui/ui16_link.cpp.obj
+[ 78%] Building CXX object CMakeFiles/app.dir/ui/ui16_navigation.cpp.obj
+[ 78%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strrchr.c.obj
+[ 79%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strsep.c.obj
+[ 79%] Built target std
+[ 79%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strspn.c.obj
+[ 80%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_i2s.c.obj
+[ 81%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strstr.c.obj
+[ 82%] Building CXX object CMakeFiles/app.dir/ui/ui16_osd.cpp.obj
+[ 82%] Building CXX object CMakeFiles/app.dir/ui/ui16_osd_menu.cpp.obj
+[ 82%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_dbi.c.obj
+[ 83%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_audac.c.obj
+[ 84%] Building CXX object CMakeFiles/app.dir/ui/ui16_rom_id.cpp.obj
+[ 84%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strtok.c.obj
+[ 85%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_strtokr.c.obj
+[ 85%] Building CXX object CMakeFiles/app.dir/ui/ui16_sd_font.cpp.obj
+[ 85%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_auadc.c.obj
+[ 86%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_wo.c.obj
+[ 86%] Building C object build_out/components/libc/CMakeFiles/libc.dir/nuttx/libc/string/lib_vikmemcpy.c.obj
+[ 86%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_usb_v2.c.obj
+[ 87%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_irq.c.obj
+[ 88%] Building C object build_out/components/libc/CMakeFiles/libc.dir/vsnprintf.c.obj
+[ 88%] Building C object build_out/components/libc/CMakeFiles/libc.dir/snprintf.c.obj
+[ 88%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_l1c.c.obj
+[ 89%] Building CXX object CMakeFiles/app.dir/ui/ui16_selftest.cpp.obj
+[ 89%] Building CXX object CMakeFiles/app.dir/ui/ui16_system_menu.cpp.obj
+[ 90%] Building C object build_out/components/libc/CMakeFiles/libc.dir/sprintf.c.obj
+[ 91%] Building CXX object CMakeFiles/app.dir/ui/ui16_system_osd.cpp.obj
+[ 91%] Building C object build_out/components/libc/CMakeFiles/libc.dir/vsprintf.c.obj
+[ 92%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/src/bflb_mtimer.c.obj
+[ 92%] Building CXX object CMakeFiles/app.dir/ui/ui16_titles.cpp.obj
+[ 93%] Building C object build_out/components/libc/CMakeFiles/libc.dir/printf.c.obj
+[ 93%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/include/arch/risc-v/t-head/rv_hart.c.obj
+[ 94%] Building CXX object CMakeFiles/app.dir/usb/hidparser.cpp.obj
+[ 94%] Building CXX object CMakeFiles/app.dir/usb/usb2ps2.cpp.obj
+[ 95%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/include/arch/risc-v/t-head/rv_pmp.c.obj
+[ 96%] Building CXX object CMakeFiles/app.dir/usb/usb_gamepad.cpp.obj
+[ 96%] Linking C static library ../../lib/liblibc.a
+[ 96%] Building C object build_out/drivers/lhal/CMakeFiles/lhal.dir/config/bl616/device_table.c.obj
+[ 96%] Building CXX object CMakeFiles/app.dir/utils/init.cpp.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/usb/hidparser.cpp: In function 'void kbd_parse(const hid_report_t*, hid_kbd_state_S*, const unsigned char*, int)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/usb/hidparser.cpp:590:10: warning: variable 'found' set but not used [-Wunused-but-set-variable]
+  590 |     bool found = false;
+      |          ^~~~~
+[ 96%] Built target libc
+[ 97%] Building CXX object CMakeFiles/app.dir/utils/tc_snes_sd_guard.cpp.obj
+[ 98%] Linking C static library ../../lib/liblhal.a
+[ 98%] Building CXX object CMakeFiles/app.dir/utils/utils.cpp.obj
+[ 98%] Built target lhal
+[ 99%] Linking CXX static library build_out/lib/libapp.a
+[ 99%] Built target app
+[100%] Building CXX object CMakeFiles/tangcore_bl616.elf.dir/main.cpp.obj
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/main.cpp: In function 'int menu_loadrom(const char*)':
+D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/main.cpp:180:23: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<core_info>::size_type' {aka 'unsigned int'} [-Wsign-compare]
+  180 |     for (int i = 0; i < core_info_list.size(); i++) {
+      |                     ~~^~~~~~~~~~~~~~~~~~~~~~~
+[100%] Linking CXX executable build_out/tangcore_bl616.elf
+Memory region         Used Size  Region Size  %age Used
+fw_header_memory:         256 B         4 KB      6.25%
+      xip_memory:      220180 B         4 MB      5.25%
+       ram_psram:          0 GB         4 MB      0.00%
+     ram_nocache:       25168 B       447 KB      5.50%
+      ram_memory:      137288 B       447 KB     29.99%
+        ram_wifi:          0 GB        32 KB      0.00%
+Generate D:/Users/foobaris/.codex/.chatgpt-projects/g-p-6aae4d27d7508191b5fefb0113656c14/crt-osd2-20261101/firmware-bl616/build-snes-crt-stage5-compact/build_out/tangcore_bl616.bin
+[100%] Built target tangcore_bl616.elf

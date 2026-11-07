@@ -1,0 +1,12 @@
+{
+  "odt": "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\osd2-compact-hardware-20261107\\TEST_GUIDE_20261107.odt",
+  "bytes": 41584741,
+  "sha256": "055c87edfe081de461504f244446ddd2d1ec0971cc3e5ba2dc5ab38f7098b54f",
+  "language": "ja-JP",
+  "embedded_fonts": 3,
+  "pdf_fonts": "/BAAAAA+NotoSansCJKjp-Bold\n/CAAAAA+NotoSansCJKjp-Regular\n/DAAAAA+NotoSansMonoCJKjp-Regular",
+  "rendered_pages": 2,
+  "visual_inspection": "passed_all_2_final_pages",
+  "no_Chinese_font_substitution": true,
+  "source_markdown_sha256": "1bb1dde06debaad1dc124e20eb8dc9afc19a918208159935eff9bad0cee765fa"
+}
