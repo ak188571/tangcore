@@ -22,7 +22,7 @@
   },
   "preview_and_cancel": "passed",
   "load_snapshot_preserved_during_preview": "reported_passed_in_requested_group",
-  "runtime_SD_invariance": "pending fresh capture",
+  "runtime_SD_invariance": "passed; fresh post-global-01 capture, all 66 files and attributes unchanged",
   "errors_hardware_result": "pending",
   "NES_regression": "pending",
   "hardware_scope": "Reported SNES GLOBAL/BAD SAVE, normal operation, compact/info preview/cancel only; no inference from NES"

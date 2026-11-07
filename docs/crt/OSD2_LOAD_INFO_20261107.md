@@ -5,7 +5,8 @@
 SYSTEM／RECOVEREDの通常①〜⑧・補助①〜⑨・preview・取消しは実機正常とのユーザー報告を受領した。
 SYSTEM試験後のSD全66file・属性の不変を新しい退避で照合した。GLOBAL試験fileへ切替済み。
 GLOBAL／BAD SAVEの通常動作・通常①〜⑧・補助①〜⑨・preview・取消しも実機正常とのユーザー報告を受領した。
-GLOBAL試験後のSD不変照合、異常defaults／未対応schema／SAVE拒否、NES回帰は未確認。
+GLOBAL試験後のSD全66file・属性の不変を新しい退避で照合し、最後の異常時試験fileへ切り替えた。
+異常defaults／未対応schema／SAVE拒否、NES回帰は未確認。
 日本語一覧・映像・音声・通常操作は同じ質問で依頼したが、回答では個別には再記載されていない。
 PC試験の合格を実機合格とは扱わない。
 

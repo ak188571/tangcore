@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-07T16:34:05.055217+09:00",
+  "prior_global_runtime_SD_audit": "passed",
+  "fresh_capture": "post-global-01",
+  "captured_files": 66,
+  "global_test_all_66_file_contents_attributes_unchanged": true,
+  "current_fixture_phase": "errors",
+  "changed_files_from_global": [
+    "crt/02-232bb5b8-0000000000200000.a",
+    "crt/02-232bb5b8-0000000000200000.b",
+    "crt/defaults.tsv"
+  ],
+  "other_63_files_contents_attributes_unchanged": true,
+  "titles_ROMs_FPGA_images_NES_records_unchanged": true,
+  "firmware_written": false,
+  "FPGA_written": false,
+  "actual_a7_Reset_b6_USER_original_backups_retained": true,
+  "fixture_conditions": {
+    "defaults": "whole-file reject: invalid SNES blur 4",
+    "a": "CRC-valid unsupported schema 2",
+    "b": "original valid USER generation 6"
+  },
+  "hardware_result": "pending_user_BAD_FILE_NEW_SCHEMA_SAVE_FAILED_report",
+  "planned_snes_launches_total": 3
+}
