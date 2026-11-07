@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-07",
+  "stage": "compact OSD2",
+  "status": "installed_full_readback_verified_runtime_pending",
+  "source_commits": {
+    "firmware-bl616": "8bf3c7037ee5df457919be939de0c0c285ba5d99",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
+  },
+  "firmware": {
+    "file": "firmware/tangcore_bl616.bin",
+    "bytes": 230960,
+    "sha256": "1416dba4ae61e0656d590f46025473301bee8f285f48772cde0988175b141e06"
+  },
+  "retained_SNES_image": {
+    "file": "cores/console138k/snestang.bin",
+    "bytes": 5066442,
+    "sha256": "bcc879e4f6da1194b8fa43edb487f71ac13c8b6037086558a42b6fa80b0dc429"
+  },
+  "fresh_SD_backup_files": 65,
+  "S4c_contents_and_attributes_unchanged": true,
+  "independent_full_flash_backups_match": true,
+  "preflight_matches_fresh_backup": true,
+  "firmware_program_operations": 1,
+  "whole_flash_readback_verified": true,
+  "whole_flash_readback_sha256": "a228e41a807d88e68e6ad95d4edce7a6784e11552645b51931dcf90087f87645",
+  "custom_bounds": [
+    262144,
+    524288
+  ],
+  "boot_area_and_from_0x80000_unchanged": true,
+  "SD_files_after_install": 65,
+  "all_SD_file_contents_and_attributes_unchanged": true,
+  "SD_write_operations": 0,
+  "FPGA_image_recopy": false,
+  "metadata_and_actual_USER_Reset_records_untouched": true,
+  "flash_utility_original_files_restored": true,
+  "hardware_status": "pending",
+  "planned_SNES_launches": 1,
+  "planned_NES_launches": 1
+}

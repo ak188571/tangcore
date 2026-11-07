@@ -48,3 +48,9 @@ SNES確認はスーパーマリオコレクション・USB P1の1回の起動へ
 同日、SDを再識別して全65fileを新しく退避し、S4cの最終snapshotとの全内容・属性の一致を確認した。独立した全4MiB flashの2回の読取りは一致し、確認済みS4c全flashとも同じだった。書込み直前の追加読取りも新しい退避と一致した。
 
 SNES imageは現物・退避・payloadのSHA256が同じであり、helperのcopy分岐へ入らず保持した。全65file・属性と実USER/Reset recordに変更はなく、SD/firmwareへの書込みはまだ0回。新しいBOOT接続を受けてからfirmwareだけを更新する。詳細は`pre-install-backups.json`。
+
+## 実機導入記録
+
+同日、新しいBOOT接続で小型OSD2 firmwareを0x40000へ1回だけ書き込んだ。全4MiBを読戻し、firmware全byteとcustom領域外の不変を確認した。SDは全65file・属性が新しい退避およびS4cの最終snapshotと一致し、SD書込みは0回。FPGA image、titles.csv、実USER/Reset recordは変更していない。flash utilityの原file復元も照合した。
+
+実機での通常表示・START開閉・縮小復帰・preview・操作は未確認であり、PC結果から合格を推定しない。詳細は`deployment.json`。

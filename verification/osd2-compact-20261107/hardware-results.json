@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "stage": "compact OSD2",
-  "status": "PC_validated_runtime_pending",
+  "status": "installed_runtime_pending",
   "firmware_source": "8bf3c7037ee5df457919be939de0c0c285ba5d99",
   "firmware_SHA256": "1416dba4ae61e0656d590f46025473301bee8f285f48772cde0988175b141e06",
   "normal_geometry_cells": [
@@ -19,10 +19,12 @@
   "host_groups_passed": 15,
   "deployment_guards_passed": 30,
   "hardware_tested": false,
-  "device_written": false,
+  "device_written": true,
   "SD_written": false,
   "planned_SNES_launches": 1,
   "planned_NES_launches": 1,
   "SD_metadata_or_record_change_planned": false,
-  "source_FPGA_NES_SNES_monitor_unchanged": true
+  "source_FPGA_NES_SNES_monitor_unchanged": true,
+  "readback_verified": true,
+  "flash_program_operations": 1
 }
