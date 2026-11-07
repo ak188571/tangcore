@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-07T16:03:12.592513+09:00",
+  "firmware_commit": "95c4416187bf19d42793336ba0390b75946d1614",
+  "firmware": {
+    "file": "firmware/tangcore_bl616.bin",
+    "bytes": 230976,
+    "sha256": "f033d8c2240fc9c9d658ba95aa5e46b8a05d9eb95c6a9d6c7bdaeb73401348ba"
+  },
+  "fresh_baseline_files": 65,
+  "system_profile_files": 66,
+  "fresh_double_flash_backup_verified": true,
+  "prewrite_flash_equal_to_backup": true,
+  "full_flash_readback_verified": true,
+  "boot_and_from_0x80000_unchanged": true,
+  "SD_snapshot_before_fixture": "pre-system-01",
+  "fixture_phase": "system",
+  "changed_files": [
+    "crt/02-232bb5b8-0000000000200000.b",
+    "crt/defaults.tsv"
+  ],
+  "other_64_existing_files_contents_attributes_unchanged": true,
+  "titles_and_FPGA_images_and_NES_records_unchanged": true,
+  "actual_a7_Reset_b6_USER_backed_up_byte_exact": true,
+  "original_record_hashes": {
+    "crt/02-232bb5b8-0000000000200000.a": "9d35c6cecb1daa7e2411fdc58a7a2a6d2d00df709aa8889c0dfc8ce10f06df51",
+    "crt/02-232bb5b8-0000000000200000.b": "f31b581650e29a661fc410fd8b3a57db6170885474378c6f594b5cc791b1ae88"
+  },
+  "hardware_result": "pending_user_SYSTEM_RECOVERED_report",
+  "planned_snes_launches": 3
+}
