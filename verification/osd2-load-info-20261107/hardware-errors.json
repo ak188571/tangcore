@@ -25,8 +25,8 @@
   "SAVE_FAILED_and_stays_open": "reported expected in group A",
   "load_snapshots_unchanged_after_failed_SAVE": "reported expected in group B",
   "cancel_and_reopen_all_OFF_without_failure_status": "reported expected in group C",
-  "runtime_SD_invariance": "pending fresh capture",
-  "original_records_restoration": "pending fresh capture and exact fixture match",
+  "runtime_SD_invariance": "passed; fresh post-errors-01 capture, all 66 files and attributes unchanged",
+  "original_records_restoration": "passed; all original 65 files and attributes restored",
   "NES_regression": "pending",
   "hardware_scope": "Reported SNES BUILT-IN/NEW SCHEMA/BAD FILE, expected SAVE failure and cancel; no physical I/O fault injection"
 }

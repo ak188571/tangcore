@@ -7,7 +7,9 @@ SYSTEM試験後のSD全66file・属性の不変を新しい退避で照合した
 GLOBAL／BAD SAVEの通常動作・通常①〜⑧・補助①〜⑨・preview・取消しも実機正常とのユーザー報告を受領した。
 GLOBAL試験後のSD全66file・属性の不変を新しい退避で照合し、最後の異常時試験fileへ切り替えた。
 BUILT-IN／NEW SCHEMA／BAD FILEの通常動作・通常①〜⑧・補助①〜⑨と、SAVE FAILED・snapshot維持・取消しのA〜Cは想定どおりとのユーザー報告を受領した。
-SNESは予定の3回で表示確認を終了。SAVE拒否後のSD不変照合、元のrecord復旧、NES回帰、最終SD照合は未完了。
+SNESは予定の3回で表示確認を終了。SAVE拒否後の全66file・属性不変を新しい退避で照合した。
+a7 Reset／b6 USERを全byte・属性で復旧し、一時defaultsを除去。元の全65file・属性への一致も確認した。
+NES回帰と最終SD照合は未完了。追加のSNES起動は行わない。
 日本語一覧・映像・音声・通常操作は同じ質問で依頼したが、回答では個別には再記載されていない。
 PC試験の合格を実機合格とは扱わない。
 
