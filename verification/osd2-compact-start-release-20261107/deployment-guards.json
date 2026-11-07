@@ -1,0 +1,14 @@
+{
+  "tests_run": 30,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "device_access": false,
+  "storage_media_written": false,
+  "helper_sha256": {
+    "deploy.py": "0a68b5d5825fea3069ac443aded26568257c144ea312ce4c42e2fa1c1797fad8",
+    "test_deploy.py": "8dfdfcecdfcbc7e85171b1fcd0bb44c0fbee85af52a886e3746aeeb6383c61d1",
+    "lib/console138k.py": "62ddb5445bfbbd662c1ffa4421e35ee6c63b2eaf6e5298083b4af82389001a2f",
+    "audit-runtime-sd.py": "a7fb9c5cc7eb3ea468daa427eb4fe556dde37be505e35f3f89c33a7f3c4b71d6"
+  }
+}

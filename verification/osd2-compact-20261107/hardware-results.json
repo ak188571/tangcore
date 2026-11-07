@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "stage": "compact OSD2",
-  "status": "reported_UI_pass_SD_invariance_failed_investigating",
+  "status": "reported_UI_pass_with_intentional_user_SAVE_updates",
   "firmware_source": "8bf3c7037ee5df457919be939de0c0c285ba5d99",
   "firmware_SHA256": "1416dba4ae61e0656d590f46025473301bee8f285f48772cde0988175b141e06",
   "normal_geometry_cells": [
@@ -35,7 +35,7 @@
     "compact_items_1_to_8": "user_reported_pass",
     "information_items_1_to_9_and_steps_A_to_C": "user_reported_pass",
     "START_hold_toggle_and_shrink_selection_value_position": "user_reported_pass_in_grouped_information_trial",
-    "actual_unchanged_SAVE_record_invariance": "failed_expected_invariance"
+    "actual_unchanged_SAVE_record_invariance": "not_evaluated_user_intentionally_saved_changes"
   },
   "raw_user_reports": [
     {
@@ -53,10 +53,16 @@
     {
       "section": "NES_compact_1_to_8_and_information_1_to_9",
       "answer": "1-8, 1-9正常"
+    },
+    {
+      "section": "saved_record_update_clarification",
+      "answer": "その保存更新は実際にユーザーが行ったものでソフトウェアに起因するものではありません"
     }
   ],
   "NES_regression": "user_reported_compact_1_to_8_and_information_1_to_9_pass_other_requested_checks_not_individually_reported",
-  "post_runtime_SD_invariance": "failed_both_SNES_records_updated_valid_a7_Reset_b6_USER",
+  "post_runtime_SD_invariance": "Other 63 files and all attributes unchanged; two valid SNES records intentionally saved by user",
   "known_START_input_gap": "Host reproduced: later A/B or direction while holding START is not blocked until release",
-  "qualification": "Not hardware-qualified as unchanged-record version"
+  "qualification": "Reported compact/info UI behavior passed; same-value SAVE invariance not evaluated in this changed-value trial; independent START full-release guard remains to be hardware tested",
+  "user_confirmed_intentional_record_changes": true,
+  "user_clarification": "その保存更新は実際にユーザーが行ったものでソフトウェアに起因するものではありません"
 }

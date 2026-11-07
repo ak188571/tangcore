@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "status": "PC_fixed_and_built_operation_history_and_hardware_pending",
+  "status": "PC_fixed_and_built_hardware_pending",
   "deployed_firmware_source": "8bf3c7037ee5df457919be939de0c0c285ba5d99",
   "fix_source": "a1b6755a271e8dfc29f388e85bb3aef772862f18",
   "fix_firmware_bytes": 230960,
@@ -10,9 +10,10 @@
   "repro_after_fix": "passed_wait_for_full_release",
   "intentional_SAVE_after_release_and_same_value_USER_Reset_skip": "passed_actual_input_loop",
   "rendering_and_storage_engine_unchanged": true,
-  "SD_observation": "Two valid SNES records updated; not attributed until user operation clarification",
+  "SD_observation": "User confirmed both valid SNES record updates were intentional; unrelated to software",
   "actual_records_preserved": true,
   "device_written": false,
   "SD_written": false,
-  "hardware_tested": false
+  "hardware_tested": false,
+  "operation_history_clarification": "その保存更新は実際にユーザーが行ったものでソフトウェアに起因するものではありません"
 }

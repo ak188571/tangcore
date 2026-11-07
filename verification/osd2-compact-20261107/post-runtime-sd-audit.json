@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "status": "expected_invariance_failed_valid_SNES_records_changed",
+  "status": "user_confirmed_intentional_saved_record_changes",
   "files_checked": 65,
   "changed_records": [
     {
@@ -46,6 +46,10 @@
   "flash_operations": 0,
   "actual_user_records_preserved": true,
   "fresh_snapshot": "osd2-compact-hardware-20261107/post-runtime-01",
-  "cause": "Under investigation; no inference that user or START input gap caused these writes",
-  "separate_host_finding": "A/B or direction added after initial START while still held can pass through; host reproduction fails before full-release gate and passes after fix"
+  "cause": "User confirmed these saved-record updates were intentional; not attributed to software",
+  "separate_host_finding": "A/B or direction added after initial START while still held can pass through; host reproduction fails before full-release gate and passes after fix",
+  "user_confirmed_intentional_record_changes": true,
+  "user_clarification": "その保存更新は実際にユーザーが行ったものでソフトウェアに起因するものではありません",
+  "initial_no_change_expectation_satisfied": false,
+  "same_value_SAVE_invariance": "Not evaluated in this trial because user intentionally saved changed values"
 }
