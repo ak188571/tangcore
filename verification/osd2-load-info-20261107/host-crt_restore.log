@@ -1,0 +1,2 @@
+CRT restore PASS: read-only aligned buffers, two generations/wrap/tombstones, explicit OFF, whole record integrity, schema/key/reserved validation, corrupt sibling recovery, I/O/future/conflict fallback, volume/system separation
+CRT restore PASS: read-only aligned buffers, two generations/wrap/tombstones, explicit OFF, whole record integrity, schema/key/reserved validation, corrupt sibling recovery, I/O/future/conflict fallback, volume/system separation

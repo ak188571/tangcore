@@ -1,0 +1,45 @@
+test_backup_integrity (__main__.DeploymentGuards.test_backup_integrity) ... ok
+test_boot_area_change_rejected (__main__.DeploymentGuards.test_boot_area_change_rejected) ... ok
+test_changed_utility_executable_still_rejected_before_command (__main__.DeploymentGuards.test_changed_utility_executable_still_rejected_before_command) ... ok
+test_compact_audit_required_before_flash_program (__main__.DeploymentGuards.test_compact_audit_required_before_flash_program) ... SNES retained when already matching; all SD files and attributes verified.
+ok
+test_compact_audit_required_before_sd_install (__main__.DeploymentGuards.test_compact_audit_required_before_sd_install) ... ok
+test_core_rollback_restores_only_nes_snes (__main__.DeploymentGuards.test_core_rollback_restores_only_nes_snes) ... SNES retained when already matching; all SD files and attributes verified.
+Original SNES image restored. Other files were not written.
+ok
+test_corrupt_restore_rejected (__main__.DeploymentGuards.test_corrupt_restore_rejected) ... ok
+test_disagreeing_full_backups_rejected (__main__.DeploymentGuards.test_disagreeing_full_backups_rejected) ... ok
+test_failed_readback_never_marks_installed (__main__.DeploymentGuards.test_failed_readback_never_marks_installed) ... ok
+test_firmware_readback_mismatch_rejected (__main__.DeploymentGuards.test_firmware_readback_mismatch_rejected) ... ok
+test_flash_config_restored_after_tool_exception (__main__.DeploymentGuards.test_flash_config_restored_after_tool_exception) ... ok
+test_fresh_boot_required_before_device_operation (__main__.DeploymentGuards.test_fresh_boot_required_before_device_operation) ... ok
+test_fresh_install_does_not_consume_connection_with_read (__main__.DeploymentGuards.test_fresh_install_does_not_consume_connection_with_read) ... SNES retained when already matching; all SD files and attributes verified.
+Write completed. Run verify-flash; do not re-run install-flash.
+ok
+test_generated_utility_images_archived_and_restored_after_success (__main__.DeploymentGuards.test_generated_utility_images_archived_and_restored_after_success) ... ok
+test_manifest_changed_rejected (__main__.DeploymentGuards.test_manifest_changed_rejected) ... ok
+test_matching_snes_not_rewritten (__main__.DeploymentGuards.test_matching_snes_not_rewritten) ... SNES retained when already matching; all SD files and attributes verified.
+ok
+test_missing_flash_backup_prevents_sd_write (__main__.DeploymentGuards.test_missing_flash_backup_prevents_sd_write) ... ok
+test_old_preflight_rejected (__main__.DeploymentGuards.test_old_preflight_rejected) ... SNES retained when already matching; all SD files and attributes verified.
+ok
+test_oversize_image_rejected (__main__.DeploymentGuards.test_oversize_image_rejected) ... ok
+test_payload_checksums (__main__.DeploymentGuards.test_payload_checksums) ... ok
+test_payload_tamper_rejected (__main__.DeploymentGuards.test_payload_tamper_rejected) ... ok
+test_preflight_required (__main__.DeploymentGuards.test_preflight_required) ... SNES retained when already matching; all SD files and attributes verified.
+ok
+test_restart_image_readback (__main__.DeploymentGuards.test_restart_image_readback) ... ok
+test_rollback_refuses_change_outside_custom_region (__main__.DeploymentGuards.test_rollback_refuses_change_outside_custom_region) ... ok
+test_rollback_requires_its_own_preflight (__main__.DeploymentGuards.test_rollback_requires_its_own_preflight) ... ok
+test_rollback_uses_fresh_connection_without_read (__main__.DeploymentGuards.test_rollback_uses_fresh_connection_without_read) ... Rollback written. Run verify-restore to confirm all flash bytes.
+ok
+test_sd_install_preserves_unrelated_bytes_and_attributes (__main__.DeploymentGuards.test_sd_install_preserves_unrelated_bytes_and_attributes) ... SNES retained when already matching; all SD files and attributes verified.
+ok
+test_sd_unrelated_change_prevents_any_core_write (__main__.DeploymentGuards.test_sd_unrelated_change_prevents_any_core_write) ... ok
+test_unknown_core_prevents_overwrite (__main__.DeploymentGuards.test_unknown_core_prevents_overwrite) ... ok
+test_upper_flash_change_rejected (__main__.DeploymentGuards.test_upper_flash_change_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 5.526s
+
+OK

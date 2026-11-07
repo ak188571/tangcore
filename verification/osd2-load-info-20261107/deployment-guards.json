@@ -1,0 +1,19 @@
+{
+  "tests_run": 30,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "device_access": false,
+  "storage_media_written": false,
+  "fixture_guard_tests": 12,
+  "fixture_guards_passed": true,
+  "helper_sha256": {
+    "deploy.py": "b4cd3c983110e56fc9e54912831f6e24cc385eb37904ccfd57c0712f47a0df55",
+    "test_deploy.py": "c8752aa18e3f93815e2d8461627d29b1026f7bed62d87defb75f66b4432b25c6",
+    "lib/console138k.py": "62ddb5445bfbbd662c1ffa4421e35ee6c63b2eaf6e5298083b4af82389001a2f",
+    "metadata.py": "8432abec7ccdababb53cc0825f933057d208023d11dc7fd9ddc45c6cedac3074",
+    "test_fixtures.py": "4d3581a7dcc65ab2aaeecfc63c5be90354384cdb4af6e0d6440e3bcae716cca4",
+    "osd2_load_info_fixtures.py": "d233cda70a61e58f8bc522552f56b3492a92c0895d0688415cd5062d5fd31ea9",
+    "TEST_GUIDE.md": "073db5a54b01c627bb4e60778c08442b9ec1482384ca0b000acca635eb2eb4e2"
+  }
+}

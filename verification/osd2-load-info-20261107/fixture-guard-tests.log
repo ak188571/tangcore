@@ -1,0 +1,28 @@
+test_attribute_drift_refused (__main__.FixtureGuards.test_attribute_drift_refused) ... ok
+test_audit_cannot_skip_fixture_restoration (__main__.FixtureGuards.test_audit_cannot_skip_fixture_restoration) ... ok
+test_changed_unrelated_titles_refused (__main__.FixtureGuards.test_changed_unrelated_titles_refused) ... ok
+test_corrupt_actual_backup_refused (__main__.FixtureGuards.test_corrupt_actual_backup_refused) ... ok
+test_duplicate_system_refused (__main__.FixtureGuards.test_duplicate_system_refused) ... ok
+test_existing_defaults_preserved (__main__.FixtureGuards.test_existing_defaults_preserved) ... ok
+test_fresh_baseline_audit_required (__main__.FixtureGuards.test_fresh_baseline_audit_required) ... ok
+test_full_cycle_restores_actual_records_and_all_unrelated_bytes_attributes (__main__.FixtureGuards.test_full_cycle_restores_actual_records_and_all_unrelated_bytes_attributes) ... ok
+test_partial_known_transition_recoverable_and_unknown_never_overwritten (__main__.FixtureGuards.test_partial_known_transition_recoverable_and_unknown_never_overwritten) ... ok
+test_unknown_user_save_preserved_instead_of_restored (__main__.FixtureGuards.test_unknown_user_save_preserved_instead_of_restored) ... ok
+test_verified_firmware_required (__main__.FixtureGuards.test_verified_firmware_required) ... ok
+test_wrong_order_refused_before_writes (__main__.FixtureGuards.test_wrong_order_refused_before_writes) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 3.798s
+
+OK
+Verified transition: original -> system ; titles, ROMs, core images, NES records and unrelated attributes unchanged
+Verified transition: original -> system ; titles, ROMs, core images, NES records and unrelated attributes unchanged
+Verified transition: original -> system ; titles, ROMs, core images, NES records and unrelated attributes unchanged
+Verified transition: original -> system ; titles, ROMs, core images, NES records and unrelated attributes unchanged
+Verified transition: original -> system ; titles, ROMs, core images, NES records and unrelated attributes unchanged
+Verified transition: system -> global ; titles, ROMs, core images, NES records and unrelated attributes unchanged
+Verified transition: global -> errors ; titles, ROMs, core images, NES records and unrelated attributes unchanged
+Verified transition: errors -> original ; titles, ROMs, core images, NES records and unrelated attributes unchanged
+{'at': '2026-11-07T15:40:25.212917+09:00', 'files_checked': 10, 'all_original_contents_attributes_restored': True, 'card_writes': 0}
+Verified transition: original -> original ; titles, ROMs, core images, NES records and unrelated attributes unchanged
+Verified transition: original -> system ; titles, ROMs, core images, NES records and unrelated attributes unchanged
