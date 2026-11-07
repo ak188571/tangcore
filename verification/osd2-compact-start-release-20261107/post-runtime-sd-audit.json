@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-07T15:10:14.142120+09:00",
+  "files_checked": 65,
+  "all_file_contents_and_attributes_unchanged": true,
+  "actual_USER_and_Reset_records_unchanged": true,
+  "metadata_unchanged": true,
+  "read_only_card_access": true,
+  "flash_operations": 0,
+  "auditor_sha256": "a7fb9c5cc7eb3ea468daa427eb4fe556dde37be505e35f3f89c33a7f3c4b71d6",
+  "status": "passed_all_65_file_contents_and_attributes",
+  "records": [
+    {
+      "file": "crt/02-232bb5b8-0000000000200000.a",
+      "system": 2,
+      "kind": 1,
+      "generation": 7,
+      "packed_value": 0,
+      "record_CRC32": "ac7d177e",
+      "sha256": "9d35c6cecb1daa7e2411fdc58a7a2a6d2d00df709aa8889c0dfc8ce10f06df51",
+      "attributes": 32
+    },
+    {
+      "file": "crt/02-232bb5b8-0000000000200000.b",
+      "system": 2,
+      "kind": 0,
+      "generation": 6,
+      "packed_value": 1,
+      "record_CRC32": "cf431445",
+      "sha256": "f31b581650e29a661fc410fd8b3a57db6170885474378c6f594b5cc791b1ae88",
+      "attributes": 32
+    }
+  ],
+  "user_confirmed_current_saved_values_preserved": true,
+  "entries_sha256": "03b9486201fb2313bf1c27c760830b2e25107095996db249cb899c50829532ea"
+}

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "stage": "compact OSD2 START full-release guard",
-  "status": "installed_full_readback_verified_runtime_pending",
+  "status": "installed_and_qualified_for_reported_scope",
   "source_commits": {
     "firmware-bl616": "a1b6755a271e8dfc29f388e85bb3aef772862f18",
     "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936"
@@ -32,8 +32,9 @@
   "metadata_unchanged": true,
   "actual_user_records_retained": true,
   "flash_utility_original_files_restored": true,
-  "hardware_status": "pending",
+  "hardware_status": "reported_SNES_NES_UI_scope_passed",
   "planned_SNES_launches": 1,
   "planned_NES_launches": 1,
-  "SNES_trial_report": "user_reported_normal_OSD_1_to_9_START_input_block_direction_release_items_1_to_3_pass"
+  "SNES_trial_report": "user_reported_normal_OSD_1_to_9_START_input_block_direction_release_items_1_to_3_pass",
+  "final_SD_invariance": "passed_all_65_contents_and_attributes_current_a7_b6_unchanged"
 }

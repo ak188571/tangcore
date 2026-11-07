@@ -1,0 +1,12 @@
+{
+  "odt": "D:\\Users\\foobaris\\.codex\\.chatgpt-projects\\g-p-6aae4d27d7508191b5fefb0113656c14\\outputs\\osd2-compact-result-20261107\\OSD2_COMPACT_RESULT_20261107.odt",
+  "bytes": 41584800,
+  "sha256": "e9019dee0f75c10c6a13e4a197e136a713e014bb59e14131510cd40f19baa562",
+  "language": "ja-JP",
+  "embedded_fonts": 3,
+  "pdf_fonts": "/BAAAAA+NotoSansCJKjp-Bold\n/CAAAAA+NotoSansCJKjp-Regular\n/DAAAAA+NotoSansMonoCJKjp-Regular\n/EAAAAA+NotoSansCJKjp-Regular",
+  "rendered_pages": 2,
+  "visual_inspection": "passed_all_2_final_pages",
+  "no_Chinese_font_substitution": true,
+  "source_markdown_sha256": "80bb0b18d4b7627efa2e594d7721b14d8b8b2e20a840c8bd9886a55118af3d82"
+}

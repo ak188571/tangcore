@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "stage": "compact OSD2 START full-release guard",
-  "status": "SNES_user_reported_pass_NES_and_SD_pending",
+  "status": "qualified_for_reported_SNES_NES_UI_scope_and_final_SD_invariance",
   "firmware_source": "a1b6755a271e8dfc29f388e85bb3aef772862f18",
   "firmware_sha256": "943f883476aa57d49367c0b19992553c42ee36e68b36938d5f80f626cf1ec622",
   "host_groups_passed": 15,
@@ -21,7 +21,7 @@
   "scope": "Block A/B/direction added while START remains held; accept new operations after full release; no changed-value SAVE or metadata update in retest",
   "readback_verified": true,
   "flash_program_operations": 1,
-  "tested_scope": "Reported Super Mario Collection / USB P1 only; NES and final SD audit pending",
+  "tested_scope": "Reported Super Mario Collection USB P1 normal/OSD/START guard and Dr. Mario compact/information OSD scope; not all games/ports",
   "SNES_trial": {
     "requested_game": "Super Mario Collection (Japan)",
     "connection": "USB P1",
@@ -44,8 +44,19 @@
     {
       "section": "SNES_direction_release_and_return_items_1_to_3",
       "answer": "1-3正常"
+    },
+    {
+      "section": "NES_compact_1_to_8_and_information_1_to_9",
+      "answer": "1-8, 1-9正常"
     }
   ],
-  "NES_regression": "pending",
-  "post_runtime_SD_invariance": "pending"
+  "NES_regression": "user_reported_compact_1_to_8_information_1_to_9_normal_other_requested_checks_not_individually_reported",
+  "post_runtime_SD_invariance": "passed_all_65_contents_and_attributes_Reset_a7_USER_b6_unchanged",
+  "legitimate_changed_value_SAVE_in_this_retest": false,
+  "limitations": [
+    "Current NES reply explicitly reports OSD item groups 1-8 and 1-9; other requested checks not individually reported",
+    "Prior intentional saved-record updates were user-confirmed and are not attributed to the independently reproduced START input gap",
+    "SYSTEM/GLOBAL and abnormal-status hardware display work remains deferred",
+    "OSD1/OSD2 localization will remain English for all cores"
+  ]
 }

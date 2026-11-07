@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "status": "installed_full_readback_verified_hardware_trial_pending",
+  "status": "qualified_for_reported_hardware_scope_and_final_SD_invariance",
   "deployed_firmware_source": "a1b6755a271e8dfc29f388e85bb3aef772862f18",
   "fix_source": "a1b6755a271e8dfc29f388e85bb3aef772862f18",
   "fix_firmware_bytes": 230960,
@@ -14,6 +14,8 @@
   "actual_records_preserved": true,
   "device_written": true,
   "SD_written": false,
-  "hardware_tested": false,
-  "operation_history_clarification": "その保存更新は実際にユーザーが行ったものでソフトウェアに起因するものではありません"
+  "hardware_tested": true,
+  "operation_history_clarification": "その保存更新は実際にユーザーが行ったものでソフトウェアに起因するものではありません",
+  "final_SD_invariance": "passed_65_files_and_attributes",
+  "actual_current_user_records_preserved": true
 }

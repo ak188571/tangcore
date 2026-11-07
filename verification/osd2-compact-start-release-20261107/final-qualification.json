@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-07",
+  "status": "qualified_for_reported_hardware_scope",
+  "branch": "tangcore-integrated",
+  "source_commits": {
+    "firmware-bl616": "a1b6755a271e8dfc29f388e85bb3aef772862f18",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936",
+    "nestang": "ec33410f2e6078fa20378df3cdae20f84aaf03e9",
+    "monitor": "e12b253838b45407dc4de99848218e24112b787c"
+  },
+  "qualification_tag": "osd2-compact-hw-20261107",
+  "normal_cells": [
+    16,
+    10
+  ],
+  "optional_information_cells": [
+    24,
+    17
+  ],
+  "normal_area_reduction_percent": 63.8,
+  "START_full_release_guard": "host_reproduced_fixed_and_reported_SNES_hardware_pass",
+  "NES_UI_regression": "reported_normal_item_groups_1_to_8_and_1_to_9",
+  "final_SD65_contents_attributes_and_current_records": "passed_read_only_snapshot",
+  "intentional_prior_user_SAVEs": "confirmed_and_retained",
+  "current_records": {
+    "a": "Reset generation7 value0",
+    "b": "USER generation6 value1"
+  },
+  "localization": "OSD1_OSD2_English_all_cores",
+  "remaining_user_deferred_work": [
+    "INITIAL_STORE_label_clarity",
+    "SYSTEM_GLOBAL_and_abnormal_status_hardware_display_checks"
+  ],
+  "pushed": false
+}
