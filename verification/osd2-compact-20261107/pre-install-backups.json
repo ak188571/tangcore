@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-07",
+  "stage": "compact OSD2",
+  "status": "fresh_backups_verified_before_firmware_write",
+  "fresh_SD_files": 65,
+  "all_S4c_contents_and_attributes_unchanged": true,
+  "independent_full_flash_reads_match": true,
+  "full_flash_matches_verified_S4c": true,
+  "whole_flash_sha256": "6a016e80989803807045a3a54b9eb2c33801dba802fb33f88d0cebc1cb26b6f4",
+  "firmware_program_operations": 0,
+  "SD_write_operations": 0,
+  "SNES_image_retained_without_copy": true,
+  "metadata_and_actual_USER_Reset_records_unchanged": true,
+  "recovery": "Fresh SD65/full-flash x2/custom-region rollback retained in session-01",
+  "approval_review": {
+    "initial_install_sd_rejected": "Potential SD write was not proven absent",
+    "resolution": "Read verified sealed helper branch and equal current/backup/payload hashes; same operation was approved on retry and skipped all copies"
+  },
+  "preflight_matches_fresh_backup": true,
+  "preflight_at": "2026-11-07T13:44:25.773009+09:00"
+}

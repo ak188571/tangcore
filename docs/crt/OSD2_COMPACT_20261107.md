@@ -42,3 +42,9 @@ firmwareは230,960byte、SHA256 `1416dba4ae61e0656d590f46025473301bee8f285f48772
 SNES確認はスーパーマリオコレクション・USB P1の1回の起動へまとめる。通常の小型表示、5位置、STARTの保持・開閉と縮小復帰、preview、X/Y取消し、Reset previewを確認する。SAVEは保存済み・無変更の状態だけで行い、同値省略とstay-openを確認する。新たなUSER値の保存やmetadata変更は行わない。続いてNESを1回起動し、同じ共有UIを回帰する。SNESの追加起動は依頼しない。
 
 最後にSDを新しく読取り退避し、全65file・属性と実USER/Reset recordの不変を照合する。公開済みのS4c合格tagは保持し、小型UIをその実機合格結果へ混ぜない。
+
+## 実機導入前の退避
+
+同日、SDを再識別して全65fileを新しく退避し、S4cの最終snapshotとの全内容・属性の一致を確認した。独立した全4MiB flashの2回の読取りは一致し、確認済みS4c全flashとも同じだった。書込み直前の追加読取りも新しい退避と一致した。
+
+SNES imageは現物・退避・payloadのSHA256が同じであり、helperのcopy分岐へ入らず保持した。全65file・属性と実USER/Reset recordに変更はなく、SD/firmwareへの書込みはまだ0回。新しいBOOT接続を受けてからfirmwareだけを更新する。詳細は`pre-install-backups.json`。
