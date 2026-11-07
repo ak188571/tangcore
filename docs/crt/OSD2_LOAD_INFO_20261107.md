@@ -20,7 +20,7 @@ GLOBAL・異常時・NESでは通常動作も明示報告された。NESの結�
 元のa7 Reset／b6 USERを全byte・属性で復旧し、一時defaultsを除去した。
 NES確認後も新しい読取り退避で、開始時の全65file・属性、titles.csv、NES設定との一致を確認した。
 追加のSNES/NES起動は不要。実機観察はユーザー報告であり、PC試験と区別して記録した。
-本段階のGitHub pushは未実施。
+GitHub公開対象と合格tagはGITHUB_PUBLICATION_OSD2_LOAD_INFO_20261107.mdに記録する。
 
 ## 補助表示の意味
 
