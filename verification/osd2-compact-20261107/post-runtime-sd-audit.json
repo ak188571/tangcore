@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-07",
+  "status": "expected_invariance_failed_valid_SNES_records_changed",
+  "files_checked": 65,
+  "changed_records": [
+    {
+      "file": "crt/02-232bb5b8-0000000000200000.a",
+      "before": {
+        "bytes": 32,
+        "sha256": "db251ecb687bf57c79ee6c71d46a408a4fd7d23f4a034bf2db1eed4f5feb4f21",
+        "attributes": 32
+      },
+      "after": {
+        "bytes": 32,
+        "sha256": "9d35c6cecb1daa7e2411fdc58a7a2a6d2d00df709aa8889c0dfc8ce10f06df51",
+        "attributes": 32
+      },
+      "system": 2,
+      "kind": 1,
+      "packed_value": 0,
+      "generation": 7,
+      "record_CRC_valid": true
+    },
+    {
+      "file": "crt/02-232bb5b8-0000000000200000.b",
+      "before": {
+        "bytes": 32,
+        "sha256": "3e5946a9e0a8288c0d8d8912d676646c0583054f3694dbc04b75267852bb78df",
+        "attributes": 32
+      },
+      "after": {
+        "bytes": 32,
+        "sha256": "f31b581650e29a661fc410fd8b3a57db6170885474378c6f594b5cc791b1ae88",
+        "attributes": 32
+      },
+      "system": 2,
+      "kind": 0,
+      "packed_value": 1,
+      "generation": 6,
+      "record_CRC_valid": true
+    }
+  ],
+  "other_63_file_contents_and_attributes_unchanged": true,
+  "all_file_attributes_unchanged": true,
+  "read_only_card_access": true,
+  "flash_operations": 0,
+  "actual_user_records_preserved": true,
+  "fresh_snapshot": "osd2-compact-hardware-20261107/post-runtime-01",
+  "cause": "Under investigation; no inference that user or START input gap caused these writes",
+  "separate_host_finding": "A/B or direction added after initial START while still held can pass through; host reproduction fails before full-release gate and passes after fix"
+}

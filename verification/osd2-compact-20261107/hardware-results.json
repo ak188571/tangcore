@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "stage": "compact OSD2",
-  "status": "SNES_user_reported_pass_NES_and_SD_invariance_pending",
+  "status": "reported_UI_pass_SD_invariance_failed_investigating",
   "firmware_source": "8bf3c7037ee5df457919be939de0c0c285ba5d99",
   "firmware_SHA256": "1416dba4ae61e0656d590f46025473301bee8f285f48772cde0988175b141e06",
   "normal_geometry_cells": [
@@ -35,7 +35,7 @@
     "compact_items_1_to_8": "user_reported_pass",
     "information_items_1_to_9_and_steps_A_to_C": "user_reported_pass",
     "START_hold_toggle_and_shrink_selection_value_position": "user_reported_pass_in_grouped_information_trial",
-    "actual_unchanged_SAVE_record_invariance": "pending_SD_audit"
+    "actual_unchanged_SAVE_record_invariance": "failed_expected_invariance"
   },
   "raw_user_reports": [
     {
@@ -49,8 +49,14 @@
     {
       "section": "SNES_information_items_1_to_9_and_steps_A_to_C",
       "answer": "1-9, A-C正常"
+    },
+    {
+      "section": "NES_compact_1_to_8_and_information_1_to_9",
+      "answer": "1-8, 1-9正常"
     }
   ],
-  "NES_regression": "pending",
-  "post_runtime_SD_invariance": "pending"
+  "NES_regression": "user_reported_compact_1_to_8_and_information_1_to_9_pass_other_requested_checks_not_individually_reported",
+  "post_runtime_SD_invariance": "failed_both_SNES_records_updated_valid_a7_Reset_b6_USER",
+  "known_START_input_gap": "Host reproduced: later A/B or direction while holding START is not blocked until release",
+  "qualification": "Not hardware-qualified as unchanged-record version"
 }
