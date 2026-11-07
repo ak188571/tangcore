@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-07T16:32:13.438195+09:00",
+  "phase": "global",
+  "evidence": "user-reported Console138K hardware observation",
+  "firmware_commit": "95c4416187bf19d42793336ba0390b75946d1614",
+  "system": "SNES",
+  "game": "スーパーマリオコレクション",
+  "connection": "USB P1",
+  "requested_snes_launches_this_phase": 1,
+  "normal_game_operation": "user-reported normal in requested group",
+  "normal_OSD_items_1_through_8": "passed",
+  "normal_reply": "通常動作、1-8に問題なし",
+  "info_items_1_through_9": "passed",
+  "info_reply": "1-9, previewと取り消しに問題なし",
+  "loaded_from": "GLOBAL",
+  "save_read": "BAD SAVE",
+  "defaults": "OK",
+  "initial_settings": {
+    "crt": true,
+    "blur": "WEAK",
+    "scan": "STRONG"
+  },
+  "preview_and_cancel": "passed",
+  "load_snapshot_preserved_during_preview": "reported_passed_in_requested_group",
+  "runtime_SD_invariance": "pending fresh capture",
+  "errors_hardware_result": "pending",
+  "NES_regression": "pending",
+  "hardware_scope": "Reported SNES GLOBAL/BAD SAVE, normal operation, compact/info preview/cancel only; no inference from NES"
+}
