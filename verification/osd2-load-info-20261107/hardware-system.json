@@ -22,8 +22,8 @@
   "load_snapshot_preserved_during_preview": "reported_passed_in_requested_group",
   "normal_boot_list_video_audio_controls": "requested_in_same_question; not individually restated in answer",
   "runtime_SD_invariance": "passed; fresh post-system-01 capture, all 66 files and attributes unchanged",
-  "global_hardware_result": "pending",
-  "errors_hardware_result": "pending",
-  "NES_regression": "pending",
+  "global_hardware_result": "user_reported_pass_for_requested_scope",
+  "errors_hardware_result": "user_reported_pass_for_requested_scope",
+  "NES_regression": "user_reported_pass_for_requested_scope",
   "hardware_scope": "Reported SNES SYSTEM/RECOVERED and compact/info preview/cancel only; no inference from NES"
 }

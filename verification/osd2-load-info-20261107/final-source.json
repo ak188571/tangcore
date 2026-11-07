@@ -26,5 +26,7 @@
     "copier512": "8541f1dc",
     "reference": "Python zlib"
   },
-  "hardware_status": "pending"
+  "hardware_status": "complete_for_reported_hardware_scope",
+  "hardware_evidence": "results.json",
+  "all_original_SD_file_contents_attributes_restored_and_finally_unchanged": true
 }

@@ -1,17 +1,26 @@
 # OSD2 起動時情報の明確化と追加実機試験
 
 2026年11月7日。対象はConsole138K、共有BL616 firmware、SNESTangとNES回帰。
-実機合格済み小型版を基準とし、tangcore-integratedで実施する。
-SYSTEM／RECOVEREDの通常①〜⑧・補助①〜⑨・preview・取消しは実機正常とのユーザー報告を受領した。
-SYSTEM試験後のSD全66file・属性の不変を新しい退避で照合した。GLOBAL試験fileへ切替済み。
-GLOBAL／BAD SAVEの通常動作・通常①〜⑧・補助①〜⑨・preview・取消しも実機正常とのユーザー報告を受領した。
-GLOBAL試験後のSD全66file・属性の不変を新しい退避で照合し、最後の異常時試験fileへ切り替えた。
-BUILT-IN／NEW SCHEMA／BAD FILEの通常動作・通常①〜⑧・補助①〜⑨と、SAVE FAILED・snapshot維持・取消しのA〜Cは想定どおりとのユーザー報告を受領した。
-SNESは予定の3回で表示確認を終了。SAVE拒否後の全66file・属性不変を新しい退避で照合した。
-a7 Reset／b6 USERを全byte・属性で復旧し、一時defaultsを除去。元の全65file・属性への一致も確認した。
-NES回帰と最終SD照合は未完了。追加のSNES起動は行わない。
-日本語一覧・映像・音声・通常操作は同じ質問で依頼したが、回答では個別には再記載されていない。
-PC試験の合格を実機合格とは扱わない。
+実機合格済み小型版を基準とし、tangcore-integratedで実装・検証した。
+通常の小型表示と英語を維持し、起動時情報をLOADED FROM／SAVE READへ改称した。
+SNESは3回、NESは1回の起動依頼で、以下の実機正常・想定どおりの報告を受領した。
+
+| 対象 | 実機で報告された結果 |
+| --- | --- |
+| SNES 1回目 | SYSTEM／RECOVERED、通常①〜⑧・補助①〜⑨、preview・取消し正常 |
+| SNES 2回目 | GLOBAL／BAD SAVE、通常動作と両表示、preview・取消し正常 |
+| SNES 3回目 | BUILT-IN／NEW SCHEMA／BAD FILE、通常動作と両表示、SAVE拒否・snapshot維持・取消しが想定どおり |
+| NES 1回 | 通常動作、CSV／RESET、両表示、START保持中の入力遮断、preview・取消し正常 |
+
+SNESはスーパーマリオコレクション、NESはドクターマリオ、接続はUSB P1。
+SYSTEM段階の一覧・映像・音声・通常操作は同じ質問で依頼したが、回答は①〜⑧正常であり個別には再記載されていない。
+GLOBAL・異常時・NESでは通常動作も明示報告された。NESの結果からSNES合格を推定していない。
+
+各SNES試験後の全66file・属性不変を新しい退避で照合した。
+元のa7 Reset／b6 USERを全byte・属性で復旧し、一時defaultsを除去した。
+NES確認後も新しい読取り退避で、開始時の全65file・属性、titles.csv、NES設定との一致を確認した。
+追加のSNES/NES起動は不要。実機観察はユーザー報告であり、PC試験と区別して記録した。
+本段階のGitHub pushは未実施。
 
 ## 補助表示の意味
 
@@ -45,9 +54,9 @@ OSD1のRestart GameはROMやmetadataを読み直さないため、採用元の�
 | READ ERROR | 読取りに失敗し、古い保存値を推測採用しない |
 | NO ROM ID | 利用可能なROM identityがない |
 
-## 最小起動の実機計画
+## 実施した試験条件と保護手順
 
-SNESは同じスーパーマリオコレクションを合計3回起動する。
+SNESは同じスーパーマリオコレクションを合計3回の起動依頼で確認した。
 各回の確認はその起動中にまとめる。firmware導入は1回のみ。
 
 | 回 | 一時fileの状態 | 設定値 | LOADED FROM | SAVE READ | DEFAULTS |
@@ -85,3 +94,11 @@ buildのproduction入力99fileはcommitと一致し、ELFのSDH wrapper結合と
 FPGAの変更はなく、既存のSNES/NES/monitor合格版を使用する。
 
 今回の実機試験ではCONFLICT、実際のREAD ERROR、SAVE中の電源断、P2/DS2/BL616側USB、全PPU映像modeの合格を主張しない。
+
+## 確認記録
+
+firmwareの変更commitは95c4416187bf19d42793336ba0390b75946d1614。
+verification/osd2-load-info-20261107/results.jsonに最終結果を、hardware-system/global/errors/nes.jsonに回答原文と確認範囲を記録した。
+各段階の導入・SD不変・復旧を別commitに記録している。
+最終SD照合は全65 user fileの内容・属性が対象であり、全sectorやFAT領域のimage一致を意味しない。
+実機へ追加書込み・追加起動を要求せず、この確認範囲を完了とする。

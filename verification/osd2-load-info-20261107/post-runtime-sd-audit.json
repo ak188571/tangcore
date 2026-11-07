@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-07T16:52:16.455502+09:00",
+  "snapshot": "post-nes-final-01",
+  "files_checked": 65,
+  "all_original_contents_attributes_unchanged": true,
+  "actual_a7_Reset_b6_USER_unchanged": true,
+  "NES_records_unchanged": true,
+  "titles_csv_contents_attributes_unchanged": true,
+  "temporary_defaults_absent": true,
+  "SD_writes": 0,
+  "flash_operations": 0,
+  "scope": "User files enumerated by sealed helper; not a whole-sector or FAT filesystem-image comparison",
+  "record_hashes": {
+    "crt/01-7623dffd-0000000000010010.a": "475ec236538bcab8636333b9ce24dd414d8b53fa165b96f17ba04e6e0c5ac4f8",
+    "crt/01-7623dffd-0000000000010010.b": "5ecfd76341252b1d283d0b46b15562969aa3f374b2b9d33e87a5e56926686ff9",
+    "crt/01-ebbb19bf-0000000000006010.a": "63adc56deab21eefbd8302b5c9daec4317b93e6d942fab470d5ca183490150cf",
+    "crt/01-ebbb19bf-0000000000006010.b": "e44346fdad8a75305c418528e4f94f3b4f7b7f0e711fbc48449d457a2efba276",
+    "crt/02-232bb5b8-0000000000200000.a": "9d35c6cecb1daa7e2411fdc58a7a2a6d2d00df709aa8889c0dfc8ce10f06df51",
+    "crt/02-232bb5b8-0000000000200000.b": "f31b581650e29a661fc410fd8b3a57db6170885474378c6f594b5cc791b1ae88"
+  }
+}

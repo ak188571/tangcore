@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-07T16:52:16.455502+09:00",
+  "evidence": "user-reported Console138K hardware observation",
+  "system": "NES",
+  "game": "ドクターマリオ",
+  "connection": "USB P1",
+  "requested_launches": 1,
+  "normal_reply": "通常動作と1-8は正常",
+  "normal_game_operation": "reported normal",
+  "normal_OSD_items_1_through_8": "passed",
+  "info_reply": "1-9, 入力遮断、preview, 取り消し正常",
+  "info_items_1_through_9": "passed",
+  "loaded_from": "CSV",
+  "save_read": "RESET",
+  "defaults": "MISSING",
+  "initial_settings": "ON/WEAK/STD",
+  "ROM_ID": "7623dffd",
+  "START_hold_input_block_preview_cancel": "passed",
+  "SAVE_RESET_not_requested": true,
+  "runtime_SD_audit": "passed; original 65 files/attributes unchanged"
+}

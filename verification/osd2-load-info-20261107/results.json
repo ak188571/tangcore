@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-07T16:52:16.455502+09:00",
+  "status": "complete_for_reported_hardware_scope",
+  "source_branch": "tangcore-integrated",
+  "source_commits": {
+    "firmware-bl616": "95c4416187bf19d42793336ba0390b75946d1614",
+    "snestang": "8cf63536f4c355b1abe2fc05854584cb41f57936",
+    "nestang": "ec33410f2e6078fa20378df3cdae20f84aaf03e9",
+    "monitor": "e12b253838b45407dc4de99848218e24112b787c"
+  },
+  "firmware_bytes": 230976,
+  "firmware_sha256": "f033d8c2240fc9c9d658ba95aa5e46b8a05d9eb95c6a9d6c7bdaeb73401348ba",
+  "English_and_compact_normal_view_preserved": true,
+  "normal_view_exact_cell_comparison_to_previous_qualified_firmware": "passed",
+  "host_test_groups": 16,
+  "deployment_guard_tests": 30,
+  "fixture_guard_tests": 12,
+  "reported_SNESTang_hardware_cases": [
+    "SYSTEM/RECOVERED",
+    "GLOBAL/BAD SAVE",
+    "BUILT-IN/NEW SCHEMA/BAD FILE/SAVE FAILED/cancel"
+  ],
+  "SNES_launches_requested": 3,
+  "NES_launches_requested": 1,
+  "reported_NES_regression": "normal game, compact/info CSV/RESET, START hold block, preview, ACK, cancel",
+  "all_original_65_file_contents_attributes_restored_and_finally_unchanged": true,
+  "final_SD_audit": "post-runtime-sd-audit.json",
+  "hardware_evidence_files": [
+    "hardware-system.json",
+    "hardware-global.json",
+    "hardware-errors.json",
+    "hardware-nes.json"
+  ],
+  "first_SYSTEM_phase_startup_checks": "Requested with OSD group; not individually restated in answer. GLOBAL/error/NES normal operation explicitly reported.",
+  "untested_in_this_stage": [
+    "physical SD READ ERROR or power loss",
+    "CONFLICT hardware display",
+    "P2/DS2/BL616-side USB",
+    "all SNES PPU video modes"
+  ],
+  "additional_game_launches_required": 0,
+  "push_performed_for_this_stage": false
+}

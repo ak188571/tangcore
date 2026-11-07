@@ -19,6 +19,6 @@
     "crt/02-232bb5b8-0000000000200000.b": "f31b581650e29a661fc410fd8b3a57db6170885474378c6f594b5cc791b1ae88"
   },
   "additional_snes_launches_planned": 0,
-  "NES_regression": "pending",
-  "final_runtime_SD_audit": "pending"
+  "NES_regression": "user_reported_pass",
+  "final_runtime_SD_audit": "passed; fresh post-nes-final-01 snapshot"
 }
