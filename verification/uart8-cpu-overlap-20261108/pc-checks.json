@@ -1,0 +1,127 @@
+{
+  "adapter-tests": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "uart-adapter-build",
+        "exit_code": 0,
+        "seconds": 0.92
+      },
+      {
+        "name": "uart-adapter",
+        "exit_code": 0,
+        "seconds": 0.36
+      },
+      {
+        "name": "uart-adapter-trace-build",
+        "exit_code": 0,
+        "seconds": 1.01
+      },
+      {
+        "name": "uart-adapter-trace",
+        "exit_code": 0,
+        "seconds": 0.44
+      },
+      {
+        "name": "launch-export-build",
+        "exit_code": 0,
+        "seconds": 0.64
+      },
+      {
+        "name": "launch-export",
+        "exit_code": 0,
+        "seconds": 0.06
+      },
+      {
+        "name": "profile-accounting-build",
+        "exit_code": 0,
+        "seconds": 0.55
+      },
+      {
+        "name": "profile-accounting",
+        "exit_code": 0,
+        "seconds": 0.06
+      },
+      {
+        "name": "uart-adapter-profile-build",
+        "exit_code": 0,
+        "seconds": 1.09
+      },
+      {
+        "name": "uart-adapter-profile",
+        "exit_code": 0,
+        "seconds": 0.45
+      },
+      {
+        "name": "common-session-build",
+        "exit_code": 0,
+        "seconds": 0.81
+      },
+      {
+        "name": "common-session",
+        "exit_code": 0,
+        "seconds": 0.73
+      },
+      {
+        "name": "snes-loader",
+        "exit_code": 0,
+        "seconds": 1.64
+      }
+    ]
+  },
+  "rom-tests": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "common-session-build",
+        "exit_code": 0,
+        "seconds": 0.58
+      },
+      {
+        "name": "common-session",
+        "exit_code": 0,
+        "seconds": 0.53
+      },
+      {
+        "name": "receiver-cosim-build",
+        "exit_code": 0,
+        "seconds": 7.06
+      },
+      {
+        "name": "receiver-cosim",
+        "exit_code": 0,
+        "seconds": 95.92
+      }
+    ]
+  },
+  "serial-tests": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "uart-cosim-build",
+        "exit_code": 0,
+        "seconds": 4.64
+      },
+      {
+        "name": "uart-cosim",
+        "exit_code": 0,
+        "seconds": 211.28
+      }
+    ]
+  },
+  "spi-common-tests": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "spi-common-build",
+        "exit_code": 0,
+        "seconds": 4.59
+      },
+      {
+        "name": "spi-common",
+        "exit_code": 0,
+        "seconds": 70.51
+      }
+    ]
+  }
+}

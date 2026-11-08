@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-08T21:23:47.265084+09:00",
+  "source": "User response in this chat",
+  "user_text": "2本とも正常。接続済み",
+  "both_games_normal": true,
+  "boot_normal": true,
+  "bottom_display_normal": true,
+  "return_to_list_normal": true,
+  "titles": [
+    "Super Mario Collection (Japan), 2 MiB",
+    "Super Donkey Kong (Japan) (Rev 1), 4 MiB"
+  ],
+  "normal_firmware_retimed": false
+}

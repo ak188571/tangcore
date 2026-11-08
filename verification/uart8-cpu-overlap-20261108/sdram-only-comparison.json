@@ -1,0 +1,76 @@
+[
+  {
+    "rom": "sd:snes/Super Mario Collection (Japan).sfc",
+    "rom_sha256": "adde6487d77eab714d5eca7d7c49299be64928dd93bb4198baa59a7aa2fd0c92",
+    "baseline_file": "uart-0017.txt",
+    "new_file": "uart-0019.txt",
+    "old_window": 2,
+    "new_window": 2,
+    "old_retries": 0,
+    "new_retries": 0,
+    "success": true,
+    "crc_matches_source": true,
+    "crc_matches_baseline": true,
+    "rom_stream_until_queued_s": {
+      "old": 3.237535,
+      "new": 3.257676,
+      "saved_s": -0.020141000000000187,
+      "reduction_percent": -0.6221091046120023
+    },
+    "end_readback_ack_wait_s": {
+      "old": 0.48776,
+      "new": 0.487761,
+      "saved_s": -9.999999999732445e-07,
+      "reduction_percent": -0.00020501886172979425
+    },
+    "fpga_program_s": {
+      "old": 5.10122,
+      "new": 5.125221,
+      "saved_s": -0.02400100000000016,
+      "reduction_percent": -0.4704952932827865
+    },
+    "firmware_launch_return_s": {
+      "old": 10.141644,
+      "new": 10.186677,
+      "saved_s": -0.0450330000000001,
+      "reduction_percent": -0.4440404336811675
+    }
+  },
+  {
+    "rom": "sd:snes/Action/Super Donkey Kong (Japan) (Rev 1).sfc",
+    "rom_sha256": "d6e8f5066ea6b87ecf3a574259c264e3c68c84bbe76c32c1945a799af581a65d",
+    "baseline_file": "uart-0018.txt",
+    "new_file": "uart-0020.txt",
+    "old_window": 2,
+    "new_window": 2,
+    "old_retries": 0,
+    "new_retries": 0,
+    "success": true,
+    "crc_matches_source": true,
+    "crc_matches_baseline": true,
+    "rom_stream_until_queued_s": {
+      "old": 6.467952,
+      "new": 6.508146,
+      "saved_s": -0.04019399999999962,
+      "reduction_percent": -0.6214331831776058
+    },
+    "end_readback_ack_wait_s": {
+      "old": 0.975412,
+      "new": 0.97541,
+      "saved_s": 1.999999999946489e-06,
+      "reduction_percent": 0.00020504156191911615
+    },
+    "fpga_program_s": {
+      "old": 5.101752,
+      "new": 5.122518,
+      "saved_s": -0.020766000000000062,
+      "reduction_percent": -0.4070366415302049
+    },
+    "firmware_launch_return_s": {
+      "old": 14.631731,
+      "new": 14.692762,
+      "saved_s": -0.061030999999999835,
+      "reduction_percent": -0.4171140106389315
+    }
+  }
+]

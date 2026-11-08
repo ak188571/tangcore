@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-08T20:46:37.009718+09:00",
+  "verified": true,
+  "profile_enabled": false,
+  "cpu_pipeline": true,
+  "image_sha256": "3dbad29760326de14118b0517e06899b3880b466cf378d8247d7cc0a9be99811",
+  "full_flash_sha256": "634eacee88895021cf502e4d0a8af51d8427c217138adbc4b8154e645178a158",
+  "readback": "flash-read-03.json",
+  "boot_area_unchanged": true,
+  "from_0x80000_unchanged": true,
+  "core_unchanged": true
+}

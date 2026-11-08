@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "setup_violations": 0,
+  "hold_violations": 0,
+  "clk96_actual_fmax_mhz": 96.085,
+  "clk80_actual_fmax_mhz": 86.214,
+  "report": "snestang\\impl\\pnr\\snestang_console138k_ds2_tr_content.html",
+  "scope": "Under console138k_combined.sdc; electrical board validation pending",
+  "legacy_pll_warnings_preserved": true
+}

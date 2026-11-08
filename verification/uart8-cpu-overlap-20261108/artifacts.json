@@ -1,0 +1,35 @@
+{
+  "tag": "uart8-cpu-overlap-hw-20261108",
+  "source_commits": {
+    "firmware-bl616": "72fa65aaad17cf87276e62e73d893c035d811c99",
+    "snestang": "4d6007736b488b477131e573ee550a609805e757"
+  },
+  "archives": {
+    "normal": {
+      "file": "verified-normal-pair.zip",
+      "bytes": 1948362,
+      "sha256": "0b9abbcad05a84a98fbc1ff467bd3f344c430187b461492263a79e16102362ac",
+      "contents": {
+        "firmware/normal/tangcore_bl616.bin": "fa0e48157191afb19be3ac7ecfbaf4ffd0d00cefcda9bf6294b6f5700c4ec0eb",
+        "cores/console138k/snestang.bin": "ca489a5fe2696716d58dc968854ed1bfb75d67b37365b68b5c3f1f88e218e191",
+        "verification/normal-runtime.json": "9be608fb656cb05cef65ce4d40f52bebf863868f903d31059e584ff101bae71c",
+        "release-manifest.json": "77002bdff411631e3f06c3729d84bdb1a95f3239d0dcef15612549a26a377458",
+        "verification/measurements.json": "5d8b8a53e04a54d76db4258e2a7adf605dc088316c231e47a70e8e671a751870",
+        "README.txt": "01a8314cba25c6035402c58aefe4edc1d1295f6ed3d3455b3ab82e5095229377"
+      }
+    },
+    "trace": {
+      "file": "verified-trace-pair.zip",
+      "bytes": 1950975,
+      "sha256": "b8c8372aeaad05eb4923471bd44cb4ba6d6bec550b93a518eaaf1374a0d62a9a",
+      "contents": {
+        "firmware/trace/tangcore_bl616.bin": "3dbad29760326de14118b0517e06899b3880b466cf378d8247d7cc0a9be99811",
+        "cores/console138k/snestang.bin": "ca489a5fe2696716d58dc968854ed1bfb75d67b37365b68b5c3f1f88e218e191",
+        "verification/trace-runtime.json": "cafc72b50e4f119713b92fbfffffc0601c16d943eb79a5c82a99c88bd71e691d",
+        "release-manifest.json": "db113e0f556ceabf846c7c7d28d302aaf2d468e5d35e9377849e5543b1514329",
+        "verification/measurements.json": "5d8b8a53e04a54d76db4258e2a7adf605dc088316c231e47a70e8e671a751870",
+        "README.txt": "e9d01ca718f3e20b1b5b09591fed8c5cbb2da44a3eae0c8ae924cf48b03a92e8"
+      }
+    }
+  }
+}

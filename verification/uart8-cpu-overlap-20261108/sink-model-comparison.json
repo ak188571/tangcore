@@ -1,0 +1,67 @@
+{
+  "mclk_hz": 21505376.34408602,
+  "controller_model": "SDRAM commands, synchronous payload RAM, fclk:mclk=3:1",
+  "device_written": false,
+  "serial_model": "Actual UART bits and common Session/receiver/sink; behavioural memory, 64 KiB body + 64-byte header",
+  "uart_baud": 8000000,
+  "serial_clock_hz": 80000000,
+  "serial_before": {
+    "stop_wait_cycles": 9079074,
+    "window2_cycles": 6749020
+  },
+  "serial_after": {
+    "stop_wait_cycles": 7739059,
+    "window2_cycles": 6726819
+  },
+  "serial_window2_reduction_percent": 0.32895146258271574,
+  "profiles": [
+    {
+      "bytes": 65536,
+      "old_data_mclk": 459269,
+      "new_data_mclk": 99408,
+      "old_data_ms": 21.356008499999998,
+      "new_data_ms": 4.622472,
+      "reduction_percent": 78.35516875730781,
+      "end_mclk": 294917,
+      "end_ms": 13.7136405
+    },
+    {
+      "bytes": 2097152,
+      "old_data_mclk": 14690501,
+      "new_data_mclk": 3178576,
+      "old_data_ms": 683.1082965,
+      "new_data_ms": 147.803784,
+      "reduction_percent": 78.3630524241481,
+      "end_mclk": 9437189,
+      "end_ms": 438.8292885
+    },
+    {
+      "bytes": 4194304,
+      "old_data_mclk": 29380805,
+      "new_data_mclk": 6357072,
+      "old_data_ms": 1366.2074325,
+      "new_data_ms": 295.603848,
+      "reduction_percent": 78.3631796337779,
+      "end_mclk": 18874373,
+      "end_ms": 877.6583445
+    }
+  ],
+  "handoff_hardware_accounting": [
+    {
+      "bytes": 2097152,
+      "data_frame_count": 2049,
+      "uart_data_wire_minimum_seconds": 2.68299,
+      "handoff_RomBegin_to_RomQueued_seconds": 3.237535,
+      "difference_seconds": 0.5545449999999996,
+      "scope": "Handoff measurement minus continuous DATA wire lower bound; control/CPU/SD/CRC/ACK contributions not individually measured"
+    },
+    {
+      "bytes": 4194304,
+      "data_frame_count": 4097,
+      "uart_data_wire_minimum_seconds": 5.36587,
+      "handoff_RomBegin_to_RomQueued_seconds": 6.467952,
+      "difference_seconds": 1.1020820000000002,
+      "scope": "Handoff measurement minus continuous DATA wire lower bound; control/CPU/SD/CRC/ACK contributions not individually measured"
+    }
+  ]
+}

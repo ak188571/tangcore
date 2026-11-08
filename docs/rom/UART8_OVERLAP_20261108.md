@@ -71,3 +71,7 @@ Gowin 1.9.12.03で `gw_sh build_console138k_usb.tcl console138k ds2` を実行�
 
 実機確認・測定・配布物の照合値は[verification/uart8-overlap-20261108](../../verification/uart8-overlap-20261108/)を参照する。
 旧tagとその配布物は前段の直列転送版の記録として保持する。
+
+## 後続の実機確認済み版
+
+SDRAM連続格納・DMA送信中のCPU処理・計測OFF通常版は[UART8_CPU_OVERLAP_20261108.md](UART8_CPU_OVERLAP_20261108.md)と共通tag `uart8-cpu-overlap-hw-20261108` に記録した。この文書と旧tagは保持する。

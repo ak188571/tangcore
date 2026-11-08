@@ -14,6 +14,11 @@ Please [file an issue](https://github.com/nand2mario/tangcore/issues) if you run
 
 `tangcore-integrated`があるrepositoryでは、このbranchを今後の変更の基準にします。対象一覧とsubmoduleの扱いは[開発branchの方針](docs/DEVELOPMENT_BRANCHES.md)を参照してください。
 
+## Console138K UART8 CPU重ね合わせの実機確認
+
+共通tag `uart8-cpu-overlap-hw-20261108`。通常版は軽量計測・詳細計測ともOFFです。
+[実装・比較・確認範囲](docs/rom/UART8_CPU_OVERLAP_20261108.md)、[通常版の配布ZIP](verification/uart8-cpu-overlap-20261108/verified-normal-pair.zip)を参照してください。
+
 ## Console138K UART8並行化の実機確認
 
 共通tag `uart8-overlap-hw-20261108` で、通常版firmwareとSNES coreの対応する組を公開しています。
