@@ -1,0 +1,36 @@
+{
+  "source_commits": {
+    "firmware-bl616": "6744940d6a1a84f677c9bd4e73696788bf3fb1de",
+    "snestang": "d4d46357a226ce77b08b78cf4be938fc6111bb80"
+  },
+  "firmware-bl616": {
+    "base_commit": "d6328c9d1caa412f1b3ec068170c296814d25e28",
+    "code_and_tests": {
+      "tests/rom/uart_adapter_test.cpp": "fe340be05988653ffc0891b84ccf807506a7345d5b4ae94d02a5a86c7a7e8f6d",
+      "tests/ui16/launch_export_test.cpp": "ba64624190baea1b2da1fa09f33c99a1bc268a750de39e815f11fa712ad8a274",
+      "ui/tc_launch_export.cpp": "bebe2077afe638224f9035d8ef04a0604653d6c7b9dd6f9df9811f5782f3a297",
+      "ui/tc_launch_trace.h": "460029a2dd693b7c1d0bae990c0d2de9701e83bcd3663729839eae3d5f5bb111",
+      "utils/tc_rom_protocol.cpp": "fec2a0edf10f7790185fba1722f84d4d934935139a232cb3f89265724eda45a6",
+      "utils/tc_rom_protocol.h": "3335bca25875e737fce17d110672e5603820fb376c00530946649ec5739b84f6",
+      "utils/tc_rom_uart.cpp": "b034ffd2fd9ab249301b340f275ebf3a0ff96587e96f4b7246f43620f6d954fd"
+    },
+    "code_matches_tested_worktree": true,
+    "documentation_updated_for_publication": true
+  },
+  "snestang": {
+    "base_commit": "06ee0670252a0486d905b6b011fab8c49e83c06c",
+    "code_and_tests": {
+      "console138k_combined.sdc": "1531949ffd74a864ea6a37a4bbea165a3a0450a01b4d66a8182608fe9025ed09",
+      "src/rom/tc_rom_receiver.sv": "cc0641a62b1f2edb805d459cc646faa5ac20d09a4cce15a8244a15f5cc9e57f8",
+      "src/rom/tc_snes_rom_sink.sv": "b6bb0e2927bbcd4289262d35598f914dfca7696a2710f48eed9027b7bef48d4e",
+      "src/rom/tc_uart_rom_link.sv": "a3dc1f7c6ee82d7e47b579f57e819cf9977ed1097c91e6450cad9ea7245e2f76",
+      "src/snestang_console138k_usb_top.v": "904e56c3acca93340c8d19428a098b89f16dfbd06bdaf500e52cc30272e7f64b",
+      "tests/rom/receiver_cosim.cpp": "aec5c52f4b20e46c3c004395f3b43ab3ee473af3962a7bf5ab742c664185c87f",
+      "tests/rom/tb_rom_core.sv": "25bad2345b08650072dd174bb5a6d1a7782b87b027abc4a1155d7e6bed385320",
+      "tests/rom/tb_rom_uart.sv": "c458eb34b75ef54a75ec0d19c180b625df83ca611fdc5bc928b0710ad3975410",
+      "tests/rom/uart_cosim.cpp": "b2bd7888b27a6abd673aa14eb03fdd7cb1cd815f382f505d53e44becd8970033"
+    },
+    "code_matches_tested_worktree": true,
+    "documentation_updated_for_publication": true
+  }
+}

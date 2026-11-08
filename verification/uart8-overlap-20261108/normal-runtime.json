@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-08T16:15:32.526143+09:00",
+  "source": "user",
+  "firmware_mode": "normal",
+  "trace_enabled": false,
+  "normal_launch_confirmed": true,
+  "loading_display_normal": true,
+  "return_to_list_confirmed": true,
+  "titles": [
+    "スーパーマリオコレクション（2 MiB）",
+    "スーパードンキーコング（4 MiB）"
+  ],
+  "trials_per_title": 1,
+  "user_observation": "2本とも起動・下段表示・一覧復帰が正常でした",
+  "title_seconds": null,
+  "timing_scope": "通常版では再計時していない"
+}

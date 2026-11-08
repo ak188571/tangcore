@@ -1,0 +1,75 @@
+{
+  "firmware-build": {
+    "target": "console138k",
+    "trace_enabled": false,
+    "uart8_enabled": true,
+    "passed": true,
+    "bytes": 238896,
+    "sha256": "d183f55bfa2fd91215f70f0a6c499140d504e19f10159f5a4fd9e594d8f89e60",
+    "steps": [
+      {
+        "step": "configure",
+        "exit_code": 0,
+        "seconds": 0.94
+      },
+      {
+        "step": "compile",
+        "exit_code": 0,
+        "seconds": 5.24
+      },
+      {
+        "step": "combine",
+        "exit_code": 0,
+        "seconds": 2.12
+      }
+    ]
+  },
+  "firmware-trace-build": {
+    "target": "console138k",
+    "trace_enabled": true,
+    "uart8_enabled": true,
+    "passed": true,
+    "bytes": 241744,
+    "sha256": "d901978c4437c9e55b9ca2b45860a64fe43cda8b68a4e7a5ce2312f81f167e2e",
+    "steps": [
+      {
+        "step": "configure",
+        "exit_code": 0,
+        "seconds": 2.11
+      },
+      {
+        "step": "compile",
+        "exit_code": 0,
+        "seconds": 15.73
+      },
+      {
+        "step": "combine",
+        "exit_code": 0,
+        "seconds": 2.06
+      }
+    ]
+  },
+  "fpga-build": {
+    "exit_code": 0,
+    "seconds": 979.75,
+    "tool": "Gowin 1.9.12.03",
+    "command": [
+      "gw_sh",
+      "build_console138k_usb.tcl",
+      "console138k",
+      "ds2"
+    ],
+    "artifacts": [
+      {
+        "file": "snestang_console138k_ds2.bin",
+        "bytes": 4733130,
+        "sha256": "e2dc7702b9f5bfc9c9401cd36c2dd4b3935d1e21499a3f51806f2b978ef37f7b"
+      },
+      {
+        "file": "snestang_console138k_ds2.fs",
+        "bytes": 37922327,
+        "sha256": "499554f40c75fdfb631dd34c24a35f1548122694ec3ceecbdc5c1552b036be91"
+      }
+    ]
+  }
+}

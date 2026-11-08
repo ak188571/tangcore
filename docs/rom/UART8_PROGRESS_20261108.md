@@ -54,3 +54,7 @@ Fmaxは96 MHz系96.325 MHz、80 MHz系81.127 MHz。
 このtagは現在の直列転送を実機で確認した構成を記録する。
 
 実機確認、測定値、成果物の照合値は `verification/uart8-progress-20261108/` を参照する。
+
+## 後続の確認済み版
+
+UART受信とSDRAM格納の並行化、および通常版の実機確認は[UART8_OVERLAP_20261108.md](UART8_OVERLAP_20261108.md)と共通tag `uart8-overlap-hw-20261108` に記録した。この文書と旧tagは直列転送版の履歴として保持する。

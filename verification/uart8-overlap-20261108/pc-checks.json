@@ -1,0 +1,159 @@
+{
+  "rom-tests": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "common-session-build",
+        "exit_code": 0,
+        "seconds": 0.53
+      },
+      {
+        "name": "common-session",
+        "exit_code": 0,
+        "seconds": 0.53
+      },
+      {
+        "name": "receiver-cosim-build",
+        "exit_code": 0,
+        "seconds": 4.38
+      },
+      {
+        "name": "receiver-cosim",
+        "exit_code": 0,
+        "seconds": 98.19
+      }
+    ]
+  },
+  "serial-tests": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "uart-cosim-build",
+        "exit_code": 0,
+        "seconds": 4.44
+      },
+      {
+        "name": "uart-cosim",
+        "exit_code": 0,
+        "seconds": 178.02
+      }
+    ]
+  },
+  "adapter-tests": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "uart-adapter-build",
+        "exit_code": 0,
+        "seconds": 0.97
+      },
+      {
+        "name": "uart-adapter",
+        "exit_code": 0,
+        "seconds": 0.33
+      },
+      {
+        "name": "uart-adapter-trace-build",
+        "exit_code": 0,
+        "seconds": 1.03
+      },
+      {
+        "name": "uart-adapter-trace",
+        "exit_code": 0,
+        "seconds": 0.33
+      },
+      {
+        "name": "launch-export-build",
+        "exit_code": 0,
+        "seconds": 0.81
+      },
+      {
+        "name": "launch-export",
+        "exit_code": 0,
+        "seconds": 0.06
+      },
+      {
+        "name": "snes-loader",
+        "exit_code": 0,
+        "seconds": 1.56
+      }
+    ]
+  },
+  "spi-common-tests": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "spi-common-build",
+        "exit_code": 0,
+        "seconds": 4.29
+      },
+      {
+        "name": "spi-common",
+        "exit_code": 0,
+        "seconds": 93.34
+      }
+    ]
+  },
+  "coexistence-tests": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "link-coexistence-build",
+        "exit_code": 0,
+        "seconds": 5.26
+      },
+      {
+        "name": "link-coexistence",
+        "exit_code": 0,
+        "seconds": 0.7
+      }
+    ]
+  },
+  "regressions": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "test_folders",
+        "exit_code": 0,
+        "seconds": 0.84
+      },
+      {
+        "name": "test_launch_adapters",
+        "exit_code": 0,
+        "seconds": 1.39
+      },
+      {
+        "name": "test_osd1_dispatch",
+        "exit_code": 0,
+        "seconds": 0.27
+      },
+      {
+        "name": "test_osd_driver",
+        "exit_code": 0,
+        "seconds": 0.91
+      },
+      {
+        "name": "test_storage_uart",
+        "exit_code": 0,
+        "seconds": 0.57
+      },
+      {
+        "name": "test_titles",
+        "exit_code": 0,
+        "seconds": 0.62
+      },
+      {
+        "name": "test_uart_rx",
+        "exit_code": 0,
+        "seconds": 0.67
+      }
+    ]
+  },
+  "legacy-rtl": {
+    "passed": true,
+    "checks": [],
+    "exit_code": 0,
+    "baseline_commit": "32433c52398ab1c65047cabfc77fafb34648ed35",
+    "baseline_sha256": "7e3868e5654bdcd70309c951f142b80cc8c9f6a360cf5865e88fd5e46072e5cc"
+  }
+}

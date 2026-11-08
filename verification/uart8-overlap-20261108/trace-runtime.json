@@ -1,0 +1,23 @@
+{
+  "source": "user",
+  "raw_reply": "14.05s / 26.5s",
+  "measurement_boundary": "Game-list confirm to title screen; logos not skipped, as requested",
+  "trials_per_title": 1,
+  "titles": [
+    {
+      "name": "スーパーマリオコレクション",
+      "rom_bytes": 2097152,
+      "title_seconds": 14.05
+    },
+    {
+      "name": "スーパードンキーコング",
+      "rom_bytes": 4194304,
+      "title_seconds": 26.5
+    }
+  ],
+  "loading_display_confirmed": true,
+  "input_confirmed": true,
+  "return_to_list_confirmed": true,
+  "sd_returned_to_pc_confirmed": true,
+  "user_confirmation": "PCへ戻しました。2本とも正常でした"
+}

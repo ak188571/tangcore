@@ -1,0 +1,35 @@
+{
+  "source_commits": {
+    "firmware-bl616": "6744940d6a1a84f677c9bd4e73696788bf3fb1de",
+    "snestang": "d4d46357a226ce77b08b78cf4be938fc6111bb80"
+  },
+  "tag": "uart8-overlap-hw-20261108",
+  "archives": {
+    "normal": {
+      "file": "verified-normal-pair.zip",
+      "bytes": 1952848,
+      "sha256": "65201cf19217fa98b0f3f1a5000f73220e8369cf5dd3d0023e57f917243b215c",
+      "contents": {
+        "firmware/normal/tangcore_bl616.bin": "d183f55bfa2fd91215f70f0a6c499140d504e19f10159f5a4fd9e594d8f89e60",
+        "cores/console138k/snestang.bin": "e2dc7702b9f5bfc9c9401cd36c2dd4b3935d1e21499a3f51806f2b978ef37f7b",
+        "verification/normal-runtime.json": "e7bb773756f56d8a223f4ef3a9c379c52e2b4dd776462695219331aea2bb2165",
+        "verification/normal-flash-readback.json": "116877044b5c108e412b32451781a9e5bf9f62349abb19f83a35e1b0847ff5ad",
+        "release-manifest.json": "7450f15c7ce89fc9260b81b272ad2c8d722373b573a51293574a10fb90d1369d",
+        "README.txt": "32ba6e1a3e60303603e09a6e522d8940771e4f0b78eefef1f1bcce1c3847cd93"
+      }
+    },
+    "trace": {
+      "file": "verified-trace-pair.zip",
+      "bytes": 1956703,
+      "sha256": "805804812869d5895d193f10e7f5dcf79ab81538095178c807f75eb5b5de1c53",
+      "contents": {
+        "firmware/trace/tangcore_bl616.bin": "d901978c4437c9e55b9ca2b45860a64fe43cda8b68a4e7a5ce2312f81f167e2e",
+        "cores/console138k/snestang.bin": "e2dc7702b9f5bfc9c9401cd36c2dd4b3935d1e21499a3f51806f2b978ef37f7b",
+        "verification/trace-runtime.json": "23b8494dd4fe2489cfcd7bdf550bf3a08b27948f56582e4a0dd97b9ad7222c97",
+        "verification/measurements.json": "27e907c7a91ef9330e6f4458bd09a5f64cb7e932fec48f96e272ad3fe97d7873",
+        "release-manifest.json": "8a92f48f17a3b13cc1c3cdf44eed5a0bd55e39d1dc96f8da33dfe6cd4a0228ee",
+        "README.txt": "30c6034fe7b52cf4b78ffd6e1f4274bdcbe799a45e29654eb1f6a4fe5a96e82d"
+      }
+    }
+  }
+}

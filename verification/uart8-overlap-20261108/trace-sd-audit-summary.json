@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-08T15:48:41.579539+09:00",
+  "original_files": 81,
+  "files": 83,
+  "changed": [],
+  "removed": [],
+  "added": [
+    "uart-0017.txt",
+    "uart-0018.txt"
+  ],
+  "all_original_files_preserved_except_installed_core": true,
+  "card_written_by_collection": false
+}

@@ -1,0 +1,74 @@
+{
+  "milestone": "uart8-overlap-hw-20261108",
+  "branch": "tangcore-integrated",
+  "status": "normal_firmware_two_title_runtime_confirmed",
+  "date_jst": "2026-11-08",
+  "board": "Console138K",
+  "baud": 8000000,
+  "framing": "8N1",
+  "block_bytes": 1024,
+  "max_inflight_data": 2,
+  "ingress_fifo_bytes": 4096,
+  "payload_banks": 3,
+  "source_commits": {
+    "firmware-bl616": "6744940d6a1a84f677c9bd4e73696788bf3fb1de",
+    "snestang": "d4d46357a226ce77b08b78cf4be938fc6111bb80"
+  },
+  "base_tag": "uart8-progress-hw-20261108",
+  "normal_firmware": {
+    "bytes": 238896,
+    "sha256": "d183f55bfa2fd91215f70f0a6c499140d504e19f10159f5a4fd9e594d8f89e60",
+    "trace_enabled": false,
+    "full_flash_readback_verified": true,
+    "boot_area_unchanged": true,
+    "from_0x80000_unchanged": true,
+    "launch_loading_display_return_to_list_user_confirmed": true
+  },
+  "trace_firmware": {
+    "bytes": 241744,
+    "sha256": "d901978c4437c9e55b9ca2b45860a64fe43cda8b68a4e7a5ce2312f81f167e2e",
+    "trace_enabled": true,
+    "full_flash_readback_verified": true,
+    "two_title_window2_and_crc_verified": true,
+    "retries": [
+      0,
+      0
+    ]
+  },
+  "snes": {
+    "bytes": 4733130,
+    "sha256": "e2dc7702b9f5bfc9c9401cd36c2dd4b3935d1e21499a3f51806f2b978ef37f7b",
+    "unchanged_during_normal_switch": true
+  },
+  "normal_user_files_audit": {
+    "files": 83,
+    "all_unchanged": true,
+    "scope": "PC audit after normal flash readback, before normal boot checks; not a sector image"
+  },
+  "timing": {
+    "passed": true,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "clk80_actual_fmax_mhz": 80.173,
+    "clk96_actual_fmax_mhz": 96.372
+  },
+  "tests": {
+    "rom-tests": true,
+    "serial-tests": true,
+    "adapter-tests": true,
+    "spi-common-tests": true,
+    "coexistence-tests": true,
+    "regressions": true,
+    "legacy-rtl": true
+  },
+  "normal_firmware_retimed": false,
+  "hardware_trials_per_title": 1,
+  "spi_physical_implemented": false,
+  "spi_common_cpp_rtl_tested": true,
+  "current_device_firmware": "normal",
+  "public_content_excludes": [
+    "whole flash images",
+    "microSD copies",
+    "game ROMs"
+  ]
+}

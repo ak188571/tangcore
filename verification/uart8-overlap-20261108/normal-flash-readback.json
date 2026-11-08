@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-08T16:08:07.604304+09:00",
+  "verified": true,
+  "trace_enabled": false,
+  "image_sha256": "d183f55bfa2fd91215f70f0a6c499140d504e19f10159f5a4fd9e594d8f89e60",
+  "bytes": 238896,
+  "full_flash_sha256": "02e00d00914db31ce68ed63d5f2caf6d5c4f45c7f3f1e81fdb2c3bd68814c77f",
+  "readback": "flash-read-03.json",
+  "boot_area_unchanged": true,
+  "from_0x80000_unchanged": true
+}
