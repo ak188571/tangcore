@@ -1,0 +1,18 @@
+{
+  "source_commits": {
+    "firmware-bl616": "d6328c9d1caa412f1b3ec068170c296814d25e28",
+    "snestang": "06ee0670252a0486d905b6b011fab8c49e83c06c"
+  },
+  "paired_archive": {
+    "path": "verified-normal-pair.zip",
+    "bytes": 1952042,
+    "sha256": "d95803a7cc2d8d3aa7c356715029fbff7bab4bc6fb03d8bf1048e9002591c326"
+  },
+  "contents": {
+    "firmware/normal/tangcore_bl616.bin": "1f1bdb2455e99210b420a9e94bd20b2565db7506c1f79deb086fba87733403f2",
+    "cores/console138k/snestang.bin": "e3b9565a05791420073f20d6d8ebd0b8d40b42eddfc05e04f4cdf6340540613f",
+    "verification/normal-runtime.json": "914399475070cb6d7f48674ee459ee96f03c45c4066ce8e34143228e272ec0c7",
+    "release-manifest.json": "3fc40916c3b731393577ba3f66ebee6c99eae0cae71a26817443eab42f23eedc",
+    "README.txt": "6185bf2b4214494c67fc8a6b10ba37d8df127f7c3e6262cdd321e538813d2d5d"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "source": "user",
+  "confirmed_date": "2026-11-08",
+  "device": "Console138K",
+  "firmware_mode": "normal",
+  "normal_launch_confirmed": true,
+  "loading_display_normal": true,
+  "user_observation": "通常版で起動とロード中の表示も正常であることを確認しました。",
+  "firmware_sha256": "1f1bdb2455e99210b420a9e94bd20b2565db7506c1f79deb086fba87733403f2",
+  "snes_sha256": "e3b9565a05791420073f20d6d8ebd0b8d40b42eddfc05e04f4cdf6340540613f",
+  "title_seconds": null
+}

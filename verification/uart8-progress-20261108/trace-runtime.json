@@ -1,0 +1,12 @@
+{
+  "source": "user",
+  "game": "スーパーマリオコレクション",
+  "logo_absent": true,
+  "bottom_row_only": true,
+  "normal_launch_confirmed": true,
+  "user_observation": "ロゴが消え、下段だけ表示されて正常起動した",
+  "title_seconds": null,
+  "timing_scope": "最終修正版は目視確認のみ。タイトル到達の再計時なし。",
+  "firmware_sha256": "1d9a4db472e7d54885334f9f809dbe02e6f8110e7d2d3861d2b38aa67ae47918",
+  "snes_sha256": "e3b9565a05791420073f20d6d8ebd0b8d40b42eddfc05e04f4cdf6340540613f"
+}

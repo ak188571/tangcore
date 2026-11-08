@@ -1,0 +1,45 @@
+{
+  "milestone": "uart8-progress-hw-20261108",
+  "status": "normal_firmware_runtime_confirmed",
+  "date": "2026-11-08",
+  "board": "Console138K",
+  "baud": 8000000,
+  "framing": "8N1",
+  "block_bytes": 1024,
+  "normal_firmware": {
+    "bytes": 237680,
+    "sha256": "1f1bdb2455e99210b420a9e94bd20b2565db7506c1f79deb086fba87733403f2",
+    "trace_enabled": false,
+    "full_flash_readback_verified": true,
+    "launch_and_loading_display_user_confirmed": true
+  },
+  "snes": {
+    "bytes": 4878740,
+    "sha256": "e3b9565a05791420073f20d6d8ebd0b8d40b42eddfc05e04f4cdf6340540613f",
+    "launch_and_bottom_row_user_confirmed": true
+  },
+  "timing": {
+    "passed": true,
+    "setup_violations": 0,
+    "hold_violations": 0,
+    "clk96_actual_fmax_mhz": 96.325,
+    "clk80_actual_fmax_mhz": 81.127
+  },
+  "tests": {
+    "label-test": true,
+    "rom-tests": true,
+    "regressions": true,
+    "legacy-rtl": true,
+    "logo-test": true
+  },
+  "usb_tests": {
+    "passed": true,
+    "top": "usb_fs_notice_test"
+  },
+  "distribution_zip_sha256": "93836071b3a3bee63f816ff356d69d06819827269e524890f3de6fa182aa68b2",
+  "next_optimization": "UART receive and SDRAM commit overlap while preserving CRC and committed ACK semantics",
+  "source_commits": {
+    "firmware-bl616": "d6328c9d1caa412f1b3ec068170c296814d25e28",
+    "snestang": "06ee0670252a0486d905b6b011fab8c49e83c06c"
+  }
+}
