@@ -14,6 +14,10 @@ Please [file an issue](https://github.com/nand2mario/tangcore/issues) if you run
 
 `tangcore-integrated`があるrepositoryでは、このbranchを今後の変更の基準にします。対象一覧とsubmoduleの扱いは[開発branchの方針](docs/DEVELOPMENT_BRANCHES.md)を参照してください。
 
+## Console138K JTAG 20 MHzの実機確認
+
+BL616の通常版で、FPGA bitstreamをSPI0＋DMAの20 MHz JTAGで送信します。従来のGPIO JTAGに比べ、ゲーム選択受理からROM転送開始まで約2.10秒、OSDからの一覧復帰まで約2.03秒短縮しました。[構成・時間比較・通常版の確認結果](docs/rom/JTAG20_20261112.md)
+
 ## Console138K SNES ROM転送の実機確認（SPI 32 MHz）
 
 共通tag `spi32-continuous-hw-20261112`。DMA連続送信と150 MHzのFPGA受信回路を使用した通常版です。[構成・測定結果・build設定](docs/rom/SPI32_20261112.md)を参照してください。
