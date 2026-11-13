@@ -14,6 +14,10 @@ Please [file an issue](https://github.com/nand2mario/tangcore/issues) if you run
 
 `tangcore-integrated`があるrepositoryでは、このbranchを今後の変更の基準にします。対象一覧とsubmoduleの扱いは[開発branchの方針](docs/DEVELOPMENT_BRANCHES.md)を参照してください。
 
+## Console138KのOSDからの一覧復帰
+
+RELOAD後の100万clockのGPIO出力を軽量化しました。20 MHz JTAGの基準計測版と比べ、OSD復帰受理から一覧再描画完了までの平均は4.414秒から3.737秒になりました。[区間別の実測値と通常版の確認結果](docs/rom/OSD_RETURN_20261113.md)
+
 ## Console138K JTAG 20 MHzの実機確認
 
 BL616の通常版で、FPGA bitstreamをSPI0＋DMAの20 MHz JTAGで送信します。従来のGPIO JTAGに比べ、ゲーム選択受理からROM転送開始まで約2.10秒、OSDからの一覧復帰まで約2.03秒短縮しました。[構成・時間比較・通常版の確認結果](docs/rom/JTAG20_20261112.md)
