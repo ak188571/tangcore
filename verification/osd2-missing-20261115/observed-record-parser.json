@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "stdout": "PASS: observed first-save record parsed as USER, generation 1, slot a, ON/OFF/OFF; no writes.\n",
+  "sha256": "949fd17b3837882af159aab5825400e344ef61cb4c3dbe246c432009b40bca59"
+}

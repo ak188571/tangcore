@@ -1,6 +1,6 @@
 {
-  "stage": "missing_slots_prepared_awaiting_hardware_report",
-  "hardware_runtime": "pending",
+  "stage": "complete",
+  "hardware_runtime": "user_reported_all_expected",
   "planned_snes_launches": 1,
   "planned_save_attempts": 1,
   "parent_commit": "527f2bf2305717af56e8f5e1365b47db0a9d57f9",
@@ -39,5 +39,21 @@
     "removed_target_slots": 2,
     "remaining_files": 213,
     "all_other_bytes_and_attributes_unchanged": true
-  }
+  },
+  "snes_launches": 1,
+  "save_attempts": 1,
+  "post_runtime_sd": {
+    "files": 214,
+    "new_slot_a_matches_expected_bytes_and_attributes": true,
+    "slot_b_absent": true,
+    "other_213_files_bytes_and_attributes_unchanged": true,
+    "actual_record_accepted_by_production_parser": true
+  },
+  "restoration": {
+    "files": 215,
+    "all_bytes_and_attributes_match_pretest": true,
+    "original_record_a": "Reset generation 7",
+    "original_record_b": "USER generation 6, ON/OFF/OFF"
+  },
+  "additional_snes_launches_required": 0
 }
