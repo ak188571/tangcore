@@ -1,6 +1,6 @@
 # SNES OSD2 `SAVE READ: CONFLICT` 実機確認
 
-2026年11月15日（日本時間）。Console138Kの通常版を維持し、同じ世代で内容が異なる有効な保存recordの拒否を、SNESの起動1回で確認する。
+2026年11月15日（日本時間）。Console138Kの通常版で、同じ世代で内容が異なる有効な保存recordを `CONFLICT` と判定し、SAVEを拒否することをSNESの起動1回で確認した。保存拒否後のSD全215ファイルの内容・属性は不変で、試験前の保存データへの復元と全件照合も完了した。実機表示・操作はユーザー報告、SDの無変化と復元はPCでの読取り照合に基づく。
 
 ## 構成と事前照合
 
@@ -27,6 +27,16 @@
 - `f_mkdir`、書込み用open、write、syncの呼出しは0件。
 
 PC上のFRAME ACKは模擬入力であり、FPGAからの実応答は実機の報告で別途確認する。
+
+### PC試験の再実行
+
+Windows、Python 3、`C:/msys64/ucrt64/bin/g++.exe` を使用。親repositoryのルートから、親が指定するfirmware submoduleを用いて実行する。
+
+```powershell
+python tools/test_osd2_conflict.py --firmware firmware-bl616 --output ../osd2-conflict-pc
+```
+
+出力先には実行ファイル、試験用record、`pc-result.json` が作成される。PC試験は実機やmicroSDへアクセスしない。
 
 ## 実機手順とデータ保護
 
