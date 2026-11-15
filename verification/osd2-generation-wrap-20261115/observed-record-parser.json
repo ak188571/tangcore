@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "scope": "Production parser verifies actual final a generation 1 and b generation 0 without writes",
+  "stdout": "PASS: actual final records select USER a generation 1 ON/WEAK/STD; remaining b independently parses as USER generation 0 OFF/WEAK/STD; no writes.\n"
+}

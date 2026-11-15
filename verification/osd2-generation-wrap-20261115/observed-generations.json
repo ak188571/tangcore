@@ -1,0 +1,24 @@
+{
+  "source": "post-runtime SD snapshot",
+  "records": {
+    "a": {
+      "generation": 1,
+      "packed_value": 19,
+      "settings": "ON/WEAK/STD",
+      "kind": "USER",
+      "bytes": 32,
+      "crc_valid": true,
+      "sha256": "27f84c88c6d0012a35551bb3bcf76eb177d52de32a395b7dbf36619837608f79"
+    },
+    "b": {
+      "generation": 0,
+      "packed_value": 18,
+      "settings": "OFF/WEAK/STD",
+      "kind": "USER",
+      "bytes": 32,
+      "crc_valid": true,
+      "sha256": "4196a1be338059219b82f5c2a9f60a3961ff98842cdb01b3c189a43858ef7550"
+    }
+  },
+  "selected_slot_by_production_parser": "a"
+}

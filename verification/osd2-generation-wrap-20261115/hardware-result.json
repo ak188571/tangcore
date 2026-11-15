@@ -1,0 +1,17 @@
+{
+  "at_recorded": "2026-11-15T22:05:35.044756+09:00",
+  "evidence": "user_report",
+  "user_response": "想定通り。microsd接続済み",
+  "snes_launches": 1,
+  "save_attempts": 2,
+  "reset_attempts": 0,
+  "reported_checks": [
+    "Japanese list/order and normal video/audio/input",
+    "initial ON/WEAK/STD, SAVE OK, SAVED/USER/USER/FRAME ACK",
+    "ROM ID 232bb5b8, DEFAULTS MISSING, RESET explanation, POS, info toggle",
+    "first SAVE after CRT OFF: OFF/WEAK/STD, SAVE OK, OSD stays open, SAVED/USER/USER/FRAME ACK",
+    "second SAVE after CRT ON: ON/WEAK/STD, SAVE OK, OSD stays open, SAVED/USER/USER/FRAME ACK",
+    "unsaved OFF preview and cancel/reopen: ON/WEAK/STD, SAVE OK/SAVED"
+  ],
+  "additional_boot_usb_connection_requested": false
+}
