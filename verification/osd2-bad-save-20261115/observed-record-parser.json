@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "scope": "PC replay of the two actual post-runtime records",
+  "stdout": "PASS: both CRC-bad records yield BAD SAVE with no selected slot or USER override; OFF/OFF/OFF, RECOMMENDED and BUILT-IN; ON preview cancels to RECOMMENDED; zero write attempts; simulated FRAME ACK.\n"
+}

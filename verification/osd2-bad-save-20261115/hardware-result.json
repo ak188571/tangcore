@@ -1,0 +1,42 @@
+{
+  "source": "user report",
+  "report": "想定通り。microsd接続済み",
+  "game": "Super Mario Collection (Japan)",
+  "rom_id": "232bb5b8",
+  "defaults": "MISSING",
+  "snes_launches": 1,
+  "save_attempts": 0,
+  "reset_attempts": 0,
+  "japanese_list_order_video_audio_input": "as expected",
+  "initial": {
+    "crt": "OFF",
+    "blur": "OFF",
+    "scan": "OFF",
+    "compact_save": "SAVE",
+    "save": "RECOMMENDED",
+    "loaded_from": "BUILT-IN",
+    "save_read": "BAD SAVE",
+    "apply": "FRAME ACK"
+  },
+  "unsaved_preview": {
+    "crt": "ON",
+    "blur": "OFF",
+    "scan": "OFF",
+    "compact_save": "SAVE *",
+    "save": "UNSAVED",
+    "loaded_from": "BUILT-IN",
+    "save_read": "BAD SAVE",
+    "apply": "FRAME ACK"
+  },
+  "cancel_and_reopen": {
+    "crt": "OFF",
+    "blur": "OFF",
+    "scan": "OFF",
+    "compact_save": "SAVE",
+    "save": "RECOMMENDED",
+    "loaded_from": "BUILT-IN",
+    "save_read": "BAD SAVE",
+    "apply": "FRAME ACK"
+  },
+  "sd_returned_to_pc": true
+}

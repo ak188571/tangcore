@@ -1,6 +1,6 @@
 # SNES OSD2 両方の保存recordがCRC不一致のときのBAD SAVE
 
-2026年11月15日（日本時間）。2件のCRT保存recordがともにCRC不一致の場合に、起動時のOSD2が `SAVE READ: BAD SAVE` を表示することを確認する。PC試験とmicroSDの退避は完了。実機確認、試験後の照合と復元はこれから行う。
+2026年11月15日（日本時間）。2件のCRT保存recordがともにCRC不一致の状態でSNESを起動し、OSD2で `SAVE READ: BAD SAVE` が表示されることを確認した。試験後のmicroSD照合と元データの復元も完了した。
 
 ## 試験条件
 
@@ -27,4 +27,12 @@ SELECT＋左で小型OSD2を開き、`CRT X/Y:BACK`、`CRT OFF`、`BLUR OFF`、`
 
 STARTで小型表示に戻してCRTだけONにする。`SAVE *` と補助表示の `UNSAVED`／`BUILT-IN`／`BAD SAVE`／`FRAME ACK` を確認し、XまたはYで取り消して開き直す。全OFFと `SAVE`、補助表示の `RECOMMENDED`／`BUILT-IN`／`BAD SAVE`／`FRAME ACK` に戻ることを確認する。
 
-電源を切りmicroSDだけをPCへ戻す。導入直後と比較し全ファイルの内容・属性を照合する。試験後に採取した2件を製品の読込み処理に通す。退避から元のaとbを復元し、試験前の全ファイルと照合する。SDの移動はPC→本体→PCの1往復、USBケーブルの挿し直しは0回を予定する。
+電源を切りmicroSDだけをPCへ戻す。導入直後と比較し全ファイルの内容・属性を照合する。試験後に採取した2件を製品の読込み処理に通す。退避から元のaとbを復元し、試験前の全ファイルと照合する。
+
+## 実機結果とSD復元
+
+ユーザーから「想定通り。microsd接続済み」と報告を受けた。SNES起動1回で全OFFに設定され、小型表示の `SAVE` と補助表示の `SAVE: RECOMMENDED`、`LOADED FROM: BUILT-IN`、`SAVE READ: BAD SAVE`、`APPLY: FRAME ACK` を確認した。CRT ONの未保存変更を取り消すと、全OFFと推奨値の表示に戻った。日本語一覧・並び順、映像・音声・通常操作も想定どおりだった。
+
+試験終了後の全215ファイルの内容・属性が、試験用record導入直後と一致した。両方のCRCが不一致のままであることを確認し、採取した2件を製品の読込み処理に通して、採用slotなしの `BAD SAVE` を再確認した。
+
+元のa（RESET世代7）とb（USER世代6）の2件を退避から復元し、全215ファイルの内容・属性が試験前と一致した。SAVEとRESETは各0回、USBケーブルの挿し直しは0回、microSDの移動はPCと本体の1往復だった。microSDは復元済みでPCに接続している。詳細は `verification/osd2-bad-save-20261115/result.json` に記録した。

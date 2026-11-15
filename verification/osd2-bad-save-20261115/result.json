@@ -1,26 +1,28 @@
 {
-  "stage": "awaiting_hardware",
-  "baseline_files": 215,
-  "prior_sd_baseline_matches": true,
-  "installed_records_verified": true,
-  "changed_slots": [
-    "a",
-    "b"
-  ],
-  "fixture_change": "Only least significant bit of each original stored CRC",
-  "expected_save_read": "BAD SAVE",
-  "expected_loaded_from": "BUILT-IN",
-  "expected_settings": "OFF/OFF/OFF",
-  "expected_save_status": "RECOMMENDED",
-  "planned_snes_launches": 1,
-  "planned_save_attempts": 0,
-  "planned_reset_attempts": 0,
+  "stage": "complete",
+  "hardware_result": "user_reported_all_expected",
+  "snes_launches": 1,
+  "save_attempts": 0,
+  "reset_attempts": 0,
   "usb_reconnections_requested": 0,
-  "planned_sd_movements": [
+  "sd_movements": [
     "PC to console",
     "console to PC"
   ],
-  "flash_accessed": false,
-  "hardware_result": "pending",
-  "original_records_restored": false
+  "both_observed_crcs_invalid": true,
+  "selected_slot": null,
+  "adopted_settings": "OFF/OFF/OFF",
+  "save": "RECOMMENDED",
+  "loaded_from": "BUILT-IN",
+  "save_read": "BAD SAVE",
+  "pretest_backup_files": 215,
+  "runtime_sd_unchanged": true,
+  "actual_records_passed_pc_parser": true,
+  "restored_original_slots": [
+    "a",
+    "b"
+  ],
+  "all_215_pretest_files_contents_attributes_restored": true,
+  "sd_current_location": "PC",
+  "flash_accessed": false
 }

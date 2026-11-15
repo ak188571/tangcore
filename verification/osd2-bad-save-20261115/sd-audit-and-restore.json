@@ -1,0 +1,14 @@
+{
+  "audit_at": "2026-11-15T23:10:13.554743+09:00",
+  "restored_at": "2026-11-15T23:10:14.107104+09:00",
+  "user_files": 215,
+  "runtime_contents_and_attributes_match_installed": true,
+  "both_observed_crcs_invalid": true,
+  "only_lowest_bit_of_each_original_crc_changed": true,
+  "changed_and_restored_slots": [
+    "a",
+    "b"
+  ],
+  "all_restored_contents_and_attributes_match_pretest": true,
+  "sd_location": "PC"
+}
