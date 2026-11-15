@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "scope": "PC replay using both post-runtime record files",
+  "stdout": "PASS: fresh SNES session selects USER slot b generation 0 OFF/WEAK/STD over valid a FFFFFFFF ON/WEAK/STD; SAVED UI, ON preview and cancel/reopen retain OFF/WEAK/STD and USER/USER; zero mkdir/write-open/write/sync attempts. FRAME ACK is simulated on PC.\n"
+}

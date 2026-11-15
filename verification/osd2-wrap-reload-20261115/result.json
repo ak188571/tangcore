@@ -1,21 +1,33 @@
 {
-  "stage": "awaiting_hardware",
-  "hardware_result": "pending",
-  "planned_snes_launches": 1,
-  "planned_save_attempts": 0,
-  "planned_reset_attempts": 0,
+  "stage": "complete",
+  "hardware_result": "user_reported_all_expected",
+  "snes_launches": 1,
+  "save_attempts": 0,
+  "reset_attempts": 0,
   "usb_reconnections_requested": 0,
-  "baseline_files": 215,
+  "sd_movements": [
+    "PC to console",
+    "console to PC"
+  ],
+  "pretest_backup_files": 215,
   "sd_matches_previous_restored": true,
+  "installed_records_verified": true,
+  "installed_record_generations": {
+    "a": 4294967295,
+    "b": 0
+  },
+  "both_records_valid_user": true,
+  "selected_slot": "b",
+  "selected_generation": 0,
+  "adopted_settings": "OFF/WEAK/STD",
+  "selection_evidence": "Distinct hardware OSD values plus exact SD comparison and PC parser replay",
+  "runtime_sd_unchanged": true,
+  "actual_records_passed_pc_parser": true,
+  "original_records_restored": true,
+  "all_215_pretest_files_contents_attributes_restored": true,
+  "sd_current_location": "PC",
   "new_flash_read": false,
   "flash_written": false,
   "core_images_written": false,
-  "expected_selected_slot": "b",
-  "expected_generation": 0,
-  "expected_settings": "OFF/WEAK/STD",
-  "runtime_sd_audit": "pending",
-  "original_records_restored": false,
-  "github_pushed": false,
-  "installed_records_verified": true,
-  "all_other_213_files_unchanged": true
+  "first_save_record_pair_reconstructed_from_prior_trial_evidence": true
 }

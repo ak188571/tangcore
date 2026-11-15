@@ -1,0 +1,20 @@
+{
+  "audit_at": "2026-11-15T22:34:12.831953+09:00",
+  "restored_at": "2026-11-15T22:34:13.273995+09:00",
+  "compared_user_files": 215,
+  "runtime_matches_installed_bytes_and_attributes": true,
+  "restored_slots": [
+    "a",
+    "b"
+  ],
+  "restored_original_generations": {
+    "a": 7,
+    "b": 6
+  },
+  "all_restored_bytes_and_attributes_match_pretest": true,
+  "excluded_windows_metadata": [
+    "System Volume Information",
+    "$RECYCLE.BIN"
+  ],
+  "sd_current_location": "PC"
+}

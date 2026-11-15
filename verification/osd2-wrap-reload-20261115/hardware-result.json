@@ -1,0 +1,45 @@
+{
+  "evidence": "user report after one cold boot of Console138K and one SNES launch",
+  "user_report": "すべて想定通りでした。microSDはPCに接続済みです",
+  "snes_launches": 1,
+  "save_attempts": 0,
+  "reset_attempts": 0,
+  "usb_reconnections_requested": 0,
+  "sd_movements": [
+    "PC to console",
+    "console to PC"
+  ],
+  "sd_reconnected_to_pc": true,
+  "game": "Super Mario Collection (Japan)",
+  "japanese_list_order_video_audio_and_game_input": "as expected",
+  "initial": {
+    "crt": "OFF",
+    "blur": "WEAK",
+    "scan": "STD",
+    "compact_save": "SAVE OK",
+    "save": "SAVED",
+    "loaded_from": "USER",
+    "save_read": "USER",
+    "apply": "FRAME ACK"
+  },
+  "preview": {
+    "crt": "ON",
+    "compact_save": "SAVE *",
+    "save": "UNSAVED",
+    "loaded_from": "USER",
+    "save_read": "USER",
+    "apply": "FRAME ACK"
+  },
+  "cancel_and_reopen": {
+    "crt": "OFF",
+    "blur": "WEAK",
+    "scan": "STD",
+    "compact_save": "SAVE OK",
+    "save": "SAVED",
+    "loaded_from": "USER",
+    "save_read": "USER",
+    "apply": "FRAME ACK"
+  },
+  "rom_id": "232bb5b8",
+  "defaults": "MISSING"
+}
