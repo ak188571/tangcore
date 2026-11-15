@@ -1,5 +1,5 @@
 {
-  "stage": "pc_and_sd_preflight_passed",
+  "stage": "recovered_user_records_installed_awaiting_hardware_report",
   "hardware_runtime": "pending",
   "parent_commit": "e873600b4ea4b24d2a73ec2b70ba34ed87822387",
   "firmware_commit": "95871ef8e9ef547767b145cee4e85577e8bb4972",
@@ -30,5 +30,12 @@
     "save_read": "RECOVERED",
     "defaults": "MISSING"
   },
-  "hardware_slot_permutations": 1
+  "hardware_slot_permutations": 1,
+  "hardware_report_requested": true,
+  "snes_launches_requested": 1,
+  "sd_preparation": {
+    "changed_target_slots": 2,
+    "files": 215,
+    "all_bytes_and_attributes_verified": true
+  }
 }

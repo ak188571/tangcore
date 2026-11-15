@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "scope": "restore guards with temporary PC files; no device or media access",
+  "cases": [
+    {
+      "case": "changed_user_record",
+      "refused_before_any_write": true,
+      "observations_preserved": true
+    },
+    {
+      "case": "changed_unrelated_file",
+      "refused_before_any_write": true,
+      "observations_preserved": true
+    },
+    {
+      "case": "missing_record",
+      "refused_before_any_write": true,
+      "observations_preserved": true
+    },
+    {
+      "case": "corrupted_second_backup",
+      "refused_before_any_write": true,
+      "observations_preserved": true
+    }
+  ]
+}
