@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "scope": "temporary PC directories; no device or media access",
+  "cases": [
+    {
+      "case": "unexpected_saved_value",
+      "refused_before_any_write": true,
+      "observations_preserved": true
+    },
+    {
+      "case": "only_first_save",
+      "refused_before_any_write": true,
+      "observations_preserved": true
+    },
+    {
+      "case": "no_saves",
+      "refused_before_any_write": true,
+      "observations_preserved": true
+    },
+    {
+      "case": "changed_unrelated_file",
+      "refused_before_any_write": true,
+      "observations_preserved": true
+    },
+    {
+      "case": "corrupted_second_backup",
+      "refused_before_any_write": true,
+      "observations_preserved": true
+    }
+  ]
+}
