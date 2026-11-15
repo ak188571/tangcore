@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "fixtures": {
+    "crt/02-232bb5b8-0000000000200000.a": {
+      "bytes": 32,
+      "sha256": "2f1e9526aa5809d3ec792d871cf60f6b8af63310bd869114f5b5e23ef2277dfb",
+      "generation": 4294967295,
+      "kind": "USER",
+      "packed_value": 19,
+      "crc_valid": true
+    },
+    "crt/02-232bb5b8-0000000000200000.b": {
+      "bytes": 32,
+      "sha256": "4196a1be338059219b82f5c2a9f60a3961ff98842cdb01b3c189a43858ef7550",
+      "generation": 0,
+      "kind": "USER",
+      "packed_value": 18,
+      "crc_valid": true
+    }
+  },
+  "stdout": "PASS: fresh SNES session selects USER slot b generation 0 OFF/WEAK/STD over valid a FFFFFFFF ON/WEAK/STD; SAVED UI, ON preview and cancel/reopen retain OFF/WEAK/STD and USER/USER; zero mkdir/write-open/write/sync attempts. FRAME ACK is simulated on PC.\n",
+  "production_source_sha256": {
+    "ui/ui16_crt.cpp": "296346c5a3675610ff16e1194cd66488b0cb67de907087bb6ab3f66c3cbd368e",
+    "ui/ui16_osd.cpp": "667da4725daad9551ba048d09083f38cf465df3e57ed0f1dcbc614213f09637a",
+    "ui/ui16_crt_restore.cpp": "59e7f98e533bd2d7f5263dd061bd2a4657487d699ef92a13dcc8a3aa680caffe",
+    "ui/ui16_crt_save.cpp": "0bc737dbfa0fefd0299dff20040e399753a1e4fdb6e5d8a7335ad359053d5551",
+    "ui/ui16_crt_defaults.cpp": "4a4394eb3bace1a6fa55ce528226a54f9ba01a71faedcde521b3e44c5250037c",
+    "ui/ui16_rom_id.cpp": "84bf913e39e1ee4489fc2b5343e9d9a3029fa8d65a33f0be3616c1b2c75f3edf"
+  },
+  "compiler_command": [
+    "C:\\msys64\\ucrt64\\bin\\g++.exe",
+    "-BC:/msys64/ucrt64/bin/",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Wno-unused-parameter",
+    "-DUI16_SYSTEM_MENU",
+    "-Itests/ui16",
+    "-Iui",
+    "<test-source>",
+    "ui/ui16_crt.cpp",
+    "ui/ui16_osd.cpp",
+    "ui/ui16_crt_restore.cpp",
+    "ui/ui16_crt_save.cpp",
+    "ui/ui16_crt_defaults.cpp",
+    "ui/ui16_rom_id.cpp",
+    "-o",
+    "<output>/wrap-reload.exe"
+  ]
+}

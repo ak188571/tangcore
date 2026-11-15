@@ -1,0 +1,25 @@
+{
+  "all_exact_matches": true,
+  "a": "Exact bytes installed as generation FFFFFFFF before preceding hardware wrap trial",
+  "b": "Exact generation 0 record captured from preceding hardware trial after two SAVEs",
+  "pair": "Reconstructed first-SAVE state; not an intermediate hardware SD snapshot",
+  "synthetic_fixtures_match_prior_evidence": true,
+  "fixtures": {
+    "crt/02-232bb5b8-0000000000200000.a": {
+      "bytes": 32,
+      "sha256": "2f1e9526aa5809d3ec792d871cf60f6b8af63310bd869114f5b5e23ef2277dfb",
+      "generation": 4294967295,
+      "kind": "USER",
+      "packed_value": 19,
+      "crc_valid": true
+    },
+    "crt/02-232bb5b8-0000000000200000.b": {
+      "bytes": 32,
+      "sha256": "4196a1be338059219b82f5c2a9f60a3961ff98842cdb01b3c189a43858ef7550",
+      "generation": 0,
+      "kind": "USER",
+      "packed_value": 18,
+      "crc_valid": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "stage": "awaiting_hardware",
+  "hardware_result": "pending",
+  "planned_snes_launches": 1,
+  "planned_save_attempts": 0,
+  "planned_reset_attempts": 0,
+  "usb_reconnections_requested": 0,
+  "baseline_files": 215,
+  "sd_matches_previous_restored": true,
+  "new_flash_read": false,
+  "flash_written": false,
+  "core_images_written": false,
+  "expected_selected_slot": "b",
+  "expected_generation": 0,
+  "expected_settings": "OFF/WEAK/STD",
+  "runtime_sd_audit": "pending",
+  "original_records_restored": false,
+  "github_pushed": false,
+  "installed_records_verified": true,
+  "all_other_213_files_unchanged": true
+}
