@@ -1,0 +1,39 @@
+{
+  "stage": "pc_and_sd_preflight_passed",
+  "hardware_runtime": "pending",
+  "parent_commit": "4a27ca26586eb46240caa90292a69763c2a18e80",
+  "firmware_commit": "95871ef8e9ef547767b145cee4e85577e8bb4972",
+  "planned_snes_launches": 1,
+  "planned_save_attempts": 2,
+  "planned_reset_attempts": 0,
+  "sd_files_backed_up": 215,
+  "sd_matches_previous_restored_contents_and_attributes": true,
+  "new_flash_read": false,
+  "flash_written": false,
+  "firmware_basis": "Same-session previously verified normal firmware; no subsequent firmware writes",
+  "usb_reconnections_requested": 0,
+  "sd_transfer_plan": [
+    "already on PC: backup and preparation",
+    "PC to console: one launch and two saves",
+    "console to PC: final record audit and original restoration"
+  ],
+  "initial": {
+    "slot_a_generation": 4294967295,
+    "slot_a_settings": "ON/WEAK/STD",
+    "slot_b_generation": 4294967294,
+    "slot_b_settings": "OFF/OFF/OFF",
+    "selected_slot": "a",
+    "loaded_from": "USER",
+    "save_read": "USER",
+    "defaults": "MISSING"
+  },
+  "expected_final": {
+    "slot_a_generation": 1,
+    "slot_a_settings": "ON/WEAK/STD",
+    "slot_b_generation": 0,
+    "slot_b_settings": "OFF/WEAK/STD",
+    "selected_slot": "a"
+  },
+  "intermediate_sd_read_performed": false,
+  "power_cycle_reload_hardware_tested": false
+}
