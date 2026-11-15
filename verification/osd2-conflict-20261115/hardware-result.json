@@ -1,0 +1,23 @@
+{
+  "at_recorded": "2026-11-15T21:06:21.723822+09:00",
+  "evidence": "user_report",
+  "user_response": "すべて想定通り",
+  "snes_launches": 1,
+  "save_attempts": 1,
+  "reported_checks": [
+    "Japanese list and title order",
+    "normal game video/audio/input",
+    "compact OSD heading/CRT OFF/BLUR OFF/SCAN OFF/SAVE/RESET/POS/START:INFO",
+    "SAVE: RECOMMENDED",
+    "LOADED FROM: BUILT-IN",
+    "SAVE READ: CONFLICT",
+    "APPLY: FRAME ACK",
+    "ROM ID: 232bb5b8",
+    "DEFAULTS: MISSING",
+    "RESET = RECOMMENDED / POS / START:HIDE",
+    "CRT ON preview",
+    "SAVE FAILED; OSD remains open",
+    "SAVE: FAILED with BUILT-IN/CONFLICT/FRAME ACK retained",
+    "X or Y cancel, release all, reopen, all OFF, failure display cleared"
+  ]
+}
