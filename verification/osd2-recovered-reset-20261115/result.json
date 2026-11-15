@@ -1,0 +1,25 @@
+{
+  "stage": "awaiting_hardware",
+  "baseline_files": 215,
+  "prior_sd_baseline_matches": true,
+  "installed_records_verified": true,
+  "changed_slot": "b",
+  "unmodified_reset_slot": "a",
+  "expected_selected_generation": 7,
+  "expected_selected_kind": "RESET",
+  "expected_save_read": "RECOVERED",
+  "expected_loaded_from": "BUILT-IN",
+  "expected_settings": "OFF/OFF/OFF",
+  "expected_save_status": "SAVED",
+  "planned_snes_launches": 1,
+  "planned_save_attempts": 0,
+  "planned_reset_attempts": 0,
+  "usb_reconnections_requested": 0,
+  "planned_sd_movements": [
+    "PC to console",
+    "console to PC"
+  ],
+  "flash_accessed": false,
+  "hardware_result": "pending",
+  "original_record_restored": false
+}
