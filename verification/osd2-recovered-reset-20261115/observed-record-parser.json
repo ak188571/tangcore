@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "scope": "PC replay of the two actual post-runtime records",
+  "stdout": "PASS: CRC-bad USER b leaves valid RESET a generation 7 selected, no USER override; OFF/OFF/OFF, SAVED, BUILT-IN and RECOVERED; ON preview and cancel restore the saved RESET state; zero write attempts; simulated FRAME ACK.\n"
+}

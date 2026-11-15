@@ -1,0 +1,10 @@
+{
+  "audit_at": "2026-11-15T22:55:16.120072+09:00",
+  "restored_at": "2026-11-15T22:55:16.571145+09:00",
+  "user_files": 215,
+  "runtime_contents_and_attributes_match_installed": true,
+  "changed_and_restored_slot": "b",
+  "existing_reset_a_preserved": true,
+  "all_restored_contents_and_attributes_match_pretest": true,
+  "sd_location": "PC"
+}

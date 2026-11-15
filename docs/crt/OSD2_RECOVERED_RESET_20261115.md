@@ -1,6 +1,6 @@
 # SNES OSD2 有効なRESET recordを使うRECOVERED
 
-2026年11月15日（日本時間）。一方のCRT保存recordがCRC不一致の場合に、有効なRESET recordを採用し、組込み推奨値と保存済み状態を復元することを確認する。現状はPC試験と元データの退避が完了し、実機結果と試験後の復元を待っている。
+2026年11月15日（日本時間）。片方のCRT保存recordがCRC不一致の状態でSNESを起動し、有効なRESET recordが採用されることを確認した。OSD2は組込み推奨値を適用し、`SAVE: SAVED` と `SAVE READ: RECOVERED` を表示した。試験後のmicroSD照合と元データの復元も完了した。
 
 ## 試験条件
 
@@ -28,3 +28,13 @@ SELECT＋左で小型OSD2を開き、`CRT X/Y:BACK`、`CRT OFF`、`BLUR OFF`、`
 STARTで小型表示に戻してCRTだけONにし、`SAVE *` と補助表示の `UNSAVED`／`BUILT-IN`／`RECOVERED`／`FRAME ACK` を確認する。XまたはYで取り消して開き直し、OFF/OFF/OFFと `SAVE OK`、補助表示 `SAVED`／`BUILT-IN`／`RECOVERED`／`FRAME ACK` を確認する。
 
 電源を切ってSDだけをPCへ戻す。全ファイルが導入直後の内容・属性と一致することを照合し、実際に使ったrecordをPCの試験に通す。事前に退避した元のbを復元して、全ユーザーファイルを試験前の状態と再照合する。SDの移動はPC→本体→PCの1往復で、USBケーブルの挿し直しは0回を予定する。
+
+## 実機結果とSD復元
+
+ユーザーから「想定通り。microsd接続済み」と報告を受けた。SNES起動は1回、SAVE・RESETは各0回。起動時はCRT・BLUR・SCANすべてOFFで、`SAVE OK`、`SAVE: SAVED`、`LOADED FROM: BUILT-IN`、`SAVE READ: RECOVERED`、`APPLY: FRAME ACK` を確認した。CRT ONの未保存変更を取り消すと、全OFFと保存済み表示に戻った。日本語一覧・並び順、映像・音声・通常操作も想定どおりだった。
+
+試験用recordを導入した直後と試験終了後を比べ、全215ユーザーファイルの内容・属性が一致した。試験に使った2件をPCで製品の読込み処理に通し、CRC不一致のUSER bに対して、有効なRESET aの世代7が `RECOVERED` として採用されることを再確認した。
+
+元のUSER b（世代6、ON/OFF/OFF）を退避から復元し、全215ファイルの内容・属性が試験前と一致した。microSDはPC→本体→PCと移し、最後の接続で照合・復元を完了した。USBケーブルの挿し直しは0回。microSDは復元済みでPCに接続している。
+
+試験結果は `verification/osd2-recovered-reset-20261115/result.json` に記録した。
