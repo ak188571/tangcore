@@ -1,5 +1,5 @@
 {
-  "stage": "pc_and_sd_preflight_passed",
+  "stage": "missing_slots_prepared_awaiting_hardware_report",
   "hardware_runtime": "pending",
   "planned_snes_launches": 1,
   "planned_save_attempts": 1,
@@ -32,5 +32,12 @@
     "loaded_from": "BUILT-IN",
     "save_read": "MISSING"
   },
-  "power_cycle_restore_hardware_tested": false
+  "power_cycle_restore_hardware_tested": false,
+  "hardware_report_requested": true,
+  "snes_launches_requested": 1,
+  "sd_preparation": {
+    "removed_target_slots": 2,
+    "remaining_files": 213,
+    "all_other_bytes_and_attributes_unchanged": true
+  }
 }

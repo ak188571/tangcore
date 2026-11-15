@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "scope": "temporary PC directories only, actual production parser used on valid first-save bytes",
+  "cases": [
+    {
+      "case": "changed_saved_record",
+      "result": "refused_without_media_changes",
+      "observations_preserved": true
+    },
+    {
+      "case": "unexpected_slot_b",
+      "result": "refused_without_media_changes",
+      "observations_preserved": true
+    },
+    {
+      "case": "missing_first_save",
+      "result": "refused_without_media_changes",
+      "observations_preserved": true
+    },
+    {
+      "case": "changed_unrelated_file",
+      "result": "refused_without_media_changes",
+      "observations_preserved": true
+    },
+    {
+      "case": "corrupted_second_backup",
+      "result": "refused_without_media_changes",
+      "observations_preserved": true
+    },
+    {
+      "case": "valid_restore",
+      "result": "original_bytes_and_attributes_restored",
+      "observations_preserved": true
+    }
+  ]
+}
