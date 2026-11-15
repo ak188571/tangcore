@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "stdout": "PASS: actual post-run records select Mario b generation 8 OFF/WEAK/STD and Panel b generation 21 ON/STD/WEAK.\n",
+  "scope": "Production record parser reads both ROM namespaces from the post-runtime SD snapshot"
+}

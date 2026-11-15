@@ -1,0 +1,37 @@
+{
+  "source": "user report",
+  "report": "すべて想定通り。microsd接続済み",
+  "roms": [
+    {
+      "game": "Super Mario Collection (Japan)",
+      "rom_id": "232bb5b8",
+      "launches": 1,
+      "saves": 1,
+      "initial_settings": "ON/WEAK/STD",
+      "saved_settings": "OFF/WEAK/STD",
+      "loaded_from": "USER",
+      "save_read": "USER",
+      "save_status": "SAVE OK / SAVED",
+      "frame_ack": true,
+      "defaults": "MISSING",
+      "video_audio_input": "as expected"
+    },
+    {
+      "game": "Panel de Pon (Japan)",
+      "rom_id": "14d70786",
+      "launches": 1,
+      "saves": 1,
+      "initial_settings": "OFF/STD/WEAK",
+      "saved_settings": "ON/STD/WEAK",
+      "loaded_from": "USER",
+      "save_read": "USER",
+      "save_status": "SAVE OK / SAVED",
+      "frame_ack": true,
+      "defaults": "MISSING",
+      "video_audio_input": "as expected"
+    }
+  ],
+  "japanese_list_and_order": "as expected",
+  "switched_via_return_to_game_list": true,
+  "sd_returned_to_pc": true
+}

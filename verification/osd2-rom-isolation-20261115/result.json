@@ -1,32 +1,47 @@
 {
-  "stage": "awaiting_hardware",
-  "baseline_files": 215,
-  "installed_files": 216,
-  "expected_post_runtime_files": 217,
-  "trial_fixtures_verified": true,
-  "expected_saved_records": [
-    {
-      "rom_id": "232bb5b8",
-      "slot": "b",
-      "generation": 8,
-      "settings": "OFF/WEAK/STD"
-    },
-    {
-      "rom_id": "14d70786",
-      "slot": "b",
-      "generation": 21,
-      "settings": "ON/STD/WEAK"
-    }
-  ],
-  "hardware_result": "pending",
-  "planned_snes_launches": 2,
-  "planned_saves": 2,
-  "planned_reset_attempts": 0,
+  "stage": "complete",
+  "hardware_result": "user_reported_all_expected",
+  "snes_launches": 2,
+  "each_rom_launched_once": true,
+  "save_attempts": 2,
+  "each_rom_saved_once": true,
+  "reset_attempts": 0,
   "usb_reconnections_requested": 0,
-  "planned_sd_movements": [
+  "sd_movements": [
     "PC to console",
     "console to PC"
   ],
-  "flash_accessed": false,
-  "original_records_restored": false
+  "record_results": [
+    {
+      "game": "Super Mario Collection (Japan)",
+      "rom_id": "232bb5b8",
+      "rom_bytes": 2097152,
+      "initial_a_generation": 7,
+      "saved_slot": "b",
+      "saved_generation": 8,
+      "saved_settings": "OFF/WEAK/STD",
+      "saved_record_crc_valid": true,
+      "slot_a_unchanged": true
+    },
+    {
+      "game": "Panel de Pon (Japan)",
+      "rom_id": "14d70786",
+      "rom_bytes": 1048576,
+      "initial_a_generation": 20,
+      "saved_slot": "b",
+      "saved_generation": 21,
+      "saved_settings": "ON/STD/WEAK",
+      "saved_record_crc_valid": true,
+      "slot_a_unchanged": true
+    }
+  ],
+  "pretest_backup_files": 215,
+  "runtime_only_expected_rom_specific_writes": true,
+  "actual_records_passed_pc_parser": true,
+  "hardware_relaunch_after_save_tested": false,
+  "original_records_restored": true,
+  "trial_panel_records_removed": true,
+  "all_215_pretest_files_contents_attributes_restored": true,
+  "sd_current_location": "PC",
+  "flash_accessed": false
 }

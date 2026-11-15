@@ -1,0 +1,46 @@
+{
+  "audit_at": "2026-11-15T23:34:47.041721+09:00",
+  "restored_at": "2026-11-15T23:34:47.727621+09:00",
+  "pretest_files": 215,
+  "installed_files": 216,
+  "post_runtime_files": 217,
+  "post_runtime_contents_and_attributes_match_expected": true,
+  "runtime_changed_only": [
+    "crt/02-14d70786-0000000000100000.b",
+    "crt/02-232bb5b8-0000000000200000.b"
+  ],
+  "record_results": [
+    {
+      "game": "Super Mario Collection (Japan)",
+      "rom_id": "232bb5b8",
+      "rom_bytes": 2097152,
+      "initial_a_generation": 7,
+      "saved_slot": "b",
+      "saved_generation": 8,
+      "saved_settings": "OFF/WEAK/STD",
+      "saved_record_crc_valid": true,
+      "slot_a_unchanged": true
+    },
+    {
+      "game": "Panel de Pon (Japan)",
+      "rom_id": "14d70786",
+      "rom_bytes": 1048576,
+      "initial_a_generation": 20,
+      "saved_slot": "b",
+      "saved_generation": 21,
+      "saved_settings": "ON/STD/WEAK",
+      "saved_record_crc_valid": true,
+      "slot_a_unchanged": true
+    }
+  ],
+  "restored_mario_slots": [
+    "a",
+    "b"
+  ],
+  "removed_trial_panel_slots": [
+    "a",
+    "b"
+  ],
+  "all_restored_contents_and_attributes_match_pretest": true,
+  "sd_location": "PC"
+}
