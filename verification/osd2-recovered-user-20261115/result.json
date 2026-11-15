@@ -1,0 +1,34 @@
+{
+  "stage": "pc_and_sd_preflight_passed",
+  "hardware_runtime": "pending",
+  "parent_commit": "e873600b4ea4b24d2a73ec2b70ba34ed87822387",
+  "firmware_commit": "95871ef8e9ef547767b145cee4e85577e8bb4972",
+  "planned_snes_launches": 1,
+  "planned_save_attempts": 0,
+  "planned_reset_attempts": 0,
+  "sd_files_backed_up": 215,
+  "sd_matches_previous_restored_contents_and_attributes": true,
+  "new_flash_read": false,
+  "flash_written": false,
+  "firmware_basis": "Same-session previously verified normal firmware, no subsequent firmware writes",
+  "usb_reconnections_requested": 0,
+  "sd_transfer_plan": [
+    "already on PC: backup and preparation",
+    "PC to console: one SNES launch",
+    "console to PC: audit and restoration in same connection"
+  ],
+  "fixture_condition": {
+    "slot_a": "USER generation 9, value 31, CRC corrupted by one bit",
+    "slot_b": "valid USER generation 8, value 19, ON/WEAK/STD"
+  },
+  "expected": {
+    "selected_slot": "b",
+    "generation": 8,
+    "settings": "ON/WEAK/STD",
+    "save": "SAVED",
+    "loaded_from": "USER",
+    "save_read": "RECOVERED",
+    "defaults": "MISSING"
+  },
+  "hardware_slot_permutations": 1
+}
