@@ -1,0 +1,32 @@
+{
+  "stage": "awaiting_hardware",
+  "baseline_files": 215,
+  "installed_files": 216,
+  "expected_post_runtime_files": 217,
+  "trial_fixtures_verified": true,
+  "expected_saved_records": [
+    {
+      "rom_id": "232bb5b8",
+      "slot": "b",
+      "generation": 8,
+      "settings": "OFF/WEAK/STD"
+    },
+    {
+      "rom_id": "14d70786",
+      "slot": "b",
+      "generation": 21,
+      "settings": "ON/STD/WEAK"
+    }
+  ],
+  "hardware_result": "pending",
+  "planned_snes_launches": 2,
+  "planned_saves": 2,
+  "planned_reset_attempts": 0,
+  "usb_reconnections_requested": 0,
+  "planned_sd_movements": [
+    "PC to console",
+    "console to PC"
+  ],
+  "flash_accessed": false,
+  "original_records_restored": false
+}
