@@ -1,0 +1,36 @@
+{
+  "stage": "pc_and_sd_preflight_passed",
+  "hardware_runtime": "pending",
+  "planned_snes_launches": 1,
+  "planned_save_attempts": 1,
+  "parent_commit": "527f2bf2305717af56e8f5e1365b47db0a9d57f9",
+  "firmware_commit": "95871ef8e9ef547767b145cee4e85577e8bb4972",
+  "sd_files_backed_up": 215,
+  "sd_matches_previous_restored_contents_and_attributes": true,
+  "new_flash_read": false,
+  "flash_written": false,
+  "firmware_basis": "Prior same-session Flash read and verified normal firmware; no intervening firmware writes",
+  "usb_reconnections_requested": 0,
+  "sd_transfer_plan": [
+    "already connected to PC: fresh backup and preparation",
+    "PC to powered-off console: one SNES launch",
+    "powered-off console to PC: audit and restoration in same connection"
+  ],
+  "expected_initial": {
+    "settings": "OFF/OFF/OFF",
+    "loaded_from": "BUILT-IN",
+    "save_read": "MISSING",
+    "defaults": "MISSING"
+  },
+  "expected_saved": {
+    "settings": "ON/OFF/OFF",
+    "slot": "a",
+    "kind": "USER",
+    "generation": 1,
+    "slot_b_exists": false,
+    "save": "SAVED",
+    "loaded_from": "BUILT-IN",
+    "save_read": "MISSING"
+  },
+  "power_cycle_restore_hardware_tested": false
+}
