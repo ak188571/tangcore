@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "scope": "PC replay using both post-runtime record files",
+  "stdout": "PASS: exact fixtures select valid USER slot b generation 8 as RECOVERED despite CRC-bad slot a generation 9; ON/WEAK/STD overrides builtin OFF; SAVED, preview/cancel/reopen retain USER/RECOVERED; zero mkdir/write-open/write/sync attempts. FRAME ACK is simulated on PC.\n"
+}
