@@ -1,5 +1,5 @@
 {
-  "stage": "pc_and_hardware_preflight_passed",
+  "stage": "conflict_records_installed_awaiting_hardware_report",
   "hardware_runtime": "pending",
   "planned_snes_launches": 1,
   "firmware_commit": "95871ef8e9ef547767b145cee4e85577e8bb4972",
@@ -15,5 +15,12 @@
     "save_read": "CONFLICT",
     "defaults": "MISSING",
     "save_attempt": "FAILED"
-  }
+  },
+  "sd_installation": {
+    "changed_records": 2,
+    "all_215_files_and_attributes_verified": true,
+    "firmware_and_fpga_unchanged": true
+  },
+  "hardware_report_requested": true,
+  "snes_launches_requested": 1
 }
