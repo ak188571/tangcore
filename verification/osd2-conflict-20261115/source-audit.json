@@ -1,0 +1,29 @@
+{
+  "parent_commit": "1e8b843efc391f888994adb6215b03758d1597a9",
+  "firmware_commit": "95871ef8e9ef547767b145cee4e85577e8bb4972",
+  "firmware_clean": true,
+  "osd_sources_match_nov7": true,
+  "files": {
+    "ui/ui16_crt.cpp": {
+      "current_blob": "0823298d0f63e61cd7d30c35415b4f7052002541",
+      "nov7_blob": "0823298d0f63e61cd7d30c35415b4f7052002541"
+    },
+    "ui/ui16_crt_restore.cpp": {
+      "current_blob": "88fb13c5bbaf220be30d72d590e943e2b3898b2e",
+      "nov7_blob": "88fb13c5bbaf220be30d72d590e943e2b3898b2e"
+    },
+    "ui/ui16_crt_save.cpp": {
+      "current_blob": "e0ffc38d10f7bb869ec67c866ac51771297095c7",
+      "nov7_blob": "e0ffc38d10f7bb869ec67c866ac51771297095c7"
+    },
+    "ui/ui16_crt_defaults.cpp": {
+      "current_blob": "49f8a2927453a0f142157e647ef1475882a32b99",
+      "nov7_blob": "49f8a2927453a0f142157e647ef1475882a32b99"
+    },
+    "ui/ui16_osd_menu.cpp": {
+      "current_blob": "84cab835c586cc19bef6997fb450c8f4383a04e5",
+      "nov7_blob": "84cab835c586cc19bef6997fb450c8f4383a04e5"
+    }
+  },
+  "parent_submodules": "160000 commit 95871ef8e9ef547767b145cee4e85577e8bb4972\tfirmware-bl616\n160000 commit e12b253838b45407dc4de99848218e24112b787c\tmonitor\n160000 commit ec33410f2e6078fa20378df3cdae20f84aaf03e9\tnestang\n160000 commit 9a1360fd764b7ca85e3b0013ac684a36ec3a04a9\tsnestang"
+}

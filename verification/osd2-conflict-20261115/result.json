@@ -1,0 +1,19 @@
+{
+  "stage": "pc_and_hardware_preflight_passed",
+  "hardware_runtime": "pending",
+  "planned_snes_launches": 1,
+  "firmware_commit": "95871ef8e9ef547767b145cee4e85577e8bb4972",
+  "firmware_image_sha256": "e60ef33db7bf38a02d88bf5e7fee8aac444c502ad4fa3dc7dc2ecbf16458d77a",
+  "full_flash_matches_nov15_restored": true,
+  "flash_written": false,
+  "sd_files_backed_up": 215,
+  "sd_matches_nov15_restored": true,
+  "snes_core_sha256": "b3df3e53444acdc083f45d11e194772e50ee91226dbcf9b23424e6732957737e",
+  "expected": {
+    "settings": "OFF/OFF/OFF",
+    "loaded_from": "BUILT-IN",
+    "save_read": "CONFLICT",
+    "defaults": "MISSING",
+    "save_attempt": "FAILED"
+  }
+}

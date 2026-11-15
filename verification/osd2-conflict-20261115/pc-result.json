@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "fixtures": {
+    "crt/02-232bb5b8-0000000000200000.a": {
+      "bytes": 32,
+      "sha256": "7461a0554eab1dc4623a7cf9dac83b795b98b67e75452f13307e9d9e1bc0f79d",
+      "generation": 8,
+      "kind": "USER",
+      "packed_value": 1
+    },
+    "crt/02-232bb5b8-0000000000200000.b": {
+      "bytes": 32,
+      "sha256": "9d9868f2c49ad6fc7e9bfecb9d3000e1bd9b562c5832a137a579926d68b4a2d4",
+      "generation": 8,
+      "kind": "USER",
+      "packed_value": 3
+    }
+  },
+  "stdout": "PASS: exact 32-byte fixtures -> CONFLICT; USER and Reset SAVE rejected with zero mkdir/write-open/write/sync attempts; OSD FAILED, load snapshot retained, cancel/reopen restored OFF. FRAME ACK is simulated in this PC test.\n",
+  "production_source_sha256": {
+    "ui/ui16_crt.cpp": "296346c5a3675610ff16e1194cd66488b0cb67de907087bb6ab3f66c3cbd368e",
+    "ui/ui16_osd.cpp": "667da4725daad9551ba048d09083f38cf465df3e57ed0f1dcbc614213f09637a",
+    "ui/ui16_crt_restore.cpp": "59e7f98e533bd2d7f5263dd061bd2a4657487d699ef92a13dcc8a3aa680caffe",
+    "ui/ui16_crt_save.cpp": "0bc737dbfa0fefd0299dff20040e399753a1e4fdb6e5d8a7335ad359053d5551",
+    "ui/ui16_crt_defaults.cpp": "4a4394eb3bace1a6fa55ce528226a54f9ba01a71faedcde521b3e44c5250037c",
+    "ui/ui16_rom_id.cpp": "84bf913e39e1ee4489fc2b5343e9d9a3029fa8d65a33f0be3616c1b2c75f3edf"
+  }
+}
