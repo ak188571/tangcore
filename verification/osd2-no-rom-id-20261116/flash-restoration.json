@@ -1,0 +1,10 @@
+{
+  "verification_method": "independent full readback with byte comparison",
+  "flash_bytes": 4194304,
+  "pretrial_two_full_reads_match": true,
+  "diagnostic_application_verified": true,
+  "diagnostic_outside_touched_sectors_unchanged": true,
+  "pre_restore_two_full_reads_match_verified_diagnostic": true,
+  "restored_application_region": "0x40000..0x7ffff",
+  "restored_full_flash_matches_pretrial": true
+}

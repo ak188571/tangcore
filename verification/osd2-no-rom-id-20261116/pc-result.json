@@ -1,0 +1,54 @@
+{
+  "firmware_baseline": "95871ef8e9ef547767b145cee4e85577e8bb4972",
+  "synthetic_rom": true,
+  "transfer_endpoint": "host stub",
+  "diagnostic_patch_reapplied_to_clean_worktree": true,
+  "normal": {
+    "cases": {
+      "nominal": {
+        "passed": true,
+        "stdout": "PASS nominal: normal SD reads produce a ROM ID and the ROM loader succeeds.\n"
+      },
+      "id-close-error": {
+        "passed": true,
+        "stdout": "PASS id-close-error: ROM loader succeeds; NO ROM ID, READ ONLY, no SAVE/RESET, preview cancels.\n"
+      },
+      "sd-timeout": {
+        "passed": true,
+        "stdout": "PASS sd-timeout: launch stops; no in-game OSD2 session.\n"
+      },
+      "rom-load-fails": {
+        "passed": true,
+        "stdout": "PASS rom-load-fails: launch stops; no in-game OSD2 session.\n"
+      }
+    },
+    "production_source_sha256": {
+      "main.cpp": "7ec0f881697727f8cf5203eeffe9da635923bdfd3abd641a9ecc241d10031185",
+      "core/snes.cpp": "9d745104efd90f9df47e99064a9b46edc25c8ae15483578004cda58febbdef77",
+      "ui/ui16_rom_id.cpp": "84bf913e39e1ee4489fc2b5343e9d9a3029fa8d65a33f0be3616c1b2c75f3edf",
+      "ui/ui16_crt_restore.cpp": "59e7f98e533bd2d7f5263dd061bd2a4657487d699ef92a13dcc8a3aa680caffe",
+      "ui/ui16_crt_defaults.cpp": "4a4394eb3bace1a6fa55ce528226a54f9ba01a71faedcde521b3e44c5250037c",
+      "ui/ui16_crt.cpp": "296346c5a3675610ff16e1194cd66488b0cb67de907087bb6ab3f66c3cbd368e",
+      "ui/ui16_osd.cpp": "667da4725daad9551ba048d09083f38cf465df3e57ed0f1dcbc614213f09637a",
+      "utils/tc_snes_sd_guard.cpp": "5d176bfe23b1408252708e01f748625ebb93cd38e1ce21290b101e717f0f85d7"
+    }
+  },
+  "diagnostic": {
+    "cases": {
+      "diagnostic": {
+        "passed": true,
+        "stdout": "PASS diagnostic: ROM loader succeeds; NO ROM ID, READ ONLY, no SAVE/RESET, preview cancels.\n"
+      }
+    },
+    "production_source_sha256": {
+      "main.cpp": "7ec0f881697727f8cf5203eeffe9da635923bdfd3abd641a9ecc241d10031185",
+      "core/snes.cpp": "9d745104efd90f9df47e99064a9b46edc25c8ae15483578004cda58febbdef77",
+      "ui/ui16_rom_id.cpp": "bc2b05b560e682fbb02952fa69fa5f0014c9eadd42b43c1ed4f957e04004b4af",
+      "ui/ui16_crt_restore.cpp": "59e7f98e533bd2d7f5263dd061bd2a4657487d699ef92a13dcc8a3aa680caffe",
+      "ui/ui16_crt_defaults.cpp": "4a4394eb3bace1a6fa55ce528226a54f9ba01a71faedcde521b3e44c5250037c",
+      "ui/ui16_crt.cpp": "296346c5a3675610ff16e1194cd66488b0cb67de907087bb6ab3f66c3cbd368e",
+      "ui/ui16_osd.cpp": "667da4725daad9551ba048d09083f38cf465df3e57ed0f1dcbc614213f09637a",
+      "utils/tc_snes_sd_guard.cpp": "5d176bfe23b1408252708e01f748625ebb93cd38e1ce21290b101e717f0f85d7"
+    }
+  }
+}

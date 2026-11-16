@@ -1,0 +1,42 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 7a7bcc3979dbe75ab1826c2f7603e96d687ea917..30ac7c161084308302a3c948889b97eed9fa08ae 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -18,6 +18,14 @@ if(UI16_SYSTEM_MENU)
+     add_definitions(-DUI16_SYSTEM_MENU)
+ endif()
+
++option(TC_DIAG_ROM_ID_CLOSE_FAILURE "Fail the first successful SD SNES ROM identification close result (diagnostic)" OFF)
++if(TC_DIAG_ROM_ID_CLOSE_FAILURE)
++    if(NOT UI16_SYSTEM_MENU OR NOT TANG_BOARD STREQUAL "console138k" OR NOT CHIP STREQUAL "bl616")
++        message(FATAL_ERROR "ROM ID close-failure diagnostic requires Console138K UI16 / BL616")
++    endif()
++    add_definitions(-DTC_DIAG_ROM_ID_CLOSE_FAILURE)
++endif()
++
+ option(TC_LAUNCH_TRACE "Record launch stages in RAM without UART/SD logging" OFF)
+ if(TC_LAUNCH_TRACE)
+     if(NOT UI16_SYSTEM_MENU)
+diff --git a/ui/ui16_rom_id.cpp b/ui/ui16_rom_id.cpp
+index 81d1c157438d01429d12d8970237cb9345832a23..5d954293139bb6c156b21f467b54778ec3a9cc5d 100644
+--- a/ui/ui16_rom_id.cpp
++++ b/ui/ui16_rom_id.cpp
+@@ -65,7 +65,17 @@ Ui16RomIdentity ui16_identify_rom(int system,const char *path,FIL &file,
+         crc=ui16_rom_crc(crc,buffer,n);count+=n;
+         if(yield)yield();
+     }
+-    if(f_close(&file)!=FR_OK)good=false;
++    auto close_result=f_close(&file);
++#ifdef TC_DIAG_ROM_ID_CLOSE_FAILURE
++    // Fail only the identification result after the real handle is closed.
++    // No SDH failure, mutation, or change to the subsequent ROM transfer.
++    static bool injected=false;
++    if(!injected&&system==2&&volume==Ui16RomVolume::Sd&&good&&count&&count==expected&&close_result==FR_OK){
++        injected=true;
++        close_result=FR_INT_ERR;
++    }
++#endif
++    if(close_result!=FR_OK)good=false;
+     if(good&&count&&count==expected){
+         result.valid=true;result.volume=volume;result.system=static_cast<unsigned>(system);
+         result.crc=crc^0xffffffffu;result.size=count;

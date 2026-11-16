@@ -1,0 +1,41 @@
+{
+  "firmware_baseline": "95871ef8e9ef547767b145cee4e85577e8bb4972",
+  "snestang_commit": "9a1360fd764b7ca85e3b0013ac684a36ec3a04a9",
+  "stage": "complete",
+  "date_jst": "2026-11-16",
+  "source": "user report with independent Flash readback",
+  "user_report": "想定通り。boot接続済み",
+  "game": "Super Mario Collection (Japan)",
+  "snes_launches": 1,
+  "diagnostic": "one-shot simulated FR_INT_ERR after successful actual ROM ID file close",
+  "video_audio_input": "as expected",
+  "compact": [
+    "CRT OFF",
+    "BLUR OFF",
+    "SCAN OFF",
+    "SAVE N/A",
+    "RESET N/A"
+  ],
+  "save_and_reset_skipped_by_selection": true,
+  "details": [
+    "SAVE: READ ONLY",
+    "LOADED FROM: BUILT-IN",
+    "SAVE READ: NO ROM ID",
+    "APPLY: FRAME ACK",
+    "ROM ID: UNAVAILABLE",
+    "DEFAULTS: MISSING"
+  ],
+  "preview_crt_on_frame_ack": true,
+  "cancel_restored_crt_off": true,
+  "game_input_resumed": true,
+  "reopened_save_read": "NO ROM ID",
+  "save_attempts": 0,
+  "reset_attempts": 0,
+  "sd_writes": 0,
+  "sd_removals_requested": 0,
+  "post_trial_sd_comparison_performed": false,
+  "full_flash_restored_exact": true,
+  "full_flash_bytes": 4194304,
+  "normal_application_restored": true,
+  "final_connection": "BL616 BOOT connection; power-cycle normally to use restored application"
+}
