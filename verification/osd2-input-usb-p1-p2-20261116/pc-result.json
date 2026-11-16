@@ -1,0 +1,18 @@
+{
+  "firmware_commit": "95871ef8e9ef547767b145cee4e85577e8bb4972",
+  "firmware_crt_test": {
+    "passed": true,
+    "stdout": "Load info PASS: source/read-state snapshots survive USER/Reset SAVE, all states fit existing frame, NES/SNES\nCRT host PASS: hotkeys, preserved config, frame ACK/retry, stale ACK rejection, CSV/default/explicit OFF seeds, invalid seed fallback, explicit SAVE/stay-open/retry and X/Y discard of live preview\nCompact OSD2 PASS: NES/SNES all 32 settings and 5 positions, hidden diagnostics, SAVE status, START hold/combinations, preserved selection, visible window and exact shrink-back\n"
+  },
+  "p1_p2_menu_test": {
+    "passed": true,
+    "stdout": "PASS: P2 directions, START and BACK leave OSD2 unchanged; P1 opens info; all-up unlocks the menu; P1 closes with P2 held.\n"
+  },
+  "production_source_sha256": {
+    "ui/ui16_crt.cpp": "296346c5a3675610ff16e1194cd66488b0cb67de907087bb6ab3f66c3cbd368e",
+    "ui/ui16_osd.cpp": "667da4725daad9551ba048d09083f38cf465df3e57ed0f1dcbc614213f09637a",
+    "ui/ui16_osd_menu.cpp": "3f59a4f6838753aff0134b34a9d7e172c1f98634eb54ff572214fe5711e2facd",
+    "ui/ui16_navigation.cpp": "524e9266a19d6063875fc9bc5e0fdb0d9de8ddd0df94b5af9bedac7a510a62a8",
+    "ui/menu_manager.cpp": "2dbf93d3f8d793d22a7b74262861e9f95ad19f36d0f62fd001df31874d6d2337"
+  }
+}

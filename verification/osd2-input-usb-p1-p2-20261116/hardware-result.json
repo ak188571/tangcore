@@ -1,0 +1,30 @@
+{
+  "stage": "complete",
+  "date_jst": "2026-11-16",
+  "source": "user report",
+  "user_report": "すべて想定通り。microsdは本体に取り付けた状態",
+  "game": "Super Mario Kart (Japan)",
+  "mode": "two-player Battle Mode",
+  "rom_id": "c8002453",
+  "routes": [
+    "FPGA USB P1",
+    "FPGA USB P2"
+  ],
+  "snes_launches": 1,
+  "save_attempts": 0,
+  "reset_attempts": 0,
+  "p1_p2_normal_controls": true,
+  "p2_chord_does_not_open_osd2": true,
+  "split_p1_select_p2_left_does_not_open_osd2": true,
+  "p1_chord_opens_osd2": true,
+  "p2_down_and_start_ignored_by_osd2": true,
+  "p1_start_opens_details_with_frame_ack": true,
+  "p2_acceleration_blocked_while_osd2_open": true,
+  "p2_held_acceleration_blocked_after_p1_close": true,
+  "fresh_p1_and_p2_presses_work_after_all_release": true,
+  "host_crt_test_passed": true,
+  "card_location": "console",
+  "post_trial_sd_comparison_performed": false,
+  "firmware_commit": "95871ef8e9ef547767b145cee4e85577e8bb4972",
+  "snestang_commit": "9a1360fd764b7ca85e3b0013ac684a36ec3a04a9"
+}
