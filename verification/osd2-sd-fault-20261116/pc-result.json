@@ -1,0 +1,449 @@
+{
+  "date_jst": "2026-11-16",
+  "firmware_commit": "95871ef8e9ef547767b145cee4e85577e8bb4972",
+  "sdk_commit": "7f44f9ea6b4ccf96db8c5236c8024b68e2a76df7",
+  "scope": "PC-only; real SDK FatFs over synthetic sectors; no device access",
+  "hardware_trial_status": "deferred",
+  "physical_power_loss_tested": false,
+  "compiler": "g++.exe (Rev6, Built by MSYS2 project) 16.2.0",
+  "firmware_source_sha256": {
+    "ui/ui16_crt_save.cpp": "0bc737dbfa0fefd0299dff20040e399753a1e4fdb6e5d8a7335ad359053d5551",
+    "ui/ui16_crt_restore.cpp": "59e7f98e533bd2d7f5263dd061bd2a4657487d699ef92a13dcc8a3aa680caffe",
+    "ui/ui16_rom_id.cpp": "84bf913e39e1ee4489fc2b5343e9d9a3029fa8d65a33f0be3616c1b2c75f3edf",
+    "fatfs_conf_user.h": "cc1d784c6dec3eb79d250d63b873364e8046a8d66ed53ece6dbca7915881b398",
+    "utils/tc_snes_sd_guard.cpp": "5d176bfe23b1408252708e01f748625ebb93cd38e1ce21290b101e717f0f85d7",
+    "tests/ui16/crt_restore_test.cpp": "75b62240520e522e3b828811a9cf1f651ac1324f4968ced0859b870213ebd284",
+    "tests/ui16/crt_save_test.cpp": "88f92ce23106075180e342db1b59a80c7df503036e9b13918a3ec9854830e34c",
+    "tests/storage/snes_sd_guard_test.cpp": "ef451cbbcdead58bd3927636c25a3e0fb50a572d593875939378e80ce9fda2c1"
+  },
+  "sdk_fatfs_source_sha256": {
+    "ff.c": "b5e9ff88e748c1a06cacaf0677149df19613034735c1985cd2ddc3e67cfb8787",
+    "ff.h": "d4176d79de6819732acda2c6c1e44929d77e5251c9ba9200674166e0d29f3c2f",
+    "ffconf.h": "49e8c1cfc7d038ab79f269f14ef313e244d018ffd71d9c2267d871453e9665ec",
+    "ffunicode.c": "6cd4dc4a664386ebd108e56d367582c35f005fc20381486366b5d77ac58119bd",
+    "diskio.h": "9198fa2153e635f3ee508d42ca72bbc38522f5967489a3aa505753c294e8c435"
+  },
+  "host_restore": {
+    "passed": true,
+    "stdout": "CRT restore PASS: read-only aligned buffers, two generations/wrap/tombstones, explicit OFF, whole record integrity, schema/key/reserved validation, corrupt sibling recovery, I/O/future/conflict fallback, volume/system separation\n"
+  },
+  "host_save": {
+    "passed": true,
+    "stdout": "CRT save PASS: alternate-slot sync/close/exact readback, Reset tombstones/zero value/retry/user resave, explicit OFF, generation wrap, torn writes, all write/verification failures, retry protects uncertain generation, corrupt recovery, I/O/schema/conflict refusal and invalid identity\n"
+  },
+  "host_sd_guard": {
+    "passed": true,
+    "stdout_by_case": {
+      "legacy": "SNES SD guard PASS: scope, unchanged legacy returns, reset-before-buffer-reuse, no timeout retry, power-cycle fault latch\n",
+      "success": "SNES SD guard PASS: scope, unchanged legacy returns, reset-before-buffer-reuse, no timeout retry, power-cycle fault latch\n",
+      "read-timeout": "SNES SD guard PASS: scope, unchanged legacy returns, reset-before-buffer-reuse, no timeout retry, power-cycle fault latch\n",
+      "write-error": "SNES SD guard PASS: scope, unchanged legacy returns, reset-before-buffer-reuse, no timeout retry, power-cycle fault latch\n"
+    }
+  },
+  "fatfs": {
+    "passed": true,
+    "interruptions": 42,
+    "completed_controls": 2,
+    "last_confirmed_record_and_neighbour_preserved": true,
+    "read_error_refused_save_before_disk_write": true,
+    "write_error_preserved_latest_confirmed_slot": true,
+    "cases": [
+      {
+        "model": "direct",
+        "boundary": 0,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "buffered",
+        "boundary": 0,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 0,
+        "event": "before_sector_write",
+        "partial_bytes": 1,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 0,
+        "event": "before_sector_write",
+        "partial_bytes": 256,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 0,
+        "event": "before_sector_write",
+        "partial_bytes": 511,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "direct",
+        "boundary": 1,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "buffered",
+        "boundary": 1,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 1,
+        "event": "before_sector_write",
+        "partial_bytes": 1,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 1,
+        "event": "before_sector_write",
+        "partial_bytes": 256,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 1,
+        "event": "before_sector_write",
+        "partial_bytes": 511,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "direct",
+        "boundary": 2,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "buffered",
+        "boundary": 2,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 2,
+        "event": "before_sector_write",
+        "partial_bytes": 1,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 2,
+        "event": "before_sector_write",
+        "partial_bytes": 256,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 2,
+        "event": "before_sector_write",
+        "partial_bytes": 511,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "direct",
+        "boundary": 3,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "buffered",
+        "boundary": 3,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 3,
+        "event": "before_sector_write",
+        "partial_bytes": 1,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 3,
+        "event": "before_sector_write",
+        "partial_bytes": 256,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 3,
+        "event": "before_sector_write",
+        "partial_bytes": 511,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "direct",
+        "boundary": 4,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "buffered",
+        "boundary": 4,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 4,
+        "event": "before_sector_write",
+        "partial_bytes": 1,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 4,
+        "event": "before_sector_write",
+        "partial_bytes": 256,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 4,
+        "event": "before_sector_write",
+        "partial_bytes": 511,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "direct",
+        "boundary": 5,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "buffered",
+        "boundary": 5,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 5,
+        "event": "before_sector_write",
+        "partial_bytes": 1,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 5,
+        "event": "before_sector_write",
+        "partial_bytes": 256,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 5,
+        "event": "before_sector_write",
+        "partial_bytes": 511,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "direct",
+        "boundary": 6,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "buffered",
+        "boundary": 6,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 6,
+        "event": "before_sector_write",
+        "partial_bytes": 1,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "RECOVERED"
+      },
+      {
+        "model": "torn",
+        "boundary": 6,
+        "event": "before_sector_write",
+        "partial_bytes": 256,
+        "selected_slot": "a",
+        "selected_generation": 3,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 6,
+        "event": "before_sector_write",
+        "partial_bytes": 511,
+        "selected_slot": "a",
+        "selected_generation": 3,
+        "state": "USER"
+      },
+      {
+        "model": "direct",
+        "boundary": 7,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "a",
+        "selected_generation": 3,
+        "state": "USER"
+      },
+      {
+        "model": "buffered",
+        "boundary": 7,
+        "event": "before_sector_write",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 7,
+        "event": "before_sector_write",
+        "partial_bytes": 1,
+        "selected_slot": "a",
+        "selected_generation": 3,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 7,
+        "event": "before_sector_write",
+        "partial_bytes": 256,
+        "selected_slot": "a",
+        "selected_generation": 3,
+        "state": "USER"
+      },
+      {
+        "model": "torn",
+        "boundary": 7,
+        "event": "before_sector_write",
+        "partial_bytes": 511,
+        "selected_slot": "a",
+        "selected_generation": 3,
+        "state": "USER"
+      },
+      {
+        "model": "direct",
+        "boundary": 8,
+        "event": "before_device_sync",
+        "partial_bytes": 0,
+        "selected_slot": "a",
+        "selected_generation": 3,
+        "state": "USER"
+      },
+      {
+        "model": "buffered",
+        "boundary": 8,
+        "event": "before_device_sync",
+        "partial_bytes": 0,
+        "selected_slot": "b",
+        "selected_generation": 2,
+        "state": "USER"
+      },
+      {
+        "model": "direct",
+        "boundary": 9,
+        "event": "after_completed_save",
+        "partial_bytes": 0,
+        "selected_slot": "a",
+        "selected_generation": 3,
+        "state": "USER"
+      },
+      {
+        "model": "buffered",
+        "boundary": 9,
+        "event": "after_completed_save",
+        "partial_bytes": 0,
+        "selected_slot": "a",
+        "selected_generation": 3,
+        "state": "USER"
+      }
+    ]
+  }
+}
